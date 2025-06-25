@@ -1,4 +1,6 @@
-# Template Mkdocs Repo
+# AI Infographics
+
+AI Infographics is a collection of resources for creating interactive infographics using AI tools.
 
 Website: 
 
