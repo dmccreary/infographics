@@ -9,6 +9,10 @@ edit_uri: 'blob/master/docs'
 nav:
   - Home: index.md
   - Taxonomy: taxonomy.md
+  - Back of the Napkin: back-of-the-napkin.md
+  - Causal Loop Diagrams: causal-loop-diagrams.md
+  - MicroSims:
+    - Introduction: sims/index.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
