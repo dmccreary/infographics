@@ -1,0 +1,1491 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI Infographics is a collection of resources for creating interactive infographics using AI tools.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/infographics/causal-loop-diagrams/">
+      
+      
+        <link rel="prev" href="../back-of-the-napkin/">
+      
+      
+        <link rel="next" href="../glossary/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Causal Loop Diagrams - AI Infographics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Causal Loop Diagrams - AI Infographics" >
+      
+        <meta  property="og:description"  content="AI Infographics is a collection of resources for creating interactive infographics using AI tools." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/infographics/assets/images/social/causal-loop-diagrams.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/infographics/causal-loop-diagrams/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Causal Loop Diagrams - AI Infographics" >
+      
+        <meta  name="twitter:description"  content="AI Infographics is a collection of resources for creating interactive infographics using AI tools." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/infographics/assets/images/social/causal-loop-diagrams.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#causal-loop-diagrams" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AI Infographics" class="md-header__button md-logo" aria-label="AI Infographics" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Infographics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Causal Loop Diagrams
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/infographics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AI Infographics" class="md-nav__button md-logo" aria-label="AI Infographics" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    AI Infographics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/infographics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../taxonomy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Taxonomy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../back-of-the-napkin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Back of the Napkin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Causal Loop Diagrams
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Causal Loop Diagrams
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-causal-loop-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Are Causal Loop Diagrams?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-components-of-causal-loop-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Components of Causal Loop Diagrams
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Components of Causal Loop Diagrams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#causal-links-arrows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Causal Links (Arrows)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polarity-indicators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polarity Indicators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop Identifiers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-feedback-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Feedback Loops
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Feedback Loops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reinforcing-r-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reinforcing (R) Loops
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balancing-b-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Balancing (B) Loops
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-capturing-feedback-in-business-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of Capturing Feedback in Business Systems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples of Capturing Feedback in Business Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customer-loyalty-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customer Loyalty Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#employee-engagement-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Employee Engagement Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#price-value-perception-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Price-Value Perception Loop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-strategy-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Strategy Applications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Business Strategy Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#strategic-planning-and-decision-making" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strategic Planning and Decision Making
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-digital-transformation-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Digital Transformation Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#competitive-dynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Competitive Dynamics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#innovation-and-growth-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Innovation and Growth Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-applications-in-executive-decision-making" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Applications in Executive Decision-Making
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Applications in Executive Decision-Making">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario Planning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-allocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resource Allocation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk Assessment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices-for-creating-effective-clds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices for Creating Effective CLDs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices for Creating Effective CLDs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start Simple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-clear-variable-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Clear Variable Names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-polarities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify Polarities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tell-the-story" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tell the Story
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#focus-on-structure-not-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Focus on Structure, Not Events
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#involve-stakeholders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Involve Stakeholders
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations-and-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitations and Considerations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../sims/index.md" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-causal-loop-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Are Causal Loop Diagrams?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-components-of-causal-loop-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Components of Causal Loop Diagrams
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Components of Causal Loop Diagrams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#causal-links-arrows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Causal Links (Arrows)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polarity-indicators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polarity Indicators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop Identifiers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-feedback-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Feedback Loops
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Feedback Loops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reinforcing-r-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reinforcing (R) Loops
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balancing-b-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Balancing (B) Loops
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-capturing-feedback-in-business-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of Capturing Feedback in Business Systems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples of Capturing Feedback in Business Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customer-loyalty-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customer Loyalty Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#employee-engagement-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Employee Engagement Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#price-value-perception-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Price-Value Perception Loop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-strategy-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Strategy Applications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Business Strategy Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#strategic-planning-and-decision-making" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strategic Planning and Decision Making
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-digital-transformation-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Digital Transformation Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#competitive-dynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Competitive Dynamics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#innovation-and-growth-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Innovation and Growth Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-applications-in-executive-decision-making" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Applications in Executive Decision-Making
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Applications in Executive Decision-Making">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario Planning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-allocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resource Allocation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk Assessment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices-for-creating-effective-clds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices for Creating Effective CLDs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices for Creating Effective CLDs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start Simple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-clear-variable-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Clear Variable Names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-polarities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify Polarities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tell-the-story" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tell the Story
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#focus-on-structure-not-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Focus on Structure, Not Events
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#involve-stakeholders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Involve Stakeholders
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations-and-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitations and Considerations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/infographics/blob/master/docs/causal-loop-diagrams.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="causal-loop-diagrams">Causal Loop Diagrams</h1>
+<h2 id="what-are-causal-loop-diagrams">What Are Causal Loop Diagrams?</h2>
+<p>Causal Loop Diagrams (CLDs) are visual tools used in Systems Thinking to map the causal connections between variables in a system and show how these connections form feedback loops. They help reveal the underlying structure of complex situations by illustrating how different elements influence each other over time.</p>
+<p>CLDs are particularly powerful because they shift focus from linear cause-and-effect thinking to circular causality, where effects can become causes, creating ongoing patterns of behavior within systems.</p>
+<h2 id="key-components-of-causal-loop-diagrams">Key Components of Causal Loop Diagrams</h2>
+<h3 id="variables">Variables</h3>
+<p>Variables are the key elements in the system that can increase or decrease over time. These are typically written as nouns or noun phrases, such as:</p>
+<ul>
+<li>Sales Revenue</li>
+<li>Customer Satisfaction</li>
+<li>Employee Morale</li>
+<li>Market Share</li>
+<li>Production Costs</li>
+</ul>
+<h3 id="causal-links-arrows">Causal Links (Arrows)</h3>
+<p>Arrows connect variables to show causal relationships. Each arrow indicates that a change in one variable causes a change in another.</p>
+<h3 id="polarity-indicators">Polarity Indicators</h3>
+<p>Each causal link is marked with either:</p>
+<ul>
+<li><strong>Positive (+)</strong> or <strong>Same (S)</strong>: When the first variable increases, the second variable increases. When the first decreases, the second decreases.</li>
+<li><strong>Negative (-)</strong> or <strong>Opposite (O)</strong>: When the first variable increases, the second variable decreases, and vice versa.</li>
+</ul>
+<h3 id="loop-identifiers">Loop Identifiers</h3>
+<p>Feedback loops are marked with:</p>
+<ul>
+<li><strong>R (Reinforcing)</strong>: Loops that amplify or accelerate change</li>
+<li><strong>B (Balancing)</strong>: Loops that seek equilibrium or counteract change</li>
+</ul>
+<h2 id="types-of-feedback-loops">Types of Feedback Loops</h2>
+<h3 id="reinforcing-r-loops">Reinforcing (R) Loops</h3>
+<p>Reinforcing loops create exponential growth or decline. They are "vicious" or "virtuous" cycles that amplify change in the system.</p>
+<p><strong>Example: Population Growth</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Population → (+) Birth Rate → (+) Population
+</code></pre></div></td></tr></table></div>
+This creates an R loop where more population leads to more births, which leads to even more population.</p>
+<p><strong>Business Example: Success Spiral</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Company Performance → (+) Investor Confidence → (+) Available Capital → (+) Investment in R&amp;D → (+) Innovation → (+) Company Performance
+</code></pre></div></td></tr></table></div></p>
+<h3 id="balancing-b-loops">Balancing (B) Loops</h3>
+<p>Balancing loops seek stability and equilibrium. They counteract changes to bring the system back toward a desired state.</p>
+<p><strong>Example: Thermostat</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Room Temperature → (-) Thermostat Activation → (+) Heating → (+) Room Temperature
+</code></pre></div></td></tr></table></div>
+When temperature drops, the thermostat activates heating, which raises temperature back to the desired level.</p>
+<p><strong>Business Example: Inventory Management</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Inventory Level → (-) Reorder Urgency → (+) Purchasing Activity → (+) Inventory Level
+</code></pre></div></td></tr></table></div></p>
+<h2 id="examples-of-capturing-feedback-in-business-systems">Examples of Capturing Feedback in Business Systems</h2>
+<h3 id="customer-loyalty-loop">Customer Loyalty Loop</h3>
+<p>This demonstrates how customer experience creates reinforcing feedback:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Service Quality → (+) Customer Satisfaction → (+) Customer Loyalty → (+) Revenue → (+) Investment in Service → (+) Service Quality
+</code></pre></div></td></tr></table></div>
+<p>This R loop shows how improving service quality leads to a virtuous cycle of increased satisfaction, loyalty, revenue, and further service improvements.</p>
+<h3 id="employee-engagement-loop">Employee Engagement Loop</h3>
+<p>A common organizational dynamic:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Employee Workload → (-) Job Satisfaction → (-) Employee Performance → (-) Team Productivity → (+) Individual Workload
+</code></pre></div></td></tr></table></div>
+<p>This R loop demonstrates how increased workload can create a vicious cycle leading to decreased satisfaction, performance, and productivity, which increases individual workload even more.</p>
+<h3 id="price-value-perception-loop">Price-Value Perception Loop</h3>
+<p>A balancing loop in competitive markets:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Price → (-) Perceived Value → (-) Customer Demand → (-) Revenue → (+) Pressure to Lower Prices → (-) Price
+</code></pre></div></td></tr></table></div>
+<p>This B loop shows how market forces tend to balance price and perceived value.</p>
+<h2 id="business-strategy-applications">Business Strategy Applications</h2>
+<h3 id="strategic-planning-and-decision-making">Strategic Planning and Decision Making</h3>
+<p>Causal Loop Diagrams help executives understand the systemic consequences of strategic decisions by revealing:</p>
+<p><strong>Unintended Consequences</strong>: CLDs help identify how a decision intended to solve one problem might create new problems elsewhere in the system.</p>
+<p><strong>Leverage Points</strong>: By mapping the system, executives can identify where small changes might produce significant results.</p>
+<p><strong>Systemic Structure</strong>: CLDs reveal whether problems are caused by the system's structure rather than individual actions or external events.</p>
+<h3 id="example-digital-transformation-strategy">Example: Digital Transformation Strategy</h3>
+<p>Consider a company implementing digital transformation:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Digital Investment → (+) Process Automation → (-) Manual Labor Needs → (-) Employee Job Security Concerns → (-) Change Adoption → (-) Digital Transformation Success → (-) Digital Investment
+</code></pre></div></td></tr></table></div>
+<p>This reveals a balancing loop where digital investment may be undermined by employee resistance, helping executives plan change management strategies.</p>
+<h3 id="competitive-dynamics">Competitive Dynamics</h3>
+<p>CLDs help map competitive responses and market dynamics:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Our Price Reduction → (+) Our Market Share → (-) Competitor Market Share → (+) Competitor Price Pressure → (+) Competitor Price Reduction → (+) Market Price War Intensity → (-) Industry Profitability
+</code></pre></div></td></tr></table></div>
+<p>This shows how a price reduction strategy might trigger industry-wide consequences.</p>
+<h3 id="innovation-and-growth-strategy">Innovation and Growth Strategy</h3>
+<p>Mapping innovation ecosystems:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>R&amp;D Investment → (+) Innovation Rate → (+) Product Differentiation → (+) Premium Pricing → (+) Profit Margins → (+) Available Capital for R&amp;D → (+) R&amp;D Investment
+</code></pre></div></td></tr></table></div>
+<p>This reinforcing loop shows how innovation investment can create a competitive advantage cycle.</p>
+<h2 id="advanced-applications-in-executive-decision-making">Advanced Applications in Executive Decision-Making</h2>
+<h3 id="scenario-planning">Scenario Planning</h3>
+<p>CLDs help executives understand how different scenarios might unfold by tracing the feedback loops that would be activated under different conditions.</p>
+<h3 id="resource-allocation">Resource Allocation</h3>
+<p>By understanding the reinforcing and balancing loops in their organization, executives can allocate resources to strengthen positive loops and interrupt negative ones.</p>
+<h3 id="change-management">Change Management</h3>
+<p>CLDs reveal why change initiatives succeed or fail by showing the systemic forces that support or resist change.</p>
+<h3 id="risk-assessment">Risk Assessment</h3>
+<p>Understanding feedback loops helps identify how small problems might escalate through reinforcing loops or how balancing loops might provide natural safeguards.</p>
+<h2 id="best-practices-for-creating-effective-clds">Best Practices for Creating Effective CLDs</h2>
+<h3 id="start-simple">Start Simple</h3>
+<p>Begin with the core issue and gradually add variables and connections. Avoid creating overly complex diagrams initially.</p>
+<h3 id="use-clear-variable-names">Use Clear Variable Names</h3>
+<p>Variables should be clearly defined and measurable. Use nouns or noun phrases that can logically increase or decrease.</p>
+<h3 id="verify-polarities">Verify Polarities</h3>
+<p>Carefully consider each causal link. Ask: "If the first variable increases, what happens to the second variable?"</p>
+<h3 id="tell-the-story">Tell the Story</h3>
+<p>Walk through the loops to ensure they tell a coherent story about how the system behaves.</p>
+<h3 id="focus-on-structure-not-events">Focus on Structure, Not Events</h3>
+<p>CLDs should capture the underlying structure that generates patterns of behavior, not just describe events or symptoms.</p>
+<h3 id="involve-stakeholders">Involve Stakeholders</h3>
+<p>Create CLDs collaboratively with people who understand different parts of the system. Different perspectives often reveal important connections.</p>
+<h2 id="limitations-and-considerations">Limitations and Considerations</h2>
+<p>While powerful, CLDs have limitations:</p>
+<ul>
+<li>They show structure but not quantitative relationships</li>
+<li>They can become complex and difficult to interpret</li>
+<li>They represent mental models, which may not reflect actual system behavior</li>
+<li>Time delays between cause and effect are not explicitly shown</li>
+</ul>
+<p>Despite these limitations, CLDs remain invaluable tools for helping business executives think systemically about strategy, understand the interconnected nature of organizational challenges, and identify high-leverage intervention points for sustainable change.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Causal Loop Diagrams serve as powerful tools for Systems Thinking in business strategy. They help executives move beyond linear thinking to understand the circular causality that drives organizational behavior. By revealing feedback loops, CLDs enable leaders to:</p>
+<ul>
+<li>Identify root causes rather than just symptoms</li>
+<li>Anticipate unintended consequences of decisions</li>
+<li>Find leverage points for sustainable change</li>
+<li>Design strategies that work with, rather than against, systemic forces</li>
+</ul>
+<p>Mastering CLDs enables more effective strategic thinking and decision-making in our increasingly complex business environment.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../back-of-the-napkin/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Back of the Napkin">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Back of the Napkin
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../glossary/" class="md-footer__link md-footer__link--next" aria-label="Next: Glossary">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Glossary
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../js/extra.js"></script>
+      
+    
+  </body>
+</html>
