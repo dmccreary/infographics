@@ -29,6 +29,7 @@ The book emphasizes that these drawings should be **simple and hand-drawn**, usi
 ## SQVID Framework
 
 Roam also introduces the SQVID framework to help determine which style of drawing to use, considering whether the visual should be:
+
 - **S**imple vs. Elaborate
 - **Q**ualitative vs. Quantitative  
 - **V**ision vs. Execution
