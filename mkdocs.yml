@@ -8,11 +8,16 @@ edit_uri: 'blob/master/docs'
 
 nav:
   - Home: index.md
+  - About: about.md
   - Taxonomy: taxonomy.md
+  - Slide Art: slide-art.md
   - Back of the Napkin: back-of-the-napkin.md
   - Causal Loop Diagrams: causal-loop-diagrams.md
   - MicroSims:
     - Introduction: sims/index.md
+  - Research:
+    - Intro: research/index.md
+    - Open Source Tools: research/open-source-tools.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
