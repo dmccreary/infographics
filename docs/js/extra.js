@@ -34,3 +34,26 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Automatically resize iframes based on MicroSim height messages
+// Every MicroSim must have a function at the end of the setup() like this:
+//   window.parent.postMessage({type: 'microsim-resize', height: height}, '*');
+
+window.addEventListener('message', function(event) {
+    // Verify this is a MicroSim resize message
+    if (event.data && event.data.type === 'microsim-resize') {
+        // Find all iframes and check which one sent the message
+        const iframes = document.querySelectorAll('iframe');
+        iframes.forEach(function(iframe) {
+            try {
+                // Check if this iframe's window matches the message source
+                if (iframe.contentWindow === event.source) {
+                    // Set the iframe height to match the MicroSim
+                    iframe.style.height = event.data.height + 'px';
+                }
+            } catch (e) {
+                // Ignore cross-origin security errors
+            }
+        });
+    }
+});
