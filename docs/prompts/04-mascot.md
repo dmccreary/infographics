@@ -192,6 +192,7 @@ File: `docs/img/mascot/celebration.png`
 ```
 Please generate a new 500x500 png image with a transparent background.
 Make it stylistically the same as the prior images.
+The image is for Percy Celebration
 A modern flat vector illustration of Percy the Peacock, a friendly pedagogical
 mascot for an interactive infographics textbook. Percy is a stylish peacock
 with a royal blue body and orange-gold accent details on his tail feathers.
@@ -213,6 +214,9 @@ the data-viz motifs in all their glory.
 File: `docs/img/mascot/encouraging.png`
 
 ```
+Please generate a new 500x500 png image with a transparent background.
+Make it stylistically the same as the prior images.
+The image is for Percy Encouraging.
 A modern flat vector illustration of Percy the Peacock, a friendly pedagogical
 mascot for an interactive infographics textbook. Percy is a stylish peacock
 with a royal blue body and orange-gold accent details on his tail feathers.
