@@ -1,12 +1,24 @@
-# AI Infographics
+---
+title: Interactive Infographics with AI
+description: Home page of our Interactive Infographics with AI textbook.
+image: img/cover.png
+og:image: img/cover.png
+hide:
+    toc
+---
+# Interactive Infographics with AI
+
+![](./img/cover.png)
+
 Welcome to our website.
 
-This github repo is just a placeholder until we get
-our MicroSim generators up to a higher quality.  I created
-it after I had a person in the  textbook publishing space ask for a specific book
-on how to generate high-quality infographcs with hover and drill-down features.
-Since we started this our energy has been put into generalizing infographics
-to include interactive MicroSims that work with the xAPI protocols.
+This github repository contains an interactive textbooks for using AI to generate
+a wide variety of interactive infographic MicroSims.
+The goal is to allow non-programmers use AI and skills to generate
+sophisticated interactive infographics with extensive hover and drill-down features
+that are ideally suited for inclusion into intelligent textbooks.
+These infographics have multiple modes for exploration, quizzes and
+editing of regions and labels. xAPI protocols.
 
 Infographics are now considered a subset of the overall [MicroSim Architecture](https://arxiv.org/abs/2511.19864).  We would love your feedback on if this book is still needed.
 
