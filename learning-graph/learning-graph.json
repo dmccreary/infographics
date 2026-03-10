@@ -1,0 +1,3834 @@
+{
+  "metadata": {
+    "title": "Interactive Infographics for Intelligent Textbooks",
+    "description": "A comprehensive learning graph covering interactive infographic design, overlayment patterns, JavaScript visualization libraries, MicroSim standards, generative AI workflows, and student interaction tracking for intelligent textbooks.",
+    "creator": "Dan McCreary",
+    "date": "2026-03-10",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundation Concepts",
+      "color": "Plum",
+      "font": {
+        "color": "black"
+      }
+    },
+    "TAXON": {
+      "classifierName": "Infographic Taxonomy",
+      "color": "Gainsboro",
+      "font": {
+        "color": "black"
+      }
+    },
+    "SLIDE": {
+      "classifierName": "Slide Art Diagrams",
+      "color": "PeachPuff",
+      "font": {
+        "color": "black"
+      }
+    },
+    "FRAME": {
+      "classifierName": "Visual Frameworks",
+      "color": "Honeydew",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CAUSE": {
+      "classifierName": "Causal Loop Diagrams",
+      "color": "MintCream",
+      "font": {
+        "color": "black"
+      }
+    },
+    "OVRLY": {
+      "classifierName": "Overlayment Patterns",
+      "color": "PowderBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "JSLIB": {
+      "classifierName": "JavaScript Libraries",
+      "color": "MistyRose",
+      "font": {
+        "color": "black"
+      }
+    },
+    "WEBFD": {
+      "classifierName": "Web Fundamentals",
+      "color": "PaleTurquoise",
+      "font": {
+        "color": "black"
+      }
+    },
+    "MSIM": {
+      "classifierName": "MicroSim Standards",
+      "color": "LavenderBlush",
+      "font": {
+        "color": "black"
+      }
+    },
+    "GENAI": {
+      "classifierName": "Generative AI",
+      "color": "LightYellow",
+      "font": {
+        "color": "black"
+      }
+    },
+    "TRACK": {
+      "classifierName": "Tracking and Analytics",
+      "color": "Lavender",
+      "font": {
+        "color": "black"
+      }
+    },
+    "LEARN": {
+      "classifierName": "Learning Science",
+      "color": "Thistle",
+      "font": {
+        "color": "black"
+      }
+    },
+    "DEPLY": {
+      "classifierName": "Deployment and Tools",
+      "color": "LightCoral",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ADVIZ": {
+      "classifierName": "Advanced Visualization",
+      "color": "SteelBlue",
+      "font": {
+        "color": "black"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Infographic",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Interactive Infographic",
+      "group": "FOUND"
+    },
+    {
+      "id": 3,
+      "label": "Static Infographic",
+      "group": "FOUND"
+    },
+    {
+      "id": 4,
+      "label": "Animated Infographic",
+      "group": "FOUND"
+    },
+    {
+      "id": 5,
+      "label": "Intelligent Textbook",
+      "group": "FOUND"
+    },
+    {
+      "id": 6,
+      "label": "MicroSim",
+      "group": "FOUND"
+    },
+    {
+      "id": 7,
+      "label": "MicroSim Architecture",
+      "group": "FOUND"
+    },
+    {
+      "id": 8,
+      "label": "Iframe Element",
+      "group": "FOUND"
+    },
+    {
+      "id": 9,
+      "label": "Width-Responsive Design",
+      "group": "FOUND"
+    },
+    {
+      "id": 10,
+      "label": "Central Content Area",
+      "group": "FOUND"
+    },
+    {
+      "id": 11,
+      "label": "Drawing Canvas",
+      "group": "FOUND"
+    },
+    {
+      "id": 12,
+      "label": "Infobox",
+      "group": "FOUND"
+    },
+    {
+      "id": 13,
+      "label": "Infobox Positioning",
+      "group": "FOUND"
+    },
+    {
+      "id": 14,
+      "label": "Region",
+      "group": "FOUND"
+    },
+    {
+      "id": 15,
+      "label": "Named Region",
+      "group": "FOUND"
+    },
+    {
+      "id": 16,
+      "label": "Region Label",
+      "group": "FOUND"
+    },
+    {
+      "id": 17,
+      "label": "Hover Event",
+      "group": "FOUND"
+    },
+    {
+      "id": 18,
+      "label": "Click Event",
+      "group": "FOUND"
+    },
+    {
+      "id": 19,
+      "label": "Selection Event",
+      "group": "FOUND"
+    },
+    {
+      "id": 20,
+      "label": "Event Handler",
+      "group": "FOUND"
+    },
+    {
+      "id": 21,
+      "label": "Infographic Taxonomy",
+      "group": "TAXON"
+    },
+    {
+      "id": 22,
+      "label": "Educational Infographic",
+      "group": "TAXON"
+    },
+    {
+      "id": 23,
+      "label": "Analytical Infographic",
+      "group": "TAXON"
+    },
+    {
+      "id": 24,
+      "label": "Persuasive Infographic",
+      "group": "TAXON"
+    },
+    {
+      "id": 25,
+      "label": "Promotional Infographic",
+      "group": "TAXON"
+    },
+    {
+      "id": 26,
+      "label": "Linear Format",
+      "group": "TAXON"
+    },
+    {
+      "id": 27,
+      "label": "Hierarchical Format",
+      "group": "TAXON"
+    },
+    {
+      "id": 28,
+      "label": "Comparative Format",
+      "group": "TAXON"
+    },
+    {
+      "id": 29,
+      "label": "Circular Format",
+      "group": "TAXON"
+    },
+    {
+      "id": 30,
+      "label": "Radial Format",
+      "group": "TAXON"
+    },
+    {
+      "id": 31,
+      "label": "Minimalist Infographic",
+      "group": "TAXON"
+    },
+    {
+      "id": 32,
+      "label": "Detailed Infographic",
+      "group": "TAXON"
+    },
+    {
+      "id": 33,
+      "label": "Visual Complexity",
+      "group": "TAXON"
+    },
+    {
+      "id": 34,
+      "label": "Audience Targeting",
+      "group": "TAXON"
+    },
+    {
+      "id": 35,
+      "label": "Content Domain",
+      "group": "TAXON"
+    },
+    {
+      "id": 36,
+      "label": "List Diagram",
+      "group": "SLIDE"
+    },
+    {
+      "id": 37,
+      "label": "Block List",
+      "group": "SLIDE"
+    },
+    {
+      "id": 38,
+      "label": "Bullet List",
+      "group": "SLIDE"
+    },
+    {
+      "id": 39,
+      "label": "Picture List",
+      "group": "SLIDE"
+    },
+    {
+      "id": 40,
+      "label": "Grid List",
+      "group": "SLIDE"
+    },
+    {
+      "id": 41,
+      "label": "Process Diagram",
+      "group": "SLIDE"
+    },
+    {
+      "id": 42,
+      "label": "Process Arrows",
+      "group": "SLIDE"
+    },
+    {
+      "id": 43,
+      "label": "Chevron Process",
+      "group": "SLIDE"
+    },
+    {
+      "id": 44,
+      "label": "Timeline Diagram",
+      "group": "SLIDE"
+    },
+    {
+      "id": 45,
+      "label": "Gear Process",
+      "group": "SLIDE"
+    },
+    {
+      "id": 46,
+      "label": "Step Up Process",
+      "group": "SLIDE"
+    },
+    {
+      "id": 47,
+      "label": "Cycle Diagram",
+      "group": "SLIDE"
+    },
+    {
+      "id": 48,
+      "label": "Basic Cycle",
+      "group": "SLIDE"
+    },
+    {
+      "id": 49,
+      "label": "Radial Cycle",
+      "group": "SLIDE"
+    },
+    {
+      "id": 50,
+      "label": "Gear Cycle",
+      "group": "SLIDE"
+    },
+    {
+      "id": 51,
+      "label": "Nested Cycle",
+      "group": "SLIDE"
+    },
+    {
+      "id": 52,
+      "label": "Continuous Cycle",
+      "group": "SLIDE"
+    },
+    {
+      "id": 53,
+      "label": "Hierarchy Diagram",
+      "group": "SLIDE"
+    },
+    {
+      "id": 54,
+      "label": "Organization Chart",
+      "group": "SLIDE"
+    },
+    {
+      "id": 55,
+      "label": "Table Hierarchy",
+      "group": "SLIDE"
+    },
+    {
+      "id": 56,
+      "label": "Labeled Hierarchy",
+      "group": "SLIDE"
+    },
+    {
+      "id": 57,
+      "label": "Relationship Diagram",
+      "group": "SLIDE"
+    },
+    {
+      "id": 58,
+      "label": "Venn Diagram",
+      "group": "SLIDE"
+    },
+    {
+      "id": 59,
+      "label": "Target Diagram",
+      "group": "SLIDE"
+    },
+    {
+      "id": 60,
+      "label": "Radial Diagram",
+      "group": "SLIDE"
+    },
+    {
+      "id": 61,
+      "label": "Matrix Diagram",
+      "group": "SLIDE"
+    },
+    {
+      "id": 62,
+      "label": "Pyramid Diagram",
+      "group": "SLIDE"
+    },
+    {
+      "id": 63,
+      "label": "Funnel Diagram",
+      "group": "SLIDE"
+    },
+    {
+      "id": 64,
+      "label": "Picture Diagram",
+      "group": "SLIDE"
+    },
+    {
+      "id": 65,
+      "label": "SmartArt Categories",
+      "group": "SLIDE"
+    },
+    {
+      "id": 66,
+      "label": "Dan Roam Framework",
+      "group": "FRAME"
+    },
+    {
+      "id": 67,
+      "label": "Portrait Drawing",
+      "group": "FRAME"
+    },
+    {
+      "id": 68,
+      "label": "Chart Drawing",
+      "group": "FRAME"
+    },
+    {
+      "id": 69,
+      "label": "Map Drawing",
+      "group": "FRAME"
+    },
+    {
+      "id": 70,
+      "label": "Timeline Drawing",
+      "group": "FRAME"
+    },
+    {
+      "id": 71,
+      "label": "Flowchart Drawing",
+      "group": "FRAME"
+    },
+    {
+      "id": 72,
+      "label": "Multi-Variable Plot",
+      "group": "FRAME"
+    },
+    {
+      "id": 73,
+      "label": "Six W's Framework",
+      "group": "FRAME"
+    },
+    {
+      "id": 74,
+      "label": "SQVID Framework",
+      "group": "FRAME"
+    },
+    {
+      "id": 75,
+      "label": "Simple vs Elaborate",
+      "group": "FRAME"
+    },
+    {
+      "id": 76,
+      "label": "Qualitative vs Quantitative",
+      "group": "FRAME"
+    },
+    {
+      "id": 77,
+      "label": "Vision vs Execution",
+      "group": "FRAME"
+    },
+    {
+      "id": 78,
+      "label": "Individual vs Comparison",
+      "group": "FRAME"
+    },
+    {
+      "id": 79,
+      "label": "Delta vs Status Quo",
+      "group": "FRAME"
+    },
+    {
+      "id": 80,
+      "label": "Visual Problem Solving",
+      "group": "FRAME"
+    },
+    {
+      "id": 81,
+      "label": "Systems Thinking",
+      "group": "CAUSE"
+    },
+    {
+      "id": 82,
+      "label": "Causal Loop Diagram",
+      "group": "CAUSE"
+    },
+    {
+      "id": 83,
+      "label": "Circular Causality",
+      "group": "CAUSE"
+    },
+    {
+      "id": 84,
+      "label": "Variable",
+      "group": "CAUSE"
+    },
+    {
+      "id": 85,
+      "label": "Causal Link",
+      "group": "CAUSE"
+    },
+    {
+      "id": 86,
+      "label": "Polarity Indicator",
+      "group": "CAUSE"
+    },
+    {
+      "id": 87,
+      "label": "Positive Polarity",
+      "group": "CAUSE"
+    },
+    {
+      "id": 88,
+      "label": "Negative Polarity",
+      "group": "CAUSE"
+    },
+    {
+      "id": 89,
+      "label": "Reinforcing Loop",
+      "group": "CAUSE"
+    },
+    {
+      "id": 90,
+      "label": "Balancing Loop",
+      "group": "CAUSE"
+    },
+    {
+      "id": 91,
+      "label": "Loop Identifier",
+      "group": "CAUSE"
+    },
+    {
+      "id": 92,
+      "label": "Feedback Loop",
+      "group": "CAUSE"
+    },
+    {
+      "id": 93,
+      "label": "Vicious Cycle",
+      "group": "CAUSE"
+    },
+    {
+      "id": 94,
+      "label": "Virtuous Cycle",
+      "group": "CAUSE"
+    },
+    {
+      "id": 95,
+      "label": "Leverage Point",
+      "group": "CAUSE"
+    },
+    {
+      "id": 96,
+      "label": "Unintended Consequence",
+      "group": "CAUSE"
+    },
+    {
+      "id": 97,
+      "label": "CLD Best Practices",
+      "group": "CAUSE"
+    },
+    {
+      "id": 98,
+      "label": "Overlayment Pattern",
+      "group": "OVRLY"
+    },
+    {
+      "id": 99,
+      "label": "Overlay JSON File",
+      "group": "OVRLY"
+    },
+    {
+      "id": 100,
+      "label": "Overlay Diagram Driver",
+      "group": "OVRLY"
+    },
+    {
+      "id": 101,
+      "label": "Type 1 Rectangular",
+      "group": "OVRLY"
+    },
+    {
+      "id": 102,
+      "label": "Non-Overlapping Regions",
+      "group": "OVRLY"
+    },
+    {
+      "id": 103,
+      "label": "Rectangular Region",
+      "group": "OVRLY"
+    },
+    {
+      "id": 104,
+      "label": "Region Extent Highlight",
+      "group": "OVRLY"
+    },
+    {
+      "id": 105,
+      "label": "Type 2 Complex Polygon",
+      "group": "OVRLY"
+    },
+    {
+      "id": 106,
+      "label": "Polygon Region",
+      "group": "OVRLY"
+    },
+    {
+      "id": 107,
+      "label": "Multi-Edge Overlay",
+      "group": "OVRLY"
+    },
+    {
+      "id": 108,
+      "label": "Polygon Edge Point",
+      "group": "OVRLY"
+    },
+    {
+      "id": 109,
+      "label": "Type 3 Callout to Edge",
+      "group": "OVRLY"
+    },
+    {
+      "id": 110,
+      "label": "Callout Point",
+      "group": "OVRLY"
+    },
+    {
+      "id": 111,
+      "label": "Edge-Aligned Label",
+      "group": "OVRLY"
+    },
+    {
+      "id": 112,
+      "label": "Numbered Indicator",
+      "group": "OVRLY"
+    },
+    {
+      "id": 113,
+      "label": "Show Numbers Toggle",
+      "group": "OVRLY"
+    },
+    {
+      "id": 114,
+      "label": "Type 4 Floating Label",
+      "group": "OVRLY"
+    },
+    {
+      "id": 115,
+      "label": "Floating Label",
+      "group": "OVRLY"
+    },
+    {
+      "id": 116,
+      "label": "Draggable Positioning",
+      "group": "OVRLY"
+    },
+    {
+      "id": 117,
+      "label": "Edit Mode",
+      "group": "OVRLY"
+    },
+    {
+      "id": 118,
+      "label": "p5.js Library",
+      "group": "JSLIB"
+    },
+    {
+      "id": 119,
+      "label": "p5.js Setup Function",
+      "group": "JSLIB"
+    },
+    {
+      "id": 120,
+      "label": "p5.js Draw Function",
+      "group": "JSLIB"
+    },
+    {
+      "id": 121,
+      "label": "createCanvas",
+      "group": "JSLIB"
+    },
+    {
+      "id": 122,
+      "label": "p5.js Event Handling",
+      "group": "JSLIB"
+    },
+    {
+      "id": 123,
+      "label": "D3.js Library",
+      "group": "JSLIB"
+    },
+    {
+      "id": 124,
+      "label": "Data-Driven Documents",
+      "group": "JSLIB"
+    },
+    {
+      "id": 125,
+      "label": "D3 Selection",
+      "group": "JSLIB"
+    },
+    {
+      "id": 126,
+      "label": "D3 Data Binding",
+      "group": "JSLIB"
+    },
+    {
+      "id": 127,
+      "label": "Chart.js Library",
+      "group": "JSLIB"
+    },
+    {
+      "id": 128,
+      "label": "Chart Type Selection",
+      "group": "JSLIB"
+    },
+    {
+      "id": 129,
+      "label": "Bar Chart",
+      "group": "JSLIB"
+    },
+    {
+      "id": 130,
+      "label": "Line Chart",
+      "group": "JSLIB"
+    },
+    {
+      "id": 131,
+      "label": "Pie Chart",
+      "group": "JSLIB"
+    },
+    {
+      "id": 132,
+      "label": "vis-network Library",
+      "group": "JSLIB"
+    },
+    {
+      "id": 133,
+      "label": "Network Graph",
+      "group": "JSLIB"
+    },
+    {
+      "id": 134,
+      "label": "Node",
+      "group": "JSLIB"
+    },
+    {
+      "id": 135,
+      "label": "Edge",
+      "group": "JSLIB"
+    },
+    {
+      "id": 136,
+      "label": "Leaflet Library",
+      "group": "JSLIB"
+    },
+    {
+      "id": 137,
+      "label": "Geographic Infographic",
+      "group": "JSLIB"
+    },
+    {
+      "id": 138,
+      "label": "Map Tile Layer",
+      "group": "JSLIB"
+    },
+    {
+      "id": 139,
+      "label": "Library Selection",
+      "group": "JSLIB"
+    },
+    {
+      "id": 140,
+      "label": "JavaScript Fundamentals",
+      "group": "WEBFD",
+      "shape": "box"
+    },
+    {
+      "id": 141,
+      "label": "HTML Structure",
+      "group": "WEBFD",
+      "shape": "box"
+    },
+    {
+      "id": 142,
+      "label": "CSS Styling",
+      "group": "WEBFD"
+    },
+    {
+      "id": 143,
+      "label": "JSON Format",
+      "group": "WEBFD"
+    },
+    {
+      "id": 144,
+      "label": "JSON Schema",
+      "group": "WEBFD"
+    },
+    {
+      "id": 145,
+      "label": "CSV Format",
+      "group": "WEBFD"
+    },
+    {
+      "id": 146,
+      "label": "Canvas Element",
+      "group": "WEBFD"
+    },
+    {
+      "id": 147,
+      "label": "SVG Element",
+      "group": "WEBFD"
+    },
+    {
+      "id": 148,
+      "label": "DOM Manipulation",
+      "group": "WEBFD"
+    },
+    {
+      "id": 149,
+      "label": "MicroSim Directory",
+      "group": "MSIM"
+    },
+    {
+      "id": 150,
+      "label": "main.html File",
+      "group": "MSIM"
+    },
+    {
+      "id": 151,
+      "label": "index.md File",
+      "group": "MSIM"
+    },
+    {
+      "id": 152,
+      "label": "Dublin Core Metadata",
+      "group": "MSIM",
+      "shape": "box"
+    },
+    {
+      "id": 153,
+      "label": "metadata.json File",
+      "group": "MSIM"
+    },
+    {
+      "id": 154,
+      "label": "YAML Frontmatter",
+      "group": "MSIM"
+    },
+    {
+      "id": 155,
+      "label": "Title Metadata",
+      "group": "MSIM"
+    },
+    {
+      "id": 156,
+      "label": "Description Metadata",
+      "group": "MSIM"
+    },
+    {
+      "id": 157,
+      "label": "Quality Score",
+      "group": "MSIM"
+    },
+    {
+      "id": 158,
+      "label": "Social Preview Image",
+      "group": "MSIM"
+    },
+    {
+      "id": 159,
+      "label": "Open Graph Tags",
+      "group": "MSIM"
+    },
+    {
+      "id": 160,
+      "label": "Display Iframe",
+      "group": "MSIM"
+    },
+    {
+      "id": 161,
+      "label": "Copy-Paste Iframe",
+      "group": "MSIM"
+    },
+    {
+      "id": 162,
+      "label": "Fullscreen Link Button",
+      "group": "MSIM"
+    },
+    {
+      "id": 163,
+      "label": "p5.js Editor Link",
+      "group": "MSIM"
+    },
+    {
+      "id": 164,
+      "label": "MicroSim Quality Rubric",
+      "group": "MSIM"
+    },
+    {
+      "id": 165,
+      "label": "Standardization Checklist",
+      "group": "MSIM"
+    },
+    {
+      "id": 166,
+      "label": "Aliceblue Drawing Region",
+      "group": "MSIM"
+    },
+    {
+      "id": 167,
+      "label": "White Control Region",
+      "group": "MSIM"
+    },
+    {
+      "id": 168,
+      "label": "Silver Border",
+      "group": "MSIM"
+    },
+    {
+      "id": 169,
+      "label": "postMessage API",
+      "group": "MSIM"
+    },
+    {
+      "id": 170,
+      "label": "Iframe Height Reporting",
+      "group": "MSIM"
+    },
+    {
+      "id": 171,
+      "label": "Text-to-Image LLM",
+      "group": "GENAI"
+    },
+    {
+      "id": 172,
+      "label": "Base Image Generation",
+      "group": "GENAI"
+    },
+    {
+      "id": 173,
+      "label": "AI Overlay Generation",
+      "group": "GENAI"
+    },
+    {
+      "id": 174,
+      "label": "AI Code Generation",
+      "group": "GENAI"
+    },
+    {
+      "id": 175,
+      "label": "AI-Assisted Workflow",
+      "group": "GENAI"
+    },
+    {
+      "id": 176,
+      "label": "Prompt Engineering",
+      "group": "GENAI",
+      "shape": "box"
+    },
+    {
+      "id": 177,
+      "label": "AI Quality Review",
+      "group": "GENAI"
+    },
+    {
+      "id": 178,
+      "label": "Editorial Control",
+      "group": "GENAI"
+    },
+    {
+      "id": 179,
+      "label": "Concept to MicroSim",
+      "group": "GENAI"
+    },
+    {
+      "id": 180,
+      "label": "No-Code Tool",
+      "group": "GENAI"
+    },
+    {
+      "id": 181,
+      "label": "Low-Code Tool",
+      "group": "GENAI"
+    },
+    {
+      "id": 182,
+      "label": "xAPI Protocol",
+      "group": "TRACK"
+    },
+    {
+      "id": 183,
+      "label": "Experience API",
+      "group": "TRACK"
+    },
+    {
+      "id": 184,
+      "label": "Event Logging",
+      "group": "TRACK"
+    },
+    {
+      "id": 185,
+      "label": "Interaction Tracking",
+      "group": "TRACK"
+    },
+    {
+      "id": 186,
+      "label": "Student Engagement Data",
+      "group": "TRACK"
+    },
+    {
+      "id": 187,
+      "label": "Learning Analytics",
+      "group": "TRACK"
+    },
+    {
+      "id": 188,
+      "label": "Lesson Plan Section",
+      "group": "TRACK"
+    },
+    {
+      "id": 189,
+      "label": "References Section",
+      "group": "TRACK"
+    },
+    {
+      "id": 190,
+      "label": "MkDocs Material Theme",
+      "group": "TRACK"
+    },
+    {
+      "id": 191,
+      "label": "GitHub Pages Deployment",
+      "group": "TRACK"
+    },
+    {
+      "id": 192,
+      "label": "gh-deploy Command",
+      "group": "MSIM"
+    },
+    {
+      "id": 193,
+      "label": "Quality Assurance",
+      "group": "MSIM"
+    },
+    {
+      "id": 194,
+      "label": "Shared Library",
+      "group": "MSIM"
+    },
+    {
+      "id": 195,
+      "label": "Template MicroSim",
+      "group": "MSIM"
+    },
+    {
+      "id": 196,
+      "label": "Infographic Portfolio",
+      "group": "MSIM"
+    },
+    {
+      "id": 197,
+      "label": "Width-Responsive Testing",
+      "group": "MSIM"
+    },
+    {
+      "id": 198,
+      "label": "Color Consistency",
+      "group": "MSIM"
+    },
+    {
+      "id": 199,
+      "label": "Font Size Scaling",
+      "group": "MSIM"
+    },
+    {
+      "id": 200,
+      "label": "Reusable Overlay Schema",
+      "group": "MSIM"
+    },
+    {
+      "id": 201,
+      "label": "Data Visualization",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 202,
+      "label": "Information Design",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 203,
+      "label": "Visual Encoding",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 204,
+      "label": "Color Palette",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 205,
+      "label": "Tooltip",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 206,
+      "label": "Hover Highlight",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 207,
+      "label": "Click Feedback",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 208,
+      "label": "Visual Hierarchy",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 209,
+      "label": "Gestalt Principles",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 210,
+      "label": "Proximity Principle",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 211,
+      "label": "Contrast Principle",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 212,
+      "label": "Alignment Principle",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 213,
+      "label": "Repetition Principle",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 214,
+      "label": "Cognitive Load Theory",
+      "group": "LEARN",
+      "shape": "box"
+    },
+    {
+      "id": 215,
+      "label": "Dual Coding Theory",
+      "group": "LEARN"
+    },
+    {
+      "id": 216,
+      "label": "Multimedia Learning",
+      "group": "LEARN"
+    },
+    {
+      "id": 217,
+      "label": "Mayer's Principles",
+      "group": "LEARN"
+    },
+    {
+      "id": 218,
+      "label": "Signaling Principle",
+      "group": "LEARN"
+    },
+    {
+      "id": 219,
+      "label": "Segmenting Principle",
+      "group": "LEARN"
+    },
+    {
+      "id": 220,
+      "label": "Spatial Contiguity",
+      "group": "LEARN"
+    },
+    {
+      "id": 221,
+      "label": "Learning Objective",
+      "group": "LEARN",
+      "shape": "box"
+    },
+    {
+      "id": 222,
+      "label": "Bloom's Taxonomy",
+      "group": "LEARN"
+    },
+    {
+      "id": 223,
+      "label": "Remember Level",
+      "group": "LEARN"
+    },
+    {
+      "id": 224,
+      "label": "Understand Level",
+      "group": "LEARN"
+    },
+    {
+      "id": 225,
+      "label": "Apply Level",
+      "group": "LEARN"
+    },
+    {
+      "id": 226,
+      "label": "Analyze Level",
+      "group": "LEARN"
+    },
+    {
+      "id": 227,
+      "label": "Evaluate Level",
+      "group": "LEARN"
+    },
+    {
+      "id": 228,
+      "label": "Create Level",
+      "group": "LEARN"
+    },
+    {
+      "id": 229,
+      "label": "Formative Assessment",
+      "group": "LEARN"
+    },
+    {
+      "id": 230,
+      "label": "Scaffolding",
+      "group": "LEARN"
+    },
+    {
+      "id": 231,
+      "label": "Knowledge Graph",
+      "group": "LEARN"
+    },
+    {
+      "id": 232,
+      "label": "Learning Path",
+      "group": "LEARN"
+    },
+    {
+      "id": 233,
+      "label": "Concept Dependency",
+      "group": "LEARN"
+    },
+    {
+      "id": 234,
+      "label": "Prerequisite Knowledge",
+      "group": "LEARN"
+    },
+    {
+      "id": 235,
+      "label": "Coordinate System",
+      "group": "WEBFD",
+      "shape": "box"
+    },
+    {
+      "id": 236,
+      "label": "Pixel Coordinates",
+      "group": "WEBFD"
+    },
+    {
+      "id": 237,
+      "label": "Relative Coordinates",
+      "group": "WEBFD"
+    },
+    {
+      "id": 238,
+      "label": "Bounding Box",
+      "group": "WEBFD"
+    },
+    {
+      "id": 239,
+      "label": "Hit Detection",
+      "group": "WEBFD"
+    },
+    {
+      "id": 240,
+      "label": "Point-in-Polygon Test",
+      "group": "WEBFD"
+    },
+    {
+      "id": 241,
+      "label": "Convex Polygon",
+      "group": "WEBFD"
+    },
+    {
+      "id": 242,
+      "label": "Concave Polygon",
+      "group": "WEBFD"
+    },
+    {
+      "id": 243,
+      "label": "Bezier Curve",
+      "group": "WEBFD"
+    },
+    {
+      "id": 244,
+      "label": "Aspect Ratio",
+      "group": "WEBFD"
+    },
+    {
+      "id": 245,
+      "label": "Viewport",
+      "group": "WEBFD"
+    },
+    {
+      "id": 246,
+      "label": "Breakpoint",
+      "group": "WEBFD"
+    },
+    {
+      "id": 247,
+      "label": "Media Query",
+      "group": "WEBFD"
+    },
+    {
+      "id": 248,
+      "label": "Touch Event",
+      "group": "WEBFD"
+    },
+    {
+      "id": 249,
+      "label": "Mouse Event",
+      "group": "WEBFD"
+    },
+    {
+      "id": 250,
+      "label": "Pointer Device",
+      "group": "WEBFD",
+      "shape": "box"
+    },
+    {
+      "id": 251,
+      "label": "Animation Loop",
+      "group": "WEBFD"
+    },
+    {
+      "id": 252,
+      "label": "Frame Rate",
+      "group": "WEBFD"
+    },
+    {
+      "id": 253,
+      "label": "State Management",
+      "group": "WEBFD"
+    },
+    {
+      "id": 254,
+      "label": "Global Variable",
+      "group": "WEBFD"
+    },
+    {
+      "id": 255,
+      "label": "Callback Function",
+      "group": "WEBFD"
+    },
+    {
+      "id": 256,
+      "label": "Arrow Function",
+      "group": "WEBFD"
+    },
+    {
+      "id": 257,
+      "label": "Template Literal",
+      "group": "WEBFD"
+    },
+    {
+      "id": 258,
+      "label": "Destructuring",
+      "group": "WEBFD"
+    },
+    {
+      "id": 259,
+      "label": "Spread Operator",
+      "group": "WEBFD"
+    },
+    {
+      "id": 260,
+      "label": "Array Methods",
+      "group": "WEBFD"
+    },
+    {
+      "id": 261,
+      "label": "Object Literal",
+      "group": "WEBFD"
+    },
+    {
+      "id": 262,
+      "label": "CDN Script Loading",
+      "group": "WEBFD"
+    },
+    {
+      "id": 263,
+      "label": "Module Import",
+      "group": "WEBFD"
+    },
+    {
+      "id": 264,
+      "label": "Version Pinning",
+      "group": "WEBFD"
+    },
+    {
+      "id": 265,
+      "label": "Cross-Origin Resource",
+      "group": "WEBFD"
+    },
+    {
+      "id": 266,
+      "label": "Content Security Policy",
+      "group": "WEBFD"
+    },
+    {
+      "id": 267,
+      "label": "Image Compression",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 268,
+      "label": "PNG Format",
+      "group": "ADVIZ",
+      "shape": "box"
+    },
+    {
+      "id": 269,
+      "label": "WebP Format",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 270,
+      "label": "Alt Text",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 271,
+      "label": "Semantic HTML",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 272,
+      "label": "ARIA Attribute",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 273,
+      "label": "Keyboard Navigation",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 274,
+      "label": "Tab Order",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 275,
+      "label": "Screen Reader Support",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 276,
+      "label": "High Contrast Mode",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 277,
+      "label": "Markdown Format",
+      "group": "DEPLY",
+      "shape": "box"
+    },
+    {
+      "id": 278,
+      "label": "MkDocs Build Process",
+      "group": "DEPLY"
+    },
+    {
+      "id": 279,
+      "label": "mkdocs.yml Configuration",
+      "group": "DEPLY"
+    },
+    {
+      "id": 280,
+      "label": "Navigation Structure",
+      "group": "DEPLY"
+    },
+    {
+      "id": 281,
+      "label": "Site Search",
+      "group": "DEPLY"
+    },
+    {
+      "id": 282,
+      "label": "Social Cards Plugin",
+      "group": "DEPLY"
+    },
+    {
+      "id": 283,
+      "label": "Custom CSS Override",
+      "group": "DEPLY"
+    },
+    {
+      "id": 284,
+      "label": "Admonition Block",
+      "group": "DEPLY"
+    },
+    {
+      "id": 285,
+      "label": "Code Block",
+      "group": "DEPLY"
+    },
+    {
+      "id": 286,
+      "label": "Mermaid Diagram",
+      "group": "DEPLY"
+    },
+    {
+      "id": 287,
+      "label": "Git Version Control",
+      "group": "DEPLY",
+      "shape": "box"
+    },
+    {
+      "id": 288,
+      "label": "GitHub Repository",
+      "group": "DEPLY"
+    },
+    {
+      "id": 289,
+      "label": "Pull Request",
+      "group": "DEPLY"
+    },
+    {
+      "id": 290,
+      "label": "GitHub Actions",
+      "group": "DEPLY"
+    },
+    {
+      "id": 291,
+      "label": "Continuous Deployment",
+      "group": "DEPLY"
+    },
+    {
+      "id": 292,
+      "label": "Branch Strategy",
+      "group": "DEPLY"
+    },
+    {
+      "id": 293,
+      "label": "Embed Code",
+      "group": "WEBFD"
+    },
+    {
+      "id": 294,
+      "label": "Sandbox Attribute",
+      "group": "WEBFD"
+    },
+    {
+      "id": 295,
+      "label": "Same-Origin Policy",
+      "group": "WEBFD"
+    },
+    {
+      "id": 296,
+      "label": "Cross-Origin Messaging",
+      "group": "WEBFD"
+    },
+    {
+      "id": 297,
+      "label": "Local Development Server",
+      "group": "WEBFD"
+    },
+    {
+      "id": 298,
+      "label": "Browser Developer Tools",
+      "group": "WEBFD"
+    },
+    {
+      "id": 299,
+      "label": "Console Logging",
+      "group": "WEBFD"
+    },
+    {
+      "id": 300,
+      "label": "Network Tab Debugging",
+      "group": "WEBFD"
+    },
+    {
+      "id": 301,
+      "label": "Performance Profiling",
+      "group": "WEBFD"
+    },
+    {
+      "id": 302,
+      "label": "Responsive Breakpoints",
+      "group": "WEBFD"
+    },
+    {
+      "id": 303,
+      "label": "Mobile-First Design",
+      "group": "WEBFD"
+    },
+    {
+      "id": 304,
+      "label": "Desktop Layout",
+      "group": "WEBFD"
+    },
+    {
+      "id": 305,
+      "label": "Tablet Layout",
+      "group": "WEBFD"
+    },
+    {
+      "id": 306,
+      "label": "Instructor Dashboard",
+      "group": "TRACK"
+    },
+    {
+      "id": 307,
+      "label": "Click Heatmap",
+      "group": "TRACK"
+    },
+    {
+      "id": 308,
+      "label": "Engagement Metrics",
+      "group": "TRACK"
+    },
+    {
+      "id": 309,
+      "label": "Session Duration",
+      "group": "TRACK"
+    },
+    {
+      "id": 310,
+      "label": "Completion Rate",
+      "group": "TRACK"
+    },
+    {
+      "id": 311,
+      "label": "A/B Testing",
+      "group": "TRACK"
+    },
+    {
+      "id": 312,
+      "label": "User Feedback Loop",
+      "group": "TRACK"
+    },
+    {
+      "id": 313,
+      "label": "Iterative Design",
+      "group": "TRACK"
+    },
+    {
+      "id": 314,
+      "label": "Usability Testing",
+      "group": "TRACK"
+    },
+    {
+      "id": 315,
+      "label": "Design Pattern",
+      "group": "WEBFD"
+    },
+    {
+      "id": 316,
+      "label": "Observer Pattern",
+      "group": "WEBFD"
+    },
+    {
+      "id": 317,
+      "label": "Factory Pattern",
+      "group": "WEBFD"
+    },
+    {
+      "id": 318,
+      "label": "Configuration Object",
+      "group": "WEBFD"
+    },
+    {
+      "id": 319,
+      "label": "Default Parameters",
+      "group": "WEBFD"
+    },
+    {
+      "id": 320,
+      "label": "Error Handling",
+      "group": "WEBFD"
+    },
+    {
+      "id": 321,
+      "label": "Graceful Degradation",
+      "group": "WEBFD"
+    },
+    {
+      "id": 322,
+      "label": "Progressive Enhancement",
+      "group": "WEBFD"
+    },
+    {
+      "id": 323,
+      "label": "Feature Detection",
+      "group": "WEBFD"
+    },
+    {
+      "id": 324,
+      "label": "Polyfill",
+      "group": "WEBFD"
+    },
+    {
+      "id": 325,
+      "label": "Stacked Bar Chart",
+      "group": "JSLIB"
+    },
+    {
+      "id": 326,
+      "label": "Scatter Plot",
+      "group": "JSLIB"
+    },
+    {
+      "id": 327,
+      "label": "Histogram",
+      "group": "JSLIB"
+    },
+    {
+      "id": 328,
+      "label": "Area Chart",
+      "group": "JSLIB"
+    },
+    {
+      "id": 329,
+      "label": "Donut Chart",
+      "group": "JSLIB"
+    },
+    {
+      "id": 330,
+      "label": "Treemap Diagram",
+      "group": "JSLIB"
+    },
+    {
+      "id": 331,
+      "label": "Sankey Diagram",
+      "group": "JSLIB"
+    },
+    {
+      "id": 332,
+      "label": "Chord Diagram",
+      "group": "JSLIB"
+    },
+    {
+      "id": 333,
+      "label": "Word Cloud",
+      "group": "JSLIB"
+    },
+    {
+      "id": 334,
+      "label": "Gauge Chart",
+      "group": "JSLIB"
+    },
+    {
+      "id": 335,
+      "label": "Sparkline",
+      "group": "JSLIB"
+    },
+    {
+      "id": 336,
+      "label": "Dashboard Layout",
+      "group": "JSLIB"
+    },
+    {
+      "id": 337,
+      "label": "Before-After Diagram",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 338,
+      "label": "Side-by-Side Comparison",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 339,
+      "label": "Decision Tree Diagram",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 340,
+      "label": "Mind Map",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 341,
+      "label": "Journey Map",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 342,
+      "label": "Roadmap Diagram",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 343,
+      "label": "Annotated Screenshot",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 344,
+      "label": "Layered Infographic",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 345,
+      "label": "Scrollytelling",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 346,
+      "label": "Step Reveal",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 347,
+      "label": "Zoom and Pan",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 348,
+      "label": "Drill Down",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 349,
+      "label": "Breadcrumb Navigation",
+      "group": "ADVIZ"
+    },
+    {
+      "id": 350,
+      "label": "Legend Design",
+      "group": "ADVIZ"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 1
+    },
+    {
+      "from": 4,
+      "to": 1
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 6,
+      "to": 2
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 8,
+      "to": 141
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 9,
+      "to": 142
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 10,
+      "to": 5
+    },
+    {
+      "from": 11,
+      "to": 146
+    },
+    {
+      "from": 12,
+      "to": 2
+    },
+    {
+      "from": 12,
+      "to": 14
+    },
+    {
+      "from": 13,
+      "to": 12
+    },
+    {
+      "from": 13,
+      "to": 236
+    },
+    {
+      "from": 14,
+      "to": 1
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 15,
+      "to": 16
+    },
+    {
+      "from": 16,
+      "to": 14
+    },
+    {
+      "from": 17,
+      "to": 20
+    },
+    {
+      "from": 17,
+      "to": 250
+    },
+    {
+      "from": 18,
+      "to": 20
+    },
+    {
+      "from": 18,
+      "to": 250
+    },
+    {
+      "from": 19,
+      "to": 17
+    },
+    {
+      "from": 19,
+      "to": 18
+    },
+    {
+      "from": 20,
+      "to": 140
+    },
+    {
+      "from": 21,
+      "to": 1
+    },
+    {
+      "from": 21,
+      "to": 201
+    },
+    {
+      "from": 22,
+      "to": 21
+    },
+    {
+      "from": 23,
+      "to": 21
+    },
+    {
+      "from": 24,
+      "to": 21
+    },
+    {
+      "from": 25,
+      "to": 21
+    },
+    {
+      "from": 26,
+      "to": 21
+    },
+    {
+      "from": 27,
+      "to": 21
+    },
+    {
+      "from": 28,
+      "to": 21
+    },
+    {
+      "from": 29,
+      "to": 21
+    },
+    {
+      "from": 30,
+      "to": 29
+    },
+    {
+      "from": 31,
+      "to": 33
+    },
+    {
+      "from": 32,
+      "to": 33
+    },
+    {
+      "from": 33,
+      "to": 21
+    },
+    {
+      "from": 34,
+      "to": 21
+    },
+    {
+      "from": 35,
+      "to": 21
+    },
+    {
+      "from": 36,
+      "to": 65
+    },
+    {
+      "from": 37,
+      "to": 36
+    },
+    {
+      "from": 38,
+      "to": 36
+    },
+    {
+      "from": 39,
+      "to": 36
+    },
+    {
+      "from": 40,
+      "to": 36
+    },
+    {
+      "from": 41,
+      "to": 65
+    },
+    {
+      "from": 41,
+      "to": 26
+    },
+    {
+      "from": 42,
+      "to": 41
+    },
+    {
+      "from": 43,
+      "to": 41
+    },
+    {
+      "from": 44,
+      "to": 41
+    },
+    {
+      "from": 45,
+      "to": 41
+    },
+    {
+      "from": 46,
+      "to": 41
+    },
+    {
+      "from": 47,
+      "to": 65
+    },
+    {
+      "from": 47,
+      "to": 29
+    },
+    {
+      "from": 48,
+      "to": 47
+    },
+    {
+      "from": 49,
+      "to": 47
+    },
+    {
+      "from": 49,
+      "to": 30
+    },
+    {
+      "from": 50,
+      "to": 47
+    },
+    {
+      "from": 51,
+      "to": 47
+    },
+    {
+      "from": 51,
+      "to": 48
+    },
+    {
+      "from": 52,
+      "to": 47
+    },
+    {
+      "from": 53,
+      "to": 65
+    },
+    {
+      "from": 53,
+      "to": 27
+    },
+    {
+      "from": 54,
+      "to": 53
+    },
+    {
+      "from": 55,
+      "to": 53
+    },
+    {
+      "from": 56,
+      "to": 53
+    },
+    {
+      "from": 57,
+      "to": 65
+    },
+    {
+      "from": 58,
+      "to": 57
+    },
+    {
+      "from": 59,
+      "to": 57
+    },
+    {
+      "from": 60,
+      "to": 57
+    },
+    {
+      "from": 60,
+      "to": 30
+    },
+    {
+      "from": 61,
+      "to": 57
+    },
+    {
+      "from": 61,
+      "to": 28
+    },
+    {
+      "from": 62,
+      "to": 65
+    },
+    {
+      "from": 62,
+      "to": 27
+    },
+    {
+      "from": 63,
+      "to": 62
+    },
+    {
+      "from": 64,
+      "to": 65
+    },
+    {
+      "from": 65,
+      "to": 21
+    },
+    {
+      "from": 66,
+      "to": 80
+    },
+    {
+      "from": 67,
+      "to": 66
+    },
+    {
+      "from": 67,
+      "to": 73
+    },
+    {
+      "from": 68,
+      "to": 66
+    },
+    {
+      "from": 68,
+      "to": 73
+    },
+    {
+      "from": 69,
+      "to": 66
+    },
+    {
+      "from": 69,
+      "to": 73
+    },
+    {
+      "from": 70,
+      "to": 66
+    },
+    {
+      "from": 70,
+      "to": 73
+    },
+    {
+      "from": 71,
+      "to": 66
+    },
+    {
+      "from": 71,
+      "to": 73
+    },
+    {
+      "from": 72,
+      "to": 66
+    },
+    {
+      "from": 72,
+      "to": 73
+    },
+    {
+      "from": 73,
+      "to": 66
+    },
+    {
+      "from": 74,
+      "to": 66
+    },
+    {
+      "from": 75,
+      "to": 74
+    },
+    {
+      "from": 76,
+      "to": 74
+    },
+    {
+      "from": 77,
+      "to": 74
+    },
+    {
+      "from": 78,
+      "to": 74
+    },
+    {
+      "from": 79,
+      "to": 74
+    },
+    {
+      "from": 80,
+      "to": 1
+    },
+    {
+      "from": 80,
+      "to": 201
+    },
+    {
+      "from": 81,
+      "to": 1
+    },
+    {
+      "from": 82,
+      "to": 81
+    },
+    {
+      "from": 82,
+      "to": 83
+    },
+    {
+      "from": 83,
+      "to": 81
+    },
+    {
+      "from": 84,
+      "to": 82
+    },
+    {
+      "from": 85,
+      "to": 84
+    },
+    {
+      "from": 86,
+      "to": 85
+    },
+    {
+      "from": 87,
+      "to": 86
+    },
+    {
+      "from": 88,
+      "to": 86
+    },
+    {
+      "from": 89,
+      "to": 92
+    },
+    {
+      "from": 89,
+      "to": 87
+    },
+    {
+      "from": 90,
+      "to": 92
+    },
+    {
+      "from": 90,
+      "to": 88
+    },
+    {
+      "from": 91,
+      "to": 89
+    },
+    {
+      "from": 91,
+      "to": 90
+    },
+    {
+      "from": 92,
+      "to": 83
+    },
+    {
+      "from": 92,
+      "to": 85
+    },
+    {
+      "from": 93,
+      "to": 89
+    },
+    {
+      "from": 94,
+      "to": 89
+    },
+    {
+      "from": 95,
+      "to": 89
+    },
+    {
+      "from": 95,
+      "to": 90
+    },
+    {
+      "from": 96,
+      "to": 95
+    },
+    {
+      "from": 97,
+      "to": 82
+    },
+    {
+      "from": 97,
+      "to": 91
+    },
+    {
+      "from": 97,
+      "to": 95
+    },
+    {
+      "from": 98,
+      "to": 2
+    },
+    {
+      "from": 98,
+      "to": 99
+    },
+    {
+      "from": 99,
+      "to": 143
+    },
+    {
+      "from": 100,
+      "to": 99
+    },
+    {
+      "from": 100,
+      "to": 140
+    },
+    {
+      "from": 101,
+      "to": 98
+    },
+    {
+      "from": 101,
+      "to": 103
+    },
+    {
+      "from": 102,
+      "to": 101
+    },
+    {
+      "from": 103,
+      "to": 14
+    },
+    {
+      "from": 103,
+      "to": 236
+    },
+    {
+      "from": 104,
+      "to": 101
+    },
+    {
+      "from": 104,
+      "to": 206
+    },
+    {
+      "from": 105,
+      "to": 98
+    },
+    {
+      "from": 105,
+      "to": 106
+    },
+    {
+      "from": 106,
+      "to": 14
+    },
+    {
+      "from": 106,
+      "to": 236
+    },
+    {
+      "from": 107,
+      "to": 105
+    },
+    {
+      "from": 108,
+      "to": 106
+    },
+    {
+      "from": 109,
+      "to": 98
+    },
+    {
+      "from": 109,
+      "to": 110
+    },
+    {
+      "from": 110,
+      "to": 14
+    },
+    {
+      "from": 110,
+      "to": 236
+    },
+    {
+      "from": 111,
+      "to": 109
+    },
+    {
+      "from": 112,
+      "to": 109
+    },
+    {
+      "from": 113,
+      "to": 112
+    },
+    {
+      "from": 114,
+      "to": 98
+    },
+    {
+      "from": 114,
+      "to": 115
+    },
+    {
+      "from": 115,
+      "to": 110
+    },
+    {
+      "from": 116,
+      "to": 114
+    },
+    {
+      "from": 116,
+      "to": 249
+    },
+    {
+      "from": 117,
+      "to": 98
+    },
+    {
+      "from": 117,
+      "to": 116
+    },
+    {
+      "from": 118,
+      "to": 140
+    },
+    {
+      "from": 118,
+      "to": 262
+    },
+    {
+      "from": 119,
+      "to": 118
+    },
+    {
+      "from": 120,
+      "to": 118
+    },
+    {
+      "from": 120,
+      "to": 251
+    },
+    {
+      "from": 121,
+      "to": 119
+    },
+    {
+      "from": 121,
+      "to": 146
+    },
+    {
+      "from": 122,
+      "to": 118
+    },
+    {
+      "from": 122,
+      "to": 20
+    },
+    {
+      "from": 123,
+      "to": 140
+    },
+    {
+      "from": 123,
+      "to": 262
+    },
+    {
+      "from": 124,
+      "to": 123
+    },
+    {
+      "from": 125,
+      "to": 123
+    },
+    {
+      "from": 125,
+      "to": 148
+    },
+    {
+      "from": 126,
+      "to": 125
+    },
+    {
+      "from": 127,
+      "to": 140
+    },
+    {
+      "from": 127,
+      "to": 262
+    },
+    {
+      "from": 128,
+      "to": 127
+    },
+    {
+      "from": 128,
+      "to": 139
+    },
+    {
+      "from": 129,
+      "to": 127
+    },
+    {
+      "from": 130,
+      "to": 127
+    },
+    {
+      "from": 131,
+      "to": 127
+    },
+    {
+      "from": 132,
+      "to": 140
+    },
+    {
+      "from": 132,
+      "to": 262
+    },
+    {
+      "from": 133,
+      "to": 132
+    },
+    {
+      "from": 134,
+      "to": 133
+    },
+    {
+      "from": 135,
+      "to": 133
+    },
+    {
+      "from": 135,
+      "to": 134
+    },
+    {
+      "from": 136,
+      "to": 140
+    },
+    {
+      "from": 136,
+      "to": 262
+    },
+    {
+      "from": 137,
+      "to": 136
+    },
+    {
+      "from": 138,
+      "to": 137
+    },
+    {
+      "from": 139,
+      "to": 118
+    },
+    {
+      "from": 139,
+      "to": 123
+    },
+    {
+      "from": 139,
+      "to": 127
+    },
+    {
+      "from": 139,
+      "to": 132
+    },
+    {
+      "from": 139,
+      "to": 136
+    },
+    {
+      "from": 142,
+      "to": 141
+    },
+    {
+      "from": 143,
+      "to": 140
+    },
+    {
+      "from": 144,
+      "to": 143
+    },
+    {
+      "from": 145,
+      "to": 143
+    },
+    {
+      "from": 146,
+      "to": 141
+    },
+    {
+      "from": 147,
+      "to": 141
+    },
+    {
+      "from": 148,
+      "to": 141
+    },
+    {
+      "from": 148,
+      "to": 140
+    },
+    {
+      "from": 149,
+      "to": 7
+    },
+    {
+      "from": 150,
+      "to": 149
+    },
+    {
+      "from": 150,
+      "to": 141
+    },
+    {
+      "from": 151,
+      "to": 149
+    },
+    {
+      "from": 151,
+      "to": 277
+    },
+    {
+      "from": 153,
+      "to": 149
+    },
+    {
+      "from": 153,
+      "to": 152
+    },
+    {
+      "from": 153,
+      "to": 143
+    },
+    {
+      "from": 154,
+      "to": 151
+    },
+    {
+      "from": 155,
+      "to": 154
+    },
+    {
+      "from": 156,
+      "to": 154
+    },
+    {
+      "from": 157,
+      "to": 164
+    },
+    {
+      "from": 158,
+      "to": 159
+    },
+    {
+      "from": 158,
+      "to": 267
+    },
+    {
+      "from": 159,
+      "to": 154
+    },
+    {
+      "from": 160,
+      "to": 8
+    },
+    {
+      "from": 160,
+      "to": 150
+    },
+    {
+      "from": 161,
+      "to": 160
+    },
+    {
+      "from": 161,
+      "to": 293
+    },
+    {
+      "from": 162,
+      "to": 160
+    },
+    {
+      "from": 163,
+      "to": 118
+    },
+    {
+      "from": 163,
+      "to": 151
+    },
+    {
+      "from": 164,
+      "to": 149
+    },
+    {
+      "from": 164,
+      "to": 165
+    },
+    {
+      "from": 165,
+      "to": 149
+    },
+    {
+      "from": 165,
+      "to": 150
+    },
+    {
+      "from": 165,
+      "to": 151
+    },
+    {
+      "from": 165,
+      "to": 153
+    },
+    {
+      "from": 166,
+      "to": 11
+    },
+    {
+      "from": 166,
+      "to": 142
+    },
+    {
+      "from": 167,
+      "to": 142
+    },
+    {
+      "from": 168,
+      "to": 142
+    },
+    {
+      "from": 169,
+      "to": 140
+    },
+    {
+      "from": 169,
+      "to": 296
+    },
+    {
+      "from": 170,
+      "to": 169
+    },
+    {
+      "from": 170,
+      "to": 8
+    },
+    {
+      "from": 171,
+      "to": 176
+    },
+    {
+      "from": 172,
+      "to": 171
+    },
+    {
+      "from": 173,
+      "to": 172
+    },
+    {
+      "from": 173,
+      "to": 99
+    },
+    {
+      "from": 173,
+      "to": 176
+    },
+    {
+      "from": 174,
+      "to": 176
+    },
+    {
+      "from": 174,
+      "to": 140
+    },
+    {
+      "from": 175,
+      "to": 172
+    },
+    {
+      "from": 175,
+      "to": 173
+    },
+    {
+      "from": 175,
+      "to": 174
+    },
+    {
+      "from": 177,
+      "to": 175
+    },
+    {
+      "from": 178,
+      "to": 177
+    },
+    {
+      "from": 179,
+      "to": 175
+    },
+    {
+      "from": 179,
+      "to": 6
+    },
+    {
+      "from": 179,
+      "to": 221
+    },
+    {
+      "from": 180,
+      "to": 2
+    },
+    {
+      "from": 181,
+      "to": 180
+    },
+    {
+      "from": 181,
+      "to": 140
+    },
+    {
+      "from": 182,
+      "to": 183
+    },
+    {
+      "from": 183,
+      "to": 184
+    },
+    {
+      "from": 184,
+      "to": 17
+    },
+    {
+      "from": 184,
+      "to": 18
+    },
+    {
+      "from": 184,
+      "to": 19
+    },
+    {
+      "from": 185,
+      "to": 184
+    },
+    {
+      "from": 185,
+      "to": 182
+    },
+    {
+      "from": 186,
+      "to": 185
+    },
+    {
+      "from": 187,
+      "to": 186
+    },
+    {
+      "from": 187,
+      "to": 308
+    },
+    {
+      "from": 188,
+      "to": 151
+    },
+    {
+      "from": 188,
+      "to": 221
+    },
+    {
+      "from": 189,
+      "to": 151
+    },
+    {
+      "from": 190,
+      "to": 278
+    },
+    {
+      "from": 191,
+      "to": 288
+    },
+    {
+      "from": 191,
+      "to": 190
+    },
+    {
+      "from": 192,
+      "to": 191
+    },
+    {
+      "from": 193,
+      "to": 164
+    },
+    {
+      "from": 193,
+      "to": 200
+    },
+    {
+      "from": 194,
+      "to": 100
+    },
+    {
+      "from": 194,
+      "to": 140
+    },
+    {
+      "from": 195,
+      "to": 149
+    },
+    {
+      "from": 195,
+      "to": 150
+    },
+    {
+      "from": 195,
+      "to": 194
+    },
+    {
+      "from": 196,
+      "to": 193
+    },
+    {
+      "from": 196,
+      "to": 6
+    },
+    {
+      "from": 197,
+      "to": 9
+    },
+    {
+      "from": 197,
+      "to": 297
+    },
+    {
+      "from": 198,
+      "to": 204
+    },
+    {
+      "from": 198,
+      "to": 142
+    },
+    {
+      "from": 199,
+      "to": 9
+    },
+    {
+      "from": 199,
+      "to": 142
+    },
+    {
+      "from": 200,
+      "to": 99
+    },
+    {
+      "from": 200,
+      "to": 144
+    },
+    {
+      "from": 201,
+      "to": 1
+    },
+    {
+      "from": 202,
+      "to": 201
+    },
+    {
+      "from": 202,
+      "to": 208
+    },
+    {
+      "from": 203,
+      "to": 201
+    },
+    {
+      "from": 204,
+      "to": 142
+    },
+    {
+      "from": 204,
+      "to": 203
+    },
+    {
+      "from": 205,
+      "to": 17
+    },
+    {
+      "from": 205,
+      "to": 12
+    },
+    {
+      "from": 206,
+      "to": 17
+    },
+    {
+      "from": 206,
+      "to": 204
+    },
+    {
+      "from": 207,
+      "to": 18
+    },
+    {
+      "from": 208,
+      "to": 203
+    },
+    {
+      "from": 209,
+      "to": 202
+    },
+    {
+      "from": 210,
+      "to": 209
+    },
+    {
+      "from": 211,
+      "to": 209
+    },
+    {
+      "from": 212,
+      "to": 209
+    },
+    {
+      "from": 213,
+      "to": 209
+    },
+    {
+      "from": 215,
+      "to": 214
+    },
+    {
+      "from": 216,
+      "to": 215
+    },
+    {
+      "from": 217,
+      "to": 216
+    },
+    {
+      "from": 218,
+      "to": 217
+    },
+    {
+      "from": 219,
+      "to": 217
+    },
+    {
+      "from": 220,
+      "to": 217
+    },
+    {
+      "from": 222,
+      "to": 221
+    },
+    {
+      "from": 223,
+      "to": 222
+    },
+    {
+      "from": 224,
+      "to": 222
+    },
+    {
+      "from": 224,
+      "to": 223
+    },
+    {
+      "from": 225,
+      "to": 222
+    },
+    {
+      "from": 225,
+      "to": 224
+    },
+    {
+      "from": 226,
+      "to": 222
+    },
+    {
+      "from": 226,
+      "to": 225
+    },
+    {
+      "from": 227,
+      "to": 222
+    },
+    {
+      "from": 227,
+      "to": 226
+    },
+    {
+      "from": 228,
+      "to": 222
+    },
+    {
+      "from": 228,
+      "to": 227
+    },
+    {
+      "from": 229,
+      "to": 222
+    },
+    {
+      "from": 230,
+      "to": 214
+    },
+    {
+      "from": 230,
+      "to": 221
+    },
+    {
+      "from": 231,
+      "to": 233
+    },
+    {
+      "from": 232,
+      "to": 231
+    },
+    {
+      "from": 232,
+      "to": 234
+    },
+    {
+      "from": 233,
+      "to": 221
+    },
+    {
+      "from": 234,
+      "to": 233
+    },
+    {
+      "from": 236,
+      "to": 235
+    },
+    {
+      "from": 237,
+      "to": 235
+    },
+    {
+      "from": 237,
+      "to": 9
+    },
+    {
+      "from": 238,
+      "to": 236
+    },
+    {
+      "from": 238,
+      "to": 103
+    },
+    {
+      "from": 239,
+      "to": 238
+    },
+    {
+      "from": 240,
+      "to": 236
+    },
+    {
+      "from": 240,
+      "to": 106
+    },
+    {
+      "from": 241,
+      "to": 106
+    },
+    {
+      "from": 242,
+      "to": 106
+    },
+    {
+      "from": 242,
+      "to": 241
+    },
+    {
+      "from": 243,
+      "to": 235
+    },
+    {
+      "from": 244,
+      "to": 9
+    },
+    {
+      "from": 245,
+      "to": 9
+    },
+    {
+      "from": 245,
+      "to": 141
+    },
+    {
+      "from": 246,
+      "to": 245
+    },
+    {
+      "from": 246,
+      "to": 302
+    },
+    {
+      "from": 247,
+      "to": 142
+    },
+    {
+      "from": 247,
+      "to": 246
+    },
+    {
+      "from": 248,
+      "to": 20
+    },
+    {
+      "from": 248,
+      "to": 250
+    },
+    {
+      "from": 249,
+      "to": 20
+    },
+    {
+      "from": 249,
+      "to": 250
+    },
+    {
+      "from": 251,
+      "to": 140
+    },
+    {
+      "from": 251,
+      "to": 252
+    },
+    {
+      "from": 252,
+      "to": 140
+    },
+    {
+      "from": 253,
+      "to": 140
+    },
+    {
+      "from": 253,
+      "to": 254
+    },
+    {
+      "from": 254,
+      "to": 140
+    },
+    {
+      "from": 255,
+      "to": 140
+    },
+    {
+      "from": 256,
+      "to": 255
+    },
+    {
+      "from": 257,
+      "to": 140
+    },
+    {
+      "from": 258,
+      "to": 140
+    },
+    {
+      "from": 259,
+      "to": 258
+    },
+    {
+      "from": 260,
+      "to": 140
+    },
+    {
+      "from": 261,
+      "to": 140
+    },
+    {
+      "from": 262,
+      "to": 141
+    },
+    {
+      "from": 263,
+      "to": 140
+    },
+    {
+      "from": 264,
+      "to": 262
+    },
+    {
+      "from": 265,
+      "to": 294
+    },
+    {
+      "from": 265,
+      "to": 295
+    },
+    {
+      "from": 266,
+      "to": 265
+    },
+    {
+      "from": 267,
+      "to": 268
+    },
+    {
+      "from": 267,
+      "to": 141
+    },
+    {
+      "from": 269,
+      "to": 268
+    },
+    {
+      "from": 270,
+      "to": 141
+    },
+    {
+      "from": 271,
+      "to": 141
+    },
+    {
+      "from": 272,
+      "to": 271
+    },
+    {
+      "from": 273,
+      "to": 272
+    },
+    {
+      "from": 274,
+      "to": 273
+    },
+    {
+      "from": 275,
+      "to": 272
+    },
+    {
+      "from": 275,
+      "to": 270
+    },
+    {
+      "from": 276,
+      "to": 204
+    },
+    {
+      "from": 276,
+      "to": 142
+    },
+    {
+      "from": 278,
+      "to": 277
+    },
+    {
+      "from": 278,
+      "to": 279
+    },
+    {
+      "from": 279,
+      "to": 277
+    },
+    {
+      "from": 280,
+      "to": 279
+    },
+    {
+      "from": 281,
+      "to": 190
+    },
+    {
+      "from": 282,
+      "to": 190
+    },
+    {
+      "from": 282,
+      "to": 158
+    },
+    {
+      "from": 283,
+      "to": 142
+    },
+    {
+      "from": 283,
+      "to": 190
+    },
+    {
+      "from": 284,
+      "to": 277
+    },
+    {
+      "from": 285,
+      "to": 277
+    },
+    {
+      "from": 286,
+      "to": 277
+    },
+    {
+      "from": 286,
+      "to": 190
+    },
+    {
+      "from": 288,
+      "to": 287
+    },
+    {
+      "from": 289,
+      "to": 288
+    },
+    {
+      "from": 290,
+      "to": 288
+    },
+    {
+      "from": 291,
+      "to": 290
+    },
+    {
+      "from": 291,
+      "to": 191
+    },
+    {
+      "from": 292,
+      "to": 287
+    },
+    {
+      "from": 293,
+      "to": 8
+    },
+    {
+      "from": 293,
+      "to": 141
+    },
+    {
+      "from": 294,
+      "to": 8
+    },
+    {
+      "from": 295,
+      "to": 8
+    },
+    {
+      "from": 295,
+      "to": 140
+    },
+    {
+      "from": 296,
+      "to": 295
+    },
+    {
+      "from": 297,
+      "to": 278
+    },
+    {
+      "from": 298,
+      "to": 140
+    },
+    {
+      "from": 298,
+      "to": 141
+    },
+    {
+      "from": 299,
+      "to": 298
+    },
+    {
+      "from": 300,
+      "to": 298
+    },
+    {
+      "from": 301,
+      "to": 298
+    },
+    {
+      "from": 302,
+      "to": 9
+    },
+    {
+      "from": 302,
+      "to": 142
+    },
+    {
+      "from": 303,
+      "to": 302
+    },
+    {
+      "from": 304,
+      "to": 302
+    },
+    {
+      "from": 305,
+      "to": 302
+    },
+    {
+      "from": 306,
+      "to": 187
+    },
+    {
+      "from": 307,
+      "to": 185
+    },
+    {
+      "from": 307,
+      "to": 18
+    },
+    {
+      "from": 308,
+      "to": 186
+    },
+    {
+      "from": 309,
+      "to": 308
+    },
+    {
+      "from": 310,
+      "to": 308
+    },
+    {
+      "from": 311,
+      "to": 308
+    },
+    {
+      "from": 311,
+      "to": 313
+    },
+    {
+      "from": 312,
+      "to": 313
+    },
+    {
+      "from": 313,
+      "to": 315
+    },
+    {
+      "from": 314,
+      "to": 313
+    },
+    {
+      "from": 314,
+      "to": 197
+    },
+    {
+      "from": 315,
+      "to": 140
+    },
+    {
+      "from": 316,
+      "to": 315
+    },
+    {
+      "from": 316,
+      "to": 20
+    },
+    {
+      "from": 317,
+      "to": 315
+    },
+    {
+      "from": 318,
+      "to": 261
+    },
+    {
+      "from": 318,
+      "to": 315
+    },
+    {
+      "from": 319,
+      "to": 140
+    },
+    {
+      "from": 320,
+      "to": 140
+    },
+    {
+      "from": 321,
+      "to": 320
+    },
+    {
+      "from": 321,
+      "to": 322
+    },
+    {
+      "from": 322,
+      "to": 140
+    },
+    {
+      "from": 322,
+      "to": 141
+    },
+    {
+      "from": 323,
+      "to": 322
+    },
+    {
+      "from": 324,
+      "to": 323
+    },
+    {
+      "from": 325,
+      "to": 129
+    },
+    {
+      "from": 326,
+      "to": 127
+    },
+    {
+      "from": 327,
+      "to": 127
+    },
+    {
+      "from": 328,
+      "to": 130
+    },
+    {
+      "from": 329,
+      "to": 131
+    },
+    {
+      "from": 330,
+      "to": 123
+    },
+    {
+      "from": 331,
+      "to": 123
+    },
+    {
+      "from": 332,
+      "to": 123
+    },
+    {
+      "from": 333,
+      "to": 123
+    },
+    {
+      "from": 334,
+      "to": 127
+    },
+    {
+      "from": 335,
+      "to": 127
+    },
+    {
+      "from": 336,
+      "to": 201
+    },
+    {
+      "from": 336,
+      "to": 127
+    },
+    {
+      "from": 337,
+      "to": 28
+    },
+    {
+      "from": 338,
+      "to": 28
+    },
+    {
+      "from": 339,
+      "to": 27
+    },
+    {
+      "from": 339,
+      "to": 71
+    },
+    {
+      "from": 340,
+      "to": 27
+    },
+    {
+      "from": 341,
+      "to": 26
+    },
+    {
+      "from": 341,
+      "to": 69
+    },
+    {
+      "from": 342,
+      "to": 26
+    },
+    {
+      "from": 342,
+      "to": 44
+    },
+    {
+      "from": 343,
+      "to": 2
+    },
+    {
+      "from": 343,
+      "to": 110
+    },
+    {
+      "from": 344,
+      "to": 32
+    },
+    {
+      "from": 344,
+      "to": 2
+    },
+    {
+      "from": 345,
+      "to": 4
+    },
+    {
+      "from": 345,
+      "to": 2
+    },
+    {
+      "from": 346,
+      "to": 345
+    },
+    {
+      "from": 347,
+      "to": 2
+    },
+    {
+      "from": 347,
+      "to": 249
+    },
+    {
+      "from": 348,
+      "to": 18
+    },
+    {
+      "from": 348,
+      "to": 2
+    },
+    {
+      "from": 349,
+      "to": 348
+    },
+    {
+      "from": 350,
+      "to": 204
+    },
+    {
+      "from": 350,
+      "to": 203
+    }
+  ]
+}
