@@ -10,83 +10,6 @@
     "license": "CC BY-NC-SA 4.0 DEED"
   },
   "groups": {
-    "JSLIB": {
-      "classifierName": "JavaScript Libraries",
-      "color": "MistyRose",
-      "font": {
-        "color": "black"
-      }
-    },
-    "SLIDE": {
-      "classifierName": "Slide Art Diagrams",
-      "color": "PeachPuff",
-      "font": {
-        "color": "black"
-      }
-    },
-    "GENAI": {
-      "classifierName": "Generative AI",
-      "color": "LightYellow",
-      "font": {
-        "color": "black"
-      }
-    },
-    "FRAME": {
-      "classifierName": "Visual Frameworks",
-      "color": "Honeydew",
-      "font": {
-        "color": "black"
-      }
-    },
-    "WEBFD": {
-      "classifierName": "Web Fundamentals",
-      "color": "PaleTurquoise",
-      "font": {
-        "color": "black"
-      }
-    },
-    "ADVIZ": {
-      "classifierName": "Advanced Visualization",
-      "color": "SteelBlue",
-      "font": {
-        "color": "black"
-      }
-    },
-    "TRACK": {
-      "classifierName": "Tracking and Analytics",
-      "color": "Lavender",
-      "font": {
-        "color": "black"
-      }
-    },
-    "MSIM": {
-      "classifierName": "MicroSim Standards",
-      "color": "LavenderBlush",
-      "font": {
-        "color": "black"
-      }
-    },
-    "LEARN": {
-      "classifierName": "Learning Science",
-      "color": "Thistle",
-      "font": {
-        "color": "black"
-      }
-    },
-    "CAUSE": {
-      "classifierName": "Causal Loop Diagrams",
-      "color": "MintCream",
-      "font": {
-        "color": "black"
-      }
-    },
-    "DEPLY": {
-      "classifierName": "Deployment and Tools",
-      "color": "LightCoral",
-      "font": {
-        "color": "black"
-      }
-    },
     "FOUND": {
       "classifierName": "Foundation Concepts",
       "color": "Plum",
@@ -101,9 +24,86 @@
         "color": "black"
       }
     },
+    "SLIDE": {
+      "classifierName": "Slide Art Diagrams",
+      "color": "PeachPuff",
+      "font": {
+        "color": "black"
+      }
+    },
+    "FRAME": {
+      "classifierName": "Visual Frameworks",
+      "color": "Honeydew",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CAUSE": {
+      "classifierName": "Causal Loop Diagrams",
+      "color": "MintCream",
+      "font": {
+        "color": "black"
+      }
+    },
     "OVRLY": {
       "classifierName": "Overlayment Patterns",
       "color": "PowderBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "JSLIB": {
+      "classifierName": "JavaScript Libraries",
+      "color": "MistyRose",
+      "font": {
+        "color": "black"
+      }
+    },
+    "WEBFD": {
+      "classifierName": "Web Fundamentals",
+      "color": "PaleTurquoise",
+      "font": {
+        "color": "black"
+      }
+    },
+    "MSIM": {
+      "classifierName": "MicroSim Standards",
+      "color": "LavenderBlush",
+      "font": {
+        "color": "black"
+      }
+    },
+    "GENAI": {
+      "classifierName": "Generative AI",
+      "color": "LightYellow",
+      "font": {
+        "color": "black"
+      }
+    },
+    "TRACK": {
+      "classifierName": "Tracking and Analytics",
+      "color": "Lavender",
+      "font": {
+        "color": "black"
+      }
+    },
+    "LEARN": {
+      "classifierName": "Learning Science",
+      "color": "Thistle",
+      "font": {
+        "color": "black"
+      }
+    },
+    "DEPLY": {
+      "classifierName": "Deployment and Tools",
+      "color": "LightCoral",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ADVIZ": {
+      "classifierName": "Advanced Visualization",
+      "color": "SteelBlue",
       "font": {
         "color": "black"
       }

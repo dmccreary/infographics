@@ -15,6 +15,7 @@ nav:
   - Causal Loop Diagrams: causal-loop-diagrams.md
   - MicroSims:
     - Introduction: sims/index.md
+    - Graph Viewer: sims/graph-viewer/index.md
   - Course Description: course-description.md
   - Learning Graph:
     - Introduction: learning-graph/index.md
