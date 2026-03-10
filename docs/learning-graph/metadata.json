@@ -1,0 +1,10 @@
+{
+  "title": "Interactive Infographics for Intelligent Textbooks",
+  "description": "A comprehensive learning graph covering interactive infographic design, overlayment patterns, JavaScript visualization libraries, MicroSim standards, generative AI workflows, and student interaction tracking for intelligent textbooks.",
+  "creator": "Dan McCreary",
+  "date": "2026-03-10",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}

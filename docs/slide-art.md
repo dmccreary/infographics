@@ -1,4 +1,4 @@
-# Slide Art Inforgraphics
+# Slide Art Infographics
 
 Here is a detailed list of slide art types available in presentation tools such as Google Slides or MicroSoft PowerPoint**, organized by category.
 
