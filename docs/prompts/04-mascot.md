@@ -259,3 +259,7 @@ docs/img/mascot/
 3. Trim excess padding from images (AI generators often add too much whitespace)
 4. Set up CSS admonitions (Option 2 recommended) — see book-installer skill
 5. Add Percy character guidelines to CLAUDE.md for consistent AI-generated content
+
+## References
+
+[ChatGPT Transcript Generating Mascot Images](https://chatgpt.com/share/69b0be43-bd94-8001-a330-45358136e26c)
