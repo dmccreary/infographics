@@ -1,0 +1,2122 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Core vocabulary and concepts for building interactive infographics in intelligent textbooks, including MicroSims, iframes, regions, infoboxes, and event handling.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/infographics/chapters/01-foundations-of-interactive-infographics/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="quiz/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Foundations of Interactive Infographics - AI Interactive Infographics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Foundations of Interactive Infographics - AI Interactive Infographics" >
+      
+        <meta  property="og:description"  content="Core vocabulary and concepts for building interactive infographics in intelligent textbooks, including MicroSims, iframes, regions, infoboxes, and event handling." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/infographics/assets/images/social/chapters/01-foundations-of-interactive-infographics/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/infographics/chapters/01-foundations-of-interactive-infographics/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Foundations of Interactive Infographics - AI Interactive Infographics" >
+      
+        <meta  name="twitter:description"  content="Core vocabulary and concepts for building interactive infographics in intelligent textbooks, including MicroSims, iframes, regions, infoboxes, and event handling." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/infographics/assets/images/social/chapters/01-foundations-of-interactive-infographics/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#foundations-of-interactive-infographics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AI Interactive Infographics" class="md-header__button md-logo" aria-label="AI Interactive Infographics" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Interactive Infographics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Foundations of Interactive Infographics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/infographics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI Interactive Infographics" class="md-nav__button md-logo" aria-label="AI Interactive Infographics" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    AI Interactive Infographics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/infographics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  
+  <span class="md-ellipsis">
+    1. Foundations
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            1. Foundations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quiz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Annotated References
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-infographic-taxonomy-and-classification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2. Taxonomy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-presentation-slide-art-diagrams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3. Slide Art Diagrams
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-visual-problem-solving-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Visual Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-causal-loop-diagrams-and-systems-thinking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. Causal Loop Diagrams
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-web-fundamentals-structure-style-and-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. Web Structure and Style
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-web-fundamentals-javascript-and-responsive-design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7. JavaScript and Responsive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-javascript-visualization-libraries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8. JS Visualization Libraries
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-overlayment-interactive-patterns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9. Overlayment Patterns
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-microsim-standards-and-packaging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10. MicroSim Standards
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-learning-science-for-interactive-content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11. Learning Science
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-generative-ai-for-infographic-creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12. Generative AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-advanced-visualization-and-design-principles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13. Advanced Visualization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-tracking-analytics-and-deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14. Tracking and Deployment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../appendices/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Appendices
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../research/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Research
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-interactive-infographics-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Interactive Infographics Matter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-infographic" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is an Infographic?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-three-types-of-infographics" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Three Types of Infographics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Three Types of Infographics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#static-infographics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static Infographics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animated-infographics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animated Infographics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-infographics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Infographics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quiz-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quiz Mode
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intelligent-textbooks-the-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intelligent Textbooks: The Platform
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microsims-the-standard-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSims: The Standard Package
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MicroSims: The Standard Package">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-microsim-architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: MicroSim Architecture Overview
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-iframe-element-embedding-interactive-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Iframe Element: Embedding Interactive Content
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#width-responsive-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Width-Responsive Design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regions-and-labels-defining-interactive-areas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regions and Labels: Defining Interactive Areas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-infobox-delivering-content-on-demand" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Infobox: Delivering Content on Demand
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Infobox: Delivering Content on Demand">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-infobox-positioning-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Infobox Positioning Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events-how-infographics-respond-to-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Events: How Infographics Respond to Users
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Events: How Infographics Respond to Users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hover-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hover Events
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#click-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Click Events
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selection-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selection Events
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-handlers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Handlers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Event Handlers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-event-handling-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Event Handling Flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-from-concept-to-experience" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: From Concept to Experience
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/infographics/blob/master/docs/chapters/01-foundations-of-interactive-infographics/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="foundations-of-interactive-infographics">Foundations of Interactive Infographics</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter introduces the core vocabulary and concepts that underpin the entire course. You will learn the distinctions between static, animated, and interactive infographics, understand how MicroSims serve as the standard packaging for interactive content within intelligent textbooks, and explore the fundamental building blocks — iframes, regions, infoboxes, and event handlers — that make infographics interactive. By the end of this chapter, you will have a solid mental model of how interactive infographics fit into the broader landscape of educational technology.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 20 concepts from the learning graph:</p>
+<ol>
+<li>Infographic</li>
+<li>Interactive Infographic</li>
+<li>Static Infographic</li>
+<li>Animated Infographic</li>
+<li>Intelligent Textbook</li>
+<li>MicroSim</li>
+<li>MicroSim Architecture</li>
+<li>Iframe Element</li>
+<li>Width-Responsive Design</li>
+<li>Central Content Area</li>
+<li>Drawing Canvas</li>
+<li>Infobox</li>
+<li>Infobox Positioning</li>
+<li>Region</li>
+<li>Named Region</li>
+<li>Region Label</li>
+<li>Hover Event</li>
+<li>Click Event</li>
+<li>Selection Event</li>
+<li>Event Handler</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter assumes only the prerequisites listed in the <a href="../../course-description/">course description</a>. No prior chapters are required.</p>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Let's Make It Visual!</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Percy welcomes you">
+Welcome, visual thinkers! I'm Percy the Peacock, your guide through
+the world of interactive infographics. In this opening chapter, we'll
+build the vocabulary you need to design infographics that truly engage
+learners. Let's spread some knowledge!</p>
+</div>
+<h2 id="why-interactive-infographics-matter">Why Interactive Infographics Matter</h2>
+<p>Imagine opening a textbook chapter on the human cell. In a traditional book, you see a static diagram with numbered labels pointing to organelles. You read the labels, maybe memorize a few, and move on. Now imagine the same diagram where you can hover over the mitochondria and a detailed infobox appears describing its function, click on the nucleus to explore DNA replication, or drag a slider to watch the cell divide in real time. That is the transformative power of interactive infographics — they turn passive reading into active exploration.</p>
+<p>Interactive infographics represent one of the most powerful tools available to instructional designers today. Research consistently shows that students who engage with interactive visual content demonstrate stronger conceptual understanding, longer retention, and greater motivation compared to those who study static materials alone. When learners can manipulate, explore, and experiment with visual representations of concepts, they build richer mental models that connect to their existing knowledge.</p>
+<p>This chapter establishes the foundational concepts you need to create these transformative learning experiences. Whether you are building an interactive anatomy diagram for a biology course, a causal loop visualization for a business class, or a data-driven chart for a statistics lesson, the building blocks are the same: infographics, regions, events, and the packaging standards that make them deployable at scale.</p>
+<h2 id="what-is-an-infographic">What Is an Infographic?</h2>
+<p>An <strong>infographic</strong> is a visual representation of information, data, or knowledge designed to present complex information quickly and clearly. The term combines "information" and "graphic" — and at its best, an infographic communicates in seconds what paragraphs of text might struggle to convey in minutes.</p>
+<p>Infographics have been part of human communication for centuries, from cave paintings to Florence Nightingale's pioneering statistical diagrams in the 1850s. What has changed dramatically in recent decades is the medium: digital platforms now allow infographics to respond to user input, adapt to screen sizes, and track how students interact with them.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Visual encoding</td>
+<td>Uses shapes, colors, and positions to represent data</td>
+<td>Bar height represents quantity</td>
+</tr>
+<tr>
+<td>Information density</td>
+<td>Communicates more per square inch than text alone</td>
+<td>A network diagram showing 50 relationships</td>
+</tr>
+<tr>
+<td>Cognitive efficiency</td>
+<td>Leverages the brain's visual processing system</td>
+<td>Color-coded categories recognized at a glance</td>
+</tr>
+<tr>
+<td>Accessibility</td>
+<td>Presents complex information to diverse audiences</td>
+<td>A timeline making historical progression intuitive</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-three-types-of-infographics">The Three Types of Infographics</h2>
+<p>Not all infographics are created equal. Understanding the distinctions between static, animated, and interactive infographics helps you choose the right approach for each learning objective.</p>
+<h3 id="static-infographics">Static Infographics</h3>
+<p>A <strong>static infographic</strong> is a fixed image — a PNG, JPEG, or SVG file that does not change or respond to user input. Traditional textbook diagrams, poster-style infographics shared on social media, and printed handouts are all static infographics. They are the simplest to create and the most widely used, but they have a fundamental limitation: they show one fixed view of the information.</p>
+<p>Static infographics are effective when you need to convey a single, well-defined message. A comparison chart of three programming languages, a labeled diagram of a simple circuit, or a timeline of historical events can work beautifully as static images. However, when the information is complex, multi-layered, or best understood through exploration, static infographics fall short.</p>
+<h3 id="animated-infographics">Animated Infographics</h3>
+<p>An <strong>animated infographic</strong> adds movement and time-based transitions to the visual presentation. Animations can reveal information sequentially, draw attention to specific elements, or show processes that unfold over time. Animated GIFs, CSS animations, and video-based explainers are common formats.</p>
+<p>Animation is particularly powerful for showing processes — how data flows through a pipeline, how a sorting algorithm rearranges elements, or how continental plates drift over millennia. However, animated infographics share a limitation with static ones: the viewer watches a predetermined sequence. They cannot pause at a moment of curiosity, explore a branch that interests them, or test a hypothesis by changing a variable.</p>
+<h3 id="interactive-infographics">Interactive Infographics</h3>
+<p>An <strong>interactive infographic</strong> responds to user input in real time. When a learner hovers, clicks, drags, or adjusts a control, the infographic changes — revealing new information, highlighting relationships, or recalculating a visualization. This is where the magic happens for education.</p>
+<p>Interactive infographics are qualitatively different from their static and animated cousins because they put the learner in control. Instead of consuming a predetermined narrative, students become active explorers. They can:</p>
+<ul>
+<li>Hover over a region to see detailed explanations without cluttering the main view</li>
+<li>Click elements to drill into related topics</li>
+<li>Adjust parameters (sliders, dropdowns) to see how changes affect outcomes</li>
+<li>Test their understanding by identifying unlabeled parts in quiz mode</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>User Control</th>
+<th>Best For</th>
+<th>Limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Static</td>
+<td>None</td>
+<td>Simple, single-message visuals</td>
+<td>Cannot show multiple views or detail layers</td>
+</tr>
+<tr>
+<td>Animated</td>
+<td>Play/pause only</td>
+<td>Processes and sequences</td>
+<td>Fixed narrative, no exploration</td>
+</tr>
+<tr>
+<td>Interactive</td>
+<td>Full (hover, click, drag, adjust)</td>
+<td>Complex, multi-layered concepts</td>
+<td>Requires JavaScript and hosting</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quiz-mode">Quiz Mode</h3>
+<p>One of the most exciting capabilities of interactive infographics is that every diagram can instantly flip into a <strong>quiz mode</strong> — prompting the learner to identify a region by name rather than simply reading labels. This is a powerful example of content reuse without duplication: the same carefully designed diagram serves both as an instructional tool and as an assessment tool.</p>
+<p>In quiz mode, the infographic hides the labels and presents a challenge: <em>"Click on the region called Mitochondria"</em> or <em>"Select the component responsible for data validation."</em> The learner must recall what they learned during exploration and demonstrate their understanding by clicking the correct region. Immediate visual feedback — a green highlight for correct, a gentle red flash for incorrect — reinforces learning in the moment.</p>
+<p>This approach delivers several benefits:</p>
+<ul>
+<li><strong>Zero duplication</strong> — one diagram serves both teaching and assessment, reducing maintenance and ensuring consistency</li>
+<li><strong>Active recall</strong> — quiz mode forces retrieval practice, which research shows is one of the most effective strategies for long-term retention</li>
+<li><strong>Seamless transition</strong> — a single toggle or button switches between explore mode and quiz mode, keeping the learner in context</li>
+<li><strong>Scalable assessment</strong> — every labeled diagram in the textbook automatically becomes a potential quiz, dramatically expanding the pool of practice opportunities</li>
+<li><strong>Bloom's Taxonomy progression</strong> — exploration targets <em>Remembering</em> and <em>Understanding</em>, while quiz mode pushes learners into <em>Applying</em> and <em>Analyzing</em></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Labels Visible</th>
+<th>User Action</th>
+<th>Learning Objective</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Explore</td>
+<td>Yes</td>
+<td>Hover/click to learn</td>
+<td>Remembering, Understanding</td>
+</tr>
+<tr>
+<td>Quiz</td>
+<td>Hidden</td>
+<td>Click prompted region</td>
+<td>Applying, Analyzing</td>
+</tr>
+</tbody>
+</table>
+<p>Because quiz mode reuses the exact same diagram, regions, and event handlers, adding assessment capability to an existing infographic requires minimal additional code — typically just a function that hides labels, selects a random region, and checks the learner's click against the target. This "build once, assess forever" pattern is one of the key reasons interactive infographics are so valuable in intelligent textbooks.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Key Insight</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Percy is thinking">
+The shift from static to interactive infographics mirrors a deeper shift
+in educational philosophy — from instructor-centered delivery to
+learner-centered exploration. When students control the visualization,
+they are not just viewing information; they are constructing understanding.</p>
+</div>
+<h2 id="intelligent-textbooks-the-platform">Intelligent Textbooks: The Platform</h2>
+<p>An <strong>intelligent textbook</strong> is a web-based educational resource that goes far beyond digitized pages. Built on platforms like MkDocs Material and deployed through GitHub Pages, intelligent textbooks combine traditional written content with interactive simulations, learning graphs, glossaries, quizzes, and analytics — all in a responsive, searchable, and freely accessible format.</p>
+<p>The key characteristics that make a textbook "intelligent" include:</p>
+<ul>
+<li><strong>Interactive content</strong> embedded directly in chapters via iframes</li>
+<li><strong>Adaptive navigation</strong> that guides students through concept dependencies</li>
+<li><strong>Learning analytics</strong> that track how students interact with content</li>
+<li><strong>Open access</strong> deployment on the web, removing cost barriers</li>
+<li><strong>Version control</strong> enabling continuous improvement through community contributions</li>
+</ul>
+<p>Interactive infographics are the visual heart of intelligent textbooks. They transform each chapter from a wall of text into an engaging, explorable learning environment. Every diagram, chart, and simulation you create in this course is designed to be embedded seamlessly within an intelligent textbook's chapter pages.</p>
+<h2 id="microsims-the-standard-package">MicroSims: The Standard Package</h2>
+<p>A <strong>MicroSim</strong> (short for Micro Simulation) is the standard packaging format for interactive content within intelligent textbooks. Think of a MicroSim as a self-contained interactive experience — a single HTML page with its own JavaScript, data files, and metadata — designed to be embedded in a textbook chapter via an iframe.</p>
+<p>The <strong>MicroSim architecture</strong> follows a consistent pattern that makes interactive infographics modular, reusable, and maintainable:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>docs/sims/my-infographic/
+├── main.html         ← The interactive experience (HTML + JS)
+├── index.md          ← Documentation page for the textbook
+├── metadata.json     ← Dublin Core metadata for discoverability
+└── data.json         ← Configuration data (optional)
+</code></pre></div></td></tr></table></div>
+<p>Every MicroSim lives in its own directory under <code>docs/sims/</code>. The <code>main.html</code> file is the entry point — it contains (or references) all the HTML, CSS, and JavaScript needed to render the interactive infographic. The <code>index.md</code> file provides the MkDocs documentation page where the MicroSim is described and embedded. The <code>metadata.json</code> file stores Dublin Core metadata (title, creator, description, subject) that makes the MicroSim discoverable and catalogable.</p>
+<p>This architecture is powerful because it enforces separation of concerns. The interactive experience is independent of the textbook framework — you can open <code>main.html</code> directly in a browser for testing, embed it in any web page, or package it for a learning management system. The standardization also means that generative AI tools can create MicroSims programmatically, dramatically accelerating production.</p>
+<h4 id="diagram-microsim-architecture-overview">Diagram: MicroSim Architecture Overview</h4>
+<iframe src="../../sims/microsim-architecture-overview/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>MicroSim Architecture Overview</summary>
+<p>Type: diagram
+<strong>sim-id:</strong> microsim-architecture-overview<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> Explain
+<strong>Learning Objective:</strong> Explain the four-file MicroSim architecture and how each file serves a distinct role in the packaging standard.</p>
+<p>Instructional Rationale: A labeled block diagram helps learners visualize the relationship between the four files in a MicroSim directory. Hover-activated descriptions connect each file to its purpose without cluttering the initial view.</p>
+<p>Visual elements:
+- A directory tree on the left showing <code>docs/sims/my-infographic/</code> with four files
+- Four colored blocks on the right, one per file:
+  - <code>main.html</code> (blue) — "Interactive Experience: HTML + JavaScript"
+  - <code>index.md</code> (green) — "Documentation: Textbook Page with Iframe Embed"
+  - <code>metadata.json</code> (orange) — "Discoverability: Dublin Core Metadata"
+  - <code>data.json</code> (purple) — "Configuration: Overlay Regions, Labels, Settings"
+- Arrows showing how <code>index.md</code> embeds <code>main.html</code> via an iframe
+- An arrow showing how <code>main.html</code> loads <code>data.json</code> at runtime
+- A browser mockup at the top showing the final rendered result</p>
+<p>Interactive features:
+- Hover over each file block to see a detailed description of its contents and purpose
+- Click a file block to highlight all arrows connected to that file</p>
+<p>Canvas layout: Width-responsive, aliceblue background, minimum 600px width
+Color scheme: Blue primary, orange accent (matching book theme)</p>
+</details>
+<h2 id="the-iframe-element-embedding-interactive-content">The Iframe Element: Embedding Interactive Content</h2>
+<p>The <strong>iframe element</strong> (<code>&lt;iframe&gt;</code>) is the HTML mechanism that makes MicroSim embedding possible. An iframe creates a rectangular window within a web page that loads and displays a separate HTML document. When you embed a MicroSim in a textbook chapter, the iframe acts as a portal — the chapter content flows around it while the interactive infographic runs independently inside it.</p>
+<p>Here is a typical iframe embed in a chapter's markdown file:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../../sims/cell-diagram/main.html&quot;</span>
+        <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">&quot;600&quot;</span>
+        <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p>The <code>src</code> attribute points to the MicroSim's <code>main.html</code> file using a relative path. The <code>width="100%"</code> ensures the infographic fills the available content area. The <code>height</code> sets a fixed pixel height, and <code>scrolling="no"</code> prevents scroll hijacking that could disrupt the reading experience.</p>
+<p>Iframes provide critical isolation: the MicroSim's JavaScript runs in its own execution context, so it cannot accidentally interfere with the textbook's navigation, styling, or other interactive elements. This isolation is what makes it safe to embed dozens of MicroSims from different authors across a single textbook.</p>
+<h2 id="width-responsive-design">Width-Responsive Design</h2>
+<p><strong>Width-responsive design</strong> ensures that interactive infographics look great and function correctly across a range of screen widths — from a 600-pixel mobile view to a 1,400-pixel desktop layout. In the context of intelligent textbooks, the infographic is displayed within the <strong>central content area</strong> of the page, which varies in width depending on the browser window and whether navigation sidebars are visible.</p>
+<p>The standard responsive approach for MicroSims uses these conventions:</p>
+<ul>
+<li>The <strong>drawing canvas</strong> (the visual area where the infographic renders) occupies the full width of the iframe</li>
+<li>A <code>windowResized()</code> function recalculates the canvas dimensions whenever the browser window changes size</li>
+<li>Control elements (sliders, buttons, dropdowns) reflow into a column layout on narrow screens</li>
+<li>Text sizes scale proportionally to maintain readability</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Screen Width</th>
+<th>Layout</th>
+<th>Typical Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>600-800 px</td>
+<td>Compact, single column controls</td>
+<td>Mobile phone, narrow browser</td>
+</tr>
+<tr>
+<td>800-1100 px</td>
+<td>Standard, controls beside canvas</td>
+<td>Tablet, typical laptop</td>
+</tr>
+<tr>
+<td>1100-1400 px</td>
+<td>Expanded, full-width canvas</td>
+<td>Desktop with sidebars open</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>drawing canvas</strong> is the rectangular area where visual elements are rendered, typically using an HTML5 <code>&lt;canvas&gt;</code> element (for p5.js) or SVG container (for D3.js). The canvas uses an <code>aliceblue</code> background color as a visual cue that distinguishes interactive content from the surrounding white page — students learn to recognize this subtle color as a signal that they can interact with the element.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Percy's Tip</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Percy shares a tip">
+Always test your infographics at both 600px and 1400px browser widths.
+A beautiful desktop visualization that breaks on mobile will frustrate
+half your students. The <code>windowResized()</code> function is your best friend.</p>
+</div>
+<h2 id="regions-and-labels-defining-interactive-areas">Regions and Labels: Defining Interactive Areas</h2>
+<p>At the heart of every interactive infographic is the concept of a <strong>region</strong> — a defined area within the visual that can respond to user interactions. Regions are what transform a static image into an interactive experience.</p>
+<p>A <strong>named region</strong> is a region that has been assigned a human-readable identifier, such as "Mitochondria" or "Revenue Growth Loop." Named regions serve as the bridge between the visual representation and the educational content: when a student interacts with a named region, the system knows exactly which concept to display information about.</p>
+<p>Each named region has a <strong>region label</strong> — a text string displayed on or near the region that identifies it. Labels can be:</p>
+<ul>
+<li><strong>Always visible</strong> — printed directly on the infographic (useful for simple diagrams)</li>
+<li><strong>Numbered</strong> — displayed as a circled number with a legend panel alongside the image</li>
+<li><strong>Hidden until interaction</strong> — revealed when the student hovers or clicks (useful for quiz modes)</li>
+</ul>
+<p>Regions can take different geometric shapes depending on the infographic type:</p>
+<ul>
+<li><strong>Rectangular regions</strong> — simple axis-aligned boxes, ideal for non-overlapping areas</li>
+<li><strong>Polygon regions</strong> — complex multi-point shapes that follow irregular boundaries</li>
+<li><strong>Circular regions</strong> — defined by a center point and radius, used for callout markers</li>
+</ul>
+<p>The region configuration is typically stored in a JSON file (<code>data.json</code> or <code>overlay.json</code>) that maps each named region to its coordinates, label text, and associated content:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;callouts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mitochondria&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">65.2</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;y&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">43.8</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;radius&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">4.0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The powerhouse of the cell...&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>Notice that coordinates are stored as <strong>percentages</strong> (0-100) rather than pixel values. This percentage-based system is essential for width-responsive design — when the infographic scales to a different size, the regions scale proportionally.</p>
+<h2 id="the-infobox-delivering-content-on-demand">The Infobox: Delivering Content on Demand</h2>
+<p>An <strong>infobox</strong> is a content panel that appears when a student interacts with a region. It is the primary mechanism for progressive disclosure — the design pattern where details are hidden until the learner requests them, keeping the main view clean and uncluttered.</p>
+<p>A well-designed infobox typically contains:</p>
+<ul>
+<li>The <strong>region label</strong> as a title (e.g., "Reinforcing Loop")</li>
+<li>A <strong>description</strong> of 2-5 sentences explaining the concept</li>
+<li>Optional additional content such as tips, common misconceptions, or exam relevance</li>
+</ul>
+<p><strong>Infobox positioning</strong> refers to where the infobox appears relative to the diagram. Common positioning strategies include:</p>
+<ul>
+<li><strong>Below the diagram</strong> — the default for landscape-oriented images; the infobox occupies a fixed-height area beneath the visual, so it never overlaps the diagram content</li>
+<li><strong>Side panel</strong> — a panel to the right of the diagram (ideal for wide screens) where the infobox content appears alongside the visual</li>
+<li><strong>Floating tooltip</strong> — appears near the mouse cursor; compact but can obscure parts of the diagram</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Positioning</th>
+<th>Pros</th>
+<th>Cons</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Below diagram</td>
+<td>Never obscures visual; predictable location</td>
+<td>Requires scrolling on short screens</td>
+<td>Landscape diagrams with detailed descriptions</td>
+</tr>
+<tr>
+<td>Side panel</td>
+<td>Always visible alongside diagram</td>
+<td>Requires wide viewport</td>
+<td>Desktop-first designs with many labels</td>
+</tr>
+<tr>
+<td>Floating tooltip</td>
+<td>Compact; appears right where attention is</td>
+<td>Can obscure diagram content</td>
+<td>Simple diagrams with short descriptions</td>
+</tr>
+</tbody>
+</table>
+<p>For intelligent textbooks, the <strong>below-diagram</strong> approach is recommended as the default because it works reliably across all screen sizes and never blocks the student's view of the infographic.</p>
+<h4 id="diagram-infobox-positioning-comparison">Diagram: Infobox Positioning Comparison</h4>
+<iframe src="../../sims/infobox-positioning-comparison/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Infobox Positioning Comparison</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> infobox-positioning-comparison<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze (L4)
+<strong>Bloom Verb:</strong> Compare
+<strong>Learning Objective:</strong> Compare the three infobox positioning strategies (below, side panel, floating tooltip) and identify which is most appropriate for different diagram layouts.</p>
+<p>Instructional Rationale: A side-by-side interactive comparison lets learners directly experience each positioning strategy rather than just reading about them. Clicking through the three modes builds intuition for when each approach works best.</p>
+<p>Visual elements:
+- A sample diagram (simple labeled block diagram with 5 regions) displayed in the center
+- Three toggle buttons at the top: "Below Diagram", "Side Panel", "Floating Tooltip"
+- When each button is active, the infobox behavior changes accordingly:
+  - Below: Infobox appears in a fixed area beneath the diagram
+  - Side Panel: Infobox appears in a panel to the right of the diagram
+  - Floating: Infobox appears as a tooltip near the hovered region
+- A highlighted annotation explaining the current positioning mode</p>
+<p>Interactive features:
+- Click toggle buttons to switch between positioning modes
+- Hover over any of the 5 regions to trigger the infobox in the current mode
+- Each mode displays a brief pro/con note in the corner</p>
+<p>Canvas layout: Width-responsive, aliceblue background, 600px minimum width
+Color scheme: Blue regions, orange active highlights, white infobox with subtle shadow</p>
+</details>
+<h2 id="events-how-infographics-respond-to-users">Events: How Infographics Respond to Users</h2>
+<p>Interactive infographics come alive through <strong>events</strong> — signals generated when a user performs an action. The three fundamental event types are hover, click, and selection.</p>
+<h3 id="hover-events">Hover Events</h3>
+<p>A <strong>hover event</strong> fires when the user moves the mouse cursor over a region (or taps and holds on a touch device). Hover is the most common interaction in educational infographics because it is lightweight and reversible — the student does not commit to anything by hovering. Information appears and disappears naturally as the cursor moves.</p>
+<p>Hover events are ideal for:</p>
+<ul>
+<li>Displaying infobox descriptions</li>
+<li>Highlighting connected elements (e.g., glowing a label when its region is hovered)</li>
+<li>Showing tooltips with brief definitions</li>
+</ul>
+<h3 id="click-events">Click Events</h3>
+<p>A <strong>click event</strong> fires when the user presses and releases the mouse button (or taps on a touch device) over a region. Click events signal intentional action and are appropriate for:</p>
+<ul>
+<li>Toggling between states (e.g., switching from Explore mode to Quiz mode)</li>
+<li>Selecting a region for deeper exploration</li>
+<li>Submitting a quiz answer (e.g., "Click the correct organelle")</li>
+<li>Navigating to related content</li>
+</ul>
+<h3 id="selection-events">Selection Events</h3>
+<p>A <strong>selection event</strong> is a higher-level concept that captures when a student has chosen a specific item from a set of options. While hover and click are raw browser events, selection represents a meaningful educational action — the student has made a decision. Selection events are particularly important for:</p>
+<ul>
+<li>Quiz interactions where the student identifies the correct answer</li>
+<li>Classification activities where items are sorted into categories</li>
+<li>Multi-step explorations where each selection reveals the next layer</li>
+</ul>
+<h3 id="event-handlers">Event Handlers</h3>
+<p>An <strong>event handler</strong> is a JavaScript function that runs in response to an event. Event handlers are the glue between user actions and infographic responses. When a student hovers over a named region, the event handler:</p>
+<ol>
+<li>Identifies which region was hovered (using hit detection)</li>
+<li>Looks up the associated content (from the JSON data file)</li>
+<li>Updates the display (shows the infobox, highlights the region)</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">mouseMoved</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">region</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">regions</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">region</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="nx">mouseX</span><span class="p">,</span><span class="w"> </span><span class="nx">mouseY</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">showInfobox</span><span class="p">(</span><span class="nx">region</span><span class="p">.</span><span class="nx">label</span><span class="p">,</span><span class="w"> </span><span class="nx">region</span><span class="p">.</span><span class="nx">description</span><span class="p">);</span>
+<span class="w">      </span><span class="nx">highlightRegion</span><span class="p">(</span><span class="nx">region</span><span class="p">);</span>
+<span class="w">      </span><span class="k">return</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="nx">hideInfobox</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>This pattern — detect the event, identify the target, update the display — is the same whether you are building a simple labeled diagram or a complex polygon overlay with dozens of interactive regions.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Key Insight</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Percy is thinking">
+Every interactive infographic in this course follows the same
+fundamental loop: <strong>Event → Identify Region → Update Display</strong>.
+Once you internalize this pattern, you can build any type of
+interactive visualization — from simple hover labels to complex
+multi-mode explorations.</p>
+</div>
+<h4 id="diagram-event-handling-flow">Diagram: Event Handling Flow</h4>
+<iframe src="../../sims/event-handling-flow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Event Handling Flow</summary>
+<p>Type: diagram
+<strong>sim-id:</strong> event-handling-flow<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> Explain
+<strong>Learning Objective:</strong> Explain the three-step event handling pattern (detect event, identify region, update display) that drives all interactive infographics.</p>
+<p>Instructional Rationale: A step-through flowchart with concrete examples at each stage helps learners trace the process with real data. Stepping through each phase builds understanding of the event → response pipeline.</p>
+<p>Visual elements:
+- A horizontal flowchart with three main stages:
+  1. "Event Detected" (blue box) — shows icons for Hover, Click, and Selection
+  2. "Region Identified" (orange box) — shows hit detection checking mouse coordinates against region boundaries
+  3. "Display Updated" (green box) — shows infobox appearing and region highlighting
+- Arrows connecting the three stages with labeled transitions
+- Below the flowchart, a live demo area with a small sample diagram (3 regions)
+- When the user interacts with the sample diagram, the corresponding flowchart stage lights up in real time</p>
+<p>Interactive features:
+- Hover over the sample diagram regions to see the flowchart stages highlight in sequence
+- Click a flowchart stage to see a detailed explanation of what happens at that step
+- A "Slow Motion" toggle that adds a visible delay between stages so students can observe the sequence</p>
+<p>Canvas layout: Width-responsive, aliceblue background
+Color scheme: Blue for events, orange for processing, green for output</p>
+</details>
+<h2 id="putting-it-all-together-from-concept-to-experience">Putting It All Together: From Concept to Experience</h2>
+<p>Let's trace how all these concepts work together in a real educational scenario. Suppose you are an instructional designer building an interactive diagram of the water cycle for an earth science textbook.</p>
+<ol>
+<li><strong>You create an infographic</strong> — a visual illustration of the water cycle showing clouds, rain, rivers, oceans, and evaporation arrows</li>
+<li><strong>You define named regions</strong> — "Evaporation," "Condensation," "Precipitation," "Collection," and "Transpiration" are each assigned polygon boundaries that follow the visual shapes in the illustration</li>
+<li><strong>Each region gets a label</strong> — numbered indicators (1-5) appear on the diagram with a legend panel listing the region names</li>
+<li><strong>You write infobox content</strong> — each named region has a 2-3 sentence description explaining the process it represents</li>
+<li><strong>You configure infobox positioning</strong> — the infobox appears below the diagram so it never obscures the visual</li>
+<li><strong>Event handlers connect everything</strong> — hover events trigger the infobox display; click events in quiz mode let students identify processes by clicking the correct region</li>
+<li><strong>You package it as a MicroSim</strong> — <code>main.html</code>, <code>index.md</code>, <code>metadata.json</code>, and <code>data.json</code> go into <code>docs/sims/water-cycle/</code></li>
+<li><strong>You embed it via an iframe</strong> — a single line in the chapter markdown brings the interactive experience into the textbook</li>
+</ol>
+<p>The result is an interactive learning experience where students explore the water cycle at their own pace, hover to read about each process, and test themselves in quiz mode — all within the flow of their reading.</p>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Excellent Progress!</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Percy celebrates">
+You now have a complete vocabulary for interactive infographic design!
+From infographics and regions to events and MicroSims, you understand
+the building blocks that power every interactive visualization in this
+course. Display it with style!</p>
+</div>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>An <strong>infographic</strong> is a visual representation of information; interactive infographics respond to user input in real time, making them dramatically more effective for learning than static alternatives</li>
+<li><strong>Intelligent textbooks</strong> are web-based educational platforms that embed interactive content, track engagement, and support learner-centered exploration</li>
+<li><strong>MicroSims</strong> are the standard packaging format: self-contained directories with <code>main.html</code>, <code>index.md</code>, <code>metadata.json</code>, and optionally <code>data.json</code></li>
+<li>The <strong>iframe element</strong> embeds MicroSims into textbook chapters while providing isolation between the interactive content and the page framework</li>
+<li><strong>Width-responsive design</strong> ensures infographics work across screen sizes from 600px to 1,400px, with the <strong>drawing canvas</strong> using an <code>aliceblue</code> background as a visual interaction cue</li>
+<li><strong>Regions</strong> define interactive areas; <strong>named regions</strong> with <strong>labels</strong> connect visual elements to educational content</li>
+<li><strong>Infoboxes</strong> deliver content on demand through progressive disclosure, with <strong>below-diagram</strong> positioning recommended as the default</li>
+<li>Three event types — <strong>hover</strong>, <strong>click</strong>, and <strong>selection</strong> — drive all interactivity, handled by <strong>event handler</strong> functions that follow the pattern: detect event → identify region → update display</li>
+</ul>
+<details class="question">
+<summary>Self-Check: Can you explain the MicroSim architecture?</summary>
+<p>A MicroSim directory contains four files: <code>main.html</code> (the interactive experience), <code>index.md</code> (the documentation page), <code>metadata.json</code> (Dublin Core metadata for discoverability), and <code>data.json</code> (optional configuration data for regions, labels, and settings). The <code>main.html</code> file is embedded in the textbook chapter via an <code>&lt;iframe&gt;</code> element.</p>
+</details>
+<p><a href="references/">See Annotated References</a></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="quiz/" class="md-footer__link md-footer__link--next" aria-label="Next: Quiz">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Quiz
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+    
+  </body>
+</html>

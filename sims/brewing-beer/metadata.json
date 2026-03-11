@@ -1,0 +1,12 @@
+{
+  "title": "Brewing Beer Process Explorer",
+  "description": "Interactive MicroSim highlighting the five biochemical stages of brewing fermentation with CO2 tracking and yeast strain comparisons.",
+  "subject": "Biology",
+  "grade_level": "9-12",
+  "time_to_complete": "10-15 minutes",
+  "learning_objectives": [
+    "Trace how glycolysis feeds alcoholic fermentation during brewing",
+    "Compare how different yeast strains manage NADH and CO2 production",
+    "Connect visual diagram prompts to cellular processes in wort fermentation"
+  ]
+}
