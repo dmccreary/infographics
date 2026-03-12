@@ -60,7 +60,7 @@ You read the labels, maybe memorize a few, and move on. Now imagine the same dia
 where the infographic tests your knowledge of the parts of the cell.  This might work
 like the following:
 
-<iframe src="../../sims/animal-cell/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/animal-cell/main.html" width="100%" height="565px" scrolling="no"></iframe>
 
 [Run the Animal Cell Interactive Infographic Fullscreen](../../sims/animal-cell/main.html)
 
@@ -97,22 +97,40 @@ A **static infographic** is a fixed image — a PNG, JPEG, or SVG file that does
 
 Static infographics are effective when you need to convey a single, well-defined message. A comparison chart of three programming languages, a labeled diagram of a simple circuit, or a timeline of historical events can work beautifully as static images. However, when the information is complex, multi-layered, or best understood through exploration, static infographics fall short.
 
+
 ### Animated Infographics
 
 An **animated infographic** adds movement and time-based transitions to the visual presentation. Animations can reveal information sequentially, draw attention to specific elements, or show processes that unfold over time. Animated GIFs, CSS animations, and video-based explainers are common formats.
 
-Animation is particularly powerful for showing processes — how data flows through a pipeline, how a sorting algorithm rearranges elements, or how continental plates drift over millennia. However, animated infographics share a limitation with static ones: the viewer watches a predetermined sequence. They cannot pause at a moment of curiosity, explore a branch that interests them, or test a hypothesis by changing a variable.
+!!! mascot-warning "Beware of GIF Overload"
+    <img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Percy warns you">
+    Beware of using GIF formatted images that include animations such
+    as the movement of data between components of the infographics.
+    Although they can be useful, they can also be distracting and they
+    can easily lead to cognitive overload.  If animations are useful
+    the best practice is to add a "Start Animation/Pause Animation" to the
+    infographic.
+
+Animation is particularly powerful for showing processes — how data flows through a pipeline, how a sorting algorithm rearranges elements, or how continental plates drift over millennia. However, animated infographics share a limitation with static ones: the viewer watches a predetermined sequence. Sometimes users cannot disable distracting animations, pause at a moment of curiosity, step back to a prior state and explore a branch that interests them, or test a hypothesis by changing a variable in the middle of a fixed sequences of steps.
+
+But how do you give complete control to your users over what they experience, how they
+view it and the speed they view the steps?  This is why need need additional interactive controls!
 
 ### Interactive Infographics
 
-An **interactive infographic** responds to user input in real time. When a learner hovers, clicks, drags, or adjusts a control, the infographic changes — revealing new information, highlighting relationships, or recalculating a visualization. This is where the magic happens for education.
+An **interactive infographic** responds to user input in real time. When a learner hovers, clicks, drags, or adjusts a control, changes the animation speed, pauses or takes a step back the infographic changes — revealing new information, highlighting relationships, or recalculating a visualization. This is where the magic happens for education!  And this is the topic of this book.
 
-Interactive infographics are qualitatively different from their static and animated cousins because they put the learner in control. Instead of consuming a predetermined narrative, students become active explorers. They can:
+Interactive infographics are qualitatively different from their static and animated cousins because they put the learner in total control. Instead of consuming a predetermined narrative, students become active explorers. They can:
 
+- Start the animation when the are cognitively ready to being viewing the infographic
+- Pause the animation at any step
+- Step back to see the prior step as many times as they wish
 - Hover over a region to see detailed explanations without cluttering the main view
 - Click elements to drill into related topics
-- Adjust parameters (sliders, dropdowns) to see how changes affect outcomes
-- Test their understanding by identifying unlabeled parts in quiz mode
+- Adjust parameters (sliders, dropdowns, animation speed) to see how changes affect outcomes
+- Test their understanding by identifying unlabeled parts in an interactive quiz mode that reuses the same underlying images, drawing and graphics
+
+Here is a summary of the three types:
 
 | Type | User Control | Best For | Limitation |
 |------|-------------|----------|------------|
@@ -151,16 +169,46 @@ Because quiz mode reuses the exact same diagram, regions, and event handlers, ad
 ## Intelligent Textbooks: The Platform
 
 An **intelligent textbook** is a web-based educational resource that goes far beyond digitized pages. Built on platforms like MkDocs Material and deployed through GitHub Pages, intelligent textbooks combine traditional written content with interactive simulations, learning graphs, glossaries, quizzes, and analytics — all in a responsive, searchable, and freely accessible format.
+Many intelligent textbooks hosted on GitHub pages are free to use and can easily
+be modified by instructors to quickly align to their classroom's needs.
 
-The key characteristics that make a textbook "intelligent" include:
+## Intelligent Textbooks Levels
 
-- **Interactive content** embedded directly in chapters via iframes
+Intelligent textbooks should all contain interactive MicroSims.  However, not all
+free textbooks will use this interactive information to make predictions on
+what content you should study.  We can classify all textbooks in a five-level
+classification system called the Intelligent Textbook Five-Level Model described
+below.
+
+#### Diagram: Five Levels of Interactive Books
+
+<iframe src="../../sims/book-levels/main.html" width="100%" height="490px" scrolling="no"></iframe>
+
+Note that once the data stream from interactive elements is collected by the textbook this student-specific data stream must be stored in a secure location.  In most countries
+student-specific data must be carefully protected, which is beyond the scope of this textbook.
+Our goal of this textbook is to define interactive infographics and show how their creation
+can be automated with the use of AI.
+
+In summary, here are the key characteristics that make a textbook "intelligent" include:
+
+- **Interactive content** embedded directly in chapters via iframes (Up to Level 2.99)
 - **Adaptive navigation** that guides students through concept dependencies
-- **Learning analytics** that track how students interact with content
-- **Open access** deployment on the web, removing cost barriers
-- **Version control** enabling continuous improvement through community contributions
+- **Learning analytics** that track how students interact with content (Level 3.0 and higher)
+- **Open access** deployment on the web, removing cost barriers and increasing accessibility
+- **Continuous Updates** enabling continuous improvement through community contributions using a modern version control such as Git with standard pull-request feature enhancements
 
-Interactive infographics are the visual heart of intelligent textbooks. They transform each chapter from a wall of text into an engaging, explorable learning environment. Every diagram, chart, and simulation you create in this course is designed to be embedded seamlessly within an intelligent textbook's chapter pages.
+Interactive infographics are the visual heart of intelligent textbooks. They transform each chapter from a wall of text into an engaging, explodable learning environment. Every diagram, chart, and simulation you create in this course is designed to be embedded seamlessly within an intelligent textbook's chapter pages.
+
+## Levels of Interactivity
+
+In summary, we can always look for ways to increase the quality of
+interaction with our readers.  The following interactive infographics
+shows the six levels of interactivity:
+
+#### Diagram: Levels of Interactivity
+
+<iframe src="../../sims/levels-of-interactivity/main.html" width="100%" height="510px" scrolling="no"></iframe>
+
 
 ## MicroSims: The Standard Package
 
