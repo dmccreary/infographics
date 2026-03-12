@@ -1,8 +1,8 @@
 ---
 title: Percy the Peacock - Mascot Test
 description: This test page shows all mascot images as well as the admonition styles for Percy the Peacock - the mascot for this intelligent textbook.
-image: img/mascot/social-image-preview.png
-og:image: img/mascot/social-image-preview.png
+image: img/mascot/social-graph-preview.png
+og:image: img/mascot/social-graph-preview.png
 ---
 # Percy the Peacock - Mascot Test
 
