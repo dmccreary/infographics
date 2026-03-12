@@ -89,6 +89,7 @@ theme:
 plugins:
   - search
   - social
+  - social_override
 markdown_extensions:
   - md_in_html
   - attr_list
