@@ -51,3 +51,18 @@ Basic understanding of natural selection and common ancestry.
 1. [Homology (biology)](https://en.wikipedia.org/wiki/Homology_(biology)) — Wikipedia
 2. [Comparative anatomy](https://en.wikipedia.org/wiki/Comparative_anatomy) — Wikipedia
 3. [AP Biology Course and Exam Description](https://apcentral.collegeboard.org/courses/ap-biology) — College Board
+
+## Forelimbs Image
+
+<style>
+      img {
+      border: 1px dashed blue;
+    }
+</style>
+![](forelimbs.png)
+
+To trim the top 5 pixels I ran the following UNIX shell command
+
+```sh
+ magick mogrify -gravity North -chop 0x5 docs/sims/comparative-anatomy/forelimbs.png
+ ```

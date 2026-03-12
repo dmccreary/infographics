@@ -11,6 +11,9 @@ Content for mkdocs lives in `docs/`, organized by topic: `docs/chapters/` holds 
 ## Coding Style & Naming Conventions
 Write Markdown with ATX headings, sentence-case titles, and 80–100 character lines. Use tables and definition lists sparingly; prefer bullet lists for learning objectives. Front-matter blocks are not used, so link metadata inline. CSS and JS tweaks belong in `docs/css/custom.css` and `docs/js/custom.js`; follow two-space indentation and keep selectors or functions scoped to the infographic being modified (e.g., `.mascot-card-*`). Asset names should be lowercase-with-dashes and describe the figure (`docs/img/model-lifecycle.png`).
 
+## Skills Directory
+When a task references reusable skills, check `~/.codex/skills` for the latest copies before assuming a skill is missing.
+
 ## Testing Guidelines
 Before submitting, run `mkdocs build` to catch broken links or syntax errors; the command fails if there are missing assets, so treat it as the test suite. Large structural edits should also be verified with `mkdocs serve` while clicking through new pages. When adding diagrams or simulations, confirm they load without console errors in Chromium and Firefox.
 
