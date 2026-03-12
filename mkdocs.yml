@@ -41,6 +41,7 @@ nav:
     - Brewing Beer: sims/brewing-beer/index.md
     - Comparative Anatomy: sims/comparative-anatomy/index.md
     - Levels of Interactivity: sims/levels-of-interactivity/index.md
+    - MicroSim Architecture Overview: sims/microsim-architecture-overview/index.md
     - ProKaryote vs Eukaryote: sims/prokaryote-eukaryote-comparison/index.md
   
   - Learning Graph:

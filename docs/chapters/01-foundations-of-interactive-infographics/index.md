@@ -212,6 +212,25 @@ shows the six levels of interactivity:
 
 ## MicroSims: The Standard Package
 
+Although there are many standards in educational content, what
+we need is a simple standard that allows us to create and
+reuse microsims across many educational domains.  We
+need a standards that is robust enough to place interactive
+infographics on any web page but simple enough that any
+teacher can do this by adding a single HTML element.  We
+also need to design the standard so that AI tools can quickly
+create interactive infographics with high-quality and precision.
+Sometimes finding existing MicroSim that is close to what you
+need is the key to quality.  Here are the key attributes:
+
+1. **Simplicity:** - easy to create and maintain using a tool like the p5.js editor
+2. **Accessibility:** - easy to drop into any web page with a single iframe element
+3. **AI Generation:** - allow AI systems to find similar interactive infographics and modify them when generating new infographics
+
+#### Diagram: MicroSim Uniqueness
+
+<iframe src="../../sims/microsim-uniqueness/main.html" height="450"  scrolling="no"></iframe>
+
 A **MicroSim** (short for Micro Simulation) is the standard packaging format for interactive content within intelligent textbooks. Think of a MicroSim as a self-contained interactive experience — a single HTML page with its own JavaScript, data files, and metadata — designed to be embedded in a textbook chapter via an iframe.
 
 The **MicroSim architecture** follows a consistent pattern that makes interactive infographics modular, reusable, and maintainable:
@@ -251,6 +270,7 @@ Visual elements:
   - `main.html` (blue) — "Interactive Experience: HTML + JavaScript"
   - `index.md` (green) — "Documentation: Textbook Page with Iframe Embed"
   - `metadata.json` (orange) — "Discoverability: Dublin Core Metadata"
+  - `overlay.json` (yellow) - "Optional overlay.json for region and label data"
   - `data.json` (purple) — "Configuration: Overlay Regions, Labels, Settings"
 - Arrows showing how `index.md` embeds `main.html` via an iframe
 - An arrow showing how `main.html` loads `data.json` at runtime
