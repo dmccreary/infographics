@@ -14,6 +14,7 @@ class DiagramSim {
     this.layout           = 'side-panel';
     this.mode             = 'explore';
     this.editMode         = false;
+    this.titleEl          = null;
     this.showNumbers      = true;
     this.markers          = new Map();   // id → <button>
     this.labelRows        = new Map();   // id → .label-row element
@@ -48,6 +49,7 @@ class DiagramSim {
       this.data        = await res.json();
       this.showNumbers = this.data.showNumbers !== false;
       this.layout      = this.data.layout || 'side-panel';
+      this.injectTitle();
     } catch (err) {
       this.showFatalError('Could not load data.json: ' + err.message);
       return;
@@ -82,6 +84,29 @@ class DiagramSim {
     } else {
       this.setMode('explore');
     }
+  }
+
+  injectTitle() {
+    if (!this.data || !this.data.title) return;
+
+    if (!this.titleEl) {
+      this.titleEl = document.getElementById('sim-title');
+      if (!this.titleEl) {
+        this.titleEl = document.createElement('h1');
+        this.titleEl.id = 'sim-title';
+        this.titleEl.className = 'sim-title';
+        const layout = document.getElementById('layout');
+        const controls = document.getElementById('controls');
+        const anchor = layout || controls;
+        if (anchor && anchor.parentNode) {
+          anchor.parentNode.insertBefore(this.titleEl, anchor);
+        } else {
+          document.body.insertBefore(this.titleEl, document.body.firstChild);
+        }
+      }
+    }
+
+    this.titleEl.textContent = this.data.title;
   }
 
   // ── Top-bottom layout DOM setup ───────────────────────────────────────────
