@@ -52,7 +52,23 @@ This chapter assumes only the prerequisites listed in the [course description](.
 
 ## Why Interactive Infographics Matter
 
-Imagine opening a textbook chapter on the human cell. In a traditional book, you see a static diagram with numbered labels pointing to organelles. You read the labels, maybe memorize a few, and move on. Now imagine the same diagram where you can hover over the mitochondria and a detailed infobox appears describing its function, click on the nucleus to explore DNA replication, or drag a slider to watch the cell divide in real time. That is the transformative power of interactive infographics — they turn passive reading into active exploration.
+Imagine opening a textbook chapter on the human cell. In a traditional book, you see a static diagram with numbered labels pointing to parts of the cell.  It might look something like the following static image:
+
+![](./animal-cell-with-callouts.png)
+
+You read the labels, maybe memorize a few, and move on. Now imagine the same diagram where you can hover over the mitochondria and a detailed infobox appears describing its function, click on the nucleus to understand its function, you explore and then you drop directly into a quiz mode
+where the infographic tests your knowledge of the parts of the cell.  This might work
+like the following:
+
+<iframe src="../../sims/animal-cell/main.html" width="100%" height="450px" scrolling="no"></iframe>
+
+[Run the Animal Cell Interactive Infographic Fullscreen](../../sims/animal-cell/main.html)
+
+But wait, there's more.  If you are curious about any component in the diagram
+the infobox below the interactive diagram can lead you to another diagram
+with details how that part of the cell works!
+
+That is the transformative power of interactive infographics — they turn passive reading into active exploration.
 
 Interactive infographics represent one of the most powerful tools available to instructional designers today. Research consistently shows that students who engage with interactive visual content demonstrate stronger conceptual understanding, longer retention, and greater motivation compared to those who study static materials alone. When learners can manipulate, explore, and experiment with visual representations of concepts, they build richer mental models that connect to their existing knowledge.
 
