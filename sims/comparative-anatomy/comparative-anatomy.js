@@ -1,6 +1,9 @@
 // Comparative Anatomy Explorer — Image overlay version
 // Students hover over species columns to learn about forelimb homology
 // MicroSim version 2026.02
+// Note - we did not refactor this code to use the ../shared-libs/diagram.js library
+// because we wanted to allow teachers to easily copy and paste this code into the
+// p5 web editor without needing to also copy the shared library files.
 
 let containerWidth;
 let canvasWidth = 800;
@@ -164,6 +167,7 @@ function draw() {
       fill('#ECF0F1');
     }
     noStroke();
+    // draw a background rectangle for the label
     rect(x, titleHeight, colW, labelHeight);
 
     // Label text
@@ -187,6 +191,8 @@ function draw() {
       if (i !== hoveredSpecies) {
         fill(255, 255, 255, 120);
         noStroke();
+        // Draw a white rectangle over the non-hovered columns to dim them.
+        // We want to highlight the hovered column by dimming the others
         rect(i * colW, imgTop, colW, imgDisplayHeight);
       }
     }

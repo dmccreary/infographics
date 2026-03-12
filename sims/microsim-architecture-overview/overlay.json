@@ -1,0 +1,183 @@
+{
+  "title": "MicroSim Architecture Overview",
+  "orientation": "landscape",
+  "image": "microsim-architecture-overview.png",
+  "regions": [
+    {
+      "id": "directory-tree",
+      "label": "MicroSim Directory",
+      "x": 3,
+      "y": 20,
+      "width": 28,
+      "height": 30,
+      "color": "#607D8B",
+      "description": "Every MicroSim lives in its own directory under docs/sims/. The directory name uses kebab-case (lowercase with dashes) and contains exactly four files, each with a distinct role."
+    },
+    {
+      "id": "browser-mockup",
+      "label": "Browser Rendered Output",
+      "x": 38,
+      "y": 2,
+      "width": 58,
+      "height": 16,
+      "color": "#90A4AE",
+      "description": "The final rendered result as seen by the learner. The browser loads main.html, which initializes p5.js and draws the interactive visualization on an HTML5 canvas element."
+    }
+  ],
+  "callouts": [
+    {
+      "id": 1,
+      "label": "main.html",
+      "x": 55,
+      "y": 22,
+      "radius": 6,
+      "color": "#4285F4",
+      "hint": "Blue block — the HTML shell file that the browser loads directly.",
+      "description": "The interactive experience file. Contains the HTML5 shell with a p5.js CDN script tag, a <main> element for canvas parenting, and a script tag importing the JavaScript file. This is the file embedded via iframe in the textbook page. Must always be named main.html (never index.html).",
+      "key_contents": [
+        "DOCTYPE html declaration",
+        "p5.js CDN link (v1.11.10)",
+        "<main> element for canvas parenting",
+        "Schema meta tag for discoverability",
+        "Script tag importing the .js file"
+      ]
+    },
+    {
+      "id": 2,
+      "label": "index.md",
+      "x": 55,
+      "y": 37,
+      "radius": 6,
+      "color": "#34A853",
+      "hint": "Green block — the MkDocs documentation page with iframe embed.",
+      "description": "The documentation and lesson plan page. Contains YAML frontmatter (title, description, social images), an iframe embedding main.html, a fullscreen link, educational context, a lesson plan section, and references. This is the page readers see in the textbook navigation.",
+      "key_contents": [
+        "YAML frontmatter with title and social metadata",
+        "iframe embed of main.html with scrolling='no'",
+        "Fullscreen launch button",
+        "Lesson plan with classroom activities",
+        "References section"
+      ]
+    },
+    {
+      "id": 3,
+      "label": "metadata.json",
+      "x": 55,
+      "y": 52,
+      "radius": 6,
+      "color": "#FB8C00",
+      "hint": "Orange block — Dublin Core metadata for search and catalog systems.",
+      "description": "Discoverability metadata following the Dublin Core standard. Contains title, creator, subject keywords, date, educational level, Bloom's taxonomy alignment, prerequisite concepts, and library information. Enables faceted search engines and MicroSim catalogs to index and find this simulation.",
+      "key_contents": [
+        "Dublin Core fields: title, creator, subject, date",
+        "Educational level and audience",
+        "Bloom's taxonomy level and verbs",
+        "Concept list and prerequisites",
+        "Library and version information"
+      ]
+    },
+    {
+      "id": 4,
+      "label": "data.json",
+      "x": 55,
+      "y": 67,
+      "radius": 6,
+      "color": "#8E44AD",
+      "hint": "Purple block — runtime configuration loaded by the JavaScript.",
+      "description": "Configuration data separated from code. Contains overlay region coordinates, labels, callout positions, color schemes, and settings that main.html loads at runtime via fetch(). Separating data from code allows teachers to customize content without editing JavaScript.",
+      "key_contents": [
+        "Named overlay regions with coordinates",
+        "Labels, callouts, and descriptions",
+        "Color schemes and visual settings",
+        "Quiz questions and answer data",
+        "Customizable without editing code"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "embed-arrow",
+      "from": "index.md",
+      "to": "main.html",
+      "label": "embeds via iframe",
+      "type": "embed",
+      "color": "#34A853",
+      "description": "The index.md page includes an <iframe src='main.html'> tag that loads the interactive experience directly into the textbook page."
+    },
+    {
+      "id": "data-arrow",
+      "from": "main.html",
+      "to": "data.json",
+      "label": "loads at runtime",
+      "type": "data-load",
+      "color": "#8E44AD",
+      "description": "The JavaScript in main.html calls fetch('data.json') during setup to load overlay regions, labels, and configuration without hardcoding values."
+    },
+    {
+      "id": "render-arrow",
+      "from": "main.html",
+      "to": "browser",
+      "label": "renders in browser",
+      "type": "render",
+      "color": "#4285F4",
+      "description": "The browser loads main.html, which initializes p5.js and renders the interactive canvas visualization."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question": "Which file contains the interactive visualization that runs in the browser?",
+      "choices": ["index.md", "main.html", "metadata.json", "data.json"],
+      "correct": 1,
+      "explanation": "main.html is the HTML shell that loads p5.js and the JavaScript file to render the interactive experience in the browser."
+    },
+    {
+      "id": "q2",
+      "question": "How does the textbook page display the MicroSim?",
+      "choices": [
+        "It copies the JavaScript inline",
+        "It links to an external website",
+        "It embeds main.html via an iframe",
+        "It uses a server-side include"
+      ],
+      "correct": 2,
+      "explanation": "The index.md page uses an <iframe src='main.html'> tag to embed the interactive experience directly within the textbook page."
+    },
+    {
+      "id": "q3",
+      "question": "Why is overlay and label data stored in a separate data.json file instead of hardcoded in JavaScript?",
+      "choices": [
+        "It makes the page load faster",
+        "JavaScript cannot store string data",
+        "It allows teachers to customize content without editing code",
+        "JSON files are required by the p5.js library"
+      ],
+      "correct": 2,
+      "explanation": "Separating data from code follows the separation of concerns principle. Teachers can edit labels, regions, and settings in data.json without needing to understand or modify the JavaScript code."
+    },
+    {
+      "id": "q4",
+      "question": "What is the purpose of metadata.json?",
+      "choices": [
+        "It controls the visual layout of the MicroSim",
+        "It stores user interaction history",
+        "It enables search engines and catalogs to discover and index the MicroSim",
+        "It defines the color scheme for the diagram"
+      ],
+      "correct": 2,
+      "explanation": "metadata.json contains Dublin Core metadata (title, creator, subject, educational level) that allows search engines, catalogs, and faceted search tools to find and classify the MicroSim."
+    },
+    {
+      "id": "q5",
+      "question": "Why must the HTML file be named main.html instead of index.html?",
+      "choices": [
+        "The p5.js library requires this name",
+        "To avoid conflicts with MkDocs which uses index.md for documentation pages",
+        "Browsers cannot render files named index.html",
+        "The iframe tag only works with main.html"
+      ],
+      "correct": 1,
+      "explanation": "MkDocs generates index.html from index.md for the documentation page. Using main.html for the interactive file avoids naming conflicts within the same directory."
+    }
+  ]
+}
