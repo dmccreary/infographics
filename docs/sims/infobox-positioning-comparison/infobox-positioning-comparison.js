@@ -26,7 +26,7 @@
 
 let containerWidth;
 let canvasWidth = 400;
-let drawHeight = 520;
+let drawHeight = 540;
 let controlRows = 2;
 let controlHeight = (controlRows * 35) + 10; // 80px tall control region
 let canvasHeight = drawHeight + controlHeight;
@@ -49,20 +49,20 @@ const infoPositionOptions = {
   },
   floating: {
     label: 'Floating Tooltip',
-    annotation: 'Follows the cursor to stay next to the region, perfect when space is tight.',
+    annotation: 'Follows the cursor to stay next to the region.',
     highlightColor: 'rgba(214, 221, 255, 0.9)'
   }
 };
 
 const proConNotes = {
-  below: 'Pro: predictable reading order.\nCon: consumes extra vertical space.',
-  side: 'Pro: infobox stays visible while scanning.\nCon: needs a wide layout.',
-  floating: 'Pro: zero reserved space.\nCon: tooltip can cover content if diagram is dense.'
+  below: 'Pro: Consistent positioning of InfoBox.\nCon: Consumes extra vertical space.',
+  side: 'Pro: InfoBox stays visible while scanning.\nCon: Needs a wide layout.',
+  floating: 'Pro: Zero reserved space.\nCon: InfoBox can cover content if diagram is dense.'
 };
 
 const eventModeNotes = {
-  hover: 'Hover mode: view region details while hovering over regions.',
-  click: 'Click mode: require deliberate clicks on regions.'
+  hover: 'Hover mode - view region details while hovering over regions.',
+  click: 'Click mode - require deliberate clicks on regions.'
 };
 
 const regionData = [
@@ -144,7 +144,8 @@ function draw() {
   drawEventNote();
   drawDiagram();
   drawInfoDisplay();
-  drawInstructionBanner();
+  // not enough room
+  // drawInstructionBanner();
   drawProConNote();
   drawControlLabels();
   positionControls();
@@ -155,36 +156,41 @@ function drawTitle() {
   fill('Black');
   textAlign(CENTER, TOP);
   textSize(24);
-  text('Infobox Positioning Comparison', canvasWidth / 2, margin);
+  text('Infobox Positioning and Event Comparison', canvasWidth / 2, margin);
 }
 
 function drawModeAnnotation() {
   const meta = infoPositionOptions[infoPositionMode];
-  const boxWidth = Math.min(canvasWidth - margin * 2, 640);
-  const x = (canvasWidth - boxWidth) / 2;
+  const boxWidth = canvasWidth - margin * 2;
+  const x = 15;
   const y = margin + 40;
   push();
   fill(meta.highlightColor);
   stroke('#7a7d84');
   strokeWeight(1);
-  rect(x, y, boxWidth, 54, 12);
+  rect(x, y, boxWidth, 30, 12);
   noStroke();
   fill('#1e1e1e');
-  textAlign(CENTER, CENTER);
-  textSize(16);
-  text(meta.annotation, x + boxWidth / 2, y + 26);
+  textAlign(LEFT, CENTER);
+  textSize(14);
+  text("Positioning Mode: " + meta.label + " - " + meta.annotation, 20, y + 16);
   pop();
 }
 
 function drawEventNote() {
   const note = eventModeNotes[eventMode];
-  push();
   noStroke();
+  const x = 15;
+  const y = margin + 74;
+  const boxWidth = canvasWidth - margin * 2;
+  fill('goldenrod');
+  stroke('#7a7d84');
+  rect(x, y, boxWidth, 30, 12);
   fill('#1b4965');
   textSize(14);
-  textAlign(CENTER, TOP);
-  text(note, canvasWidth / 2, margin + 98);
-  pop();
+  textAlign(LEFT, TOP);
+  noStroke();
+  text("Event Mode: " + note, 20, margin + 83);
 }
 
 function drawDiagram() {
@@ -257,7 +263,8 @@ function drawCard(rectInfo, title, body, eventTip) {
   const bodyHeight = rectInfo.h - padding * 2 - 42;
   text(body, rectInfo.x + padding, rectInfo.y + padding + 26, bodyWidth, bodyHeight);
   fill('#546a7b');
-  text(eventTip, rectInfo.x + padding, rectInfo.y + rectInfo.h - 40, bodyWidth, 32);
+  // no room for the event tip
+  // text(eventTip, rectInfo.x + padding, rectInfo.y + rectInfo.h - 40, bodyWidth, 32);
 }
 
 function drawFloatingTooltip(region, title, body, eventTip) {

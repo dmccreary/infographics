@@ -11,7 +11,7 @@ quality_score: 90
 
 # Infobox Positioning Comparison
 
-<iframe src="main.html" height="602px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="622px" width="100%" scrolling="no"></iframe>
 
 [Run the Infobox Positioning Comparison MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
