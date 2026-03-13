@@ -32,18 +32,19 @@ let controlHeight = (controlRows * 35) + 10; // 80px tall control region
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
-let sliderLeftMargin = 140;
+// this is really the left selection list margin
+let sliderLeftMargin = 180;
 let defaultTextSize = 16;
 
 const infoPositionOptions = {
   below: {
     label: 'Below Diagram',
-    annotation: 'Anchors every detail beneath the layout, ideal when you need stacked reading order.',
+    annotation: 'Shows details beneath the regions.',
     highlightColor: 'rgba(255, 224, 178, 0.85)'
   },
   side: {
     label: 'Side Panel',
-    annotation: 'Locks callouts in a persistent right panel so learners can compare without scrolling.',
+    annotation: 'Shows details in a right side panel.',
     highlightColor: 'rgba(197, 231, 255, 0.9)'
   },
   floating: {
@@ -60,8 +61,8 @@ const proConNotes = {
 };
 
 const eventModeNotes = {
-  hover: 'Hover mode: peek at info instantly while gliding across regions.',
-  click: 'Click mode: require deliberate taps so mobile users avoid accidental tooltips.'
+  hover: 'Hover mode: view region details while hovering over regions.',
+  click: 'Click mode: require deliberate clicks on regions.'
 };
 
 const regionData = [
@@ -86,9 +87,9 @@ function setup() {
   const canvas = createCanvas(containerWidth, containerHeight);
   const mainElement = document.querySelector('main');
   canvas.parent(mainElement);
-  textFont('Inter, "Helvetica Neue", Arial, sans-serif');
   textSize(defaultTextSize);
 
+  // create the selection list for the infobox positioning
   infoPositionSelect = createSelect();
   infoPositionSelect.option('Below Diagram', 'below');
   infoPositionSelect.option('Side Panel', 'side');
@@ -101,6 +102,7 @@ function setup() {
     }
   });
 
+  // create the selection list for the hover type
   eventModeSelect = createSelect();
   eventModeSelect.option('Hover', 'hover');
   eventModeSelect.option('Click', 'click');
@@ -126,6 +128,7 @@ function draw() {
   fill('white');
   rect(0, drawHeight, canvasWidth, canvasHeight - drawHeight);
 
+  // Draw the title at the top using a larger font
   drawTitle();
 
   layoutState = computeLayout();
@@ -188,6 +191,7 @@ function drawDiagram() {
   const { regionRects } = layoutState;
   regionRects.forEach((rectInfo, index) => {
     const isActive = index === activeRegionIndex;
+
     push();
     stroke(isActive ? '#1d1d1d' : '#d5d8de');
     strokeWeight(isActive ? 3 : 1);
@@ -202,13 +206,14 @@ function drawDiagram() {
   });
 }
 
+// draws the infobox
 function drawInfoDisplay() {
   if (!layoutState) return;
   const region = activeRegionIndex >= 0 ? regionData[activeRegionIndex] : null;
   const eventTip = eventMode === 'hover'
     ? 'Shown while your pointer stays inside a region.'
     : 'Stays visible until another region is clicked.';
-  const title = region ? `${region.label} insight` : 'Try an infobox position';
+  const title = region ? `${region.label} Details` : 'Select Any Region';
   const body = region ? region.info : 'Hover or click any colored region to populate the infobox, then switch positioning modes to compare.';
 
   if (layoutState.infoBoxRect) {
@@ -220,7 +225,7 @@ function drawInfoDisplay() {
   } else if (infoPositionMode === 'floating' && !region) {
     push();
     noStroke();
-    fill('#1b3a57');
+    fill('black');
     textAlign(CENTER, TOP);
     textSize(16);
     text('Floating tooltips follow the region. Interact to see the drop shadow card.', canvasWidth / 2, layoutState.diagramY + layoutState.diagramHeight + 24);
@@ -260,12 +265,20 @@ function drawFloatingTooltip(region, title, body, eventTip) {
   const tooltipWidth = 260;
   const tooltipHeight = 130;
   let tooltipX = rectInfo.x + rectInfo.w + 18;
-  if (tooltipX + tooltipWidth > canvasWidth - margin) {
+  const maxX = canvasWidth - margin - tooltipWidth;
+  if (tooltipX > maxX) {
     tooltipX = rectInfo.x - tooltipWidth - 18;
   }
-  let tooltipY = rectInfo.y - tooltipHeight - 12;
-  if (tooltipY < margin + 60) {
-    tooltipY = rectInfo.y + rectInfo.h + 12;
+  tooltipX = constrain(tooltipX, margin, maxX);
+
+  // Prefer dropping the tooltip below the region for better readability.
+  let tooltipY = rectInfo.y + rectInfo.h + 16;
+  const maxY = drawHeight - margin - tooltipHeight;
+  if (tooltipY > maxY) {
+    tooltipY = rectInfo.y - tooltipHeight - 16;
+  }
+  if (tooltipY < margin + 40) {
+    tooltipY = margin + 40;
   }
   const tooltipRect = { x: tooltipX, y: tooltipY, w: tooltipWidth, h: tooltipHeight };
   drawCard(tooltipRect, title, body, eventTip);
@@ -392,6 +405,6 @@ function windowResized() {
 
 function updateCanvasSize() {
   const container = document.querySelector('main').getBoundingClientRect();
-  containerWidth = Math.floor(container.width);
-  canvasWidth = containerWidth;
+  containerWidth = container.width;
+  canvasWidth = container.width;
 }
