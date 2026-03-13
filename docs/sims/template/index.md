@@ -1,16 +1,16 @@
 ---
-title: {MICROSIM_NAME}
-description: Description of MicroSim of length ~110–160 characters
-image: {MICROSIM_ID}.png
-og:image: {MICROSIM_ID}.png
+title: MicroSim Template
+description: Starter template for building a new MicroSim. Replace the placeholder content when creating a real activity.
+image: template.png
+og:image: template.png
 ---
-# {MICROSIM_NAME}
+# MicroSim Template
 
 <iframe src="main.html" width="100%" height="552px" scrolling="no"></iframe>
 
-[Run the {MICROSIM_NAME} Fullscreen](./main.html){ .md-button .md-button--primary }
+[Run the MicroSim Template Fullscreen](./main.html){ .md-button .md-button--primary }
 
-[Edit the {MICROSIM_NAME} using the p5.js Editor](https://editor.p5js.org/)
+[Edit the MicroSim Template using the p5.js Editor](https://editor.p5js.org/)
 
 ## About This MicroSim
 

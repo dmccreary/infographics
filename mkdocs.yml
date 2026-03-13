@@ -34,15 +34,22 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
-    - Animal Cell: sims/animal-cell/index.md
-    - Book Levels: sims/book-levels/index.md
-    - Graph Viewer: sims/graph-viewer/index.md
-    - Biogeochemical Cycles: sims/biogeochemical-cycles/index.md
-    - Brewing Beer: sims/brewing-beer/index.md
-    - Comparative Anatomy: sims/comparative-anatomy/index.md
-    - Levels of Interactivity: sims/levels-of-interactivity/index.md
+    - Animal Cell MicroSim: sims/animal-cell/index.md
+    - Biogeochemical Cycles Dashboard: sims/biogeochemical-cycles/index.md
+    - Book Levels MicroSim: sims/book-levels/index.md
+    - Brewing Beer Process Explorer: sims/brewing-beer/index.md
+    - Comparative Anatomy Explorer: sims/comparative-anatomy/index.md
+    - Infobox Positioning Comparison: sims/infobox-positioning-comparison/index.md
+    - Learning Graph Viewer: sims/graph-viewer/index.md
+    - Levels of Interactivity MicroSim: sims/levels-of-interactivity/index.md
     - MicroSim Architecture Overview: sims/microsim-architecture-overview/index.md
-    - ProKaryote vs Eukaryote: sims/prokaryote-eukaryote-comparison/index.md
+    - MicroSim Template: sims/template/index.md
+    - MicroSim Uniqueness Interactive Venn Diagram: sims/microsim-uniqueness/index.md
+    - Prokaryote vs. Eukaryote Cell Comparison: sims/prokaryote-eukaryote-comparison/index.md
+
+
+
+
   
   - Learning Graph:
     - Introduction: learning-graph/index.md

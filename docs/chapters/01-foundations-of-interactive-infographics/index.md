@@ -400,26 +400,43 @@ Type: infographic
 
 **Bloom Level:** Analyze (L4)
 **Bloom Verb:** Compare
-**Learning Objective:** Compare the three infobox positioning strategies (below, side panel, floating tooltip) and identify which is most appropriate for different diagram layouts.
+**Learning Objective:** Compare the three infobox positioning strategies (below, side panel, floating tooltip) and two event modes (hover and click) and identify which is most appropriate for different diagram layouts.
 
-Instructional Rationale: A side-by-side interactive comparison lets learners directly experience each positioning strategy rather than just reading about them. Clicking through the three modes builds intuition for when each approach works best.
+Instructional Rationale: A interactive comparison lets learners directly experience each 
+infobox positioning strategy rather than just reading about them. 
+Controls in the bottom control area allow the user to change how the infobox is
+positioned (below, right side and floating) and what events trigger the infobox
+to be displayed (hover or click)
+Allowing the user to try the three three infobox placement modes 
+and the two event modes (hover and click) builds intuition for when each approach works best.
 
 Visual elements:
-- A sample diagram (simple labeled block diagram with 5 regions) displayed in the center
-- Three toggle buttons at the top: "Below Diagram", "Side Panel", "Floating Tooltip"
-- When each button is active, the infobox behavior changes accordingly:
+- A sample diagram (simple labeled block diagram with 6 rectangular regions labeled "Region 1"
+to "Region 6") displayed in the center of the canvas or offset based in the infobox
+positioning strategy.
+- A three state selection list with the label "InfoBox Positioning:" with select options for "Below Diagram (default)", "Side Panel", "Floating Tooltip"
+- A "Event Mode" selection list with options for "Hover (default)" and "Click"
+- When different "InfoBox Positioning:" selection is active, the infobox behavior changes accordingly:
   - Below: Infobox appears in a fixed area beneath the diagram
   - Side Panel: Infobox appears in a panel to the right of the diagram
   - Floating: Infobox appears as a tooltip near the hovered region
-- A highlighted annotation explaining the current positioning mode
+  - A highlighted annotation explaining the current positioning mode
+- When different "Event Mode" selections are used the
+  different events will trigger an infobox display
+- When the user has not clicked or hovered, text instructions will be display just above
+  the control area.  The text will read "Select an InfoBox positioning option and an event mode option"
 
 Interactive features:
-- Click toggle buttons to switch between positioning modes
-- Hover over any of the 5 regions to trigger the infobox in the current mode
-- Each mode displays a brief pro/con note in the corner
+- Click on the "InfoBox Positioning:" selection list switch between positioning modes
+- Click on the "Event Mode:" selection list to change if the hover or click modes are used
+- Hover over or Click on any of the 6 sample regions to trigger the infobox in the current mode
+- Each mode displays a brief pro/con note in the lower right corner
 
-Canvas layout: Width-responsive, aliceblue background, 600px minimum width
-Color scheme: Blue regions, orange active highlights, white infobox with subtle shadow
+Canvas layout: Width-responsive, aliceblue background in the drawing area. white background for the controls positioned below the drawing area
+Color scheme: Each test region is a dark color with white text and round corners
+Region colors are: Red, Orange, Gold, Green, Blue, Purple
+Regions have a thin light gray border when not selected and a 3 wide back boarder when selected
+The infobox has rounded corners with subtle drop shadow to imply it is above the selection regions
 </details>
 
 ## Events: How Infographics Respond to Users
