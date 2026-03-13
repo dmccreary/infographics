@@ -389,7 +389,7 @@ For intelligent textbooks, the **below-diagram** approach is recommended as the 
 
 #### Diagram: Infobox Positioning Comparison
 
-<iframe src="../../sims/infobox-positioning-comparison/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/infobox-positioning-comparison/main.html" width="100%" height="622px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Infobox Positioning Comparison</summary>
@@ -506,34 +506,41 @@ This pattern — detect the event, identify the target, update the display — i
 <iframe src="../../sims/event-handling-flow/main.html" width="100%" height="500px" scrolling="no"></iframe>
 
 <details markdown="1">
-<summary>Event Handling Flow</summary>
+<summary>Event Handling Data Flow Diagram</summary>
 Type: diagram
 **sim-id:** event-handling-flow<br/>
-**Library:** p5.js<br/>
+**Library:** mermaid.js with custom Javascript for drawing the infobox to the right of the flowchart<br/>
 **Status:** Specified
 
 **Bloom Level:** Understand (L2)
 **Bloom Verb:** Explain
 **Learning Objective:** Explain the three-step event handling pattern (detect event, identify region, update display) that drives all interactive infographics.
 
-Instructional Rationale: A step-through flowchart with concrete examples at each stage helps learners trace the process with real data. Stepping through each phase builds understanding of the event → response pipeline.
+Instructional Rationale: A three step vertical top-down flowchart with a detailed explanation of
+what happens at each step. Stepping through each phase builds understanding of the event → response pipeline and the critical processing at each step.
 
 Visual elements:
-- A horizontal flowchart with three main stages:
-  1. "Event Detected" (blue box) — shows icons for Hover, Click, and Selection
-  2. "Region Identified" (orange box) — shows hit detection checking mouse coordinates against region boundaries
-  3. "Display Updated" (green box) — shows infobox appearing and region highlighting
-- Arrows connecting the three stages with labeled transitions
-- Below the flowchart, a live demo area with a small sample diagram (3 regions)
-- When the user interacts with the sample diagram, the corresponding flowchart stage lights up in real time
+- A vertical flowchart on the left 50% of the canvas with three main elements:
+  1. "Event Detected" (blue box) at the top of a three step flowchart
+  2. "Region Identified" (orange box) — middle box of a three step flowchart
+  3. "Display Updated" (green box) — bottom box of a three step flowchart
+
+- Two arrows connecting the three stages 1 -> 2 and 2 -> 3
+- To the right of the flowchart, a floating infobox that shows the details of each step
+- When the user clicks on the diagram on the left, the corresponding infobox is
+shown up in real time
+- An initial infobox has the instructions "Select an item in the flowchart to the left to view the details of that step."
 
 Interactive features:
-- Hover over the sample diagram regions to see the flowchart stages highlight in sequence
-- Click a flowchart stage to see a detailed explanation of what happens at that step
-- A "Slow Motion" toggle that adds a visible delay between stages so students can observe the sequence
+- Hover over the flowchart item region on the left to see a brief summary tooltip of that step
+- Click a flowchart item to see a detailed explanation of what happens at that step
 
-Canvas layout: Width-responsive, aliceblue background
+Canvas layout: Width-responsive, aliceblue background, infobox in the right has a white background
 Color scheme: Blue for events, orange for processing, green for output
+Place the mermaid flowchart data and annotations in a data.json file
+Place the javascript in event-handling-flow.js in the microsim directory
+Place the style sheet in a file called style.css in the microsim directory
+Reference the data.json and the style.css in the microsims directory
 </details>
 
 ## Putting It All Together: From Concept to Experience

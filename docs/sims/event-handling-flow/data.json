@@ -1,0 +1,27 @@
+{
+  "title": "Event Handling Data Flow",
+  "simId": "event-handling-flow",
+  "subtitle": "Detect → identify → update for every interaction",
+  "instructions": "Select an item in the flowchart to the left to view the details of that step.",
+  "mermaid": "flowchart TD\n    EventDetected[Event Detected]:::eventNode\n    RegionIdentified[Region Identified]:::processNode\n    DisplayUpdated[Display Updated]:::outputNode\n\n    EventDetected --> RegionIdentified --> DisplayUpdated\n\n    classDef eventNode fill:#1f77b4,stroke:#0a365c,stroke-width:3px,color:#ffffff,font-size:18px,font-weight:600\n    classDef processNode fill:#f39c12,stroke:#8a5401,stroke-width:3px,color:#1f1f1f,font-size:18px,font-weight:600\n    classDef outputNode fill:#2ca02c,stroke:#0f4120,stroke-width:3px,color:#ffffff,font-size:18px,font-weight:600\n    linkStyle default stroke:#4d5c6b,stroke-width:3px\n",
+  "nodes": [
+    {
+      "id": "EventDetected",
+      "label": "Event Detected",
+      "summary": "Input hardware (mouse, touch, key, sensor) fires an event that the runtime captures.",
+      "details": "<p>The operating system or browser normalizes a raw user gesture into an event with type, timestamp, and coordinates.</p><p>The infographic's listener subscribes to the relevant event channel (like <code>pointerdown</code> or <code>keyup</code>) and places the event into a queue so it can be handled deterministically.</p><p>Instrumentation hooks capture metadata so designers can observe how often the step is triggered.</p>"
+    },
+    {
+      "id": "RegionIdentified",
+      "label": "Region Identified",
+      "summary": "Hit-testing determines which interactive region or layer owns the event.",
+      "details": "<p>The event dispatcher compares the event location with the registered regions for the infographic.</p><p>Spatial indexing and z-order rules resolve conflicts when multiple layers overlap.</p><p>Once ownership is decided, the sim fetches the region's state machine so it knows what transition should run next.</p>"
+    },
+    {
+      "id": "DisplayUpdated",
+      "label": "Display Updated",
+      "summary": "State changes drive new visuals, instructions, and animations on screen.",
+      "details": "<p>The owning region mutates its state (selection, hover, active path) and recomputes derived visuals.</p><p>Rendering hooks update SVG fills, text labels, and the explanatory infobox so students can immediately see the effect of their action.</p><p>Finally, the sim queues any follow-up events (timers, accessibility announcements) and waits for the next interaction.</p>"
+    }
+  ]
+}
