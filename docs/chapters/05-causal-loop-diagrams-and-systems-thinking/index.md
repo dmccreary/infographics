@@ -58,23 +58,25 @@ By the end of this chapter, you will be able to:
 
 ## Introduction
 
-Every instructional designer has faced the challenge of explaining a complex system to students. How does climate change accelerate? Why do some schools improve rapidly while others stagnate? What makes a technology platform grow explosively? Traditional linear diagrams — flowcharts, timelines, and process arrows — are excellent tools for sequential processes, but they fall short when the output of a system feeds back to influence its own input. That is where causal loop diagrams shine.
+Every experienced instructional designer has faced the challenge of explaining a complex system to learners. How does climate change accelerate? Why do some schools improve rapidly while others stagnate? What makes some technology platforms grow explosively? Traditional linear diagrams — flowcharts, timelines, and process arrows — are excellent tools for sequential processes, but they fall short when the output of a system feeds back to influence its own input. That is where causal loop diagrams shine.
 
-Causal loop diagrams (CLDs) are a cornerstone of systems thinking, a discipline that examines how components of a system interact and influence one another over time. Unlike the linear infographic types you explored in earlier chapters, CLDs embrace **circular causality** — the idea that effects can loop back and become causes. This circular structure is what makes CLDs uniquely suited for representing feedback-driven phenomena in education, business, ecology, public health, and virtually every domain where interconnected variables shape outcomes.
+Causal loop diagrams (CLDs) are a cornerstone of [systems thinking](../../glossary.md#systems-thinking), a discipline that examines how components of a system interact and influence one another over time. Unlike the linear infographic types you explored in earlier chapters, CLDs embrace **circular causality** — the idea that effects can loop back and become causes. This circular structure is what makes CLDs uniquely suited for representing feedback-driven phenomena in education, business, ecology, public health, and virtually every domain where interconnected variables shape outcomes.  A book on interactive infographics would not be compete without
+a chapter on CLDs.
 
-In this chapter, you will build your understanding from the ground up: starting with the foundational philosophy of systems thinking, moving through the vocabulary of variables, links, and polarity, and arriving at the ability to read, construct, and critique complete causal loop diagrams. Along the way, you will encounter interactive MicroSims that let you experiment with feedback dynamics firsthand — an approach that transforms an abstract modeling technique into a hands-on design skill.
+In this chapter, you will build your understanding from the ground up: starting with the foundational philosophy of systems thinking, moving through the vocabulary of variables, links, and polarity, and arriving at the ability to read, construct, and critique complete causal loop diagrams. We will also introduce you to JavaScript libraries that are ideally suited for
+creating CLDs.  Along the way, you will encounter interactive MicroSims that let you experiment with feedback dynamics firsthand — an approach that transforms an abstract modeling technique into a hands-on design skill.
 
 ## Systems Thinking: Seeing the Whole
 
 **Systems thinking** is an approach to understanding the world that focuses on relationships and interactions rather than isolated components. Instead of asking "What caused this?", a systems thinker asks "What patterns of interaction produced this behavior over time?" This shift in perspective is transformative for instructional designers because most educational topics — from cell biology to economics to software engineering — involve systems whose behavior emerges from feedback among interconnected parts.
 
-Consider a simple example: student performance in a course. A linear thinker might say "good teaching leads to good grades." A systems thinker recognizes a richer picture:
+Consider a simple example: student performance in a course. A linear thinker might say "good teaching with interactive infographics leads to good grades." A systems thinker recognizes a richer picture:
 
-- Engaging instruction increases student motivation
-- Higher motivation increases study effort
-- Greater effort improves performance
-- Better performance boosts confidence
-- Higher confidence further increases motivation
+1. Engaging instruction with interactive microsims increases student engagement and motivation
+2. Higher motivation increases study effort
+3. Greater effort improves performance
+4. Better performance boosts confidence
+5. Higher confidence further increases motivation
 
 This is a **loop** — performance feeds back into the very factors that produce it. Systems thinking gives us the conceptual framework to see these loops, and causal loop diagrams give us the visual language to draw them.
 
@@ -87,7 +89,7 @@ This is a **loop** — performance feeds back into the very factors that produce
 
 !!! mascot-thinking "Key Insight"
     <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Percy is thinking">
-    Systems thinking does not replace linear thinking — it extends it. When you recognize that a process has feedback (where outputs influence future inputs), that is your signal to reach for a causal loop diagram instead of a flowchart.
+    Systems thinking does not replace linear thinking — it extends it. When you recognize that a process has feedback (where outputs influence future inputs), that is your signal to reach for a causal loop diagram instead of a simple linear flowchart or a linear workflow.
 
 ## Circular Causality
 
@@ -124,6 +126,13 @@ Poorly chosen variable names create confusion. Avoid binary states ("Is Enrolled
 A **causal link** is a directed arrow connecting two variables, indicating that a change in the first variable causes a change in the second. The arrow points from the cause to the effect. For example, an arrow from "Study Hours" to "Exam Score" indicates that changes in study hours cause changes in exam scores.
 
 Not every correlation is a causal link. When constructing CLDs, focus on relationships where a change in one variable **directly** produces a change in another, not merely where two variables happen to move together.
+
+!!! mascot-warning "Causality is Not Movement of Atoms or Bits"
+    <img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Percy warns you about how to not confused causality with the movement of atoms or bits">
+    One common mistake of people new to designing causal loop diagrams is confusing
+    the movement of atoms or bits (information flows) with causality.  Getting
+    more data can cause your predictive model to improve, but the flow of data is NOT the
+    same as causality.  More bad data can cause your predictive model to become worse!
 
 ### Polarity Indicators
 
