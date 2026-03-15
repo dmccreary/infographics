@@ -1,0 +1,14 @@
+{
+  "sim_id": "process-diagram-variants",
+  "diagram_name": "Process Diagram Variants",
+  "chapter_number": 3,
+  "chapter_title": "Presentation Slide Art Diagrams",
+  "chapter_dir": "03-presentation-slide-art-diagrams",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Compare",
+  "learning_objective": "Compare the five process diagram subtypes by viewing their visual renderings side by side and explaining how each visual metaphor communicates a different relationship between stages.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: diagram\n**sim-id:** process-diagram-variants<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand (L2)\n**Bloom Verb:** Compare\n**Learning Objective:** Compare the five process diagram subtypes by viewing their visual renderings side by side and explaining how each visual metaphor communicates a different relationship between stages.\n\nInstructional Rationale: Placing all five process subtypes side by side allows learners to directly compare their visual structures. Clicking a subtype reveals its definition and use cases, making the comparison active rather than passive.\n\nVisual elements:\n- Five miniature process diagrams arranged horizontally (or 2 rows on narrow screens):\n  1. Process Arrows: 3 blue boxes connected by gray arrows, left to right\n  2. Chevron Process: 4 interlocking orange chevron shapes\n  3. Timeline: A horizontal gray line with 4 circular event markers above and below it, dates underneath\n  4. Gear Process: 3 interlocking green gear icons\n  5. Step Up: 4 ascending rectangular steps in purple, staircase going upper right\n- Each diagram is labeled with its subtype name\n- Below, a detail panel shows the selected subtype's description, best use cases, and an example scenario\n- Default: \"Click a diagram type to learn when to use it.\"\n\nInteractive features:\n- Hover highlights the diagram thumbnail with a glowing border\n- Click selects a subtype and populates the detail panel\n- The detail panel includes: Name, Visual Metaphor, Best For, Example Scenario\n\nCanvas layout: Width-responsive, aliceblue background, minimum 600px\nColor scheme: Blue (arrows), orange (chevron), teal (timeline), green (gear), purple (step up)"
+}

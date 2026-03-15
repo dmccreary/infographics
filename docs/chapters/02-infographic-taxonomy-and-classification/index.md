@@ -1,12 +1,12 @@
 ---
-title: Infographic Taxonomy and Classification
-description: A comprehensive classification system for organizing infographic types by purpose, structural format, visual complexity, audience, and content domain.
+title: Interactive Infographic Taxonomy and Classification
+description: A comprehensive classification system for organizing interactive infographic types by purpose, structural format, visual complexity, audience, and content domain.
 generated_by: claude skill chapter-content-generator
 date: 2026-03-13 18:19:25
 version: 0.05
 ---
 
-# Infographic Taxonomy and Classification
+# Interactive Infographic Taxonomy and Classification
 
 ## Summary
 

@@ -1,0 +1,14 @@
+{
+  "sim_id": "devtools-navigator",
+  "diagram_name": "Browser DevTools Navigator",
+  "chapter_number": 7,
+  "chapter_title": "Web Fundamentals: JavaScript and Responsive Design",
+  "chapter_dir": "07-web-fundamentals-javascript-and-responsive-design",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "Identify",
+  "learning_objective": "Identify the key panels of browser developer tools (Console, Network, Performance, Elements) and recall what debugging information each panel provides for infographic development.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: infographic\n**sim-id:** devtools-navigator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Remember (L1)\n**Bloom Verb:** Identify\n**Learning Objective:** Identify the key panels of browser developer tools (Console, Network, Performance, Elements) and recall what debugging information each panel provides for infographic development.\n\n**Instructional Rationale:** A labeled interactive diagram with hover-to-reveal details is appropriate because the Remember objective requires learners to associate each DevTools panel with its purpose. Hover interactions reinforce name-to-function associations through repeated retrieval practice.\n\n**Canvas Layout:**\n- Drawing area (aliceblue): a stylized representation of a browser DevTools window with labeled tab panels\n- Bottom info panel (white, silver border): description of the currently hovered tab\n\n**Visual Elements:**\n- A simulated browser DevTools window with four tabs across the top:\n  - \"Console\" (blue tab)\n  - \"Network\" (green tab)\n  - \"Performance\" (orange tab)\n  - \"Elements\" (purple tab)\n- Below the tabs: a preview area showing a representative screenshot/mockup of what each panel looks like\n- Console preview: shows colored log lines (white, yellow, red)\n- Network preview: shows a waterfall chart of requests\n- Performance preview: shows a flame chart timeline\n- Elements preview: shows a DOM tree with highlighted element\n\n**Interactive Controls:**\n- Hovering over a tab highlights it and updates the preview and info panel\n- Clicking a tab \"selects\" it (stays active until another is clicked)\n- Info panel shows: panel name, keyboard shortcut, 3-4 bullet points describing infographic-relevant uses\n- A \"Quiz Mode\" toggle that hides panel names and asks the user to identify each panel by its preview\n\n**Behavior:**\n- Smooth transitions between panel previews\n- Quiz Mode: panels shown without labels; clicking a panel reveals its name with correct/incorrect feedback\n- Responsive to window resize\n\n**Default Parameters:**\n- Start with Console tab selected\n- Quiz Mode: off\n- Canvas width: responsive\n- Canvas height: 500px\n\nImplementation: p5.js with stylized DevTools mockup"
+}

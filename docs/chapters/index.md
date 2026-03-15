@@ -5,7 +5,7 @@ This textbook is organized into 14 chapters covering 350 concepts.
 ## Chapter Overview
 
 1. [Foundations of Interactive Infographics](01-foundations-of-interactive-infographics/index.md) - Introduces core definitions including infographics, intelligent textbooks, MicroSims, iframes, regions, infoboxes, and event handling fundamentals.
-2. [Infographic Taxonomy and Classification](02-infographic-taxonomy-and-classification/index.md) - Classifies infographics by purpose, format, complexity, medium, and audience targeting.
+2. [Interactive Infographic Taxonomy and Classification](02-infographic-taxonomy-and-classification/index.md) - Classifies interactive infographics by purpose, format, complexity, medium, and audience targeting.
 3. [Presentation Slide Art Diagrams](03-presentation-slide-art-diagrams/index.md) - Covers SmartArt-style diagram types: list, process, cycle, hierarchy, relationship, pyramid, funnel, matrix, and picture diagrams.
 4. [Visual Problem-Solving Frameworks](04-visual-problem-solving-frameworks/index.md) - Explores Dan Roam's six visual frameworks, the Six W's framework, and the SQVID decision framework.
 5. [Causal Loop Diagrams and Systems Thinking](05-causal-loop-diagrams-and-systems-thinking/index.md) - Introduces systems thinking, circular causality, feedback loops, polarity, and CLD best practices.

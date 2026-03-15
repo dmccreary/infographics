@@ -1,0 +1,14 @@
+{
+  "sim_id": "smartart-category-quiz",
+  "diagram_name": "SmartArt Category Matching Quiz",
+  "chapter_number": 3,
+  "chapter_title": "Presentation Slide Art Diagrams",
+  "chapter_dir": "03-presentation-slide-art-diagrams",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "Identify",
+  "learning_objective": "Identify the correct SmartArt category for a given diagram description by matching descriptions to category names.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: microsim\n**sim-id:** smartart-category-quiz<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Remember (L1)\n**Bloom Verb:** Identify\n**Learning Objective:** Identify the correct SmartArt category for a given diagram description by matching descriptions to category names.\n\nInstructional Rationale: A matching quiz at the Remember level reinforces the vocabulary introduced throughout the chapter. By presenting brief descriptions and asking learners to select the correct category, this MicroSim tests recognition of the eight SmartArt categories and their defining characteristics.\n\nVisual elements:\n- A description card at the top showing a brief characterization of a diagram type (1-2 sentences)\n- Eight category buttons arranged in two rows of four below the card:\n  - Row 1: List, Process, Cycle, Hierarchy\n  - Row 2: Relationship, Pyramid, Funnel, Picture\n  - Each button has the category name and a small icon matching the gallery\n- Feedback area below buttons showing correct/incorrect with brief explanation\n- Score tracker: \"8 of 12 correct\"\n- Progress bar showing completion\n\nData (store in data.json):\n- 12 description-category pairs\n- Example: \"A triangle divided into horizontal layers where the base is the broadest and the top is the narrowest, showing that higher levels are rarer.\" → Pyramid\n- Example: \"Items arranged in a circle with arrows pointing clockwise from each item to the next, looping back to the start.\" → Cycle\n- Example: \"A central concept connected by spokes to five surrounding concepts.\" → Relationship (Radial Diagram)\n\nInteractive features:\n- Click a category button to submit answer\n- Immediate feedback with correct answer highlighted in green\n- If wrong, the selected button flashes red and the correct one highlights green\n- Auto-advance to next question after 2 seconds\n- Final score screen with percentage and option to retry\n\nCanvas layout: Width-responsive, aliceblue background, minimum 600px width\nColor scheme: Category buttons use the same color scheme as the gallery for consistency"
+}

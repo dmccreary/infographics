@@ -1,0 +1,14 @@
+{
+  "sim_id": "framework-decision-pipeline",
+  "diagram_name": "Framework Decision Pipeline",
+  "chapter_number": 4,
+  "chapter_title": "Visual Problem-Solving Frameworks",
+  "chapter_dir": "04-visual-problem-solving-frameworks",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "Examine",
+  "learning_objective": "Examine how the three frameworks (Six W's, Six Frameworks, SQVID) connect as a decision pipeline by tracing a communication scenario through all three stages.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: diagram\n**sim-id:** framework-decision-pipeline<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze (L4)\n**Bloom Verb:** Examine\n**Learning Objective:** Examine how the three frameworks (Six W's, Six Frameworks, SQVID) connect as a decision pipeline by tracing a communication scenario through all three stages.\n\nInstructional Rationale: An Analyze-level activity requires learners to see the relationships between the three frameworks. By presenting scenarios and asking learners to trace the decision through all three stages, this MicroSim builds understanding of how the frameworks compose into a complete visual problem-solving method.\n\nVisual elements:\n- A three-stage horizontal pipeline at the top:\n  - Stage 1: \"Identify the W\" (blue box) — shows the six W questions as clickable options\n  - Stage 2: \"Select the Framework\" (orange box) — shows the matching visual type (auto-selected based on Stage 1, but can be overridden)\n  - Stage 3: \"Set SQVID\" (green box) — shows five mini-sliders\n- Arrows connecting the three stages left to right\n- Below the pipeline, a scenario panel with a communication challenge description\n- At the bottom, a result panel showing: \"For this scenario, the recommended visual is a [framework] drawn in a [SQVID description] style.\"\n- A \"New Scenario\" button loads the next challenge from data.json\n\nInteractive features:\n- Read the scenario, then click one of the six W options in Stage 1\n- Stage 2 auto-highlights the matching framework (learner can override if they disagree)\n- In Stage 3, adjust the five SQVID mini-sliders\n- Click \"Check\" to see the recommended answer with explanation\n- 6 scenarios in data.json covering all six question types\n\nData (store in data.json):\n- Array of scenario objects with: description, correctW, correctFramework, recommendedSQVID (object with 5 values), explanation\n- Example: \"A chemistry teacher wants to show students what happens when sodium is dropped into water — the molecular rearrangement step by step.\" → How, Flowchart, {S: Elaborate, Q: Qualitative, V: Execution, I: Individual, D: Delta}\n\nCanvas layout: Width-responsive, aliceblue background, minimum 600px width\nColor scheme: Blue (Stage 1), orange (Stage 2), green (Stage 3)"
+}

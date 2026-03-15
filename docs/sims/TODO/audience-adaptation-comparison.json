@@ -1,0 +1,14 @@
+{
+  "sim_id": "audience-adaptation-comparison",
+  "diagram_name": "Audience Adaptation Comparison",
+  "chapter_number": 2,
+  "chapter_title": "Infographic Taxonomy and Classification",
+  "chapter_dir": "02-infographic-taxonomy-and-classification",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Compare",
+  "learning_objective": "Compare how the same dataset is presented differently for three audience types (general public, professional, stakeholder) and explain why the differences exist.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: diagram\n**sim-id:** audience-adaptation-comparison<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand (L2)\n**Bloom Verb:** Compare\n**Learning Objective:** Compare how the same dataset is presented differently for three audience types (general public, professional, stakeholder) and explain why the differences exist.\n\nInstructional Rationale: Showing three versions of the same information — adapted for different audiences — makes the concept of audience targeting concrete and immediately visible. Learners can toggle between versions to see how vocabulary, complexity, and emphasis shift.\n\nVisual elements:\n- A topic label at the top: \"Topic: Student Engagement with Interactive Infographics\"\n- Three side-by-side panels, each showing the same data adapted for a different audience:\n  1. General Public panel (blue border): Large bold percentage \"78% of students prefer interactive content\", simple bar chart with 2 bars, minimal text\n  2. Professional panel (orange border): Detailed bar chart with 5 metrics, axis labels with statistical notation, technical vocabulary like \"engagement rate\" and \"completion ratio\"\n  3. Stakeholder panel (green border): Budget-focused view with cost-per-student data, ROI projection, action-oriented heading \"Recommended: Expand interactive content\"\n- Below the panels, an infobox showing a brief explanation of the design choices for the currently selected panel\n\nInteractive features:\n- Click a panel to select it and display the design rationale in the infobox below\n- Hover over a panel to highlight its border\n- Default state: All three panels visible with instruction \"Click a panel to see why it was designed this way.\"\n\nCanvas layout: Width-responsive, aliceblue background, three panels divide evenly across available width\nColor scheme: Blue, orange, green for the three audience types"
+}

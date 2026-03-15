@@ -375,6 +375,9 @@ A **relationship diagram** shows how items connect, overlap, or relate to each o
 
 ### Venn Diagram
 
+<iframe src="../../sims/microsim-uniqueness/main.html" width="100%" height="460px" scrolling="no"></iframe>
+[Run the MicroSim Uniqueness Fullscreen](../../sims/microsim-uniqueness/main.html)
+
 A **Venn diagram** uses overlapping circles to show the relationships between sets. Items in the overlap regions belong to multiple sets simultaneously. Venn diagrams are effective for comparing 2-4 categories and highlighting what they share.
 
 Interactive Venn diagrams become powerful learning tools when learners can click on overlap regions to see specific examples of items that belong to multiple categories. For instance, a Venn diagram comparing "Educational Infographics" and "Analytical Infographics" might show "Data-driven concept explanations" in the overlap.

@@ -65,14 +65,17 @@ nav:
     - Book Levels MicroSim: sims/book-levels/index.md
     - Brewing Beer Process Explorer: sims/brewing-beer/index.md
     - Comparative Anatomy Explorer: sims/comparative-anatomy/index.md
-    - Event Handling Flow: sims/event-handling-flow/index.md
+    - Event handling data flow: sims/event-handling-flow/index.md
     - Infobox Positioning Comparison: sims/infobox-positioning-comparison/index.md
+    - Interactive Infographic Taxonomy Tree: sims/infographic-taxonomy-tree/index.md
     - Learning Graph Viewer: sims/graph-viewer/index.md
     - Levels of Interactivity MicroSim: sims/levels-of-interactivity/index.md
     - MicroSim Architecture Overview: sims/microsim-architecture-overview/index.md
     - MicroSim Template: sims/template/index.md
     - MicroSim Uniqueness Interactive Venn Diagram: sims/microsim-uniqueness/index.md
     - Prokaryote vs. Eukaryote Cell Comparison: sims/prokaryote-eukaryote-comparison/index.md
+
+
 
   - Stories:
     - Overview: stories/index.md

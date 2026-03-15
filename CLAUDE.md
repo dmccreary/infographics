@@ -1,5 +1,14 @@
 # CLAUDE.md
 
+## Interactive Infographics — Core Terminology
+
+This book is about **interactive infographics**, not static infographics. Always use the term "interactive infographic" (not just "infographic") when generating content. The key distinction:
+
+- **Static infographics** are one-way broadcasts — the designer controls what the viewer sees, with no feedback loop.
+- **Interactive infographics** let the learner control pacing, detail level, and focus. Critically, they produce an **event stream** (hover, click, drag, expand/collapse) that can be monitored to understand what the user is doing, enabling assessment, adaptive content, and learning analytics.
+
+The ability to monitor the user's interaction event stream is what makes interactive infographics essential for education. When generating chapter content, MicroSim descriptions, lesson plans, or any other material, always emphasize this distinction and frame the discussion around interactivity and feedback.
+
 ## Build Process
 
 Use `mkdocs build` to check the `mkdocs.yml` file is valid.

@@ -1,0 +1,14 @@
+{
+  "sim_id": "interactive-cycle-builder",
+  "diagram_name": "Interactive Cycle Builder",
+  "chapter_number": 3,
+  "chapter_title": "Presentation Slide Art Diagrams",
+  "chapter_dir": "03-presentation-slide-art-diagrams",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "Construct",
+  "learning_objective": "Construct a basic cycle diagram by adding labeled nodes and connecting them in sequence, demonstrating understanding of cycle structure.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: microsim\n**sim-id:** interactive-cycle-builder<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply (L3)\n**Bloom Verb:** Construct\n**Learning Objective:** Construct a basic cycle diagram by adding labeled nodes and connecting them in sequence, demonstrating understanding of cycle structure.\n\nInstructional Rationale: An Apply-level activity requires learners to use their knowledge of cycle diagrams to build one. By adding nodes and labels interactively, learners internalize the structural rules (circular layout, directional arrows, return to start) through direct manipulation.\n\nVisual elements:\n- A circular drawing area where nodes appear around an invisible circle\n- A text input field at the bottom for entering node labels\n- An \"Add Node\" button that places the next node at the correct position on the circle\n- Nodes appear as colored circles with the entered label text inside\n- Arrows automatically connect each node to the next in clockwise order\n- When 3+ nodes exist, a dashed arrow connects the last node back to the first, completing the cycle\n- A \"Clear\" button resets the diagram\n- A counter showing \"Nodes: 4 of 8 max\"\n\nDefault state:\n- Empty circle outline with instruction text: \"Type a label and click Add Node to build your cycle diagram.\"\n- Pre-populated example labels appear as placeholder text in the input: \"Plan\", \"Do\", \"Check\", \"Act\"\n\nInteractive features:\n- Type a label in the text input and press Enter or click \"Add Node\"\n- Nodes appear sequentially around the circle at equally-spaced positions\n- Hover over a node to see it highlighted\n- Click a node to select it and edit its label\n- Maximum 8 nodes (enough for most cycle diagrams)\n- Arrows animate into place when a new node is added\n\nCanvas layout: Width-responsive, aliceblue drawing region (500px height), white control region with input field and buttons (50px)\nColor scheme: Blue nodes, orange arrows, green completion arrow (last-to-first)"
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "visual-framework-quiz",
+  "diagram_name": "Visual Framework Matching Quiz",
+  "chapter_number": 4,
+  "chapter_title": "Visual Problem-Solving Frameworks",
+  "chapter_dir": "04-visual-problem-solving-frameworks",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "Use",
+  "learning_objective": "Use the Six W's and Dan Roam's six visual frameworks to select the correct visual type for a given communication scenario.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: microsim\n**sim-id:** visual-framework-quiz<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply (L3)\n**Bloom Verb:** Use\n**Learning Objective:** Use the Six W's and Dan Roam's six visual frameworks to select the correct visual type for a given communication scenario.\n\nInstructional Rationale: An Apply-level quiz presents novel scenarios that the learner has not seen before and asks them to apply the framework. This tests transfer — can the learner use the Six W's mapping on new problems, not just recall the table?\n\nVisual elements:\n- A scenario card at the top describing a communication challenge (3-4 sentences)\n- Two selection rows below:\n  - Row 1 \"What W?\": Six buttons — Who/What, How Much, Where, When, How, Why\n  - Row 2 \"What Visual?\": Six buttons — Portrait, Chart, Map, Timeline, Flowchart, Multi-Variable Plot\n- A \"Check Answer\" button\n- Feedback panel showing:\n  - Both selections evaluated independently (green check or red X)\n  - Explanation of the correct answer\n  - Connection between the W and the visual type\n- Score tracker: \"Scenario 4 of 8 — Score: 3/3\"\n\nData (store in data.json):\n- 8 scenario objects with: description, correctW, correctFramework, explanation\n- Example: \"A public health official wants to show how vaccination rates have risen and fallen across different decades.\" → When, Timeline\n- Example: \"A startup CEO wants to demonstrate why their product outperforms competitors across customer satisfaction, price, and feature completeness.\" → Why, Multi-Variable Plot\n\nInteractive features:\n- Click one button in each row, then click \"Check Answer\"\n- Immediate visual feedback per row\n- Auto-advance after 2 seconds or click \"Next\"\n- Final score screen with option to retry\n\nCanvas layout: Width-responsive, aliceblue background, minimum 600px width\nColor scheme: Row 1 buttons match the Six W's colors; Row 2 buttons match the framework colors from the gallery"
+}

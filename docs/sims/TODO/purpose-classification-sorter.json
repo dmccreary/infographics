@@ -1,0 +1,14 @@
+{
+  "sim_id": "purpose-classification-sorter",
+  "diagram_name": "Purpose Classification Sorter",
+  "chapter_number": 2,
+  "chapter_title": "Infographic Taxonomy and Classification",
+  "chapter_dir": "02-infographic-taxonomy-and-classification",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Classify",
+  "learning_objective": "Classify example infographic descriptions into the correct purpose category (Educational, Analytical, Persuasive, Promotional).",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: microsim\n**sim-id:** purpose-classification-sorter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand (L2)\n**Bloom Verb:** Classify\n**Learning Objective:** Classify example infographic descriptions into the correct purpose category (Educational, Analytical, Persuasive, Promotional).\n\nInstructional Rationale: A classification activity requires learners to read a scenario, identify purpose-related cues, and make a judgment — directly exercising the \"classify\" verb at the Understand level. Immediate feedback with explanations reinforces correct mental models.\n\nVisual elements:\n- A scenario card at the top displaying a brief description of an infographic (2-3 sentences)\n- Four colored category bins at the bottom, one per purpose type:\n  - Educational (blue) — \"Teach a concept\"\n  - Analytical (orange) — \"Reveal data patterns\"\n  - Persuasive (green) — \"Argue a point\"\n  - Promotional (purple) — \"Market a product\"\n- A feedback area below the bins showing \"Correct!\" or \"Not quite — here's why...\" with a brief explanation\n- A score tracker in the top-right: \"3 of 8 correct\"\n- A progress bar showing how many scenarios the learner has completed\n\nInteractive features:\n- Click a category bin to classify the current scenario\n- After selection, feedback appears explaining why the answer is correct or incorrect\n- Click \"Next\" button to advance to the next scenario\n- 8-10 scenarios loaded from a data.json file\n\nData (store in data.json):\n- Array of scenario objects, each with: description, correctCategory, explanation\n- Example scenario: \"A university creates a visual showing declining student satisfaction scores alongside rising textbook costs, then presents their new interactive textbook initiative as the solution.\" → Persuasive\n\nCanvas layout: Width-responsive, aliceblue background drawing region, white control region\nColor scheme: Blue primary, orange accent"
+}

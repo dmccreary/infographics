@@ -387,9 +387,11 @@ A well-designed infobox typically contains:
 
 For intelligent textbooks, the **below-diagram** approach is recommended as the default because it works reliably across all screen sizes and never blocks the student's view of the infographic.
 
-#### Diagram: Infobox Positioning Comparison
+#### Diagram: Infobox Positioning and Event Comparison
 
 <iframe src="../../sims/infobox-positioning-comparison/main.html" width="100%" height="622px" scrolling="no"></iframe>
+
+[Run the Infobox Positioning and Event Comparison Infographic Fullscreen](../../sims/infobox-positioning-comparison/main.html){ .md-button}
 
 <details markdown="1">
 <summary>Infobox Positioning Comparison</summary>

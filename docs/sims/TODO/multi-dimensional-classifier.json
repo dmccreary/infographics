@@ -1,0 +1,14 @@
+{
+  "sim_id": "multi-dimensional-classifier",
+  "diagram_name": "Multi-Dimensional Classification Explorer",
+  "chapter_number": 2,
+  "chapter_title": "Infographic Taxonomy and Classification",
+  "chapter_dir": "02-infographic-taxonomy-and-classification",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "Apply",
+  "learning_objective": "Apply the five-dimension taxonomy to classify real-world infographic examples by selecting the correct value on each dimension.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: microsim\n**sim-id:** multi-dimensional-classifier<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply (L3)\n**Bloom Verb:** Apply\n**Learning Objective:** Apply the five-dimension taxonomy to classify real-world infographic examples by selecting the correct value on each dimension.\n\nInstructional Rationale: An Apply-level activity requires learners to use the taxonomy on novel examples. By presenting real infographic descriptions and asking learners to select values on each dimension, this MicroSim bridges the gap between memorizing categories and actually using them for design decisions.\n\nVisual elements:\n- A scenario panel at the top describing a real-world infographic (3-4 sentences)\n- Five horizontal rows below, one per taxonomy dimension:\n  - Each row has a dimension label on the left and clickable option buttons on the right\n  - Purpose row: [Educational] [Analytical] [Persuasive] [Promotional]\n  - Format row: [Linear] [Hierarchical] [Comparative] [Circular] [Radial]\n  - Complexity row: [Minimalist] [Detailed]\n  - Audience row: [General Public] [Professional] [Stakeholder]\n  - Domain row: [Science] [Business] [Technology] [Education] [Health] [History]\n- A \"Check Answer\" button at the bottom\n- A feedback panel showing correctness for each dimension with brief explanations\n- A score tracker: \"Scenario 2 of 6\"\n\nInteractive features:\n- Click an option in each row to select it (highlighted state)\n- Click \"Check Answer\" to see which dimensions were classified correctly (green check or red X per row)\n- Each incorrect answer shows a brief explanation of the correct choice\n- Click \"Next Scenario\" to advance\n- 6 scenarios loaded from a data.json file\n\nData (store in data.json):\n- Array of scenario objects with: description, correctPurpose, correctFormat, correctComplexity, correctAudience, correctDomain, explanations (one per dimension)\n- Example: \"A museum creates a large touchscreen display showing the human digestive system. Visitors tap on each organ to see a 3D animation of its function and read a short description written in everyday language.\" → Educational, Linear, Detailed, General Public, Science\n\nCanvas layout: Width-responsive, aliceblue drawing region, white control region below\nColor scheme: Blue primary, orange accent"
+}

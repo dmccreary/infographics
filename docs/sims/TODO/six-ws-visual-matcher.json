@@ -1,0 +1,14 @@
+{
+  "sim_id": "six-ws-visual-matcher",
+  "diagram_name": "Six W's Visual Matcher",
+  "chapter_number": 4,
+  "chapter_title": "Visual Problem-Solving Frameworks",
+  "chapter_dir": "04-visual-problem-solving-frameworks",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Explain",
+  "learning_objective": "Explain the mapping between each of the Six W question types and its corresponding visual type by interacting with a visual reference card.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: diagram\n**sim-id:** six-ws-visual-matcher<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand (L2)\n**Bloom Verb:** Explain\n**Learning Objective:** Explain the mapping between each of the Six W question types and its corresponding visual type by interacting with a visual reference card.\n\nInstructional Rationale: A static table can show the mapping, but an interactive version lets learners click on each question type to see its visual rendered as a miniature example alongside a real-world scenario. This connects the abstract framework to concrete practice.\n\nVisual elements:\n- Six horizontal rows, one per question type, arranged vertically on the left third of the canvas\n- Each row shows: the W question (e.g., \"Who / What\"), an arrow, and a label for the visual type (e.g., \"Portrait\")\n- The right two-thirds of the canvas is an info panel that changes based on selection\n- When a row is selected, the info panel shows:\n  - A miniature rendering of the visual type (e.g., a small portrait sketch for Who/What, a bar chart for How Much)\n  - A real-world example: \"A biology teacher wants to show students what a mitochondrion looks like → Portrait drawing with labeled parts\"\n  - The question type's position on the simple-to-complex scale (1-6 dots)\n- Default state: All six rows visible, info panel shows \"Click a question type to see its visual match and a real-world example.\"\n\nColor scheme:\n- Who/What: blue (#4285F4)\n- How Much: orange (#FB8C00)\n- Where: green (#34A853)\n- When: purple (#8E44AD)\n- How: teal (#00897B)\n- Why: red (#E53935)\n\nInteractive features:\n- Click a row to select it and populate the info panel\n- Hover over a row to highlight it\n- Selected row gets a filled background; others stay outlined\n\nCanvas layout: Width-responsive, aliceblue background, minimum 600px width"
+}

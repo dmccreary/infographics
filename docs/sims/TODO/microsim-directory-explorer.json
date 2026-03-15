@@ -1,0 +1,14 @@
+{
+  "sim_id": "microsim-directory-explorer",
+  "diagram_name": "MicroSim Directory Structure Explorer",
+  "chapter_number": 10,
+  "chapter_title": "MicroSim Standards and Packaging",
+  "chapter_dir": "10-microsim-standards-and-packaging",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "Identify",
+  "learning_objective": "Identify the required files in a MicroSim directory and recall the purpose of each file (main.html, index.md, metadata.json, sketch.js) in the MicroSim packaging standard.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: infographic\n**sim-id:** microsim-directory-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Remember (L1)\n**Bloom Verb:** Identify\n**Learning Objective:** Identify the required files in a MicroSim directory and recall the purpose of each file (main.html, index.md, metadata.json, sketch.js) in the MicroSim packaging standard.\n\n**Instructional Rationale:** An interactive file tree with hover-to-reveal descriptions supports the Remember objective by creating file-name-to-purpose associations through repeated retrieval practice. The quiz mode reinforces memorization.\n\n**Canvas Layout:**\n- Main area (aliceblue): interactive file tree visualization\n- Right info panel (white, silver border, 35% width): file details\n\n**Visual Elements:**\n- A visual file tree showing a complete MicroSim directory:\n  - 📁 cell-biology/ (root folder)\n    - 📄 main.html\n    - 📄 index.md\n    - 📄 metadata.json\n    - 📄 sketch.js\n    - 📄 style.css\n    - 📄 overlay.json\n    - 📁 img/\n      - 🖼️ diagram.png\n      - 🖼️ preview.png\n- Each file/folder is clickable; selecting one highlights it and displays details in the right panel\n- File icons are color-coded by type (HTML=orange, MD=blue, JSON=green, JS=yellow, CSS=purple, images=red)\n\n**Interactive Controls:**\n- Click a file to select it and read: filename, purpose, required/optional status, and a 3-line example of its contents\n- Toggle: \"Show File Sizes\" — displays approximate file sizes next to each file\n- Button: \"Quiz Mode\" — hides file descriptions; user clicks a file and selects its purpose from 4 multiple-choice options; score tracked\n- Button: \"Show All\" — expands all folders and shows descriptions inline\n\n**Behavior:**\n- Clicking a folder expands/collapses it with animation\n- Selected file has a blue highlight\n- Quiz Mode provides immediate correct/incorrect feedback with the correct answer shown\n- Responsive to window resize; file tree and info panel stack on narrow screens\n\n**Default Parameters:**\n- All folders expanded\n- No file selected initially\n- Quiz Mode: off\n- Canvas width: responsive\n- Canvas height: 500px\n\nImplementation: p5.js with interactive tree rendering"
+}

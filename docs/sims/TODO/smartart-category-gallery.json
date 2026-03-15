@@ -1,0 +1,14 @@
+{
+  "sim_id": "smartart-category-gallery",
+  "diagram_name": "SmartArt Category Gallery",
+  "chapter_number": 3,
+  "chapter_title": "Presentation Slide Art Diagrams",
+  "chapter_dir": "03-presentation-slide-art-diagrams",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "Identify",
+  "learning_objective": "Identify the eight SmartArt categories by their visual thumbnail and name, building recognition of the standard diagram vocabulary.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: diagram\n**sim-id:** smartart-category-gallery<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Remember (L1)\n**Bloom Verb:** Identify\n**Learning Objective:** Identify the eight SmartArt categories by their visual thumbnail and name, building recognition of the standard diagram vocabulary.\n\nInstructional Rationale: A visual gallery with miniature renderings of each category provides instant pattern recognition. Clicking a category reveals its definition and subtypes, connecting the visual to the vocabulary without overwhelming the initial view.\n\nVisual elements:\n- Eight thumbnail cards arranged in a 4x2 grid (responsive: 2x4 on narrow screens)\n- Each card contains:\n  - A miniature visual representation of the category drawn with p5.js shapes:\n    - List: Four horizontal bars stacked vertically\n    - Process: Three boxes connected by right-pointing arrows\n    - Cycle: Four nodes in a circle with clockwise arrows\n    - Hierarchy: A tree with root and two levels of children\n    - Relationship: Three overlapping circles (Venn)\n    - Pyramid: A triangle divided into horizontal layers\n    - Matrix: A 2x2 grid of colored squares\n    - Picture: A rectangle with a small image icon and text lines\n  - The category name below each thumbnail\n- A detail panel below the grid showing the selected category's description and list of subtypes\n- Default state: \"Click a category to explore its diagram types.\"\n\nColor scheme:\n- List: blue (#4285F4)\n- Process: orange (#FB8C00)\n- Cycle: green (#34A853)\n- Hierarchy: purple (#8E44AD)\n- Relationship: teal (#00897B)\n- Pyramid: red (#E53935)\n- Matrix: indigo (#3F51B5)\n- Picture: amber (#FFB300)\n\nInteractive features:\n- Hover over a card to highlight its border and show the category name as tooltip\n- Click a card to select it and populate the detail panel with description + subtypes\n- Click again or click another card to change selection\n\nCanvas layout: Width-responsive, aliceblue background, minimum 600px width"
+}
