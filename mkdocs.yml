@@ -90,7 +90,10 @@ nav:
     - Mascot Test: learning-graph/mascot-test.md
     - FAQ Quality Report: learning-graph/faq-quality-report.md
     - Quiz Generation Report: learning-graph/quiz-generation-report.md
-
+    - learning-graph/book-metrics.md
+    - learning-graph/chapter-metrics.md
+    - learning-graph/diagram-details.md
+    - learning-graph/diagram-table.md
 
 
   - Appendices:
@@ -111,7 +114,8 @@ nav:
     - Cover: prompts/05-cover.md
     - Chapter Content Generation: prompts/10-chapter-content-generation.md
     - Glossary Generator: prompts/11-glossary-generator.md
-  
+    - prompts/12-faq-generator.md
+
   - FAQ: faq.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md

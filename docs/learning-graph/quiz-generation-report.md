@@ -39,6 +39,8 @@ which reported that the quiz generation task consumed **25% of the
 | Pro plan budget (5-hour window) | 200,000 |
 | **Budget consumed** | **25%** |
 
+![](./token-usage-during-quiz-generation.png)
+
 ### Per-Question Token Economics
 
 | Metric | Value |
