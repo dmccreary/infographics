@@ -10,9 +10,11 @@ social:
 ---
 # Gestalt Principles Interactive Playground
 
-<iframe src="main.html" height="730" scrolling="no"></iframe>
+<iframe src="main.html" height="660" scrolling="no"></iframe>
 
 [Run the Gestalt Principles Playground Fullscreen](./main.html){ .md-button .md-button--primary }
+
+[Edit the Gestalt Principles Playground on the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/f4MA6-mR7)
 
 ## What Does "Gestalt" Mean?
 
