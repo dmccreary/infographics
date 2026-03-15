@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="AI Infographics is a collection of resources for creating interactive infographics using AI tools.">
+        <meta name="description" content="Explore the five major JavaScript visualization libraries for interactive infographics — p5.js, D3.js, Chart.js, vis-network, and Leaflet — along with chart types, selection criteria, and dashboard layout strategies.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>8. JS Visualization Libraries - AI Interactive Infographics</title>
+        <title>JavaScript Visualization Libraries - AI Interactive Infographics</title>
       
     
     
@@ -65,9 +65,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="8. JS Visualization Libraries - AI Interactive Infographics" >
+        <meta  property="og:title"  content="JavaScript Visualization Libraries - AI Interactive Infographics" >
       
-        <meta  property="og:description"  content="AI Infographics is a collection of resources for creating interactive infographics using AI tools." >
+        <meta  property="og:description"  content="Explore the five major JavaScript visualization libraries for interactive infographics — p5.js, D3.js, Chart.js, vis-network, and Leaflet — along with chart types, selection criteria, and dashboard layout strategies." >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/infographics/assets/images/social/chapters/08-javascript-visualization-libraries/index.png" >
       
@@ -81,9 +81,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="8. JS Visualization Libraries - AI Interactive Infographics" >
+        <meta  name="twitter:title"  content="JavaScript Visualization Libraries - AI Interactive Infographics" >
       
-        <meta  name="twitter:description"  content="AI Infographics is a collection of resources for creating interactive infographics using AI tools." >
+        <meta  name="twitter:description"  content="Explore the five major JavaScript visualization libraries for interactive infographics — p5.js, D3.js, Chart.js, vis-network, and Leaflet — along with chart types, selection criteria, and dashboard layout strategies." >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/infographics/assets/images/social/chapters/08-javascript-visualization-libraries/index.png" >
       
@@ -141,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              8. JS Visualization Libraries
+              JavaScript Visualization Libraries
             
           </span>
         </div>
@@ -679,6 +679,384 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#p5js-creative-canvas-drawing" class="md-nav__link">
+    <span class="md-ellipsis">
+      p5.js: Creative Canvas Drawing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="p5.js: Creative Canvas Drawing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-setup-and-draw-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Setup and Draw Pattern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p5js-event-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      p5.js Event Handling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d3js-data-driven-document-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      D3.js: Data-Driven Document Manipulation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="D3.js: Data-Driven Document Manipulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#d3-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      D3 Selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d3-data-binding" class="md-nav__link">
+    <span class="md-ellipsis">
+      D3 Data Binding
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chartjs-standard-chart-types-made-easy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart.js: Standard Chart Types Made Easy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chart.js: Standard Chart Types Made Easy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a Chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart-type-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Type Selection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chart Type Selection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-chart-types-chartjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Chart Types (Chart.js)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-chart-types-d3js" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Chart Types (D3.js)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-chart-type-selection-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Chart Type Selection Guide
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vis-network-network-and-graph-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      vis-network: Network and Graph Visualization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="vis-network: Network and Graph Visualization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nodes-and-edges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nodes and Edges
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nodes and Edges">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-interactive-learning-graph-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Interactive Learning Graph Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leaflet-geographic-and-map-based-infographics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leaflet: Geographic and Map-Based Infographics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Leaflet: Geographic and Map-Based Infographics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#map-tile-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Map Tile Layers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-complete-library-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Complete Library Comparison
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Complete Library Comparison">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#library-selection-decision-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Library Selection Decision Framework
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Library Selection Decision Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-library-selection-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Library Selection Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specialized-chart-types-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specialized Chart Types in Depth
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Specialized Chart Types in Depth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#treemap-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Treemap Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sankey-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sankey Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chord-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chord Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#word-clouds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Word Clouds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gauge-charts-and-sparklines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gauge Charts and Sparklines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gauge Charts and Sparklines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-chart-type-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Chart Type Gallery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard Layout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dashboard Layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-educational-dashboard-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Educational Dashboard Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -864,6 +1242,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -885,6 +1269,59 @@
   
   <span class="md-ellipsis">
     MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../stories/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Stories
     
   </span>
   
@@ -1311,6 +1748,384 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#p5js-creative-canvas-drawing" class="md-nav__link">
+    <span class="md-ellipsis">
+      p5.js: Creative Canvas Drawing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="p5.js: Creative Canvas Drawing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-setup-and-draw-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Setup and Draw Pattern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p5js-event-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      p5.js Event Handling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d3js-data-driven-document-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      D3.js: Data-Driven Document Manipulation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="D3.js: Data-Driven Document Manipulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#d3-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      D3 Selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d3-data-binding" class="md-nav__link">
+    <span class="md-ellipsis">
+      D3 Data Binding
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chartjs-standard-chart-types-made-easy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart.js: Standard Chart Types Made Easy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chart.js: Standard Chart Types Made Easy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a Chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart-type-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Type Selection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chart Type Selection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-chart-types-chartjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Chart Types (Chart.js)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-chart-types-d3js" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Chart Types (D3.js)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-chart-type-selection-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Chart Type Selection Guide
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vis-network-network-and-graph-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      vis-network: Network and Graph Visualization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="vis-network: Network and Graph Visualization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nodes-and-edges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nodes and Edges
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nodes and Edges">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-interactive-learning-graph-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Interactive Learning Graph Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leaflet-geographic-and-map-based-infographics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leaflet: Geographic and Map-Based Infographics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Leaflet: Geographic and Map-Based Infographics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#map-tile-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Map Tile Layers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-complete-library-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Complete Library Comparison
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Complete Library Comparison">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#library-selection-decision-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Library Selection Decision Framework
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Library Selection Decision Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-library-selection-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Library Selection Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specialized-chart-types-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specialized Chart Types in Depth
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Specialized Chart Types in Depth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#treemap-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Treemap Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sankey-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sankey Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chord-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chord Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#word-clouds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Word Clouds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gauge-charts-and-sparklines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gauge Charts and Sparklines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gauge Charts and Sparklines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-chart-type-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Chart Type Gallery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard Layout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dashboard Layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-educational-dashboard-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Educational Dashboard Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1383,7 +2198,944 @@
 <li><a href="../07-web-fundamentals-javascript-and-responsive-design/">Chapter 7: Web Fundamentals: JavaScript and Responsive Design</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Let's Make It Visual!</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Percy welcomes you">
+Welcome to the chapter where your infographic toolkit truly expands! You are about to explore five powerful JavaScript libraries — each one a specialist in a different type of visualization. By the end, you will know exactly which library to reach for when you need a custom animation, a data-driven chart, a network graph, or an interactive map. Let's spread some knowledge!</p>
+</div>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this chapter, you will be able to:</p>
+<ul>
+<li><strong>Explain</strong> the architecture and rendering model of each of the five major visualization libraries (Bloom: Understand)</li>
+<li><strong>Construct</strong> basic visualizations using p5.js, Chart.js, and vis-network (Bloom: Apply)</li>
+<li><strong>Distinguish</strong> between chart types and identify which best communicates a given data story (Bloom: Analyze)</li>
+<li><strong>Evaluate</strong> which JavaScript library is the best match for a specific infographic requirement (Bloom: Evaluate)</li>
+<li><strong>Design</strong> a dashboard layout that combines multiple chart types into a coherent visual narrative (Bloom: Create)</li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>In Chapters 6 and 7, you built a solid foundation in web technologies and JavaScript. Now it is time to put that foundation to work with the visualization libraries that transform code into compelling interactive graphics. Each library in this chapter was designed with a specific visualization philosophy, and understanding those philosophies is the key to choosing the right tool for every infographic you build.</p>
+<p>The five libraries you will explore represent a spectrum from total creative freedom to structured convenience:</p>
+<ul>
+<li><strong>p5.js</strong> gives you a blank canvas and pixel-level control — ideal for custom infographics, animations, and MicroSims</li>
+<li><strong>D3.js</strong> binds data directly to DOM elements — powerful for bespoke data visualizations where every detail is tailored</li>
+<li><strong>Chart.js</strong> provides ready-made chart types with minimal configuration — perfect for standard bar, line, and pie charts</li>
+<li><strong>vis-network</strong> specializes in node-and-edge graph visualization — the natural choice for relationship diagrams and learning graphs</li>
+<li><strong>Leaflet</strong> renders interactive maps with tile layers — essential for geographic infographics</li>
+</ul>
+<p>No single library is "best" — each excels in its domain. The skill you will develop in this chapter is <strong>library selection</strong>: matching the right tool to each visualization requirement.</p>
+<h2 id="p5js-creative-canvas-drawing">p5.js: Creative Canvas Drawing</h2>
+<p>The <strong>p5.js library</strong> is a JavaScript framework for creative coding that provides an intuitive, artist-friendly API for drawing on the HTML Canvas element. Originally inspired by the Processing language, p5.js is the primary library used in this course for custom interactive infographics and MicroSims because it offers the best balance of creative freedom and ease of learning.</p>
+<h3 id="the-setup-and-draw-pattern">The Setup and Draw Pattern</h3>
+<p>Every p5.js sketch follows a two-function pattern:</p>
+<p>The <strong>p5.js setup function</strong> (<code>setup()</code>) runs once when the sketch starts. It is where you create the canvas, set initial parameters, and load data:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">createCanvas</span><span class="p">(</span><span class="mf">800</span><span class="p">,</span><span class="w"> </span><span class="mf">500</span><span class="p">);</span><span class="w"> </span><span class="c1">// width=800px and height=500px</span>
+<span class="w">    </span><span class="nx">background</span><span class="p">(</span><span class="s1">&#39;aliceblue&#39;</span><span class="p">);</span><span class="w"> </span><span class="c1">// aliceblue is the standard our books use to signal an interactive iframe</span>
+<span class="w">    </span><span class="nx">frameRate</span><span class="p">(</span><span class="mf">30</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>The <strong>createCanvas</strong> function creates the drawing surface with specified width and height in pixels. For responsive infographics, you typically pass <code>windowWidth</code> as the width and calculate height based on the desired aspect ratio.</p>
+<p>The <strong>p5.js draw function</strong> (<code>draw()</code>) runs continuously — by default 60 times per second — creating the animation loop. Each call to <code>draw()</code> repaints the entire canvas:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">draw</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">background</span><span class="p">(</span><span class="s1">&#39;aliceblue&#39;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Clear canvas each frame</span>
+
+<span class="w">    </span><span class="c1">// Draw all the regions in the canvas</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">region</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">regions</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">fill</span><span class="p">(</span><span class="nx">region</span><span class="p">.</span><span class="nx">hovered</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s1">&#39;#FF6600&#39;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#4A90D9&#39;</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">rect</span><span class="p">(</span><span class="nx">region</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">region</span><span class="p">.</span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="nx">region</span><span class="p">.</span><span class="nx">w</span><span class="p">,</span><span class="w"> </span><span class="nx">region</span><span class="p">.</span><span class="nx">h</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;#333&#39;</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">text</span><span class="p">(</span><span class="nx">region</span><span class="p">.</span><span class="nx">label</span><span class="p">,</span><span class="w"> </span><span class="nx">region</span><span class="p">.</span><span class="nx">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="nx">region</span><span class="p">.</span><span class="nx">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">20</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="p5js-event-handling">p5.js Event Handling</h3>
+<p><strong>p5.js event handling</strong> uses global callback functions that p5.js invokes automatically when user input occurs:</p>
+<ul>
+<li><code>mousePressed()</code> — Called when any mouse button is pressed</li>
+<li><code>mouseReleased()</code> — Called when a mouse button is released</li>
+<li><code>mouseMoved()</code> — Called when the mouse moves (without a button pressed)</li>
+<li><code>mouseDragged()</code> — Called when the mouse moves with a button pressed</li>
+<li><code>keyPressed()</code> — Called when a key is pressed</li>
+<li><code>windowResized()</code> — Called when the browser window changes size</li>
+</ul>
+<p>The global variables <code>mouseX</code> and <code>mouseY</code> always contain the current cursor position relative to the canvas, making hit detection straightforward:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">mousePressed</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">region</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">regions</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">mouseX</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">region</span><span class="p">.</span><span class="nx">x</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">mouseX</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">region</span><span class="p">.</span><span class="nx">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">region</span><span class="p">.</span><span class="nx">w</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">            </span><span class="nx">mouseY</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">region</span><span class="p">.</span><span class="nx">y</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">mouseY</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">region</span><span class="p">.</span><span class="nx">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">region</span><span class="p">.</span><span class="nx">h</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">selectRegion</span><span class="p">(</span><span class="nx">region</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>p5.js is the ideal choice when you need:</p>
+<ul>
+<li>Custom shapes, animations, or visual effects</li>
+<li>Full creative control over every pixel</li>
+<li>Interactive simulations with sliders and buttons (using p5.js built-in functions)</li>
+<li>Canvas-based MicroSims that follow the MicroSim standard <code>aliceblue</code> drawing region above a <code>white</code> control layout </li>
+</ul>
+<h2 id="d3js-data-driven-document-manipulation">D3.js: Data-Driven Document Manipulation</h2>
+<p>The <strong>D3.js library</strong> (short for <strong>Data-Driven Documents</strong>) takes a fundamentally different approach from p5.js. Instead of drawing pixels on a canvas, D3.js creates and directly manipulates SVG or HTML elements in the DOM, binding data directly to visual elements.</p>
+<p>Because D3 directly generates SVG, you have detailed control for drawing on the canvas, however you can't always use CSS to change your SVG placement.</p>
+<p>This data-first philosophy makes D3.js extraordinarily powerful for creating visualizations where the shape, size, position, and color of every element is determined by data.  If you
+have a complex set of data you want to visualized, both D3 and ChartJS are good libraries
+to consider using.</p>
+<h3 id="d3-selection">D3 Selection</h3>
+<p>A <strong>D3 selection</strong> is a set of DOM elements that D3 operates on. Selections are created using CSS-selector syntax and form the foundation of every D3 operation:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Select a single element</span>
+<span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s1">&#39;#chart-container&#39;</span><span class="p">)</span>
+
+<span class="c1">// Select all elements matching a selector</span>
+<span class="nx">d3</span><span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="s1">&#39;circle&#39;</span><span class="p">)</span>
+
+<span class="c1">// Chain operations on a selection</span>
+<span class="nx">d3</span><span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="s1">&#39;rect&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;steelblue&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;height&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">d</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">yScale</span><span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">value</span><span class="p">));</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="d3-data-binding">D3 Data Binding</h3>
+<p><strong>D3 data binding</strong> is the core innovation of D3.js. The <code>.data()</code> method joins an array of data values to a selection of DOM elements, creating a correspondence between data and visual representation:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">bars</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s1">&#39;#chart&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="s1">&#39;rect&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="nx">dataset</span><span class="p">);</span>
+
+<span class="c1">// Enter: create new elements for new data</span>
+<span class="nx">bars</span><span class="p">.</span><span class="nx">enter</span><span class="p">()</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;rect&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">d</span><span class="p">,</span><span class="w"> </span><span class="nx">i</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">barWidth</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">d</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">height</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">yScale</span><span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">value</span><span class="p">))</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;width&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">barWidth</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;height&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">d</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">yScale</span><span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">value</span><span class="p">))</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;steelblue&#39;</span><span class="p">);</span>
+
+<span class="c1">// Update: modify existing elements for changed data</span>
+<span class="nx">bars</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;height&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">d</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">yScale</span><span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">value</span><span class="p">));</span>
+
+<span class="c1">// Exit: remove elements for removed data</span>
+<span class="nx">bars</span><span class="p">.</span><span class="nx">exit</span><span class="p">().</span><span class="nx">remove</span><span class="p">();</span>
+</code></pre></div></td></tr></table></div>
+<p>The enter-update-exit pattern is what makes D3 visualizations truly data-driven — add data and new visual elements appear; remove data and they disappear; change data and the visualization updates smoothly.</p>
+<p>D3.js is the ideal choice when you need:</p>
+<ul>
+<li>Highly customized, bespoke data visualizations</li>
+<li>Smooth animated transitions between data states</li>
+<li>Complex chart types not available in Chart.js (Sankey, chord, treemap)</li>
+<li>SVG-based output with resolution independence</li>
+</ul>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Key Insight</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Percy is thinking">
+p5.js and D3.js represent two philosophies: p5.js says "I will draw what I want on a canvas," while D3.js says "I will bind data to elements and let the data drive the visuals." Neither is better — they solve different problems. When your visualization is data-centric and needs smooth transitions, reach for D3. When you need creative freedom and custom interactions, reach for p5.js.</p>
+</div>
+<h2 id="chartjs-standard-chart-types-made-easy">Chart.js: Standard Chart Types Made Easy</h2>
+<p>The <strong>Chart.js library</strong> provides beautiful, responsive charts with minimal configuration. Where D3.js gives you granular control over every SVG element, Chart.js gives you complete chart types — bar, line, pie, scatter, and more — that you configure with a simple JavaScript object.</p>
+<h3 id="creating-a-chart">Creating a Chart</h3>
+<p>The core pattern is straightforward: create a canvas element, instantiate a Chart object with a type and data configuration:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">ctx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myChart&#39;</span><span class="p">).</span><span class="nx">getContext</span><span class="p">(</span><span class="s1">&#39;2d&#39;</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">chart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Chart</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;bar&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">labels</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Q1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Q2&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Q3&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Q4&#39;</span><span class="p">],</span>
+<span class="w">        </span><span class="nx">datasets</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span>
+<span class="w">            </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Revenue ($K)&#39;</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">120</span><span class="p">,</span><span class="w"> </span><span class="mf">190</span><span class="p">,</span><span class="w"> </span><span class="mf">150</span><span class="p">,</span><span class="w"> </span><span class="mf">210</span><span class="p">],</span>
+<span class="w">            </span><span class="nx">backgroundColor</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;#4A90D9&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#FF6600&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#50C878&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#FFD700&#39;</span><span class="p">]</span>
+<span class="w">        </span><span class="p">}]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nx">options</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">responsive</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">plugins</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">legend</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">position</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;top&#39;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="chart-type-selection">Chart Type Selection</h3>
+<p><strong>Chart type selection</strong> is the process of matching your data and communication goal to the most effective chart format. This is one of the most important skills in infographic design — the wrong chart type can obscure insights, while the right one makes them instantly clear.</p>
+<p>The standard chart types available in Chart.js, along with the specialized types available through D3.js, form a comprehensive visualization vocabulary:</p>
+<h4 id="core-chart-types-chartjs">Core Chart Types (Chart.js)</h4>
+<table>
+<thead>
+<tr>
+<th>Chart Type</th>
+<th>Best For</th>
+<th>Data Shape</th>
+<th>Example Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bar Chart</strong></td>
+<td>Comparing categories</td>
+<td>Categories × values</td>
+<td>Library usage by subject area</td>
+</tr>
+<tr>
+<td><strong>Stacked Bar Chart</strong></td>
+<td>Comparing categories with composition</td>
+<td>Categories × multiple series</td>
+<td>Student scores by topic and difficulty</td>
+</tr>
+<tr>
+<td><strong>Line Chart</strong></td>
+<td>Trends over time</td>
+<td>Sequential × values</td>
+<td>Quiz scores across a semester</td>
+</tr>
+<tr>
+<td><strong>Area Chart</strong></td>
+<td>Trends with volume emphasis</td>
+<td>Sequential × values</td>
+<td>Cumulative student enrollment</td>
+</tr>
+<tr>
+<td><strong>Pie Chart</strong></td>
+<td>Parts of a whole (≤7 segments)</td>
+<td>Categories × proportions</td>
+<td>Distribution of infographic types</td>
+</tr>
+<tr>
+<td><strong>Donut Chart</strong></td>
+<td>Parts of a whole with center metric</td>
+<td>Categories × proportions</td>
+<td>Completion rate with percentage in center</td>
+</tr>
+<tr>
+<td><strong>Scatter Plot</strong></td>
+<td>Relationship between two variables</td>
+<td>X values × Y values</td>
+<td>Study hours vs. exam scores</td>
+</tr>
+<tr>
+<td><strong>Histogram</strong></td>
+<td>Distribution of a single variable</td>
+<td>Binned frequency counts</td>
+<td>Distribution of page load times</td>
+</tr>
+</tbody>
+</table>
+<h4 id="advanced-chart-types-d3js">Advanced Chart Types (D3.js)</h4>
+<table>
+<thead>
+<tr>
+<th>Chart Type</th>
+<th>Best For</th>
+<th>Data Shape</th>
+<th>Example Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Treemap Diagram</strong></td>
+<td>Hierarchical proportions</td>
+<td>Nested categories × values</td>
+<td>Course content by chapter and topic</td>
+</tr>
+<tr>
+<td><strong>Sankey Diagram</strong></td>
+<td>Flow quantities between stages</td>
+<td>Source → destination × volume</td>
+<td>Student progression through course modules</td>
+</tr>
+<tr>
+<td><strong>Chord Diagram</strong></td>
+<td>Bilateral relationships</td>
+<td>Matrix of inter-group flows</td>
+<td>Concept cross-references between chapters</td>
+</tr>
+<tr>
+<td><strong>Word Cloud</strong></td>
+<td>Term frequency</td>
+<td>Words × frequency counts</td>
+<td>Most common terms in student essays</td>
+</tr>
+<tr>
+<td><strong>Gauge Chart</strong></td>
+<td>Single metric against a target</td>
+<td>Current value × max value</td>
+<td>MicroSim quality score</td>
+</tr>
+<tr>
+<td><strong>Sparkline</strong></td>
+<td>Compact trend indicator</td>
+<td>Sequential mini-series</td>
+<td>Inline engagement trend per chapter</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Percy's Tip</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Percy shares a tip">
+When in doubt about chart type, start by asking: "Am I comparing categories, showing a trend over time, revealing proportions, or exploring relationships?" That question alone narrows your options to 2-3 chart types. Then choose the simplest one that communicates your insight clearly.</p>
+</div>
+<h4 id="diagram-chart-type-selection-guide">Diagram: Chart Type Selection Guide</h4>
+<iframe src="../../sims/chart-type-selector/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Chart Type Selection Guide</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> chart-type-selector<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze (L4)
+<strong>Bloom Verb:</strong> Differentiate
+<strong>Learning Objective:</strong> Differentiate between chart types by answering guided questions about data characteristics and communication goals, then seeing which chart type best matches the scenario.</p>
+<p><strong>Instructional Rationale:</strong> A decision-tree interaction is appropriate because the Analyze objective requires learners to break down their visualization needs into structured criteria. Walking through the decision tree for multiple scenarios builds the analytical habit of matching data to chart type.</p>
+<p><strong>Canvas Layout:</strong>
+- Main area (aliceblue, 65% width): interactive decision tree or flowchart
+- Right panel (white, silver border, 35% width): chart preview and description</p>
+<p><strong>Visual Elements:</strong>
+- A decision tree with 4-5 branching questions:
+  1. "What is your goal?" → Compare | Trend | Proportion | Relationship | Distribution
+  2. Branch-specific follow-ups (e.g., "How many categories?" for Compare; "How many series?" for Trend)
+  3. Terminal nodes showing the recommended chart type with a small preview icon
+- The currently active question is highlighted in blue
+- Previously answered questions show the selected path in green
+- Right panel shows: a thumbnail preview of the recommended chart type, its name, a 2-sentence description, and the library that implements it (Chart.js or D3.js)</p>
+<p><strong>Interactive Controls:</strong>
+- Click to select an answer at each decision point
+- The tree animates to reveal the next question
+- Button: "Reset" — returns to the first question
+- Button: "Try a Scenario" — loads a pre-built scenario (e.g., "Show student scores by subject" → Bar Chart; "Show how students flow through modules" → Sankey Diagram)
+- 5 pre-built scenarios available via dropdown</p>
+<p><strong>Behavior:</strong>
+- Decision tree branches based on selections; non-selected branches fade to gray
+- Reaching a terminal node highlights the recommended chart type in the right panel with an animated preview
+- "Try a Scenario" auto-fills the decision tree with a brief animation
+- Responsive to window resize; decision tree scales and right panel stacks below on narrow screens</p>
+<p><strong>Default Parameters:</strong>
+- Start at the first question
+- No scenario loaded
+- Canvas width: responsive
+- Canvas height: 500px</p>
+<p>Implementation: p5.js with decision tree data structure and chart preview thumbnails</p>
+</details>
+<h2 id="vis-network-network-and-graph-visualization">vis-network: Network and Graph Visualization</h2>
+<p>The <strong>vis-network library</strong> specializes in rendering interactive <strong>network graphs</strong> — diagrams composed of <strong>nodes</strong> (points) and <strong>edges</strong> (connections between points). Network graphs are essential for visualizing relationships, dependencies, hierarchies, and flows in educational content.</p>
+<h3 id="nodes-and-edges">Nodes and Edges</h3>
+<p>A <strong>node</strong> represents an entity in the network — a concept, a person, a system component, or any discrete item. Each node has an identifier, a label, and optional visual properties (shape, color, size, icon).</p>
+<p>An <strong>edge</strong> represents a relationship between two nodes. Edges connect a source node to a target node and can be directed (arrows) or undirected (lines). Edges can also carry labels, colors, and width values that encode relationship properties.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">nodes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">vis</span><span class="p">.</span><span class="nx">DataSet</span><span class="p">([</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">shape</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;box&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#4A90D9&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;CSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">shape</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;box&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#50C878&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">shape</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;box&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#FF6600&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;p5.js&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">shape</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;ellipse&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#FFD700&#39;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">]);</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">edges</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">vis</span><span class="p">.</span><span class="nx">DataSet</span><span class="p">([</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="kr">from</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">to</span><span class="o">:</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;structures&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="kr">from</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">to</span><span class="o">:</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;styles&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="kr">from</span><span class="o">:</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="nx">to</span><span class="o">:</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;extends&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">arrows</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;to&#39;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">]);</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">network</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">vis</span><span class="p">.</span><span class="nx">Network</span><span class="p">(</span><span class="nx">container</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">nodes</span><span class="p">,</span><span class="w"> </span><span class="nx">edges</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="nx">options</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>vis-network provides interactive features out of the box:</p>
+<ul>
+<li><strong>Drag nodes</strong> to rearrange the layout</li>
+<li><strong>Zoom and pan</strong> with mouse wheel and drag</li>
+<li><strong>Click and hover events</strong> for showing details about nodes and edges</li>
+<li><strong>Physics simulation</strong> that arranges nodes using force-directed algorithms</li>
+<li><strong>Clustering</strong> for managing large graphs by collapsing groups of nodes</li>
+</ul>
+<p>vis-network is the ideal choice when you need:</p>
+<ul>
+<li>Concept dependency graphs (like the learning graph for this textbook)</li>
+<li>Organization charts and hierarchies</li>
+<li>System architecture diagrams with interactive exploration</li>
+<li>Any visualization where relationships between entities are the primary focus</li>
+</ul>
+<h4 id="diagram-interactive-learning-graph-explorer">Diagram: Interactive Learning Graph Explorer</h4>
+<iframe src="../../sims/learning-graph-explorer/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Interactive Learning Graph Explorer</summary>
+<p>Type: graph-model
+<strong>sim-id:</strong> learning-graph-explorer<br/>
+<strong>Library:</strong> vis-network<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze (L4)
+<strong>Bloom Verb:</strong> Examine
+<strong>Learning Objective:</strong> Examine the dependency relationships between JavaScript visualization library concepts by navigating an interactive network graph, identifying prerequisite chains and concept clusters.</p>
+<p><strong>Instructional Rationale:</strong> Interactive graph exploration is appropriate because the Analyze objective requires learners to trace relationships and identify structural patterns. Clicking nodes to reveal prerequisites and dependents builds understanding of how concepts interconnect.</p>
+<p><strong>Canvas Layout:</strong>
+- Main graph area (aliceblue, 75% width): vis-network graph display
+- Right info panel (white, silver border, 25% width): node details</p>
+<p><strong>Visual Elements:</strong>
+- Nodes representing the 34 concepts from this chapter, grouped by library:
+  - p5.js nodes (blue): p5.js Library, Setup Function, Draw Function, createCanvas, Event Handling
+  - D3.js nodes (orange): D3.js Library, Data-Driven Documents, D3 Selection, D3 Data Binding
+  - Chart.js nodes (green): Chart.js Library, Chart Type Selection, Bar Chart, Line Chart, Pie Chart, Stacked Bar, Scatter Plot, Histogram, Area Chart, Donut Chart
+  - vis-network nodes (purple): vis-network Library, Network Graph, Node, Edge
+  - Leaflet nodes (red): Leaflet Library, Geographic Infographic, Map Tile Layer
+  - Advanced D3 chart nodes (teal): Treemap, Sankey, Chord, Word Cloud, Gauge, Sparkline
+  - Cross-cutting nodes (gray): Library Selection, Dashboard Layout
+- Edges showing dependency relationships from the learning graph CSV
+- Node size proportional to the number of connections (degree)</p>
+<p><strong>Interactive Controls:</strong>
+- Click a node to select it; info panel shows: concept name, library, description, prerequisites (incoming edges), dependents (outgoing edges)
+- Double-click a node to highlight its full prerequisite chain (all ancestors) in yellow
+- Dropdown: "Layout" with options: Force-directed (default), Hierarchical (top-down), Clustered (by library)
+- Checkbox: "Show Edge Labels" (default off)
+- Search box: type a concept name to highlight it in the graph
+- Button: "Reset View" — resets zoom and deselects all</p>
+<p><strong>Behavior:</strong>
+- Physics simulation arranges nodes; dragging a node pins it in place
+- Selecting a node dims unconnected nodes to 30% opacity
+- Hierarchical layout shows prerequisite chains flowing top-to-bottom
+- Clustered layout groups nodes by library with visible group boundaries
+- Responsive to window resize; graph recenters</p>
+<p><strong>Default Parameters:</strong>
+- Layout: Force-directed
+- All nodes visible
+- Canvas width: responsive
+- Canvas height: 500px</p>
+<p>Implementation: vis-network with custom node colors per library group</p>
+</details>
+<h2 id="leaflet-geographic-and-map-based-infographics">Leaflet: Geographic and Map-Based Infographics</h2>
+<p>The <strong>Leaflet library</strong> is a lightweight JavaScript library for creating interactive maps. <strong>Geographic infographics</strong> — visualizations that present data in a spatial context — are among the most engaging infographic types because humans are naturally oriented to geographic thinking.</p>
+<h3 id="map-tile-layers">Map Tile Layers</h3>
+<p>A <strong>map tile layer</strong> is a set of pre-rendered map image tiles (typically 256×256 pixels) served from a tile server. Leaflet loads tiles on demand as the user pans and zooms, assembling them into a seamless map. The most common tile provider is OpenStreetMap, but satellite imagery, terrain maps, and stylized tiles are also available:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">L</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s1">&#39;map-container&#39;</span><span class="p">).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">44.9778</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">93.2650</span><span class="p">],</span><span class="w"> </span><span class="mf">12</span><span class="p">);</span>
+
+<span class="nx">L</span><span class="p">.</span><span class="nx">tileLayer</span><span class="p">(</span><span class="s1">&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">attribution</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;© OpenStreetMap contributors&#39;</span>
+<span class="p">}).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">);</span>
+
+<span class="c1">// Add a marker with a popup</span>
+<span class="nx">L</span><span class="p">.</span><span class="nx">marker</span><span class="p">([</span><span class="mf">44.9778</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">93.2650</span><span class="p">])</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">bindPopup</span><span class="p">(</span><span class="s1">&#39;&lt;b&gt;Minneapolis&lt;/b&gt;&lt;br&gt;University of Minnesota&#39;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>Leaflet supports markers, polygons, circles, popups, and custom overlays that make it possible to build rich geographic infographics showing:</p>
+<ul>
+<li>School district boundaries with demographic data</li>
+<li>Historical event locations with timeline integration</li>
+<li>Scientific data collection sites with measurement overlays</li>
+<li>Trade routes and migration patterns with animated movement arrows</li>
+</ul>
+<p>Leaflet is the ideal choice when your data has a geographic component and spatial context enhances understanding.</p>
+<h2 id="the-complete-library-comparison">The Complete Library Comparison</h2>
+<p>Understanding when to use each library is one of the most practical skills this chapter teaches. The following table provides a comprehensive comparison:</p>
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>p5.js</th>
+<th>D3.js</th>
+<th>Chart.js</th>
+<th>vis-network</th>
+<th>Leaflet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rendering</strong></td>
+<td>Canvas (pixels)</td>
+<td>SVG (DOM)</td>
+<td>Canvas</td>
+<td>Canvas + DOM</td>
+<td>DOM + tiles</td>
+</tr>
+<tr>
+<td><strong>Learning curve</strong></td>
+<td>Gentle</td>
+<td>Steep</td>
+<td>Very gentle</td>
+<td>Moderate</td>
+<td>Gentle</td>
+</tr>
+<tr>
+<td><strong>Creative freedom</strong></td>
+<td>Maximum</td>
+<td>High</td>
+<td>Limited to chart types</td>
+<td>Limited to graphs</td>
+<td>Limited to maps</td>
+</tr>
+<tr>
+<td><strong>Built-in chart types</strong></td>
+<td>None</td>
+<td>None (build from primitives)</td>
+<td>8+ standard types</td>
+<td>Network only</td>
+<td>Map only</td>
+</tr>
+<tr>
+<td><strong>Animation</strong></td>
+<td>Native (draw loop)</td>
+<td>Transitions API</td>
+<td>Built-in animations</td>
+<td>Physics simulation</td>
+<td>Pan/zoom</td>
+</tr>
+<tr>
+<td><strong>Data binding</strong></td>
+<td>Manual</td>
+<td>Core feature</td>
+<td>Declarative config</td>
+<td>DataSet objects</td>
+<td>GeoJSON layers</td>
+</tr>
+<tr>
+<td><strong>Best for</strong></td>
+<td>Custom infographics, MicroSims</td>
+<td>Bespoke data viz</td>
+<td>Standard charts</td>
+<td>Relationship diagrams</td>
+<td>Geographic data</td>
+</tr>
+<tr>
+<td><strong>CDN size</strong></td>
+<td>~800 KB</td>
+<td>~260 KB</td>
+<td>~200 KB</td>
+<td>~450 KB</td>
+<td>~170 KB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="library-selection-decision-framework">Library Selection Decision Framework</h3>
+<p><strong>Library selection</strong> is the process of matching an infographic requirement to the best library. Use this decision framework:</p>
+<ol>
+<li><strong>Does the infographic show geographic data?</strong> → <strong>Leaflet</strong></li>
+<li><strong>Does it show relationships between entities (nodes and edges)?</strong> → <strong>vis-network</strong></li>
+<li><strong>Is it a standard chart type (bar, line, pie, scatter)?</strong> → <strong>Chart.js</strong></li>
+<li><strong>Does it need highly customized, data-driven SVG elements?</strong> → <strong>D3.js</strong></li>
+<li><strong>Does it need custom drawing, animation, or simulation?</strong> → <strong>p5.js</strong></li>
+<li><strong>Is it a complex chart type (Sankey, chord, treemap)?</strong> → <strong>D3.js</strong></li>
+<li><strong>Is it a dashboard combining multiple chart types?</strong> → <strong>Chart.js</strong> (for individual charts) + custom layout</li>
+</ol>
+<p>If multiple libraries could work, prefer the simpler option. Chart.js is faster to implement than D3.js for standard charts. p5.js is more approachable than D3.js for custom visualizations. Only reach for D3.js when you need its unique strengths: data binding, enter-update-exit, or advanced chart types.</p>
+<h4 id="diagram-library-selection-flowchart">Diagram: Library Selection Flowchart</h4>
+<iframe src="../../sims/library-selection-flowchart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Library Selection Flowchart</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> library-selection-flowchart<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Evaluate (L5)
+<strong>Bloom Verb:</strong> Assess
+<strong>Learning Objective:</strong> Assess which JavaScript visualization library is the best match for a given infographic requirement by working through a structured decision flowchart and evaluating the trade-offs between libraries.</p>
+<p><strong>Instructional Rationale:</strong> A decision flowchart with scenario testing is appropriate because the Evaluate objective requires learners to make justified selection decisions. Walking through the flowchart with concrete scenarios builds the evaluative skill of matching tools to requirements.</p>
+<p><strong>Canvas Layout:</strong>
+- Drawing area (aliceblue): flowchart with decision diamonds and library outcome boxes
+- Bottom panel (white, silver border): scenario loader and result explanation</p>
+<p><strong>Visual Elements:</strong>
+- A flowchart starting from "What type of infographic?" at the top
+- Decision diamonds (yellow) with yes/no branches:
+  - "Geographic data?" → Yes: Leaflet (red terminal)
+  - "Network/relationships?" → Yes: vis-network (purple terminal)
+  - "Standard chart type?" → Yes: Chart.js (green terminal)
+  - "Custom visualization or simulation?" → Yes: p5.js (blue terminal)
+  - "Complex data-driven chart?" → Yes: D3.js (orange terminal)
+- Terminal boxes colored by library, showing the library logo/icon and name
+- The active decision diamond pulses gently
+- Arrows connecting decisions, with the selected path highlighted in green</p>
+<p><strong>Interactive Controls:</strong>
+- Click yes/no at each decision point to follow the flowchart
+- Button: "Load Scenario" with dropdown of 6 scenarios:
+  1. "Bar chart comparing student scores" → Chart.js
+  2. "Animated physics simulation" → p5.js
+  3. "Concept dependency graph" → vis-network
+  4. "World map of university locations" → Leaflet
+  5. "Sankey diagram of student flow" → D3.js
+  6. "Dashboard with 4 charts" → Chart.js + layout
+- Loading a scenario auto-navigates the flowchart with animation
+- Bottom panel shows: selected library name, 2-sentence justification, alternative library and why it is less suitable
+- Button: "Reset"</p>
+<p><strong>Behavior:</strong>
+- Non-selected branches fade to gray as decisions are made
+- Terminal boxes expand when reached, showing key strengths
+- Responsive to window resize; flowchart scales proportionally</p>
+<p><strong>Default Parameters:</strong>
+- Start at first decision
+- No scenario loaded
+- Canvas width: responsive
+- Canvas height: 450px</p>
+<p>Implementation: p5.js with animated flowchart and scenario data</p>
+</details>
+<h2 id="specialized-chart-types-in-depth">Specialized Chart Types in Depth</h2>
+<p>Beyond the standard bar, line, and pie charts, several specialized chart types are particularly valuable for educational infographics. Understanding when and how to use them expands your visual vocabulary significantly.</p>
+<h3 id="treemap-diagrams">Treemap Diagrams</h3>
+<p>A <strong>treemap diagram</strong> displays hierarchical data as nested rectangles, where the area of each rectangle is proportional to a quantitative value. Treemaps are excellent for showing how a whole is divided into parts at multiple levels of hierarchy — for example, how a textbook's word count is distributed across chapters, sections, and topics.</p>
+<h3 id="sankey-diagrams">Sankey Diagrams</h3>
+<p>A <strong>Sankey diagram</strong> visualizes flows between stages, with the width of each flow proportional to its quantity. Sankey diagrams are powerful for showing student progression through course modules (how many students moved from Module 1 to Module 2, how many dropped out), resource allocation, or any process where quantities split and merge between stages.</p>
+<h3 id="chord-diagrams">Chord Diagrams</h3>
+<p>A <strong>chord diagram</strong> displays bilateral relationships between groups arranged in a circle. Chords connect groups, with chord thickness indicating the strength of the relationship. Chord diagrams are ideal for showing concept cross-references between chapters, student transfer patterns between departments, or any matrix of inter-group connections.</p>
+<h3 id="word-clouds">Word Clouds</h3>
+<p>A <strong>word cloud</strong> displays words sized proportionally to their frequency or importance. While word clouds have limited analytical precision (exact comparisons are difficult), they provide an engaging overview of dominant themes. In educational contexts, word clouds can visualize vocabulary emphasis in course materials or term frequency in student responses.</p>
+<h3 id="gauge-charts-and-sparklines">Gauge Charts and Sparklines</h3>
+<p>A <strong>gauge chart</strong> displays a single metric against a target, resembling a speedometer dial. Gauges are effective for showing MicroSim quality scores, course completion rates, or any single value that has a defined range and target.</p>
+<p>A <strong>sparkline</strong> is a tiny, word-sized chart embedded inline with text or within a table cell. Sparklines show trends without the overhead of axis labels and legends. In educational dashboards, sparklines can show engagement trends for each chapter, giving instructors an at-a-glance view of student activity patterns.</p>
+<table>
+<thead>
+<tr>
+<th>Chart Type</th>
+<th>Library</th>
+<th>Complexity</th>
+<th>Educational Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Treemap</td>
+<td>D3.js</td>
+<td>Medium</td>
+<td>Content distribution by chapter/topic</td>
+</tr>
+<tr>
+<td>Sankey</td>
+<td>D3.js</td>
+<td>High</td>
+<td>Student flow through modules</td>
+</tr>
+<tr>
+<td>Chord</td>
+<td>D3.js</td>
+<td>High</td>
+<td>Cross-chapter concept connections</td>
+</tr>
+<tr>
+<td>Word Cloud</td>
+<td>D3.js (d3-cloud)</td>
+<td>Low</td>
+<td>Term frequency analysis</td>
+</tr>
+<tr>
+<td>Gauge</td>
+<td>Chart.js (plugin) or p5.js</td>
+<td>Low</td>
+<td>Quality scores, completion rates</td>
+</tr>
+<tr>
+<td>Sparkline</td>
+<td>Chart.js or inline SVG</td>
+<td>Low</td>
+<td>Compact trend indicators in tables</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-chart-type-gallery">Diagram: Chart Type Gallery</h4>
+<iframe src="../../sims/chart-type-gallery/main.html" width="100%" height="600px" scrolling="no"></iframe>
+
+<details>
+<summary>Chart Type Gallery</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> chart-type-gallery<br/>
+<strong>Library:</strong> Chart.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Remember (L1)
+<strong>Bloom Verb:</strong> Identify
+<strong>Learning Objective:</strong> Identify the 14 chart types covered in this chapter by viewing example renderings and recalling which data characteristics each chart type communicates best.</p>
+<p><strong>Instructional Rationale:</strong> A visual gallery with hover-to-reveal descriptions supports the Remember objective by creating strong visual-name associations. Repeated viewing of chart examples alongside their names and use cases builds recognition fluency.</p>
+<p><strong>Canvas Layout:</strong>
+- Main gallery area (aliceblue): 4×4 grid of chart thumbnails (14 charts + 2 blank slots)
+- Bottom info panel (white, silver border): details about the selected chart</p>
+<p><strong>Visual Elements:</strong>
+- 14 chart thumbnails arranged in a responsive grid:
+  Row 1: Bar Chart, Stacked Bar Chart, Line Chart, Area Chart
+  Row 2: Pie Chart, Donut Chart, Scatter Plot, Histogram
+  Row 3: Treemap, Sankey, Chord, Word Cloud
+  Row 4: Gauge, Sparkline (smaller, inline-style display)
+- Each thumbnail is a miniature rendered chart with sample data (using Chart.js for standard types, p5.js-drawn approximations for D3 types)
+- Chart name label below each thumbnail
+- Selected chart has a blue highlight border</p>
+<p><strong>Interactive Controls:</strong>
+- Click a chart thumbnail to select it; info panel shows:
+  - Chart name and library
+  - "Best for:" one-line description
+  - "Data shape:" description of expected input format
+  - "Example:" a concrete educational use case
+  - "Tip:" one sentence on when NOT to use this chart type
+- Button: "Quiz Mode" — hides chart names; user clicks a thumbnail and types the chart name; correct/incorrect feedback displayed
+- Filter buttons across the top: "All" | "Chart.js" | "D3.js" | "Other"</p>
+<p><strong>Behavior:</strong>
+- Thumbnails render with actual chart libraries where possible for visual fidelity
+- Grid layout is responsive: 4 columns on desktop, 3 on tablet, 2 on mobile
+- Quiz Mode tracks correct/incorrect count and displays score
+- Smooth highlight transition on selection
+- Responsive to window resize</p>
+<p><strong>Default Parameters:</strong>
+- All charts visible
+- Quiz Mode: off
+- Canvas width: responsive
+- Canvas height: 550px</p>
+<p>Implementation: Chart.js for standard chart thumbnails, p5.js canvas for D3-type approximations, CSS grid for responsive layout</p>
+</details>
+<h2 id="dashboard-layout">Dashboard Layout</h2>
+<p>A <strong>dashboard layout</strong> combines multiple charts, metrics, and visual elements into a single cohesive view. Dashboards are particularly valuable in educational contexts for:</p>
+<ul>
+<li><strong>Instructor dashboards</strong> showing student engagement across chapters</li>
+<li><strong>Course overview pages</strong> summarizing content metrics, completion rates, and quality scores</li>
+<li><strong>Analytics panels</strong> displaying interaction data from MicroSim infographics</li>
+</ul>
+<p>Effective dashboard design follows these principles:</p>
+<ul>
+<li><strong>Place the most important metric prominently</strong> — typically top-left or full-width at the top</li>
+<li><strong>Group related charts together</strong> using visual proximity and consistent color schemes</li>
+<li><strong>Use sparklines and gauge charts for compact metrics</strong> that do not need full-size charts</li>
+<li><strong>Limit to 4-6 visual elements</strong> per dashboard view to avoid cognitive overload</li>
+<li><strong>Maintain consistent formatting</strong> — same fonts, color palettes, and border styles across all charts</li>
+</ul>
+<p>A typical educational dashboard layout might include:</p>
+<ol>
+<li>A <strong>gauge chart</strong> showing overall course completion rate (top center)</li>
+<li>A <strong>bar chart</strong> comparing engagement across chapters (top row)</li>
+<li>A <strong>line chart</strong> showing enrollment trends over time (middle row, left)</li>
+<li>A <strong>pie chart</strong> showing distribution of infographic types used (middle row, right)</li>
+<li>A <strong>table with sparklines</strong> showing per-chapter engagement trends (bottom)</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">.</span><span class="nc">dashboard</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span>
+<span class="w">    </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="nc">dashboard</span><span class="w"> </span><span class="p">.</span><span class="nc">full-width</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">grid-column</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">.</span><span class="nc">dashboard</span><span class="w"> </span><span class="p">.</span><span class="nc">chart-card</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">silver</span><span class="p">;</span>
+<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Common Mistake</p>
+<p><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Percy warns you">
+The most common dashboard mistake is cramming too many charts into a single view. If your dashboard has more than 6 visual elements, your users will not know where to look first. Prioritize ruthlessly: show the 4-5 most actionable metrics and provide drill-down links for everything else.</p>
+</div>
+<h4 id="diagram-educational-dashboard-builder">Diagram: Educational Dashboard Builder</h4>
+<iframe src="../../sims/dashboard-builder/main.html" width="100%" height="600px" scrolling="no"></iframe>
+
+<details>
+<summary>Educational Dashboard Builder</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> dashboard-builder<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Create (L6)
+<strong>Bloom Verb:</strong> Design
+<strong>Learning Objective:</strong> Design an educational dashboard layout by selecting chart types, arranging them in a grid, and configuring each chart's data source to create a coherent visual overview of course metrics.</p>
+<p><strong>Instructional Rationale:</strong> A drag-and-drop builder is appropriate for the Create-level objective because learners must synthesize their understanding of chart types, layout principles, and educational context into an original dashboard design. Building a dashboard from scratch requires integrating multiple concepts from this chapter.</p>
+<p><strong>Canvas Layout:</strong>
+- Left palette (white, 20% width): available chart type cards to drag
+- Main grid area (aliceblue, 60% width): 3×2 dashboard grid where charts are placed
+- Right panel (white, silver border, 20% width): configuration for the selected chart cell</p>
+<p><strong>Visual Elements:</strong>
+- Left palette: 8 draggable chart type cards (Bar, Line, Pie, Donut, Gauge, Sparkline Table, Scatter, Area) with small icons
+- Main grid: 6 cells (3 columns × 2 rows), each showing either a placeholder "Drop chart here" or a rendered mini-chart
+- Each placed chart renders with sample educational data (enrollment numbers, completion rates, quiz scores)
+- Right panel (when a cell is selected): chart title input, data source dropdown (Enrollment, Engagement, Scores, Completion, Quality), color scheme selector (Blue, Orange, Green, Mixed)</p>
+<p><strong>Interactive Controls:</strong>
+- Drag a chart type from the palette and drop it into a grid cell
+- Click a filled cell to select it and configure in the right panel
+- Double-click a filled cell to remove the chart
+- Button: "Load Template" — fills the grid with a pre-designed dashboard
+- Button: "Clear All" — empties the grid
+- Toggle: "Full-width top row" — merges the two top cells into one full-width chart (common for bar/line overview charts)</p>
+<p><strong>Behavior:</strong>
+- Dropping a chart type into a cell renders a miniature version with sample data
+- Changing the data source in the right panel updates the chart's data and labels
+- The dashboard preview updates in real-time as charts are placed and configured
+- Responsive: on narrow screens, the palette and config panel stack above and below the grid</p>
+<p><strong>Default Parameters:</strong>
+- Empty grid on load
+- "Load Template" creates: top-left: Line (Enrollment), top-right: Gauge (Completion), bottom-left: Bar (Engagement), bottom-center: Pie (Quality), bottom-right: Sparkline Table (Scores)
+- Canvas width: responsive
+- Canvas height: 550px</p>
+<p>Implementation: p5.js with drag-and-drop, mini chart rendering using Chart.js-style algorithms</p>
+</details>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>The five libraries and the chart types you have learned form a comprehensive toolkit for building any type of interactive infographic. Here is how they map to common educational infographic needs:</p>
+<table>
+<thead>
+<tr>
+<th>Educational Need</th>
+<th>Recommended Library</th>
+<th>Chart/Visualization Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Student scores by topic</td>
+<td>Chart.js</td>
+<td>Bar or Stacked Bar Chart</td>
+</tr>
+<tr>
+<td>Enrollment trends</td>
+<td>Chart.js</td>
+<td>Line or Area Chart</td>
+</tr>
+<tr>
+<td>Content distribution</td>
+<td>Chart.js or D3.js</td>
+<td>Pie, Donut, or Treemap</td>
+</tr>
+<tr>
+<td>Concept dependencies</td>
+<td>vis-network</td>
+<td>Network Graph</td>
+</tr>
+<tr>
+<td>Student flow through curriculum</td>
+<td>D3.js</td>
+<td>Sankey Diagram</td>
+</tr>
+<tr>
+<td>Campus or field site locations</td>
+<td>Leaflet</td>
+<td>Geographic Map with markers</td>
+</tr>
+<tr>
+<td>Custom simulation or overlay</td>
+<td>p5.js</td>
+<td>Canvas-based MicroSim</td>
+</tr>
+<tr>
+<td>Cross-chapter concept links</td>
+<td>D3.js</td>
+<td>Chord Diagram</td>
+</tr>
+<tr>
+<td>At-a-glance metrics</td>
+<td>Chart.js / p5.js</td>
+<td>Gauge and Sparkline</td>
+</tr>
+<tr>
+<td>Multi-metric overview</td>
+<td>Multiple</td>
+<td>Dashboard Layout</td>
+</tr>
+</tbody>
+</table>
+<h2 id="summary_1">Summary</h2>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Excellent Work!</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Percy celebrates">
+You now command five powerful visualization libraries and a vocabulary of 14+ chart types! Whether you need a custom animation, a data-driven chart, a network graph, or an interactive map, you know exactly which tool to reach for and why. This is the chapter that transforms you from a web developer into an infographic designer. Display it with style!</p>
+</div>
+<p>In this chapter, you learned that:</p>
+<ul>
+<li>The <strong>p5.js library</strong> provides creative canvas drawing through a <strong>setup function</strong> (runs once to initialize), <strong>draw function</strong> (runs continuously for animation), <strong>createCanvas</strong> (creates the drawing surface), and <strong>p5.js event handling</strong> (callback functions for mouse, keyboard, and window events)</li>
+<li>The <strong>D3.js library</strong> implements <strong>data-driven documents</strong> through <strong>D3 selections</strong> (CSS-selector-based element access) and <strong>D3 data binding</strong> (the enter-update-exit pattern that joins data to visual elements)</li>
+<li>The <strong>Chart.js library</strong> provides ready-made <strong>chart type selection</strong> with <strong>bar charts</strong>, <strong>line charts</strong>, <strong>pie charts</strong>, and their variants (<strong>stacked bar charts</strong>, <strong>area charts</strong>, <strong>donut charts</strong>, <strong>scatter plots</strong>, <strong>histograms</strong>)</li>
+<li>The <strong>vis-network library</strong> renders interactive <strong>network graphs</strong> composed of <strong>nodes</strong> (entities) and <strong>edges</strong> (relationships), with built-in physics, drag, zoom, and hover capabilities</li>
+<li>The <strong>Leaflet library</strong> creates <strong>geographic infographics</strong> using <strong>map tile layers</strong> loaded from OpenStreetMap or other providers, with markers, polygons, and popups</li>
+<li>Advanced chart types include <strong>treemap diagrams</strong> (hierarchical proportions), <strong>Sankey diagrams</strong> (flow quantities), <strong>chord diagrams</strong> (bilateral relationships), <strong>word clouds</strong> (term frequency), <strong>gauge charts</strong> (single metrics), and <strong>sparklines</strong> (compact inline trends)</li>
+<li><strong>Library selection</strong> follows a structured decision framework: geographic → Leaflet; network → vis-network; standard chart → Chart.js; bespoke data viz → D3.js; custom/simulation → p5.js</li>
+<li><strong>Dashboard layout</strong> combines multiple chart types into a cohesive view, following principles of prioritization, grouping, and limiting visual elements to 4-6 per view</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://p5js.org/reference/">p5.js Reference</a></li>
+<li><a href="https://d3js.org/">D3.js Documentation</a></li>
+<li><a href="https://www.chartjs.org/docs/">Chart.js Documentation</a></li>
+<li><a href="https://visjs.github.io/vis-network/docs/network/">vis-network Documentation</a></li>
+<li><a href="https://leafletjs.com/reference.html">Leaflet Documentation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sankey_diagram">Wikipedia: Sankey Diagram</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Treemapping">Wikipedia: Treemapping</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chord_diagram_(information_visualization)">Wikipedia: Chord Diagram</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sparkline">Wikipedia: Sparkline</a></li>
+<li><a href="https://www.data-to-viz.com/">From Data to Viz — Chart Selection Guide</a></li>
+</ul>
 
 
 

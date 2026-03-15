@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="AI Infographics is a collection of resources for creating interactive infographics using AI tools.">
+        <meta name="description" content="Master the complete MicroSim packaging standard including directory structure, Dublin Core metadata, quality scoring, iframe embedding, responsive testing, and the standardization checklist for deploying interactive infographics in intelligent textbooks.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>10. MicroSim Standards - AI Interactive Infographics</title>
+        <title>MicroSim Standards and Packaging - AI Interactive Infographics</title>
       
     
     
@@ -65,9 +65,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="10. MicroSim Standards - AI Interactive Infographics" >
+        <meta  property="og:title"  content="MicroSim Standards and Packaging - AI Interactive Infographics" >
       
-        <meta  property="og:description"  content="AI Infographics is a collection of resources for creating interactive infographics using AI tools." >
+        <meta  property="og:description"  content="Master the complete MicroSim packaging standard including directory structure, Dublin Core metadata, quality scoring, iframe embedding, responsive testing, and the standardization checklist for deploying interactive infographics in intelligent textbooks." >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/infographics/assets/images/social/chapters/10-microsim-standards-and-packaging/index.png" >
       
@@ -81,9 +81,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="10. MicroSim Standards - AI Interactive Infographics" >
+        <meta  name="twitter:title"  content="MicroSim Standards and Packaging - AI Interactive Infographics" >
       
-        <meta  name="twitter:description"  content="AI Infographics is a collection of resources for creating interactive infographics using AI tools." >
+        <meta  name="twitter:description"  content="Master the complete MicroSim packaging standard including directory structure, Dublin Core metadata, quality scoring, iframe embedding, responsive testing, and the standardization checklist for deploying interactive infographics in intelligent textbooks." >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/infographics/assets/images/social/chapters/10-microsim-standards-and-packaging/index.png" >
       
@@ -141,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              10. MicroSim Standards
+              MicroSim Standards and Packaging
             
           </span>
         </div>
@@ -725,6 +725,549 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-microsim-directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      The MicroSim Directory Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The MicroSim Directory Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-mainhtml-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      The main.html File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-indexmd-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      The index.md File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml-frontmatter" class="md-nav__link">
+    <span class="md-ellipsis">
+      YAML Frontmatter
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="YAML Frontmatter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-graph-standards-in-frontmatter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Graph Standards in Frontmatter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-open-graph-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Open Graph Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dublin-core-metadata-and-the-metadatajson-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dublin Core Metadata and the metadata.json File
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#social-sharing-open-graph-images-for-link-previews" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Sharing: Open Graph Images for Link Previews
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Social Sharing: Open Graph Images for Link Previews">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#social-preview-image-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Preview Image Standards
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Social Preview Image Standards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-image-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required Image Specifications
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform-specific-rendering-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform-Specific Rendering Behavior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#composing-an-effective-preview-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composing an Effective Preview Image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-preview-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Preview Images
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overriding-mkdocs-material-social-cards-with-local-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overriding MkDocs Material Social Cards with Local Images
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#social-media-override-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Media Override Plugin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-your-open-graph-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Your Open Graph Tags
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embedding-microsims-in-textbook-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embedding MicroSims in Textbook Pages
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Embedding MicroSims in Textbook Pages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#display-iframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display Iframe
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-paste-iframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copy-Paste Iframe
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fullscreen-link-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fullscreen Link Button
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p5js-editor-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      p5.js Editor Link
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-visual-layout-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Visual Layout Standard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Visual Layout Standard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aliceblue-drawing-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aliceblue Drawing Region
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#white-control-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      White Control Region
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#silver-border" class="md-nav__link">
+    <span class="md-ellipsis">
+      Silver Border
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color Consistency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#font-size-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Font Size Scaling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Font Size Scaling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-microsim-visual-standards-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: MicroSim Visual Standards Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iframe-height-reporting-with-postmessage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iframe Height Reporting with postMessage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iframe Height Reporting with postMessage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-postmessage-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      The postMessage API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iframe-height-reporting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iframe Height Reporting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-assurance-rubric-and-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quality Assurance: Rubric and Checklist
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quality Assurance: Rubric and Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-quality-rubric" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim Quality Rubric
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standardization-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standardization Checklist
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Standardization Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-microsim-quality-scorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: MicroSim Quality Scorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-with-gh-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment with gh-deploy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shared-libraries-and-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shared Libraries and Templates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shared Libraries and Templates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shared-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shared Libraries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-microsims" class="md-nav__link">
+    <span class="md-ellipsis">
+      Template MicroSims
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reusable-overlay-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reusable Overlay Schema
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#width-responsive-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Width-Responsive Testing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Width-Responsive Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-infographic-portfolio" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Infographic Portfolio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Infographic Portfolio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-microsim-directory-structure-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: MicroSim Directory Structure Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-similar-microsims-faceted-search-and-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Similar MicroSims: Faceted Search and Embeddings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding Similar MicroSims: Faceted Search and Embeddings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#two-dimensions-of-microsim-similarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two Dimensions of MicroSim Similarity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-both-dimensions-matter-for-ai-assisted-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Both Dimensions Matter for AI-Assisted Generation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faceted-search-for-microsim-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Faceted Search for MicroSim Discovery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -864,6 +1407,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -885,6 +1434,59 @@
   
   <span class="md-ellipsis">
     MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../stories/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Stories
     
   </span>
   
@@ -1311,6 +1913,549 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-microsim-directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      The MicroSim Directory Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The MicroSim Directory Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-mainhtml-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      The main.html File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-indexmd-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      The index.md File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml-frontmatter" class="md-nav__link">
+    <span class="md-ellipsis">
+      YAML Frontmatter
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="YAML Frontmatter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-graph-standards-in-frontmatter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Graph Standards in Frontmatter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-open-graph-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Open Graph Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dublin-core-metadata-and-the-metadatajson-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dublin Core Metadata and the metadata.json File
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#social-sharing-open-graph-images-for-link-previews" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Sharing: Open Graph Images for Link Previews
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Social Sharing: Open Graph Images for Link Previews">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#social-preview-image-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Preview Image Standards
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Social Preview Image Standards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-image-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required Image Specifications
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform-specific-rendering-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform-Specific Rendering Behavior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#composing-an-effective-preview-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composing an Effective Preview Image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-preview-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Preview Images
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overriding-mkdocs-material-social-cards-with-local-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overriding MkDocs Material Social Cards with Local Images
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#social-media-override-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Media Override Plugin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-your-open-graph-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Your Open Graph Tags
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embedding-microsims-in-textbook-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embedding MicroSims in Textbook Pages
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Embedding MicroSims in Textbook Pages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#display-iframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display Iframe
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-paste-iframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copy-Paste Iframe
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fullscreen-link-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fullscreen Link Button
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p5js-editor-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      p5.js Editor Link
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-visual-layout-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Visual Layout Standard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Visual Layout Standard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aliceblue-drawing-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aliceblue Drawing Region
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#white-control-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      White Control Region
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#silver-border" class="md-nav__link">
+    <span class="md-ellipsis">
+      Silver Border
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color Consistency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#font-size-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Font Size Scaling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Font Size Scaling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-microsim-visual-standards-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: MicroSim Visual Standards Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iframe-height-reporting-with-postmessage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iframe Height Reporting with postMessage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iframe Height Reporting with postMessage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-postmessage-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      The postMessage API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iframe-height-reporting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iframe Height Reporting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-assurance-rubric-and-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quality Assurance: Rubric and Checklist
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quality Assurance: Rubric and Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-quality-rubric" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim Quality Rubric
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standardization-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standardization Checklist
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Standardization Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-microsim-quality-scorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: MicroSim Quality Scorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-with-gh-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment with gh-deploy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shared-libraries-and-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shared Libraries and Templates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shared Libraries and Templates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shared-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shared Libraries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-microsims" class="md-nav__link">
+    <span class="md-ellipsis">
+      Template MicroSims
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reusable-overlay-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reusable Overlay Schema
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#width-responsive-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Width-Responsive Testing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Width-Responsive Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-infographic-portfolio" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Infographic Portfolio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Infographic Portfolio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-microsim-directory-structure-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: MicroSim Directory Structure Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-similar-microsims-faceted-search-and-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Similar MicroSims: Faceted Search and Embeddings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding Similar MicroSims: Faceted Search and Embeddings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#two-dimensions-of-microsim-similarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two Dimensions of MicroSim Similarity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-both-dimensions-matter-for-ai-assisted-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Both Dimensions Matter for AI-Assisted Generation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faceted-search-for-microsim-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Faceted Search for MicroSim Discovery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1381,7 +2526,931 @@
 <li><a href="../09-overlayment-interactive-patterns/">Chapter 9: Overlayment Interactive Patterns</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Let's Make It Visual!</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Percy welcomes you">
+Welcome to the chapter that brings everything together into a professional, deployable package! You have learned to build interactive infographics — now you will learn to package them with proper metadata, quality standards, and embedding patterns so they work seamlessly inside intelligent textbooks. Standards might sound dry, but they are what make your work scalable, shareable, and sustainable. Let's spread some knowledge!</p>
+</div>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this chapter, you will be able to:</p>
+<ul>
+<li><strong>Construct</strong> a complete MicroSim directory with all required files (main.html, index.md, metadata.json) following packaging conventions (Bloom: Apply)</li>
+<li><strong>Explain</strong> the role of Dublin Core metadata, YAML frontmatter, and Open Graph tags in making MicroSims discoverable and shareable (Bloom: Understand)</li>
+<li><strong>Apply</strong> the MicroSim quality rubric to score an infographic and identify areas for improvement (Bloom: Apply)</li>
+<li><strong>Evaluate</strong> a MicroSim against the standardization checklist to determine deployment readiness (Bloom: Evaluate)</li>
+<li><strong>Design</strong> a responsive MicroSim layout with consistent color scheme, font scaling, and iframe height reporting (Bloom: Create)</li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>Throughout this course, you have been building increasingly sophisticated interactive infographics — from simple labeled diagrams to complex polygon overlays, from p5.js canvas animations to D3.js data-driven charts. Each of these creations is valuable on its own, but their true power emerges when they are packaged consistently, embedded reliably, and deployed at scale within intelligent textbooks.</p>
+<p>MicroSim standards are the conventions that make this possible. Just as a shipping container standardized global trade by ensuring that any container fits on any ship, train, or truck, MicroSim packaging standards ensure that any interactive infographic fits seamlessly into any MkDocs Material intelligent textbook. The standards cover file organization, metadata formats, visual consistency, embedding patterns, and quality measurement — everything needed to move from "it works on my machine" to "it works everywhere, for everyone."</p>
+<p>This chapter presents the complete MicroSim packaging standard in a practical, workflow-oriented sequence. You will start with directory structure and file conventions, move through metadata and embedding patterns, and finish with quality assurance tools that help you evaluate and refine your work.</p>
+<h2 id="the-microsim-directory-structure">The MicroSim Directory Structure</h2>
+<p>A <strong>MicroSim directory</strong> is a self-contained folder that holds all files for a single interactive infographic. Every MicroSim in an intelligent textbook follows the same directory structure, making it immediately clear where to find code, documentation, and metadata.</p>
+<p>The standard directory structure:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>docs/sims/my-infographic/
+├── main.html          # The interactive infographic (entry point)
+├── index.md           # Documentation page for MkDocs
+├── metadata.json      # Dublin Core metadata
+├── sketch.js          # JavaScript code (if separate from main.html)
+├── style.css          # Custom styles (if needed)
+├── overlay.json       # Overlay configuration (for overlay types)
+└── img/               # Images used by the infographic
+    └── diagram.png
+</code></pre></div></td></tr></table></div>
+<h3 id="the-mainhtml-file">The main.html File</h3>
+<p>The <strong>main.html file</strong> is the core entry point for every MicroSim. This is the file loaded by the iframe when the infographic is embedded in a textbook page. The name <code>main.html</code> (not <code>index.html</code>) is a deliberate convention that prevents conflicts with MkDocs, which generates its own <code>index.html</code> from the <code>index.md</code> documentation file.</p>
+<p>A minimal main.html follows this structure:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My Infographic<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">Arial</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background: aliceblue;&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;canvas-container&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;controls&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background: white; border-top: 1px solid silver; padding: 8px;&quot;</span><span class="p">&gt;</span>
+        <span class="cm">&lt;!-- Control elements here --&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;sketch.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="the-indexmd-file">The index.md File</h3>
+<p>The <strong>index.md file</strong> serves as the MkDocs documentation page for the MicroSim. It contains human-readable information about the infographic, including its purpose, usage instructions, lesson plan suggestions, and an embedded preview. The index.md file is what appears in the textbook's navigation when readers browse to the MicroSim's page.</p>
+<h3 id="yaml-frontmatter">YAML Frontmatter</h3>
+<p><strong>YAML frontmatter</strong> is a block of metadata at the top of the index.md file, enclosed in triple dashes. It provides <strong>title metadata</strong> and <strong>description metadata</strong> that MkDocs uses for page titles, search indexing, and — critically — <strong>Open Graph tags</strong> that control how your page appears when shared on social media and messaging platforms.</p>
+<h4 id="open-graph-standards-in-frontmatter">Open Graph Standards in Frontmatter</h4>
+<p>The <a href="https://ogp.me/">Open Graph protocol</a> defines a set of <code>&lt;meta&gt;</code> tags that social platforms read to generate link previews. MkDocs Material automatically maps your YAML frontmatter fields to Open Graph <code>&lt;meta&gt;</code> tags in the rendered HTML, so getting your frontmatter right means your MicroSim pages look professional everywhere they are shared.</p>
+<p><strong>Title metadata (<code>og:title</code>):</strong></p>
+<ul>
+<li><strong>Recommended length:</strong> 40–60 characters (optimal for most platforms)</li>
+<li><strong>Maximum before truncation:</strong> 88 characters on Facebook, 70 characters on Twitter/X, ~60 characters on LinkedIn</li>
+<li><strong>Best practice:</strong> Lead with the most descriptive words. Avoid generic prefixes like "MicroSim:" — the platform already shows your site name. Make it specific enough that a reader can decide whether to click from the title alone.</li>
+</ul>
+<p><strong>Description metadata (<code>og:description</code>):</strong></p>
+<ul>
+<li><strong>Recommended length:</strong> 120–158 characters (the sweet spot across platforms)</li>
+<li><strong>Maximum before truncation:</strong> 200 characters on Facebook, 200 characters on Twitter/X, ~300 characters on LinkedIn</li>
+<li><strong>Best practice:</strong> Describe what the learner will <em>do</em> with the MicroSim, not just what it contains. Use active verbs: "Explore," "Build," "Compare," "Drag and drop." Include one or two key terms that a searcher might use.</li>
+</ul>
+<p>A well-crafted frontmatter block:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nn">---</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Cell Biology Interactive Diagram</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Explore cell organelles with hover-activated descriptions, labeled callout points, and a quiz mode that tests your knowledge of mitochondria, ribosomes, and more.</span>
+<span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">img/preview.png</span>
+<span class="nn">---</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="additional-open-graph-fields">Additional Open Graph Fields</h4>
+<p>MkDocs Material supports several additional frontmatter fields that map to Open Graph tags:</p>
+<table>
+<thead>
+<tr>
+<th>Frontmatter Field</th>
+<th>Open Graph Tag</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td><code>og:title</code></td>
+<td>Page title in link previews</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td><code>og:description</code></td>
+<td>Summary text below the title</td>
+</tr>
+<tr>
+<td><code>image</code></td>
+<td><code>og:image</code></td>
+<td>Preview image (see next section)</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>og:type</code> is automatically set to <code>"website"</code> and the <code>og:url</code> is generated from the page's canonical URL. You do not need to set these manually.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Percy's Tip</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Percy shares a tip">
+Write your title and description <em>before</em> building the MicroSim. This forces you to articulate the learning objective in plain language — which often improves the design of the infographic itself. If you cannot describe it in 150 characters, the MicroSim might be trying to do too much.</p>
+</div>
+<h2 id="dublin-core-metadata-and-the-metadatajson-file">Dublin Core Metadata and the metadata.json File</h2>
+<p><strong>Dublin Core metadata</strong> is an internationally recognized standard (ISO 15836) for describing digital resources. It defines 15 core elements that apply to virtually any digital object, making it ideal for cataloging MicroSim infographics.</p>
+<p>The <strong>metadata.json file</strong> stores Dublin Core metadata for each MicroSim in a structured, machine-readable format:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;dc:title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cell Biology Interactive Diagram&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;dc:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Interactive infographic showing major organelles of an animal cell with hover-activated descriptions.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;dc:creator&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Jane Smith&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;dc:date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-03-14&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;dc:subject&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;biology&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;cell structure&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;organelles&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;dc:type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;InteractiveResource&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;dc:format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;text/html&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;dc:language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;en&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;dc:rights&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CC BY 4.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;dc:source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Original&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;microsim:library&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;p5.js&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;microsim:version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;microsim:quality_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">85</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;microsim:visualization_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;overlay-type2&quot;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>The Dublin Core fields provide standardized discoverability, while the <code>microsim:</code> prefixed fields add domain-specific metadata for MicroSim management (library used, quality score, visualization type).</p>
+<table>
+<thead>
+<tr>
+<th>Dublin Core Element</th>
+<th>Purpose</th>
+<th>Example Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dc:title</code></td>
+<td>Human-readable name</td>
+<td>"Cell Biology Interactive Diagram"</td>
+</tr>
+<tr>
+<td><code>dc:description</code></td>
+<td>What the MicroSim does</td>
+<td>"Interactive infographic showing..."</td>
+</tr>
+<tr>
+<td><code>dc:creator</code></td>
+<td>Author name</td>
+<td>"Jane Smith"</td>
+</tr>
+<tr>
+<td><code>dc:date</code></td>
+<td>Creation or last update date</td>
+<td>"2026-03-14"</td>
+</tr>
+<tr>
+<td><code>dc:subject</code></td>
+<td>Topic keywords (array)</td>
+<td>["biology", "cell structure"]</td>
+</tr>
+<tr>
+<td><code>dc:type</code></td>
+<td>Resource type</td>
+<td>"InteractiveResource"</td>
+</tr>
+<tr>
+<td><code>dc:format</code></td>
+<td>Technical format</td>
+<td>"text/html"</td>
+</tr>
+<tr>
+<td><code>dc:language</code></td>
+<td>Content language</td>
+<td>"en"</td>
+</tr>
+<tr>
+<td><code>dc:rights</code></td>
+<td>License</td>
+<td>"CC BY 4.0"</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Key Insight</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Percy is thinking">
+Dublin Core metadata serves two audiences. For humans, it makes MicroSims searchable and describable. For AI agents and automation tools, it provides structured data that enables intelligent operations — like finding all MicroSims about "cell biology" or all MicroSims using "p5.js" with "overlay-type2" visualization.</p>
+</div>
+<h2 id="social-sharing-open-graph-images-for-link-previews">Social Sharing: Open Graph Images for Link Previews</h2>
+<p>When an instructor pastes a MicroSim URL into a meeting chat — Zoom, Microsoft Teams, Google Chat, Slack, LinkedIn, or Facebook — the platform fetches the page's Open Graph metadata and renders a <strong>link preview card</strong>. A well-configured preview shows the MicroSim's title, description, and a representative screenshot, giving students an immediate visual preview of the infographic being discussed in class. A poorly configured preview shows a generic placeholder or nothing at all, losing a valuable opportunity to engage learners before they even click.</p>
+<h3 id="social-preview-image-standards">Social Preview Image Standards</h3>
+<p>The <strong>social preview image</strong> (<code>og:image</code>) is the single most impactful Open Graph element. It is the large visual that dominates the link preview card on every platform. Getting the image size and aspect ratio right ensures your MicroSim preview renders correctly across all major platforms.</p>
+<h4 id="required-image-specifications">Required Image Specifications</h4>
+<table>
+<thead>
+<tr>
+<th>Specification</th>
+<th>Recommended Value</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Dimensions</strong></td>
+<td><strong>1200 × 630 pixels</strong></td>
+<td>The universal standard; renders correctly on all major platforms</td>
+</tr>
+<tr>
+<td><strong>Aspect ratio</strong></td>
+<td><strong>1.91:1</strong></td>
+<td>Facebook, LinkedIn, Slack, Teams, and Twitter/X all optimize for this ratio</td>
+</tr>
+<tr>
+<td><strong>Minimum size</strong></td>
+<td>600 × 315 pixels</td>
+<td>Below this, some platforms will not display the image at all</td>
+</tr>
+<tr>
+<td><strong>Maximum file size</strong></td>
+<td>Under 5 MB (target under 1 MB)</td>
+<td>Large images cause slow preview rendering or timeout failures</td>
+</tr>
+<tr>
+<td><strong>Format</strong></td>
+<td>PNG for screenshots, JPEG for photos</td>
+<td>PNG preserves sharp text and UI elements; JPEG for photographic content</td>
+</tr>
+<tr>
+<td><strong>Color space</strong></td>
+<td>sRGB</td>
+<td>Non-sRGB images may render with shifted colors on some platforms</td>
+</tr>
+</tbody>
+</table>
+<h4 id="platform-specific-rendering-behavior">Platform-Specific Rendering Behavior</h4>
+<p>Different platforms crop and display the <code>og:image</code> differently. The 1200 × 630 standard works across all of them, but understanding the differences helps you compose better preview images:</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Display Size</th>
+<th>Crop Behavior</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Slack</strong></td>
+<td>~360 × 189 px (displayed)</td>
+<td>Center-crops to 1.91:1</td>
+<td>Shows title + description below image</td>
+</tr>
+<tr>
+<td><strong>Microsoft Teams</strong></td>
+<td>~360 × 189 px</td>
+<td>Center-crops to 1.91:1</td>
+<td>Very similar to Slack rendering</td>
+</tr>
+<tr>
+<td><strong>Zoom Chat</strong></td>
+<td>~300 × 157 px</td>
+<td>Center-crops to 1.91:1</td>
+<td>Smaller display; keep key content centered</td>
+</tr>
+<tr>
+<td><strong>LinkedIn</strong></td>
+<td>~520 × 272 px</td>
+<td>Center-crops to 1.91:1</td>
+<td>Larger display; more detail visible</td>
+</tr>
+<tr>
+<td><strong>Facebook</strong></td>
+<td>~500 × 261 px</td>
+<td>Center-crops to 1.91:1</td>
+<td>Shows title overlay on image in some views</td>
+</tr>
+<tr>
+<td><strong>Twitter/X</strong></td>
+<td>~506 × 265 px</td>
+<td>Center-crops to 1.91:1</td>
+<td>"Summary with large image" card type</td>
+</tr>
+<tr>
+<td><strong>Google Chat</strong></td>
+<td>~400 × 209 px</td>
+<td>Center-crops to 1.91:1</td>
+<td>Renders inline in conversation</td>
+</tr>
+<tr>
+<td><strong>iMessage</strong></td>
+<td>Variable width</td>
+<td>Center-crops to 1.91:1</td>
+<td>Full-width in message bubbles</td>
+</tr>
+</tbody>
+</table>
+<h4 id="composing-an-effective-preview-image">Composing an Effective Preview Image</h4>
+<p>Because all platforms center-crop, place the most important visual content in the <strong>center 80%</strong> of the image. Avoid placing critical labels, titles, or interactive elements near the edges where they may be cropped.</p>
+<p>A good MicroSim preview image should:</p>
+<ul>
+<li>Show the infographic in an <strong>active state</strong> — with data displayed, a region highlighted, or a tooltip visible — not a blank canvas or loading screen</li>
+<li>Include the <strong>MicroSim title</strong> as text overlay in the upper portion of the image so viewers can read it even when the platform's text fields are truncated</li>
+<li>Use the <strong>aliceblue background</strong> so the preview is visually consistent with the live MicroSim</li>
+<li>Have <strong>sufficient contrast</strong> for readability at small sizes (remember, the image may be displayed as small as 300px wide)</li>
+<li>Be a <strong>real screenshot</strong> of the working MicroSim, not a mockup or placeholder</li>
+</ul>
+<h4 id="creating-preview-images">Creating Preview Images</h4>
+<p>The simplest approach is to take a browser screenshot of the MicroSim at the correct dimensions:</p>
+<ol>
+<li>Open <code>main.html</code> in the browser</li>
+<li>Set the browser window to approximately 1200px wide</li>
+<li>Use the browser's screenshot tool or a screen capture utility</li>
+<li>Crop to exactly 1200 × 630 pixels, centering on the most visually informative area</li>
+<li>Save as PNG in the MicroSim directory as <code>img/preview.png</code></li>
+</ol>
+<p>For automated screenshot generation at scale, tools like Playwright or Puppeteer can capture screenshots of every MicroSim in a portfolio with consistent dimensions.</p>
+<h3 id="overriding-mkdocs-material-social-cards-with-local-images">Overriding MkDocs Material Social Cards with Local Images</h3>
+<p>MkDocs Material includes a <strong>Social Cards plugin</strong> (<code>social</code> plugin) that automatically generates preview images with the page title and site branding. These auto-generated cards are useful as a default, but for MicroSim pages, a <strong>screenshot of the actual infographic</strong> is far more compelling than a text-only card.</p>
+<p>To override the auto-generated social card with your own custom preview image, use the <code>image</code> property in the page's YAML frontmatter. In MkDocs Material, the <code>meta</code> frontmatter key allows you to set custom Open Graph tags that override the defaults:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nn">---</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Cell Biology Interactive Diagram</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Explore cell organelles with hover-activated descriptions and a quiz mode that tests your knowledge of mitochondria, ribosomes, and more.</span>
+<span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">img/preview.png</span>
+<span class="nn">---</span>
+</code></pre></div></td></tr></table></div>
+<p>When the <code>image</code> field is set in the frontmatter, MkDocs Material uses your local image file as the <code>og:image</code> instead of the auto-generated social card. The path is relative to the page's directory.</p>
+<p>If the Social Cards plugin is enabled in <code>mkdocs.yml</code>, the override hierarchy is:</p>
+<ol>
+<li><strong>Page-level <code>image</code> frontmatter</strong> — highest priority; uses your custom screenshot</li>
+<li><strong>Auto-generated social card</strong> — fallback if no page-level image is set</li>
+<li><strong>Site-level default</strong> — configured in <code>mkdocs.yml</code> under <code>extra</code> if no other image exists</li>
+</ol>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Common Mistake</p>
+<p><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Percy warns you">
+Forgetting to set the <code>image</code> frontmatter on MicroSim pages is one of the most common packaging oversights. Without it, shared links show a generic text card instead of your beautiful infographic. Always capture a preview screenshot and reference it in the frontmatter — it takes 30 seconds and dramatically improves how your MicroSims appear when instructors share them in class chats.</p>
+</div>
+<h3 id="social-media-override-plugin">Social Media Override Plugin</h3>
+<p>Often, the priority of having a local image in the <code>imgage</code> or <code>og:image</code> field
+may not be used by the mkdocs material social plugin. To get around this problem,
+we have created another plugin called the <code>social_override</code> plugin.  This plugin
+guarantees that a local image in the YML frontmatter will override the social
+card generated by the social plugin.  An installer for this plugin is available
+in the <code>book-installer</code> skill located in the <a href="https://github.com/dmccreary/claude-skills/skills/book-installer">Claude Skills repo</a>.</p>
+<p>It is our hope that a future version of mkdocs-material will fix this issue.
+See the <a href="https://github.com/squidfunk/mkdocs-material">Mkdocs Material</a> issues
+for an update.</p>
+<h3 id="testing-your-open-graph-tags">Testing Your Open Graph Tags</h3>
+<p>Before deploying, verify that your Open Graph tags render correctly. After running <code>mkdocs gh-deploy</code>, you can test your live URLs with these platform-specific tools:</p>
+<ul>
+<li><strong>Facebook Sharing Debugger</strong> — shows exactly what Facebook will display and lets you clear cached previews</li>
+<li><strong>Twitter/X Card Validator</strong> — previews the card format and flags missing tags</li>
+<li><strong>LinkedIn Post Inspector</strong> — previews the link card and refreshes cached metadata</li>
+<li><strong>Slack</strong> — simply paste the URL into a Slack message to yourself; Slack renders previews in real time</li>
+</ul>
+<p>For local testing before deployment, view the page source in your browser and search for <code>og:image</code> to confirm the meta tag points to your custom preview image rather than the default social card.</p>
+<h2 id="embedding-microsims-in-textbook-pages">Embedding MicroSims in Textbook Pages</h2>
+<p>Embedding is how MicroSim infographics appear within textbook chapter pages. The MicroSim packaging standard defines three embedding mechanisms, each serving a different purpose.</p>
+<h3 id="display-iframe">Display Iframe</h3>
+<p>The <strong>display iframe</strong> is the primary embedding mechanism — an <code>&lt;iframe&gt;</code> element in the chapter's markdown that loads the MicroSim's main.html:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../../sims/cell-biology/main.html&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;500px&quot;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p>Key rules for display iframes:</p>
+<ul>
+<li>Never add a <code>style</code> attribute to the iframe (styles are governed by <code>extra.css</code>)</li>
+<li>Always include <code>scrolling="no"</code> to prevent scroll hijacking</li>
+<li>Use <code>width="100%"</code> for responsive width</li>
+<li>Set an initial <code>height</code> that matches the MicroSim's expected height</li>
+</ul>
+<h3 id="copy-paste-iframe">Copy-Paste Iframe</h3>
+<p>The <strong>copy-paste iframe</strong> is a secondary embed code designed for use outside the textbook — in blog posts, LMS pages, or other websites. It includes the full absolute URL and self-contained styling:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://textbook.example.com/sims/cell-biology/main.html&quot;</span>
+        <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;500px&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;border: 1px solid silver;&quot;</span>
+        <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p>A copy-paste iframe code snippet is typically included in the MicroSim's index.md documentation page so that educators can easily embed the infographic in their own materials.</p>
+<h3 id="fullscreen-link-button">Fullscreen Link Button</h3>
+<p>The <strong>fullscreen link button</strong> is a markdown link placed immediately after the display iframe that opens the MicroSim in a full browser tab:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[<span class="nt">View Cell Biology Diagram Fullscreen</span>](<span class="na">../../sims/cell-biology/main.html</span>)
+</code></pre></div></td></tr></table></div>
+<p>This provides students with an uncluttered, full-screen view of the infographic — useful for complex MicroSims that benefit from more screen space, for presentations, and for accessibility (screen readers and assistive technologies work better with a full page than an iframe).</p>
+<h3 id="p5js-editor-link">p5.js Editor Link</h3>
+<p>The <strong>p5.js editor link</strong> opens the MicroSim's code in the online p5.js web editor, allowing students to view, modify, and experiment with the JavaScript code. This supports the learning objective of understanding how infographics are built, not just using them:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[<span class="nt">Edit in p5.js Editor</span>](<span class="na">https://editor.p5js.org/?source=https://textbook.example.com/sims/cell-biology/sketch.js</span>)
+</code></pre></div></td></tr></table></div>
+<h2 id="the-visual-layout-standard">The Visual Layout Standard</h2>
+<p>Visual consistency across all MicroSims in a textbook creates a professional, cohesive experience. The MicroSim standard defines three visual elements that every infographic should use.</p>
+<h3 id="aliceblue-drawing-region">Aliceblue Drawing Region</h3>
+<p>The <strong>aliceblue drawing region</strong> is the primary canvas area where the infographic's visual content is rendered. The background color <code>aliceblue</code> (hex <code>#F0F8FF</code>, RGB 240, 248, 255) was chosen for its soft, neutral appearance that provides sufficient contrast for colored visual elements without the harshness of pure white.</p>
+<h3 id="white-control-region">White Control Region</h3>
+<p>The <strong>white control region</strong> is the area below the drawing canvas that contains interactive controls — sliders, buttons, dropdowns, and text inputs. The white background (<code>#FFFFFF</code>) visually separates controls from the drawing area, creating a clear two-zone layout.</p>
+<h3 id="silver-border">Silver Border</h3>
+<p>The <strong>silver border</strong> (1px solid <code>silver</code>, hex <code>#C0C0C0</code>) provides a subtle visual boundary between the drawing region and the control region, and around the MicroSim's outer edge when embedded in a textbook page.</p>
+<p>Together, these three elements create the signature MicroSim visual identity:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>┌──────────────────────────────────┐
+│                                  │
+│     Aliceblue Drawing Region     │
+│     (interactive canvas)         │
+│                                  │
+├──────────────────────────────────┤  ← Silver border
+│     White Control Region         │
+│     [Slider] [Button] [Select]   │
+└──────────────────────────────────┘
+</code></pre></div></td></tr></table></div>
+<h3 id="color-consistency">Color Consistency</h3>
+<p><strong>Color consistency</strong> means using the same color palette across all MicroSims in a textbook. The standard defines:</p>
+<ul>
+<li>Drawing background: <code>aliceblue</code> (#F0F8FF)</li>
+<li>Control background: <code>white</code> (#FFFFFF)</li>
+<li>Border: <code>silver</code> (#C0C0C0)</li>
+<li>Primary accent: the textbook's theme color (e.g., blue #4A90D9)</li>
+<li>Secondary accent: the textbook's accent color (e.g., orange #FF6600)</li>
+<li>Text: dark gray (#333333)</li>
+</ul>
+<h3 id="font-size-scaling">Font Size Scaling</h3>
+<p><strong>Font size scaling</strong> ensures that text labels, titles, and descriptions within the MicroSim remain readable across different canvas sizes. The standard approach is to calculate font sizes as a proportion of the canvas width:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">baseFontSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">max</span><span class="p">(</span><span class="mf">12</span><span class="p">,</span><span class="w"> </span><span class="nx">width</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.02</span><span class="p">);</span><span class="w">  </span><span class="c1">// 2% of canvas width, minimum 12px</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">titleFontSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">baseFontSize</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">1.5</span><span class="p">;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">labelFontSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">baseFontSize</span><span class="p">;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">smallFontSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">baseFontSize</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.8</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>This ensures that a MicroSim displayed at 600px wide has appropriately smaller text than one displayed at 1200px wide, maintaining readability at both extremes.</p>
+<h4 id="diagram-microsim-visual-standards-explorer">Diagram: MicroSim Visual Standards Explorer</h4>
+<iframe src="../../sims/microsim-visual-standards/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>MicroSim Visual Standards Explorer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> microsim-visual-standards<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> Explain
+<strong>Learning Objective:</strong> Explain the MicroSim visual layout standard by interacting with an annotated example that highlights the aliceblue drawing region, white control region, silver border, color consistency, and font size scaling.</p>
+<p><strong>Instructional Rationale:</strong> An annotated interactive example is appropriate because the Understand objective requires learners to see each visual standard element identified and explained in context. Hovering over each labeled region provides just-in-time definitions.</p>
+<p><strong>Canvas Layout:</strong>
+- Drawing area (aliceblue): a sample infographic with 4 labeled regions
+- Control area (white, silver border): sample slider and button controls
+- Annotation overlay: labeled arrows pointing to each standard element</p>
+<p><strong>Visual Elements:</strong>
+- A working sample MicroSim (simple bar chart with 4 bars) displayed at full standard
+- Annotation arrows pointing to:
+  1. "Aliceblue Drawing Region (#F0F8FF)" → the canvas background
+  2. "White Control Region (#FFFFFF)" → the controls area
+  3. "Silver Border (1px solid #C0C0C0)" → the dividing line
+  4. "Font Size Scaling" → text labels that resize with the canvas
+  5. "Color Consistency" → the bar colors matching the textbook theme
+- Hovering over an annotation arrow highlights the corresponding element and shows a tooltip with its specification</p>
+<p><strong>Interactive Controls:</strong>
+- Slider: "Canvas Width" (range 400–1000px, default 700px) — resizes the sample MicroSim to demonstrate responsive behavior and font scaling
+- Toggle: "Show Annotations" (default on) — shows/hides the annotation arrows
+- Toggle: "Show Hex Values" — displays the hex color value inside each colored region
+- The sample bar chart is functional (hovering bars shows values) to demonstrate that the standard does not interfere with interactivity</p>
+<p><strong>Behavior:</strong>
+- Resizing the canvas width visually demonstrates font scaling (text gets proportionally larger/smaller)
+- Annotations reposition as the canvas resizes
+- Responsive to window resize</p>
+<p><strong>Default Parameters:</strong>
+- Canvas Width: 700px
+- Show Annotations: on
+- Show Hex Values: off
+- Canvas width: responsive
+- Canvas height: 500px</p>
+<p>Implementation: p5.js with annotated MicroSim rendering</p>
+</details>
+<h2 id="iframe-height-reporting-with-postmessage">Iframe Height Reporting with postMessage</h2>
+<h3 id="the-postmessage-api">The postMessage API</h3>
+<p>The <strong>postMessage API</strong> is a browser mechanism for safe communication between an iframe and its parent page, even across different origins. For MicroSim packaging, postMessage serves a critical purpose: <strong>iframe height reporting</strong>.</p>
+<h3 id="iframe-height-reporting">Iframe Height Reporting</h3>
+<p><strong>Iframe height reporting</strong> solves a fundamental embedding problem: the parent page does not know how tall the MicroSim content is, and setting a fixed iframe height either wastes space (too tall) or clips content (too short). The solution is for the MicroSim to measure its own height and report it to the parent page:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Inside the MicroSim (main.html)</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">reportHeight</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">scrollHeight</span><span class="p">;</span>
+<span class="w">    </span><span class="nb">window</span><span class="p">.</span><span class="nx">parent</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">({</span>
+<span class="w">        </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;microsim-resize&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="nx">height</span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="s1">&#39;*&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Call after setup and on window resize</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;load&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">reportHeight</span><span class="p">);</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;resize&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">reportHeight</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>The parent page's JavaScript (loaded via <code>extra.js</code> in MkDocs) listens for these messages and adjusts the iframe height accordingly:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// In the parent page (extra.js)</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">type</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;microsim-resize&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">iframes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;iframe&#39;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">iframe</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">iframes</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">iframe</span><span class="p">.</span><span class="nx">contentWindow</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">source</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nx">iframe</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">height</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;px&#39;</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></td></tr></table></div>
+<p>This mechanism ensures that every MicroSim occupies exactly the space it needs, regardless of its content height, control count, or responsive layout configuration.</p>
+<h2 id="quality-assurance-rubric-and-checklist">Quality Assurance: Rubric and Checklist</h2>
+<p>Consistent quality across a textbook's MicroSim portfolio requires objective measurement tools. The MicroSim standard provides two complementary instruments: a scoring rubric for quality assessment and a checklist for deployment readiness.</p>
+<h3 id="microsim-quality-rubric">MicroSim Quality Rubric</h3>
+<p>The <strong>MicroSim quality rubric</strong> is a 100-point scoring system that evaluates a MicroSim across multiple dimensions. The <strong>quality score</strong> produced by the rubric provides a single number that summarizes the overall quality of the infographic.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Max Points</th>
+<th>What It Measures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Functionality</td>
+<td>25</td>
+<td>Does the infographic work correctly? Are interactions responsive?</td>
+</tr>
+<tr>
+<td>Visual Design</td>
+<td>20</td>
+<td>Color consistency, layout, typography, use of standard regions</td>
+</tr>
+<tr>
+<td>Educational Value</td>
+<td>20</td>
+<td>Learning objective clarity, concept coverage, engagement</td>
+</tr>
+<tr>
+<td>Metadata</td>
+<td>15</td>
+<td>Dublin Core completeness, YAML frontmatter, Open Graph tags</td>
+</tr>
+<tr>
+<td>Responsiveness</td>
+<td>10</td>
+<td>Width-responsive behavior, font scaling, mobile compatibility</td>
+</tr>
+<tr>
+<td>Code Quality</td>
+<td>10</td>
+<td>Clean code, no console errors, proper event handling</td>
+</tr>
+</tbody>
+</table>
+<p>A quality score of <strong>85 or above</strong> indicates a MicroSim ready for production deployment. Scores between <strong>70-84</strong> indicate a functional MicroSim that would benefit from refinement. Scores below <strong>70</strong> suggest significant issues that should be addressed before deployment.</p>
+<h3 id="standardization-checklist">Standardization Checklist</h3>
+<p>The <strong>standardization checklist</strong> is a binary (pass/fail) list of requirements that every MicroSim must meet before deployment. Unlike the rubric (which allows partial credit), the checklist items are non-negotiable:</p>
+<ul>
+<li>[ ] <code>main.html</code> file exists and loads without errors</li>
+<li>[ ] <code>index.md</code> file exists with YAML frontmatter (title and description)</li>
+<li>[ ] <code>metadata.json</code> file exists with all required Dublin Core fields</li>
+<li>[ ] Background color is aliceblue (#F0F8FF)</li>
+<li>[ ] Control region has white background and silver border</li>
+<li>[ ] <code>scrolling="no"</code> on all iframe embeds</li>
+<li>[ ] No <code>style</code> attribute on iframe elements</li>
+<li>[ ] postMessage height reporting implemented</li>
+<li>[ ] Responsive to window resize events</li>
+<li>[ ] No JavaScript console errors</li>
+<li>[ ] Library versions pinned in CDN URLs</li>
+<li>[ ] Fullscreen link provided after iframe embed</li>
+</ul>
+<h4 id="diagram-microsim-quality-scorer">Diagram: MicroSim Quality Scorer</h4>
+<iframe src="../../sims/microsim-quality-scorer/main.html" width="100%" height="600px" scrolling="no"></iframe>
+
+<details>
+<summary>MicroSim Quality Scorer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> microsim-quality-scorer<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Evaluate (L5)
+<strong>Bloom Verb:</strong> Assess
+<strong>Learning Objective:</strong> Assess the quality of a MicroSim by scoring it against the quality rubric across six categories, producing a total quality score, and identifying specific areas for improvement.</p>
+<p><strong>Instructional Rationale:</strong> A guided scoring tool is appropriate because the Evaluate objective requires learners to apply the rubric criteria to concrete examples. Scoring a sample MicroSim (or their own work) builds evaluative judgment and familiarity with quality standards.</p>
+<p><strong>Canvas Layout:</strong>
+- Left panel (aliceblue, 55% width): a preview of a sample MicroSim being scored
+- Right panel (white, silver border, 45% width): scoring interface with sliders for each category</p>
+<p><strong>Visual Elements:</strong>
+- Left: an embedded preview of a sample MicroSim (a simple bar chart) with annotations highlighting issues to evaluate (e.g., missing silver border, incorrect background color, no height reporting)
+- Right: six scoring sliders, one per rubric category:
+  - Functionality (0-25)
+  - Visual Design (0-20)
+  - Educational Value (0-20)
+  - Metadata (0-15)
+  - Responsiveness (0-10)
+  - Code Quality (0-10)
+- Below the sliders: total score display (large number, color-coded: green ≥85, yellow 70-84, red &lt;70)
+- A "Findings" text area that auto-populates with feedback based on the scores (e.g., "Visual Design: Score 12/20 — Consider using aliceblue background and silver borders for MicroSim standard compliance")</p>
+<p><strong>Interactive Controls:</strong>
+- 6 sliders for scoring each category
+- Dropdown: "Sample MicroSim" with 3 options:
+  - "Good Example" (expected score ~90)
+  - "Needs Work" (expected score ~72)
+  - "Poor Example" (expected score ~45)
+- Selecting a sample loads a different preview with different issues visible
+- Button: "Reset Scores" — clears all sliders to 0
+- Button: "Copy Report" — copies the scores and findings as formatted text</p>
+<p><strong>Behavior:</strong>
+- Moving any slider updates the total score in real time
+- The total score changes color based on the threshold
+- The Findings area updates dynamically based on slider positions
+- Responsive to window resize; panels stack vertically on narrow screens</p>
+<p><strong>Default Parameters:</strong>
+- Sample: "Good Example"
+- All sliders at 0 initially (user must evaluate)
+- Canvas width: responsive
+- Canvas height: 550px</p>
+<p>Implementation: p5.js with slider-based scoring and dynamic feedback generation</p>
+</details>
+<h2 id="deployment-with-gh-deploy">Deployment with gh-deploy</h2>
+<p>The <strong>gh-deploy command</strong> (<code>mkdocs gh-deploy</code>) builds the MkDocs site and pushes it to the <code>gh-pages</code> branch of the GitHub repository, making the textbook (and all embedded MicroSims) publicly accessible via GitHub Pages.</p>
+<p>The deployment workflow:</p>
+<ol>
+<li>Run <code>mkdocs build</code> to verify the site builds without errors</li>
+<li>Review the built site locally with <code>mkdocs serve</code></li>
+<li>Run <code>mkdocs gh-deploy</code> to build and push to GitHub Pages</li>
+<li>Verify the deployed site at the GitHub Pages URL</li>
+</ol>
+<p>The gh-deploy command handles the entire deployment pipeline — building HTML from markdown, copying MicroSim directories to the output, and pushing to the hosting branch. Every MicroSim in the <code>docs/sims/</code> directory is automatically included in the deployment because MkDocs copies all non-markdown files to the built site.</p>
+<h2 id="shared-libraries-and-templates">Shared Libraries and Templates</h2>
+<h3 id="shared-libraries">Shared Libraries</h3>
+<p>A <strong>shared library</strong> is a JavaScript file used by multiple MicroSims — most commonly the overlay diagram driver (<code>overlay-diagram.js</code>) or a custom utility library for common operations (color management, responsive layout helpers, analytics integration). Shared libraries are stored in a common directory (e.g., <code>docs/sims/lib/</code>) and referenced from each MicroSim's main.html:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../lib/overlay-diagram.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p>The advantage of shared libraries is that bug fixes and improvements propagate to every MicroSim that uses them. The trade-off is a dependency: if the shared library changes its API, all dependent MicroSims must be updated.</p>
+<h3 id="template-microsims">Template MicroSims</h3>
+<p>A <strong>template MicroSim</strong> is a starter package that provides the standard directory structure, boilerplate HTML, CSS, and JavaScript, and placeholder content that a designer fills in to create a new infographic. Templates dramatically accelerate MicroSim creation by eliminating repetitive setup work:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>docs/sims/_templates/
+├── p5js-basic/           # Template for p5.js canvas MicroSims
+│   ├── main.html
+│   ├── index.md
+│   ├── metadata.json
+│   └── sketch.js
+├── chartjs-basic/        # Template for Chart.js chart MicroSims
+├── overlay-type1/        # Template for Type 1 rectangular overlays
+├── overlay-type2/        # Template for Type 2 polygon overlays
+└── vis-network-basic/    # Template for vis-network graph MicroSims
+</code></pre></div></td></tr></table></div>
+<p>Each template includes all standard elements (aliceblue background, white controls, silver border, postMessage height reporting, metadata.json with placeholder values) so that the designer starts from a compliant baseline.</p>
+<h3 id="reusable-overlay-schema">Reusable Overlay Schema</h3>
+<p>The <strong>reusable overlay schema</strong> is a JSON Schema document that defines the valid structure for overlay JSON configuration files across all four overlay types. The schema enables automated validation: before deploying an overlay MicroSim, a validation script checks the overlay.json against the schema and reports any structural errors (missing fields, wrong data types, coordinates outside 0-1 range).</p>
+<h2 id="width-responsive-testing">Width-Responsive Testing</h2>
+<p><strong>Width-responsive testing</strong> is the process of verifying that a MicroSim displays correctly across a range of viewport widths. Because MicroSims are embedded in MkDocs content areas that vary from approximately 600px to 900px wide (and may be viewed on mobile devices at narrower widths), every MicroSim must be tested at multiple sizes.</p>
+<p>A systematic testing protocol:</p>
+<table>
+<thead>
+<tr>
+<th>Test Width</th>
+<th>Simulates</th>
+<th>What to Check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>360px</td>
+<td>Mobile phone</td>
+<td>Controls usable, text readable, no horizontal overflow</td>
+</tr>
+<tr>
+<td>600px</td>
+<td>Narrow content area</td>
+<td>Layout intact, labels not truncated</td>
+</tr>
+<tr>
+<td>768px</td>
+<td>Tablet / medium area</td>
+<td>Standard layout, proper spacing</td>
+</tr>
+<tr>
+<td>900px</td>
+<td>Standard content area</td>
+<td>Full layout, all features visible</td>
+</tr>
+<tr>
+<td>1200px</td>
+<td>Wide content area</td>
+<td>No excessive whitespace, proportional scaling</td>
+</tr>
+</tbody>
+</table>
+<p>Testing can be performed using the browser's responsive design mode (DevTools → Toggle Device Toolbar) or by resizing the browser window while viewing the MicroSim's main.html directly.</p>
+<h3 id="the-infographic-portfolio">The Infographic Portfolio</h3>
+<p>An <strong>infographic portfolio</strong> is a collection of all MicroSims in a textbook, organized and cataloged for easy browsing, quality tracking, and maintenance. The portfolio typically takes the form of a summary page listing each MicroSim with its title, quality score, library, and links to the documentation page and fullscreen view.</p>
+<p>A well-maintained portfolio serves multiple purposes:</p>
+<ul>
+<li><strong>Quality tracking</strong> — At a glance, identify which MicroSims need attention (low quality scores)</li>
+<li><strong>Content planning</strong> — See which topics and visualization types are covered, and where gaps exist</li>
+<li><strong>Reuse</strong> — Find existing MicroSims that can be adapted for new chapters</li>
+<li><strong>Showcase</strong> — Demonstrate the breadth of interactive content to stakeholders and adopters</li>
+</ul>
+<h4 id="diagram-microsim-directory-structure-explorer">Diagram: MicroSim Directory Structure Explorer</h4>
+<iframe src="../../sims/microsim-directory-explorer/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>MicroSim Directory Structure Explorer</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> microsim-directory-explorer<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Remember (L1)
+<strong>Bloom Verb:</strong> Identify
+<strong>Learning Objective:</strong> Identify the required files in a MicroSim directory and recall the purpose of each file (main.html, index.md, metadata.json, sketch.js) in the MicroSim packaging standard.</p>
+<p><strong>Instructional Rationale:</strong> An interactive file tree with hover-to-reveal descriptions supports the Remember objective by creating file-name-to-purpose associations through repeated retrieval practice. The quiz mode reinforces memorization.</p>
+<p><strong>Canvas Layout:</strong>
+- Main area (aliceblue): interactive file tree visualization
+- Right info panel (white, silver border, 35% width): file details</p>
+<p><strong>Visual Elements:</strong>
+- A visual file tree showing a complete MicroSim directory:
+  - 📁 cell-biology/ (root folder)
+    - 📄 main.html
+    - 📄 index.md
+    - 📄 metadata.json
+    - 📄 sketch.js
+    - 📄 style.css
+    - 📄 overlay.json
+    - 📁 img/
+      - 🖼️ diagram.png
+      - 🖼️ preview.png
+- Each file/folder is clickable; selecting one highlights it and displays details in the right panel
+- File icons are color-coded by type (HTML=orange, MD=blue, JSON=green, JS=yellow, CSS=purple, images=red)</p>
+<p><strong>Interactive Controls:</strong>
+- Click a file to select it and read: filename, purpose, required/optional status, and a 3-line example of its contents
+- Toggle: "Show File Sizes" — displays approximate file sizes next to each file
+- Button: "Quiz Mode" — hides file descriptions; user clicks a file and selects its purpose from 4 multiple-choice options; score tracked
+- Button: "Show All" — expands all folders and shows descriptions inline</p>
+<p><strong>Behavior:</strong>
+- Clicking a folder expands/collapses it with animation
+- Selected file has a blue highlight
+- Quiz Mode provides immediate correct/incorrect feedback with the correct answer shown
+- Responsive to window resize; file tree and info panel stack on narrow screens</p>
+<p><strong>Default Parameters:</strong>
+- All folders expanded
+- No file selected initially
+- Quiz Mode: off
+- Canvas width: responsive
+- Canvas height: 500px</p>
+<p>Implementation: p5.js with interactive tree rendering</p>
+</details>
+<h2 id="finding-similar-microsims-faceted-search-and-embeddings">Finding Similar MicroSims: Faceted Search and Embeddings</h2>
+<p>As your infographic portfolio grows — and as you begin creating MicroSims with the help of AI agents and AI Skills — one of the most valuable capabilities is the ability to <strong>find similar MicroSims</strong> that can serve as proven templates for new work. Rather than starting from scratch, a designer or AI agent can locate an existing MicroSim that closely matches the desired outcome and use it as a starting point, dramatically improving both quality and speed.</p>
+<p>The <a href="https://dmccreary.github.io/search-microsims/">Search MicroSims</a> project provides both interactive faceted search demos and tools for creating multiple types of embeddings optimized for MicroSim discovery. This section explores why finding similar MicroSims is important and how two distinct similarity dimensions — topic similarity and technical similarity — combine to produce better results.</p>
+<h3 id="two-dimensions-of-microsim-similarity">Two Dimensions of MicroSim Similarity</h3>
+<p>The key insight is that <strong>finding a MicroSim about a similar topic is fundamentally different from finding a MicroSim that uses a similar JavaScript library and visualization type</strong> — and both dimensions matter when generating new high-quality MicroSims.</p>
+<p><strong>Topic/Subject similarity</strong> answers the question: "What other MicroSims teach related concepts?" A MicroSim about cell mitosis is topically similar to one about cell meiosis, even if they use completely different JavaScript libraries and visualization approaches. Topic embeddings are generated from the <code>dc:subject</code> keywords, the <code>dc:title</code>, and the <code>dc:description</code> fields in metadata.json.</p>
+<p><strong>Technical/Structural similarity</strong> answers the question: "What other MicroSims use the same library and visualization pattern?" A p5.js overlay-type2 MicroSim about cell biology is technically similar to a p5.js overlay-type2 MicroSim about engine components, even though they cover entirely different subjects. Technical embeddings are generated from the <code>microsim:library</code>, <code>microsim:visualization_type</code>, and code structure features.</p>
+<table>
+<thead>
+<tr>
+<th>Similarity Dimension</th>
+<th>What It Captures</th>
+<th>Generated From</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Topic/Subject</td>
+<td>Conceptual relatedness</td>
+<td>dc:subject, dc:title, dc:description</td>
+<td>Find MicroSims about related educational topics</td>
+</tr>
+<tr>
+<td>Technical/Structural</td>
+<td>Implementation similarity</td>
+<td>Library, visualization type, code patterns</td>
+<td>Find proven templates for a given technical approach</td>
+</tr>
+</tbody>
+</table>
+<h3 id="why-both-dimensions-matter-for-ai-assisted-generation">Why Both Dimensions Matter for AI-Assisted Generation</h3>
+<p>When an AI agent (such as a Claude Code skill) needs to generate a new MicroSim, the best results come from combining both similarity dimensions:</p>
+<ol>
+<li><strong>Find topically similar MicroSims</strong> to understand the educational context — what concepts are typically visualized together, what labels and descriptions work well, and what learning objectives are appropriate</li>
+<li><strong>Find technically similar MicroSims</strong> to use as implementation templates — proven code patterns, tested responsive layouts, and working event handling for the chosen library and visualization type</li>
+</ol>
+<p>For example, if you need a new p5.js overlay-type2 MicroSim about the human respiratory system:</p>
+<ul>
+<li><strong>Topic search</strong> finds existing MicroSims about anatomy, biology, and organ systems — providing good examples of labels, descriptions, and educational approaches</li>
+<li><strong>Technical search</strong> finds existing p5.js overlay-type2 MicroSims — providing working code templates with proper polygon hit detection, hover highlights, and infobox rendering</li>
+</ul>
+<p>The intersection of these two searches gives the AI agent the best possible starting context for generating a high-quality MicroSim.</p>
+<h3 id="faceted-search-for-microsim-discovery">Faceted Search for MicroSim Discovery</h3>
+<p>Faceted search provides a structured browsing interface with filters for multiple metadata dimensions simultaneously. The <a href="https://dmccreary.github.io/search-microsims/">Search MicroSims</a> site demonstrates how faceted search enables designers and AI agents to quickly narrow a large portfolio to the most relevant examples:</p>
+<ul>
+<li><strong>Subject facet</strong> — Filter by topic area (biology, physics, history, computer science)</li>
+<li><strong>Library facet</strong> — Filter by JavaScript library (p5.js, D3.js, Chart.js, vis-network, Leaflet)</li>
+<li><strong>Visualization type facet</strong> — Filter by pattern (overlay-type1, bar-chart, network-graph, timeline)</li>
+<li><strong>Quality score facet</strong> — Filter by minimum quality score (show only MicroSims scoring 85+)</li>
+<li><strong>Bloom level facet</strong> — Filter by target Bloom's Taxonomy level</li>
+</ul>
+<p>Faceted search is complementary to embedding-based similarity search. Facets provide exact categorical filtering ("show me all p5.js overlay MicroSims"), while embeddings provide fuzzy similarity matching ("show me MicroSims most similar to this description"). Together, they create a powerful discovery system that scales as your portfolio grows from dozens to hundreds or thousands of MicroSims.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Key Insight</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Percy is thinking">
+As your MicroSim portfolio grows, the ability to find similar existing MicroSims becomes one of your most powerful quality levers. An AI agent that can search both by topic and by technical approach will consistently generate better MicroSims than one that starts from scratch — because it builds on patterns that have already been tested, refined, and proven to work.</p>
+</div>
+<h2 id="summary_1">Summary</h2>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Excellent Work!</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Percy celebrates">
+You now have a complete understanding of the MicroSim packaging standard — from directory structure to metadata to quality scoring to deployment! These standards are what transform individual infographic experiments into a professional, scalable portfolio of interactive learning content. Every standard you follow makes your next MicroSim easier to create, easier to maintain, and easier to share. Display it with style!</p>
+</div>
+<p>In this chapter, you learned that:</p>
+<ul>
+<li>The <strong>MicroSim directory</strong> follows a standard structure with the <strong>main.html file</strong> as the entry point (not index.html), the <strong>index.md file</strong> for MkDocs documentation with <strong>YAML frontmatter</strong> containing <strong>title metadata</strong> and <strong>description metadata</strong>, and the <strong>metadata.json file</strong> with <strong>Dublin Core metadata</strong></li>
+<li><strong>Social preview images</strong> and <strong>Open Graph tags</strong> control how MicroSim pages appear when shared on social media</li>
+<li>The <strong>display iframe</strong> embeds MicroSims in chapter pages (with <code>scrolling="no"</code> and no <code>style</code> attribute), the <strong>copy-paste iframe</strong> provides standalone embed code, the <strong>fullscreen link button</strong> opens a full-page view, and the <strong>p5.js editor link</strong> enables code exploration</li>
+<li>The visual layout standard specifies an <strong>aliceblue drawing region</strong>, <strong>white control region</strong>, and <strong>silver border</strong> for consistent appearance, with <strong>color consistency</strong> and <strong>font size scaling</strong> ensuring professional quality across sizes</li>
+<li>The <strong>postMessage API</strong> enables <strong>iframe height reporting</strong> so MicroSims automatically communicate their height to the parent page</li>
+<li>The <strong>MicroSim quality rubric</strong> produces a <strong>quality score</strong> (0-100) across six categories, while the <strong>standardization checklist</strong> provides binary pass/fail deployment criteria, together forming the <strong>quality assurance</strong> system</li>
+<li>The <strong>gh-deploy command</strong> builds and publishes the textbook to GitHub Pages</li>
+<li><strong>Shared libraries</strong> reduce duplication, <strong>template MicroSims</strong> accelerate creation, the <strong>reusable overlay schema</strong> validates overlay JSON files, and <strong>width-responsive testing</strong> verifies behavior across screen sizes</li>
+<li>The <strong>infographic portfolio</strong> catalogs all MicroSims for quality tracking, content planning, and reuse</li>
+<li><strong>Faceted search</strong> and <strong>embeddings</strong> enable finding similar MicroSims along two dimensions — topic/subject similarity and technical/structural similarity — which is essential for AI-assisted generation of new high-quality MicroSims based on proven working templates</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.dublincore.org/specifications/dublin-core/">Dublin Core Metadata Initiative</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dublin_Core">Wikipedia: Dublin Core</a></li>
+<li><a href="https://ogp.me/">Open Graph Protocol</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Facebook_Platform#Open_Graph_protocol">Wikipedia: Open Graph Protocol</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage">MDN Web Docs: postMessage</a></li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/">MkDocs Material — Social Cards</a></li>
+<li><a href="https://www.mkdocs.org/user-guide/deploying-your-docs/">MkDocs — Deploying with GitHub Pages</a></li>
+<li><a href="https://json-schema.org/specification">JSON Schema Specification</a></li>
+<li><a href="https://dmccreary.github.io/search-microsims/">Search MicroSims — Faceted Search and Embeddings</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Faceted_search">Wikipedia: Faceted Search</a></li>
+</ul>
 
 
 

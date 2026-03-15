@@ -1,0 +1,57 @@
+{
+  "title": "Infobox Positioning Comparison",
+  "creator": "Dan McCreary",
+  "subject": "High School Geometry",
+  "description": "Interactive comparison that lets learners switch infobox placement (below, side panel, floating tooltip) and hover/click triggers to judge which pairing fits a given diagram.",
+  "date": "2026-03-13",
+  "educational": {
+    "gradeLevel": [
+      "11",
+      "12",
+      "Undergraduate"
+    ],
+    "subjectArea": "Information Design",
+    "topic": "Infobox Positioning Comparison",
+    "learningObjectives": [
+      "Compare below, side panel, and floating tooltip infobox positions and determine which is most appropriate for a diagram layout.",
+      "Evaluate whether hover or click events create clearer reading sequences for dense diagrams."
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Comfort interpreting labeled block diagrams",
+      "Familiarity with UI terminology such as tooltip and side panel"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 600
+    },
+    "responsive": true,
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration",
+    "keyQuestions": [
+      "Which infobox placement keeps the diagram legible for your current project?",
+      "When does hover behavior overwhelm readers compared to click-to-reveal?"
+    ],
+    "commonMisconceptions": [
+      "Assuming a floating tooltip always saves space without covering critical regions.",
+      "Believing hover interactions work equally well on touch devices."
+    ],
+    "assessmentOpportunities": [
+      "Ask students to justify their recommended placement/trigger pairing for a new diagram.",
+      "Have learners screenshot the mode they chose and annotate why it works."
+    ]
+  },
+  "chapter": ""
+}

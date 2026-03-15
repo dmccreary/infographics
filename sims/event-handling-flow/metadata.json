@@ -1,0 +1,26 @@
+{
+  "title": "Event handling data flow",
+  "description": "Vertical flowchart that explains how events are detected, mapped to interactive regions, and used to refresh MicroSim displays.",
+  "subject": "Interactive infographic design",
+  "creator": "Claude AI with Mermaid Generator Skill",
+  "date": "2026-03-13",
+  "type": "Interactive Workflow Diagram",
+  "format": "text/html",
+  "language": "en-US",
+  "coverage": "Event handling pipeline for educational infographics",
+  "rights": "CC BY-NC-SA 4.0",
+  "audience": "Instructional designers and frontend developers",
+  "diagram_type": "flowchart",
+  "direction": "TD",
+  "node_count": 3,
+  "edge_count": 2,
+  "concepts": [
+    "event handling",
+    "hit testing",
+    "interactive displays"
+  ],
+  "bloom_taxonomy": "Understand (L2)",
+  "library": "mermaid.js",
+  "library_version": "11",
+  "version": "1.0"
+}

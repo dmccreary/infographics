@@ -856,6 +856,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -877,6 +883,59 @@
   
   <span class="md-ellipsis">
     MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../stories/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Stories
     
   </span>
   
@@ -2054,7 +2113,7 @@ half your students. The <code>windowResized()</code> function is your best frien
 </table>
 <p>For intelligent textbooks, the <strong>below-diagram</strong> approach is recommended as the default because it works reliably across all screen sizes and never blocks the student's view of the infographic.</p>
 <h4 id="diagram-infobox-positioning-comparison">Diagram: Infobox Positioning Comparison</h4>
-<iframe src="../../sims/infobox-positioning-comparison/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/infobox-positioning-comparison/main.html" width="100%" height="622px" scrolling="no"></iframe>
 
 <details>
 <summary>Infobox Positioning Comparison</summary>
@@ -2064,22 +2123,39 @@ half your students. The <code>windowResized()</code> function is your best frien
 <strong>Status:</strong> Specified</p>
 <p><strong>Bloom Level:</strong> Analyze (L4)
 <strong>Bloom Verb:</strong> Compare
-<strong>Learning Objective:</strong> Compare the three infobox positioning strategies (below, side panel, floating tooltip) and identify which is most appropriate for different diagram layouts.</p>
-<p>Instructional Rationale: A side-by-side interactive comparison lets learners directly experience each positioning strategy rather than just reading about them. Clicking through the three modes builds intuition for when each approach works best.</p>
+<strong>Learning Objective:</strong> Compare the three infobox positioning strategies (below, side panel, floating tooltip) and two event modes (hover and click) and identify which is most appropriate for different diagram layouts.</p>
+<p>Instructional Rationale: A interactive comparison lets learners directly experience each 
+infobox positioning strategy rather than just reading about them. 
+Controls in the bottom control area allow the user to change how the infobox is
+positioned (below, right side and floating) and what events trigger the infobox
+to be displayed (hover or click)
+Allowing the user to try the three three infobox placement modes 
+and the two event modes (hover and click) builds intuition for when each approach works best.</p>
 <p>Visual elements:
-- A sample diagram (simple labeled block diagram with 5 regions) displayed in the center
-- Three toggle buttons at the top: "Below Diagram", "Side Panel", "Floating Tooltip"
-- When each button is active, the infobox behavior changes accordingly:
+- A sample diagram (simple labeled block diagram with 6 rectangular regions labeled "Region 1"
+to "Region 6") displayed in the center of the canvas or offset based in the infobox
+positioning strategy.
+- A three state selection list with the label "InfoBox Positioning:" with select options for "Below Diagram (default)", "Side Panel", "Floating Tooltip"
+- A "Event Mode" selection list with options for "Hover (default)" and "Click"
+- When different "InfoBox Positioning:" selection is active, the infobox behavior changes accordingly:
   - Below: Infobox appears in a fixed area beneath the diagram
   - Side Panel: Infobox appears in a panel to the right of the diagram
   - Floating: Infobox appears as a tooltip near the hovered region
-- A highlighted annotation explaining the current positioning mode</p>
+  - A highlighted annotation explaining the current positioning mode
+- When different "Event Mode" selections are used the
+  different events will trigger an infobox display
+- When the user has not clicked or hovered, text instructions will be display just above
+  the control area.  The text will read "Select an InfoBox positioning option and an event mode option"</p>
 <p>Interactive features:
-- Click toggle buttons to switch between positioning modes
-- Hover over any of the 5 regions to trigger the infobox in the current mode
-- Each mode displays a brief pro/con note in the corner</p>
-<p>Canvas layout: Width-responsive, aliceblue background, 600px minimum width
-Color scheme: Blue regions, orange active highlights, white infobox with subtle shadow</p>
+- Click on the "InfoBox Positioning:" selection list switch between positioning modes
+- Click on the "Event Mode:" selection list to change if the hover or click modes are used
+- Hover over or Click on any of the 6 sample regions to trigger the infobox in the current mode
+- Each mode displays a brief pro/con note in the lower right corner</p>
+<p>Canvas layout: Width-responsive, aliceblue background in the drawing area. white background for the controls positioned below the drawing area
+Color scheme: Each test region is a dark color with white text and round corners
+Region colors are: Red, Orange, Gold, Green, Blue, Purple
+Regions have a thin light gray border when not selected and a 3 wide back boarder when selected
+The infobox has rounded corners with subtle drop shadow to imply it is above the selection regions</p>
 </details>
 <h2 id="events-how-infographics-respond-to-users">Events: How Infographics Respond to Users</h2>
 <p>Interactive infographics come alive through <strong>events</strong> — signals generated when a user performs an action. The three fundamental event types are hover, click, and selection.</p>
@@ -2147,29 +2223,37 @@ multi-mode explorations.</p>
 <iframe src="../../sims/event-handling-flow/main.html" width="100%" height="500px" scrolling="no"></iframe>
 
 <details>
-<summary>Event Handling Flow</summary>
+<summary>Event Handling Data Flow Diagram</summary>
 <p>Type: diagram
 <strong>sim-id:</strong> event-handling-flow<br/>
-<strong>Library:</strong> p5.js<br/>
+<strong>Library:</strong> mermaid.js with custom Javascript for drawing the infobox to the right of the flowchart<br/>
 <strong>Status:</strong> Specified</p>
 <p><strong>Bloom Level:</strong> Understand (L2)
 <strong>Bloom Verb:</strong> Explain
 <strong>Learning Objective:</strong> Explain the three-step event handling pattern (detect event, identify region, update display) that drives all interactive infographics.</p>
-<p>Instructional Rationale: A step-through flowchart with concrete examples at each stage helps learners trace the process with real data. Stepping through each phase builds understanding of the event → response pipeline.</p>
+<p>Instructional Rationale: A three step vertical top-down flowchart with a detailed explanation of
+what happens at each step. Stepping through each phase builds understanding of the event → response pipeline and the critical processing at each step.</p>
 <p>Visual elements:
-- A horizontal flowchart with three main stages:
-  1. "Event Detected" (blue box) — shows icons for Hover, Click, and Selection
-  2. "Region Identified" (orange box) — shows hit detection checking mouse coordinates against region boundaries
-  3. "Display Updated" (green box) — shows infobox appearing and region highlighting
-- Arrows connecting the three stages with labeled transitions
-- Below the flowchart, a live demo area with a small sample diagram (3 regions)
-- When the user interacts with the sample diagram, the corresponding flowchart stage lights up in real time</p>
+- A vertical flowchart on the left 50% of the canvas with three main elements:
+  1. "Event Detected" (blue box) at the top of a three step flowchart
+  2. "Region Identified" (orange box) — middle box of a three step flowchart
+  3. "Display Updated" (green box) — bottom box of a three step flowchart</p>
+<ul>
+<li>Two arrows connecting the three stages 1 -&gt; 2 and 2 -&gt; 3</li>
+<li>To the right of the flowchart, a floating infobox that shows the details of each step</li>
+<li>When the user clicks on the diagram on the left, the corresponding infobox is
+shown up in real time</li>
+<li>An initial infobox has the instructions "Select an item in the flowchart to the left to view the details of that step."</li>
+</ul>
 <p>Interactive features:
-- Hover over the sample diagram regions to see the flowchart stages highlight in sequence
-- Click a flowchart stage to see a detailed explanation of what happens at that step
-- A "Slow Motion" toggle that adds a visible delay between stages so students can observe the sequence</p>
-<p>Canvas layout: Width-responsive, aliceblue background
-Color scheme: Blue for events, orange for processing, green for output</p>
+- Hover over the flowchart item region on the left to see a brief summary tooltip of that step
+- Click a flowchart item to see a detailed explanation of what happens at that step</p>
+<p>Canvas layout: Width-responsive, aliceblue background, infobox in the right has a white background
+Color scheme: Blue for events, orange for processing, green for output
+Place the mermaid flowchart data and annotations in a data.json file
+Place the javascript in event-handling-flow.js in the microsim directory
+Place the style sheet in a file called style.css in the microsim directory
+Reference the data.json and the style.css in the microsims directory</p>
 </details>
 <h2 id="putting-it-all-together-from-concept-to-experience">Putting It All Together: From Concept to Experience</h2>
 <p>Let's trace how all these concepts work together in a real educational scenario. Suppose you are an instructional designer building an interactive diagram of the water cycle for an earth science textbook.</p>

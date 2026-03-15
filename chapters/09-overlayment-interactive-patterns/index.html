@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="AI Infographics is a collection of resources for creating interactive infographics using AI tools.">
+        <meta name="description" content="Master the four overlayment interactive infographic patterns — rectangular regions, complex polygons, callout-to-edge labels, and floating labels — along with the overlay JSON format, shared driver, and edit mode.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>9. Overlayment Patterns - AI Interactive Infographics</title>
+        <title>Overlayment Interactive Patterns - AI Interactive Infographics</title>
       
     
     
@@ -65,9 +65,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="9. Overlayment Patterns - AI Interactive Infographics" >
+        <meta  property="og:title"  content="Overlayment Interactive Patterns - AI Interactive Infographics" >
       
-        <meta  property="og:description"  content="AI Infographics is a collection of resources for creating interactive infographics using AI tools." >
+        <meta  property="og:description"  content="Master the four overlayment interactive infographic patterns — rectangular regions, complex polygons, callout-to-edge labels, and floating labels — along with the overlay JSON format, shared driver, and edit mode." >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/infographics/assets/images/social/chapters/09-overlayment-interactive-patterns/index.png" >
       
@@ -81,9 +81,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="9. Overlayment Patterns - AI Interactive Infographics" >
+        <meta  name="twitter:title"  content="Overlayment Interactive Patterns - AI Interactive Infographics" >
       
-        <meta  name="twitter:description"  content="AI Infographics is a collection of resources for creating interactive infographics using AI tools." >
+        <meta  name="twitter:description"  content="Master the four overlayment interactive infographic patterns — rectangular regions, complex polygons, callout-to-edge labels, and floating labels — along with the overlay JSON format, shared driver, and edit mode." >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/infographics/assets/images/social/chapters/09-overlayment-interactive-patterns/index.png" >
       
@@ -141,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              9. Overlayment Patterns
+              Overlayment Interactive Patterns
             
           </span>
         </div>
@@ -702,6 +702,318 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-overlayment-pattern-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Overlayment Pattern Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Overlayment Pattern Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-overlay-json-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Overlay JSON File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-overlay-diagram-driver" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Overlay Diagram Driver
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-1-rectangular-region-overlay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type 1: Rectangular Region Overlay
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type 1: Rectangular Region Overlay">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#non-overlapping-regions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-Overlapping Regions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rectangular-region-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rectangular Region Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#region-extent-highlight" class="md-nav__link">
+    <span class="md-ellipsis">
+      Region Extent Highlight
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Region Extent Highlight">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-type-1-rectangular-overlay-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Type 1 Rectangular Overlay Demo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-2-complex-polygon-overlay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type 2: Complex Polygon Overlay
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type 2: Complex Polygon Overlay">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polygon-regions-and-edge-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polygon Regions and Edge Points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-edge-overlay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-Edge Overlay
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multi-Edge Overlay">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-type-2-polygon-overlay-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Type 2 Polygon Overlay Demo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-3-callout-to-edge-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type 3: Callout to Edge Labels
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type 3: Callout to Edge Labels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#callout-points-and-edge-aligned-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Callout Points and Edge-Aligned Labels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numbered-indicators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Numbered Indicators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-numbers-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Show Numbers Toggle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Show Numbers Toggle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-type-3-callout-to-edge-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Type 3 Callout to Edge Demo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-4-floating-labels-with-draggable-positioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type 4: Floating Labels with Draggable Positioning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type 4: Floating Labels with Draggable Positioning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#floating-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Floating Labels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#draggable-positioning-and-edit-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Draggable Positioning and Edit Mode
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Draggable Positioning and Edit Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-type-4-floating-label-with-edit-mode-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Type 4 Floating Label with Edit Mode Demo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-the-right-overlay-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing the Right Overlay Type
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Choosing the Right Overlay Type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-overlay-type-comparison-side-by-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Overlay Type Comparison Side-by-Side
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-overlay-creation-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Overlay Creation Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -864,6 +1176,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -885,6 +1203,59 @@
   
   <span class="md-ellipsis">
     MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../stories/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Stories
     
   </span>
   
@@ -1311,6 +1682,318 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-overlayment-pattern-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Overlayment Pattern Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Overlayment Pattern Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-overlay-json-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Overlay JSON File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-overlay-diagram-driver" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Overlay Diagram Driver
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-1-rectangular-region-overlay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type 1: Rectangular Region Overlay
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type 1: Rectangular Region Overlay">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#non-overlapping-regions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-Overlapping Regions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rectangular-region-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rectangular Region Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#region-extent-highlight" class="md-nav__link">
+    <span class="md-ellipsis">
+      Region Extent Highlight
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Region Extent Highlight">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-type-1-rectangular-overlay-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Type 1 Rectangular Overlay Demo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-2-complex-polygon-overlay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type 2: Complex Polygon Overlay
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type 2: Complex Polygon Overlay">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polygon-regions-and-edge-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polygon Regions and Edge Points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-edge-overlay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-Edge Overlay
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multi-Edge Overlay">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-type-2-polygon-overlay-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Type 2 Polygon Overlay Demo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-3-callout-to-edge-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type 3: Callout to Edge Labels
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type 3: Callout to Edge Labels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#callout-points-and-edge-aligned-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Callout Points and Edge-Aligned Labels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numbered-indicators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Numbered Indicators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-numbers-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Show Numbers Toggle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Show Numbers Toggle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-type-3-callout-to-edge-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Type 3 Callout to Edge Demo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-4-floating-labels-with-draggable-positioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type 4: Floating Labels with Draggable Positioning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type 4: Floating Labels with Draggable Positioning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#floating-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Floating Labels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#draggable-positioning-and-edit-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Draggable Positioning and Edit Mode
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Draggable Positioning and Edit Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-type-4-floating-label-with-edit-mode-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Type 4 Floating Label with Edit Mode Demo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-the-right-overlay-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing the Right Overlay Type
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Choosing the Right Overlay Type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-overlay-type-comparison-side-by-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Overlay Type Comparison Side-by-Side
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-overlay-creation-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Overlay Creation Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1370,7 +2053,707 @@
 <li><a href="../07-web-fundamentals-javascript-and-responsive-design/">Chapter 7: Web Fundamentals: JavaScript and Responsive Design</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Let's Make It Visual!</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Percy welcomes you">
+Welcome to the chapter that turns ordinary images into extraordinary interactive learning experiences! The overlayment patterns you are about to learn are the signature technique of this course — they let you take any diagram, photograph, or illustration and add hover regions, click interactions, infoboxes, and labeled callouts. By the end, you will have four powerful patterns in your toolkit, each suited to a different type of visual content. Let's make it visual!</p>
+</div>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this chapter, you will be able to:</p>
+<ul>
+<li><strong>Explain</strong> the overlayment pattern concept and how it separates image content from interaction logic (Bloom: Understand)</li>
+<li><strong>Construct</strong> a Type 1 rectangular overlay with non-overlapping regions, hover highlights, and infoboxes (Bloom: Apply)</li>
+<li><strong>Implement</strong> a Type 2 complex polygon overlay with multi-edge regions for irregular shapes (Bloom: Apply)</li>
+<li><strong>Distinguish</strong> between the four overlay types and select the appropriate one for a given image and use case (Bloom: Analyze)</li>
+<li><strong>Create</strong> a Type 4 floating label overlay with draggable positioning and edit mode for calibration (Bloom: Create)</li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>Imagine you have a beautifully detailed diagram of a cell, an engine, a historical map, or a software architecture. The image itself is rich with information, but it is static — students can only look at it. What if hovering over the nucleus revealed a description of DNA replication? What if clicking on the combustion chamber opened an explanation of the four-stroke cycle? What if numbered callouts around a circuit board linked to detailed component specifications?</p>
+<p>This is exactly what <strong>overlayment patterns</strong> achieve. An overlayment interactive infographic takes an existing image and adds an invisible layer of interactive regions on top of it. When students hover over or click these regions, the infographic responds with highlights, infoboxes, labels, and descriptions. The image itself remains unchanged — all the interactivity comes from the overlay layer, defined in a JSON configuration file and rendered by a shared JavaScript driver.</p>
+<p>This separation of concerns — image content in one file, interaction definitions in another, rendering logic in a shared driver — is what makes overlayment patterns so practical for instructional designers. You can reuse the same driver across hundreds of infographics, and updating an image or changing the interactive regions requires editing only the relevant file, not rewriting code.</p>
+<p>This chapter presents the four overlay types in order of increasing complexity. Each type builds on the concepts from the previous one, so by the time you reach Type 4, you will have a thorough understanding of how all the pieces fit together.</p>
+<h2 id="the-overlayment-pattern-architecture">The Overlayment Pattern Architecture</h2>
+<p>An <strong>overlayment pattern</strong> is an interactive infographic technique that layers transparent interactive regions over a static background image. The pattern consists of three components working together:</p>
+<ol>
+<li><strong>Background image</strong> — The visual content (diagram, photo, illustration) displayed at full size</li>
+<li><strong>Overlay JSON file</strong> — A data file that defines the interactive regions, their positions, labels, and descriptions</li>
+<li><strong>Overlay diagram driver</strong> — A shared JavaScript file that reads the JSON, draws the overlay regions, handles user events, and displays infoboxes</li>
+</ol>
+<p>This architecture provides several advantages for educational content:</p>
+<ul>
+<li><strong>Reusability</strong> — The same driver JavaScript works for any image; only the JSON changes</li>
+<li><strong>Maintainability</strong> — Update labels or descriptions by editing JSON, without touching code</li>
+<li><strong>Scalability</strong> — Add new regions or modify existing ones without rebuilding the infographic</li>
+<li><strong>Consistency</strong> — Every overlay infographic in the textbook behaves identically because they share the same driver</li>
+<li><strong>AI-assisted creation</strong> — Generative AI can produce overlay JSON files from image descriptions, dramatically accelerating content creation</li>
+</ul>
+<h3 id="the-overlay-json-file">The Overlay JSON File</h3>
+<p>The <strong>overlay JSON file</strong> is the data backbone of every overlayment infographic. It defines the image source, the interactive regions, and the content displayed when users interact with each region. The JSON structure varies slightly by overlay type, but all types share common fields:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;diagram.png&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cell Biology Diagram&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;width&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">800</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;height&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">600</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;regions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;region-1&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Region Name&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Detailed description shown in the infobox.&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;geometry&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>The <code>geometry</code> field varies by overlay type: rectangular coordinates for Type 1, polygon point arrays for Type 2, callout coordinates for Types 3 and 4.</p>
+<h3 id="the-overlay-diagram-driver">The Overlay Diagram Driver</h3>
+<p>The <strong>overlay diagram driver</strong> is a shared JavaScript library (<code>overlay-diagram.js</code>) that provides the rendering and interaction logic for all four overlay types. The driver:</p>
+<ul>
+<li>Loads the background image and the overlay JSON configuration</li>
+<li>Draws transparent interactive regions on top of the image</li>
+<li>Detects hover and click events using hit detection (bounding boxes for rectangles, ray casting for polygons)</li>
+<li>Displays region highlights, labels, and infoboxes in response to user interaction</li>
+<li>Reports height to the parent iframe for auto-resizing via <code>postMessage</code></li>
+<li>Adapts to window resizes for responsive behavior</li>
+</ul>
+<p>Because the driver is shared, improvements to interaction handling, accessibility, or visual styling benefit every overlay infographic in the textbook simultaneously.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>File</th>
+<th>Role</th>
+<th>Changes Per Infographic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Background image</td>
+<td><code>diagram.png</code></td>
+<td>Visual content</td>
+<td>Different for each</td>
+</tr>
+<tr>
+<td>Overlay JSON</td>
+<td><code>overlay.json</code></td>
+<td>Region definitions, labels, descriptions</td>
+<td>Different for each</td>
+</tr>
+<tr>
+<td>Overlay driver</td>
+<td><code>overlay-diagram.js</code></td>
+<td>Rendering, events, infobox display</td>
+<td>Shared (same for all)</td>
+</tr>
+<tr>
+<td>HTML wrapper</td>
+<td><code>main.html</code></td>
+<td>Loads image, JSON, and driver</td>
+<td>Minimal changes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="type-1-rectangular-region-overlay">Type 1: Rectangular Region Overlay</h2>
+<p>The <strong>Type 1 rectangular</strong> overlay is the simplest and most common overlay pattern. It divides the image into <strong>non-overlapping rectangular regions</strong>, each defined by a position (x, y) and dimensions (width, height). When the user hovers over a region, the <strong>region extent highlight</strong> — a semi-transparent colored rectangle — appears over that area, and an infobox displays the region's label and description.</p>
+<h3 id="non-overlapping-regions">Non-Overlapping Regions</h3>
+<p><strong>Non-overlapping regions</strong> means that no two rectangular regions share any pixels. This constraint simplifies hit detection (only one region can be active at a time) and prevents visual confusion when highlights overlap. When designing a Type 1 overlay, you partition the image into distinct rectangular zones, each covering a meaningful area of the diagram.</p>
+<h3 id="rectangular-region-definition">Rectangular Region Definition</h3>
+<p>A <strong>rectangular region</strong> is defined by four values in the overlay JSON:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nucleus&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nucleus&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The nucleus contains DNA and controls cell activities. It is surrounded by a double membrane called the nuclear envelope.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;geometry&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;rect&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.25</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;y&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.20</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;width&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.20</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;height&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.25</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>Note that coordinates are specified as <strong>relative values</strong> (0.0 to 1.0) rather than pixel values. This ensures the overlay regions scale correctly when the infographic is displayed at different sizes — essential for width-responsive design.</p>
+<h3 id="region-extent-highlight">Region Extent Highlight</h3>
+<p>The <strong>region extent highlight</strong> is the visual feedback that appears when a user hovers over a rectangular region. Typically implemented as a semi-transparent rectangle (e.g., <code>rgba(255, 102, 0, 0.3)</code> for a warm orange glow), the highlight shows the user exactly which area they are interacting with and provides a clear visual connection between the cursor position and the infobox content.</p>
+<p>Type 1 overlays are ideal for:</p>
+<ul>
+<li>Diagrams with clearly defined rectangular sections (organizational charts, floor plans, grid layouts)</li>
+<li>Screenshots of software interfaces where each UI element occupies a rectangular area</li>
+<li>Any image that can be meaningfully partitioned into non-overlapping rectangular zones</li>
+</ul>
+<h4 id="diagram-type-1-rectangular-overlay-demo">Diagram: Type 1 Rectangular Overlay Demo</h4>
+<iframe src="../../sims/type1-rectangular-overlay/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Type 1 Rectangular Overlay Demo</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> type1-rectangular-overlay<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Apply (L3)
+<strong>Bloom Verb:</strong> Construct
+<strong>Learning Objective:</strong> Construct a Type 1 rectangular overlay by hovering over non-overlapping rectangular regions on a sample diagram and observing how region extent highlights and infoboxes respond to user interaction.</p>
+<p><strong>Instructional Rationale:</strong> Interactive demonstration with a working overlay is appropriate because the Apply objective requires learners to see and interact with a complete Type 1 implementation. Experiencing the hover-highlight-infobox cycle firsthand builds practical understanding of how the pattern works.</p>
+<p><strong>Canvas Layout:</strong>
+- Main drawing area (aliceblue): background diagram image with transparent rectangular overlay regions
+- Infobox panel (below image, white background, silver border): displays label and description of hovered region</p>
+<p><strong>Visual Elements:</strong>
+- A sample diagram image (e.g., a simplified computer architecture with 6 labeled blocks: CPU, RAM, Storage, GPU, Network, Power Supply)
+- 6 non-overlapping rectangular regions drawn as invisible areas over each block
+- On hover: a semi-transparent orange rectangle (region extent highlight) appears over the hovered region
+- The region's label appears in bold above the highlight
+- The infobox panel below shows: region label (h3), description text (paragraph), and the region's relative coordinates for educational transparency
+- Non-hovered regions show thin dashed outlines (toggleable)</p>
+<p><strong>Interactive Controls:</strong>
+- Toggle: "Show Region Outlines" (default on) — shows dashed borders around all regions for learning purposes; in production this would be off
+- Toggle: "Show Coordinates" — displays the relative (x, y, w, h) values inside each region
+- Dropdown: "Highlight Color" — choose from Orange, Blue, Green, Purple highlight colors
+- The JSON configuration is displayed in a collapsible panel below the infobox for reference</p>
+<p><strong>Behavior:</strong>
+- Hovering over a region smoothly fades in the highlight and updates the infobox
+- Moving the cursor off all regions clears the highlight and shows "Hover over a region to learn more" in the infobox
+- Only one region can be highlighted at a time (non-overlapping guarantee)
+- Responsive to window resize; regions reposition based on relative coordinates</p>
+<p><strong>Default Parameters:</strong>
+- Show Region Outlines: on
+- Show Coordinates: off
+- Highlight Color: Orange
+- Canvas width: responsive
+- Canvas height: 500px (image area) + infobox below</p>
+<p>Implementation: p5.js with background image loading and rectangular hit detection</p>
+</details>
+<h2 id="type-2-complex-polygon-overlay">Type 2: Complex Polygon Overlay</h2>
+<p>The <strong>Type 2 complex polygon</strong> overlay extends the rectangular pattern to support irregular shapes. Instead of axis-aligned rectangles, each region is defined as a <strong>polygon region</strong> — a closed shape specified by an ordered list of vertex coordinates. This enables overlays on images where the meaningful areas are not rectangular: anatomical diagrams, geographic regions, organic shapes, and mechanical components with curved or angled boundaries.</p>
+<h3 id="polygon-regions-and-edge-points">Polygon Regions and Edge Points</h3>
+<p>A <strong>polygon region</strong> is defined by an array of <strong>polygon edge points</strong> — the vertices that form the boundary of the region. Each edge point is specified as a relative (x, y) coordinate:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mitochondria&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mitochondria&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The powerhouse of the cell. Mitochondria generate ATP through cellular respiration.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;geometry&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;polygon&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;points&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">[</span><span class="mf">0.55</span><span class="p">,</span><span class="w"> </span><span class="mf">0.35</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">0.70</span><span class="p">,</span><span class="w"> </span><span class="mf">0.30</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">0.75</span><span class="p">,</span><span class="w"> </span><span class="mf">0.40</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="mf">0.72</span><span class="p">,</span><span class="w"> </span><span class="mf">0.52</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">0.60</span><span class="p">,</span><span class="w"> </span><span class="mf">0.55</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">0.52</span><span class="p">,</span><span class="w"> </span><span class="mf">0.45</span><span class="p">]</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>The polygon is automatically closed by connecting the last point back to the first. The points must be specified in order (clockwise or counterclockwise) to form a valid polygon.</p>
+<h3 id="multi-edge-overlay">Multi-Edge Overlay</h3>
+<p>A <strong>multi-edge overlay</strong> is a Type 2 overlay that contains multiple polygon regions, potentially with complex, non-rectangular boundaries that fit tightly around irregular shapes in the image. Hit detection for polygon regions uses the ray casting algorithm (point-in-polygon test) covered in Chapter 6, which correctly handles both convex and concave polygons.</p>
+<p>The key advantage of Type 2 over Type 1 is precision: polygon regions can follow the actual contours of shapes in the diagram rather than approximating them with rectangles. This precision matters when:</p>
+<ul>
+<li>Regions are adjacent and non-rectangular (body organs, map territories)</li>
+<li>Rectangular approximations would overlap significantly</li>
+<li>Visual accuracy is important for educational credibility (anatomy, biology, geography)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Type 1 (Rectangular)</th>
+<th>Type 2 (Polygon)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Region shape</td>
+<td>Axis-aligned rectangles</td>
+<td>Arbitrary polygons</td>
+</tr>
+<tr>
+<td>Hit detection</td>
+<td>Bounding box check</td>
+<td>Ray casting algorithm</td>
+</tr>
+<tr>
+<td>Setup complexity</td>
+<td>Low (4 values per region)</td>
+<td>Medium (N vertex pairs per region)</td>
+</tr>
+<tr>
+<td>Precision</td>
+<td>Approximate</td>
+<td>Exact boundary matching</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Grid layouts, screenshots, block diagrams</td>
+<td>Anatomical diagrams, maps, organic shapes</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Key Insight</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Percy is thinking">
+When deciding between Type 1 and Type 2, ask yourself: "Would rectangular regions overlap or leave significant gaps?" If the answer is yes, use polygon regions. If the image has a natural grid structure where rectangles fit cleanly, Type 1 is simpler and perfectly adequate.</p>
+</div>
+<h4 id="diagram-type-2-polygon-overlay-demo">Diagram: Type 2 Polygon Overlay Demo</h4>
+<iframe src="../../sims/type2-polygon-overlay/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Type 2 Polygon Overlay Demo</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> type2-polygon-overlay<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Apply (L3)
+<strong>Bloom Verb:</strong> Implement
+<strong>Learning Objective:</strong> Implement a Type 2 complex polygon overlay by interacting with irregular polygon regions on an anatomical diagram and observing how the ray casting hit detection correctly identifies the hovered region even for concave shapes.</p>
+<p><strong>Instructional Rationale:</strong> Interactive demonstration with visible hit detection is appropriate because the Apply objective requires learners to see polygon overlays in action. Showing the ray casting algorithm's behavior (with an optional visual trace) connects the geometric concepts from Chapter 6 to their practical application.</p>
+<p><strong>Canvas Layout:</strong>
+- Main drawing area (aliceblue): background image (simplified cell diagram) with polygon overlay regions
+- Infobox panel (below, white, silver border): label and description of hovered region</p>
+<p><strong>Visual Elements:</strong>
+- A simplified cell biology diagram with 5 irregularly shaped organelles:
+  1. Cell Membrane (large elliptical polygon, outer boundary)
+  2. Nucleus (roughly circular polygon, center)
+  3. Mitochondria (bean-shaped polygon, right side)
+  4. Endoplasmic Reticulum (irregular wavy polygon, upper area)
+  5. Golgi Apparatus (curved stack polygon, lower left)
+- Each polygon region outlined with a thin colored border (unique color per region)
+- On hover: the polygon fills with a semi-transparent version of its border color
+- Vertex points shown as small dots when "Show Vertices" is enabled
+- The infobox shows label, description, and the number of edge points defining the region</p>
+<p><strong>Interactive Controls:</strong>
+- Toggle: "Show Polygon Outlines" (default on) — shows colored borders around all polygon regions
+- Toggle: "Show Vertices" (default off) — displays the individual polygon edge points as small dots
+- Toggle: "Show Ray Cast" (default off) — visualizes the horizontal ray from the cursor position, showing intersection points with polygon edges as red dots, and the crossing count
+- The overlay JSON for the current diagram is displayed in a collapsible panel</p>
+<p><strong>Behavior:</strong>
+- Hovering over a polygon region fills it with color and updates the infobox
+- With "Show Ray Cast" enabled, a horizontal line extends from the cursor to the right edge, with red dots at every edge crossing; the crossing count (odd = inside, even = outside) is displayed
+- Moving between adjacent polygons smoothly transitions the highlight
+- Responsive to window resize; polygon vertices reposition based on relative coordinates</p>
+<p><strong>Default Parameters:</strong>
+- Show Polygon Outlines: on
+- Show Vertices: off
+- Show Ray Cast: off
+- Canvas width: responsive
+- Canvas height: 500px + infobox</p>
+<p>Implementation: p5.js with polygon rendering and ray casting hit detection</p>
+</details>
+<h2 id="type-3-callout-to-edge-labels">Type 3: Callout to Edge Labels</h2>
+<p>The <strong>Type 3 callout to edge</strong> overlay takes a different approach from Types 1 and 2. Instead of highlighting regions of the image, it places <strong>callout points</strong> at specific locations and connects them to <strong>edge-aligned labels</strong> positioned along the edges of the diagram. This pattern is familiar from technical illustrations, museum exhibit labels, and anatomy textbook diagrams where numbered indicators point to specific features.</p>
+<h3 id="callout-points-and-edge-aligned-labels">Callout Points and Edge-Aligned Labels</h3>
+<p>A <strong>callout point</strong> is a specific (x, y) coordinate on the image that marks a point of interest. A thin line extends from the callout point to an <strong>edge-aligned label</strong> — a text label positioned along the left, right, top, or bottom edge of the diagram. This spatial separation keeps the labels readable without obscuring the image content.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;spark-plug&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Spark Plug&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ignites the air-fuel mixture in the combustion chamber.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;geometry&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;callout&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;point&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.35</span><span class="p">,</span><span class="w"> </span><span class="mf">0.22</span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;edge&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;right&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;edgePosition&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.15</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="numbered-indicators">Numbered Indicators</h3>
+<p>A <strong>numbered indicator</strong> is a small circle containing a number, placed at the callout point on the image. Numbers provide a clear visual reference: students can scan the numbers on the image and find the corresponding label at the edge. The numbered indicator serves as the interactive target — hovering or clicking the number reveals the full description.</p>
+<h3 id="show-numbers-toggle">Show Numbers Toggle</h3>
+<p>The <strong>show numbers toggle</strong> is a UI control that turns the numbered indicators on and off. When numbers are hidden, only the callout points (small dots) remain visible, creating a cleaner visual that students can use to test their knowledge — "Can I identify each component without the numbers?" This toggle supports self-assessment and formative evaluation.</p>
+<p>Type 3 overlays are ideal for:</p>
+<ul>
+<li>Technical illustrations with many small components (engines, circuit boards, tools)</li>
+<li>Anatomical diagrams where labeling each part inline would clutter the image</li>
+<li>Any image where precise point identification matters more than area selection</li>
+</ul>
+<h4 id="diagram-type-3-callout-to-edge-demo">Diagram: Type 3 Callout to Edge Demo</h4>
+<iframe src="../../sims/type3-callout-overlay/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Type 3 Callout to Edge Demo</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> type3-callout-overlay<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze (L4)
+<strong>Bloom Verb:</strong> Differentiate
+<strong>Learning Objective:</strong> Differentiate between edge-aligned label placement strategies (left, right, top, bottom) by interacting with a Type 3 callout overlay and observing how numbered indicators, leader lines, and edge labels work together to identify components without obscuring the image.</p>
+<p><strong>Instructional Rationale:</strong> Interactive exploration of a labeled diagram is appropriate because the Analyze objective requires learners to understand the relationship between callout points, leader lines, and edge labels. The show/hide numbers toggle adds a self-assessment dimension.</p>
+<p><strong>Canvas Layout:</strong>
+- Main drawing area (aliceblue): background image with callout points, leader lines, and edge labels
+- Infobox panel (below, white, silver border): description of the selected callout</p>
+<p><strong>Visual Elements:</strong>
+- A sample technical illustration (e.g., a simplified bicycle with 8 labeled components)
+- 8 callout points on the image, each with:
+  - A numbered circle (numbered indicator) at the callout point
+  - A thin leader line from the callout point to the diagram edge
+  - An edge-aligned label at the end of the leader line
+- Labels distributed across all four edges (2 on left, 2 on right, 2 on top, 2 on bottom) to demonstrate edge positioning
+- On hover over a number or label: the leader line thickens, the number and label highlight in orange, and the infobox shows the full description
+- On click: the callout stays selected (highlighted) until another is clicked or the background is clicked</p>
+<p><strong>Interactive Controls:</strong>
+- Toggle: "Show Numbers" (default on) — shows/hides the numbered indicators on the image
+- Toggle: "Show Leader Lines" (default on) — shows/hides the thin lines connecting points to labels
+- Toggle: "Quiz Mode" (default off) — hides all labels; clicking a numbered indicator reveals the label one at a time; tracks how many the user identified correctly
+- Dropdown: "Label Style" — choose from "Text Only", "Text + Number", "Number Only"</p>
+<p><strong>Behavior:</strong>
+- Hovering over a numbered indicator or its edge label highlights both and the connecting line
+- In Quiz Mode: clicking a number reveals its label with a slide-in animation; a score counter tracks progress (e.g., "5 of 8 identified")
+- Leader lines route cleanly, avoiding crossing each other where possible
+- Responsive to window resize; callout points and edge labels reposition proportionally</p>
+<p><strong>Default Parameters:</strong>
+- Show Numbers: on
+- Show Leader Lines: on
+- Quiz Mode: off
+- Label Style: Text + Number
+- Canvas width: responsive
+- Canvas height: 500px + infobox</p>
+<p>Implementation: p5.js with callout point, leader line, and edge label rendering</p>
+</details>
+<h2 id="type-4-floating-labels-with-draggable-positioning">Type 4: Floating Labels with Draggable Positioning</h2>
+<p>The <strong>Type 4 floating label</strong> overlay is the most flexible pattern. Instead of aligning labels to diagram edges, it places <strong>floating labels</strong> at arbitrary positions near their associated callout points. The key innovation of Type 4 is <strong>draggable positioning</strong> — in <strong>edit mode</strong>, the infographic designer can drag labels to the optimal position, and the final coordinates are saved back to the overlay JSON file.</p>
+<h3 id="floating-labels">Floating Labels</h3>
+<p>A <strong>floating label</strong> is a text label positioned freely on the diagram, connected to its callout point by a thin leader line. Unlike edge-aligned labels (Type 3), floating labels can be placed wherever they are most readable — next to the feature they describe, in an open area of the image, or grouped with related labels.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;alternator&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Alternator&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Converts mechanical energy to electrical energy to charge the battery.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;geometry&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;floating&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;point&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.40</span><span class="p">,</span><span class="w"> </span><span class="mf">0.55</span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;labelPosition&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.55</span><span class="p">,</span><span class="w"> </span><span class="mf">0.48</span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>The <code>point</code> field specifies the callout location on the image, and the <code>labelPosition</code> field specifies where the floating label is displayed. The separation between these two coordinates is what gives Type 4 its flexibility.</p>
+<h3 id="draggable-positioning-and-edit-mode">Draggable Positioning and Edit Mode</h3>
+<p><strong>Draggable positioning</strong> allows the designer to reposition floating labels by clicking and dragging them in the browser. This is enabled through <strong>edit mode</strong> — a special mode activated by a toggle or keyboard shortcut that makes all labels draggable.</p>
+<p>In edit mode:</p>
+<ul>
+<li>Labels display drag handles (small squares at the corners)</li>
+<li>Clicking and dragging a label moves it to a new position</li>
+<li>Leader lines update in real time as labels move</li>
+<li>A "Save Positions" button exports the updated coordinates as JSON that can be pasted into the overlay configuration file</li>
+<li>A coordinate readout shows the current relative position of the dragged label</li>
+</ul>
+<p>Edit mode is a powerful workflow tool because it separates the initial layout (which can be automated by AI or calculated programmatically) from the fine-tuning (which benefits from human visual judgment). A designer can start with AI-generated label positions and then drag a few labels to avoid overlaps or improve readability.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Type 3 (Callout to Edge)</th>
+<th>Type 4 (Floating Label)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Label position</td>
+<td>Fixed to diagram edge</td>
+<td>Freely positioned anywhere</td>
+</tr>
+<tr>
+<td>Leader line</td>
+<td>Callout point → edge</td>
+<td>Callout point → floating label</td>
+</tr>
+<tr>
+<td>Repositioning</td>
+<td>Change edge and position in JSON</td>
+<td>Drag interactively in edit mode</td>
+</tr>
+<tr>
+<td>Setup effort</td>
+<td>Medium (assign edge positions)</td>
+<td>Low initial, then drag to refine</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Clean, formal technical diagrams</td>
+<td>Dense diagrams needing flexible placement</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">You've Got This!</p>
+<p><img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Percy encourages you">
+Edit mode might sound complex, but it is actually the most intuitive part of the overlay workflow. Instead of calculating coordinates in a JSON file, you simply drag labels where they look best. It is a visual design tool built right into the infographic itself.</p>
+</div>
+<h4 id="diagram-type-4-floating-label-with-edit-mode-demo">Diagram: Type 4 Floating Label with Edit Mode Demo</h4>
+<iframe src="../../sims/type4-floating-overlay/main.html" width="100%" height="600px" scrolling="no"></iframe>
+
+<details>
+<summary>Type 4 Floating Label with Edit Mode Demo</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> type4-floating-overlay<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Create (L6)
+<strong>Bloom Verb:</strong> Design
+<strong>Learning Objective:</strong> Design a Type 4 floating label overlay by activating edit mode, dragging labels to optimal positions on a sample diagram, and exporting the resulting coordinate configuration as JSON.</p>
+<p><strong>Instructional Rationale:</strong> A hands-on builder with drag-and-drop is appropriate for the Create-level objective because learners must produce an original label layout by applying visual design judgment. The edit mode experience directly mirrors the real workflow for creating Type 4 overlays.</p>
+<p><strong>Canvas Layout:</strong>
+- Main drawing area (aliceblue): background image with callout points and floating labels
+- Control bar (top, white, silver border): edit mode toggle, save button, coordinate display
+- Infobox panel (below, white, silver border): description of selected callout (view mode) or coordinate readout (edit mode)</p>
+<p><strong>Visual Elements:</strong>
+- A sample diagram (e.g., a simplified solar system or a building floor plan) with 6 labeled features
+- 6 callout points (small colored dots) on the image
+- 6 floating labels connected to their callout points by thin leader lines
+- In view mode: hovering a label or callout point highlights both and shows the infobox
+- In edit mode:
+  - Labels display drag handles (small orange squares at corners)
+  - The currently dragged label has a dashed border and a coordinate readout nearby
+  - Leader lines stretch in real time as labels are dragged
+  - A subtle grid overlay appears (toggleable) to assist with alignment
+  - Non-dragged labels have a slight opacity reduction to focus attention on the active label</p>
+<p><strong>Interactive Controls:</strong>
+- Toggle: "Edit Mode" (default off) — switches between view mode (normal hover/click interaction) and edit mode (drag to reposition)
+- Button: "Save Positions" (only in edit mode) — copies the current label coordinates to the clipboard as formatted JSON
+- Button: "Reset Positions" (only in edit mode) — returns all labels to their original positions
+- Toggle: "Show Grid" (only in edit mode, default off) — displays an alignment grid
+- Coordinate display (top bar): shows "Label: Alternator | Position: (0.55, 0.48)" for the currently dragged label
+- In view mode: standard hover-to-highlight and click-for-infobox behavior</p>
+<p><strong>Behavior:</strong>
+- Switching to edit mode adds drag handles to all labels and disables the infobox
+- Dragging a label updates its position in real time; the leader line stretches smoothly
+- "Save Positions" generates a formatted JSON snippet showing all label positions:
+  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>{&quot;id&quot;: &quot;alternator&quot;, &quot;labelPosition&quot;: [0.55, 0.48]},
+{&quot;id&quot;: &quot;battery&quot;, &quot;labelPosition&quot;: [0.30, 0.72]},
+...
+</code></pre></div></td></tr></table></div>
+- Switching back to view mode hides drag handles and re-enables hover/click interaction with the updated positions
+- Responsive to window resize; all positions are stored as relative coordinates and recomputed on resize</p>
+<p><strong>Default Parameters:</strong>
+- Edit Mode: off (starts in view mode)
+- Labels at initial programmatically-assigned positions (slightly offset from callout points)
+- Canvas width: responsive
+- Canvas height: 550px + infobox</p>
+<p>Implementation: p5.js with drag-and-drop label management and JSON export</p>
+</details>
+<h2 id="choosing-the-right-overlay-type">Choosing the Right Overlay Type</h2>
+<p>Selecting the appropriate overlay type for a given image is an important design decision. The four types form a progression from simple to flexible:</p>
+<table>
+<thead>
+<tr>
+<th>Decision Factor</th>
+<th>Type 1</th>
+<th>Type 2</th>
+<th>Type 3</th>
+<th>Type 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Image structure</strong></td>
+<td>Grid or block layout</td>
+<td>Irregular, organic shapes</td>
+<td>Precise point features</td>
+<td>Dense, complex diagrams</td>
+</tr>
+<tr>
+<td><strong>Number of regions</strong></td>
+<td>4-12</td>
+<td>3-8</td>
+<td>5-20+</td>
+<td>5-15</td>
+</tr>
+<tr>
+<td><strong>Region shape</strong></td>
+<td>Rectangles only</td>
+<td>Any polygon</td>
+<td>Points (no area)</td>
+<td>Points with labels</td>
+</tr>
+<tr>
+<td><strong>Label placement</strong></td>
+<td>In infobox</td>
+<td>In infobox</td>
+<td>Along diagram edges</td>
+<td>Freely positioned</td>
+</tr>
+<tr>
+<td><strong>Interactive feedback</strong></td>
+<td>Rectangle highlight</td>
+<td>Polygon fill</td>
+<td>Leader line + number</td>
+<td>Leader line + floating text</td>
+</tr>
+<tr>
+<td><strong>Setup complexity</strong></td>
+<td>Low</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Medium (with easy refinement)</td>
+</tr>
+<tr>
+<td><strong>Calibration method</strong></td>
+<td>Set x, y, w, h values</td>
+<td>Define polygon vertices</td>
+<td>Set callout + edge positions</td>
+<td>Drag labels in edit mode</td>
+</tr>
+</tbody>
+</table>
+<p>A practical selection guide:</p>
+<ol>
+<li><strong>Can the image be cleanly divided into rectangles?</strong> → <strong>Type 1</strong></li>
+<li><strong>Do regions have irregular boundaries that rectangles cannot approximate?</strong> → <strong>Type 2</strong></li>
+<li><strong>Are you labeling specific points rather than areas?</strong> → <strong>Type 3</strong> or <strong>Type 4</strong></li>
+<li><strong>Do labels need to be placed in specific positions for readability?</strong> → <strong>Type 4</strong></li>
+<li><strong>Do you want a formal, technical look with edge-aligned labels?</strong> → <strong>Type 3</strong></li>
+</ol>
+<h4 id="diagram-overlay-type-comparison-side-by-side">Diagram: Overlay Type Comparison Side-by-Side</h4>
+<iframe src="../../sims/overlay-type-comparison/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Overlay Type Comparison Side-by-Side</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> overlay-type-comparison<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Evaluate (L5)
+<strong>Bloom Verb:</strong> Assess
+<strong>Learning Objective:</strong> Assess which overlay type is most appropriate for a given image by viewing the same diagram rendered with all four overlay types side-by-side and evaluating the trade-offs in clarity, precision, and readability.</p>
+<p><strong>Instructional Rationale:</strong> Side-by-side comparison with the same base image is appropriate for the Evaluate objective because learners must judge which overlay approach best serves a given visual context. Seeing all four types applied to identical content highlights the practical differences.</p>
+<p><strong>Canvas Layout:</strong>
+- 2×2 grid of panels (aliceblue backgrounds): each panel shows the same diagram with a different overlay type
+- Bottom info panel (white, silver border): description of the currently selected type</p>
+<p><strong>Visual Elements:</strong>
+- A single diagram (e.g., a simplified engine or microscope) duplicated in 4 panels:
+  - Top-left: Type 1 (rectangular regions with orange highlights)
+  - Top-right: Type 2 (polygon regions with colored fills)
+  - Bottom-left: Type 3 (numbered callout points with edge labels)
+  - Bottom-right: Type 4 (floating labels with leader lines)
+- Each panel labeled with its type number and name
+- A blue highlight border around the currently selected panel
+- The info panel shows: type name, strengths, weaknesses, and "Best for:" description</p>
+<p><strong>Interactive Controls:</strong>
+- Click a panel to select it and read details in the info panel
+- Each panel is individually interactive:
+  - Type 1 panel: hover to see rectangular highlights
+  - Type 2 panel: hover to see polygon fills
+  - Type 3 panel: hover to see callout highlights
+  - Type 4 panel: hover to see floating label highlights
+- Toggle: "Highlight Active Only" — dims the 3 non-selected panels to 40% opacity for focused comparison
+- Dropdown: "Scenario" — switches the base diagram to a different example (Cell Biology, Engine, Software Architecture), showing how overlay type suitability changes with the image</p>
+<p><strong>Behavior:</strong>
+- All four panels respond to hover independently
+- Selecting a different scenario loads a new base image and different overlay configurations in all four panels
+- The info panel updates with type-specific commentary for the current scenario (e.g., "For this cell diagram, Type 2 provides the best precision because organelle shapes are irregular")
+- Responsive: panels stack 2×1 or 1×1 on narrow viewports</p>
+<p><strong>Default Parameters:</strong>
+- Scenario: Engine diagram
+- Highlight Active Only: off
+- Canvas width: responsive
+- Canvas height: 500px + info panel</p>
+<p>Implementation: p5.js with four independent overlay renderers sharing a common image</p>
+</details>
+<h2 id="the-overlay-creation-workflow">The Overlay Creation Workflow</h2>
+<p>Creating an overlayment infographic follows a consistent workflow regardless of overlay type:</p>
+<ol>
+<li>
+<p><strong>Select or create the background image</strong> — Choose a diagram, photo, or illustration. Ensure it is high quality and clearly shows the features you want to make interactive.</p>
+</li>
+<li>
+<p><strong>Choose the overlay type</strong> — Based on the image structure and your educational goals, select Type 1, 2, 3, or 4.</p>
+</li>
+<li>
+<p><strong>Define regions in the overlay JSON</strong> — Write the initial JSON configuration with region IDs, labels, descriptions, and geometry. For Type 4, use approximate positions initially.</p>
+</li>
+<li>
+<p><strong>Test with the overlay driver</strong> — Load the infographic in a browser and verify that regions are correctly positioned, hover interactions work, and infobox content is accurate.</p>
+</li>
+<li>
+<p><strong>Calibrate positions</strong> — For Types 1-3, adjust coordinates in the JSON file. For Type 4, use edit mode to drag labels to optimal positions, then save the updated coordinates.</p>
+</li>
+<li>
+<p><strong>Package as a MicroSim</strong> — Place the files in the standard MicroSim directory structure (<code>main.html</code>, <code>overlay.json</code>, <code>diagram.png</code>) with metadata.</p>
+</li>
+</ol>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Common Mistake</p>
+<p><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Percy warns you">
+The most common overlay mistake is using pixel coordinates instead of relative coordinates. Pixel coordinates break when the infographic is displayed at a different size. Always specify positions as values between 0.0 and 1.0 (fractions of the image width and height), and let the overlay driver convert to pixels at render time.</p>
+</div>
+<h2 id="summary_1">Summary</h2>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Excellent Work!</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Percy celebrates">
+You now have four powerful overlay patterns in your infographic toolkit! From simple rectangular regions to freely positioned floating labels with drag-to-calibrate edit mode, you can transform any static image into an interactive learning experience. The overlayment architecture — separating images, data, and driver code — makes these infographics maintainable, reusable, and ready for AI-assisted creation. Display it with style!</p>
+</div>
+<p>In this chapter, you learned that:</p>
+<ul>
+<li>The <strong>overlayment pattern</strong> layers transparent interactive regions over a static background image, with three components: the image, the <strong>overlay JSON file</strong> (region definitions), and the <strong>overlay diagram driver</strong> (shared rendering and interaction logic)</li>
+<li><strong>Type 1 rectangular</strong> overlays use <strong>non-overlapping rectangular regions</strong> with simple bounding box hit detection and <strong>region extent highlights</strong> — ideal for grid-structured diagrams</li>
+<li><strong>Type 2 complex polygon</strong> overlays define <strong>polygon regions</strong> using arrays of <strong>polygon edge points</strong>, enabling <strong>multi-edge overlays</strong> that precisely match irregular shapes using ray casting hit detection</li>
+<li><strong>Type 3 callout to edge</strong> overlays place <strong>callout points</strong> on specific image features, connected by leader lines to <strong>edge-aligned labels</strong> along the diagram borders, with <strong>numbered indicators</strong> that support a <strong>show numbers toggle</strong> for self-assessment</li>
+<li><strong>Type 4 floating label</strong> overlays position <strong>floating labels</strong> freely near their callout points, with <strong>draggable positioning</strong> enabled through <strong>edit mode</strong> for intuitive visual calibration</li>
+<li>The overlay JSON file uses relative coordinates (0.0 to 1.0) for width-responsive behavior</li>
+<li>The shared overlay diagram driver provides consistent interaction, rendering, and iframe height reporting across all overlay infographics</li>
+<li>Overlay type selection depends on image structure, region shape requirements, label placement needs, and desired interaction style</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Image_map">Wikipedia: Image Map</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Point_in_polygon">Wikipedia: Point in Polygon</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes">MDN Web Docs: Canvas API — Drawing Shapes</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events">MDN Web Docs: Pointer Events</a></li>
+<li><a href="https://p5js.org/reference/p5/loadImage/">p5.js Reference — loadImage</a></li>
+<li><a href="https://json-schema.org/">JSON Schema — Specification</a></li>
+<li><a href="https://www.nngroup.com/articles/data-visualization-interaction/">Nielsen Norman Group: Interactive Data Visualization</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Overlay_(programming)">Wikipedia: Overlay (programming)</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API">MDN Web Docs: Drag and Drop API</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Gestalt_psychology#Pr%C3%A4gnanz">Gestalt Principles of Visual Perception</a></li>
+</ul>
 
 
 

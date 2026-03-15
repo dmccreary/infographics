@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="AI Infographics is a collection of resources for creating interactive infographics using AI tools.">
+        <meta name="description" content="Learn to track student interactions with xAPI event logging, analyze engagement through click heatmaps and session metrics, conduct A/B and usability testing, author content in Markdown with MkDocs Material, and deploy intelligent textbooks to GitHub Pages with CI/CD automation.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>14. Tracking and Deployment - AI Interactive Infographics</title>
+        <title>Tracking, Analytics, and Deployment - AI Interactive Infographics</title>
       
     
     
@@ -65,9 +65,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="14. Tracking and Deployment - AI Interactive Infographics" >
+        <meta  property="og:title"  content="Tracking, Analytics, and Deployment - AI Interactive Infographics" >
       
-        <meta  property="og:description"  content="AI Infographics is a collection of resources for creating interactive infographics using AI tools." >
+        <meta  property="og:description"  content="Learn to track student interactions with xAPI event logging, analyze engagement through click heatmaps and session metrics, conduct A/B and usability testing, author content in Markdown with MkDocs Material, and deploy intelligent textbooks to GitHub Pages with CI/CD automation." >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/infographics/assets/images/social/chapters/14-tracking-analytics-and-deployment/index.png" >
       
@@ -81,9 +81,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="14. Tracking and Deployment - AI Interactive Infographics" >
+        <meta  name="twitter:title"  content="Tracking, Analytics, and Deployment - AI Interactive Infographics" >
       
-        <meta  name="twitter:description"  content="AI Infographics is a collection of resources for creating interactive infographics using AI tools." >
+        <meta  name="twitter:description"  content="Learn to track student interactions with xAPI event logging, analyze engagement through click heatmaps and session metrics, conduct A/B and usability testing, author content in Markdown with MkDocs Material, and deploy intelligent textbooks to GitHub Pages with CI/CD automation." >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/infographics/assets/images/social/chapters/14-tracking-analytics-and-deployment/index.png" >
       
@@ -141,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              14. Tracking and Deployment
+              Tracking, Analytics, and Deployment
             
           </span>
         </div>
@@ -817,6 +817,513 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#student-interaction-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Interaction Tracking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Student Interaction Tracking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xapi-protocol-and-the-experience-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      xAPI Protocol and the Experience API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Logging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interaction-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interaction Tracking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interaction Tracking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-event-logging-flow-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Event Logging Flow Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#engagement-metrics-and-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Engagement Metrics and Analytics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Engagement Metrics and Analytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#student-engagement-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Engagement Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Analytics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#engagement-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Engagement Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#click-heatmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Click Heatmap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-duration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Duration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#completion-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Completion Rate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instructor-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructor Dashboard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instructor Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-engagement-metrics-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Engagement Metrics Dashboard
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-and-iterative-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing and Iterative Improvement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing and Iterative Improvement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ab-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      A/B Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-feedback-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Feedback Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usability-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usability Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iterative-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iterative Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-for-intelligent-textbooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation for Intelligent Textbooks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentation for Intelligent Textbooks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lesson-plan-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan Section
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      References Section
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-authoring-for-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markdown Authoring for MkDocs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Markdown Authoring for MkDocs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#markdown-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markdown Format
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admonition-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admonition Block
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Block
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mermaid-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mermaid Diagram
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocs-configuration-and-site-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      MkDocs Configuration and Site Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MkDocs Configuration and Site Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs-material-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      MkDocs Material Theme
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs-build-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      MkDocs Build Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocsyml-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      mkdocs.yml Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#site-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Site Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#social-cards-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Cards Plugin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-css-override" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom CSS Override
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-control-and-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version Control and Deployment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Version Control and Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-version-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Version Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branch-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Branch Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pull Request
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-actions-and-continuous-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Actions and Continuous Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-pages-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Pages Deployment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Pages Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-cicd-deployment-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: CI/CD Deployment Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-complete-lifecycle-from-creation-to-continuous-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Complete Lifecycle: From Creation to Continuous Improvement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Complete Lifecycle: From Creation to Continuous Improvement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-infographic-lifecycle-wheel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Infographic Lifecycle Wheel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -864,6 +1371,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -885,6 +1398,59 @@
   
   <span class="md-ellipsis">
     MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../stories/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Stories
     
   </span>
   
@@ -1311,6 +1877,513 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#student-interaction-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Interaction Tracking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Student Interaction Tracking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xapi-protocol-and-the-experience-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      xAPI Protocol and the Experience API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Logging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interaction-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interaction Tracking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interaction Tracking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-event-logging-flow-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Event Logging Flow Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#engagement-metrics-and-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Engagement Metrics and Analytics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Engagement Metrics and Analytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#student-engagement-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Engagement Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Analytics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#engagement-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Engagement Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#click-heatmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Click Heatmap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-duration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Duration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#completion-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Completion Rate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instructor-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructor Dashboard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instructor Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-engagement-metrics-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Engagement Metrics Dashboard
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-and-iterative-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing and Iterative Improvement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing and Iterative Improvement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ab-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      A/B Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-feedback-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Feedback Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usability-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usability Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iterative-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iterative Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-for-intelligent-textbooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation for Intelligent Textbooks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentation for Intelligent Textbooks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lesson-plan-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan Section
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      References Section
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-authoring-for-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markdown Authoring for MkDocs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Markdown Authoring for MkDocs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#markdown-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markdown Format
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admonition-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admonition Block
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Block
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mermaid-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mermaid Diagram
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocs-configuration-and-site-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      MkDocs Configuration and Site Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MkDocs Configuration and Site Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs-material-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      MkDocs Material Theme
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs-build-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      MkDocs Build Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocsyml-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      mkdocs.yml Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#site-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Site Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#social-cards-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Cards Plugin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-css-override" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom CSS Override
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-control-and-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version Control and Deployment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Version Control and Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-version-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Version Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branch-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Branch Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pull Request
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-actions-and-continuous-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Actions and Continuous Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-pages-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Pages Deployment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Pages Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-cicd-deployment-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: CI/CD Deployment Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-complete-lifecycle-from-creation-to-continuous-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Complete Lifecycle: From Creation to Continuous Improvement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Complete Lifecycle: From Creation to Continuous Improvement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-infographic-lifecycle-wheel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Infographic Lifecycle Wheel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1384,7 +2457,861 @@
 <li><a href="../10-microsim-standards-and-packaging/">Chapter 10: MicroSim Standards and Packaging</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Let's Spread Some Knowledge!</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Percy welcomes you">
+Welcome to the chapter where everything comes together! You have spent this course learning to design, build, and refine interactive infographics — and now it is time to ship them to the world and learn from how students actually use them. Tracking, analytics, and deployment are not afterthoughts — they are what transform a collection of MicroSims into a living, improving intelligent textbook. This chapter gives you the tools to publish with confidence and iterate with data. Let's spread some knowledge!</p>
+</div>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this chapter, you will be able to:</p>
+<ul>
+<li><strong>Explain</strong> how the xAPI protocol and Experience API enable standardized tracking of student interactions across interactive infographics and learning systems (Bloom: Understand)</li>
+<li><strong>Implement</strong> event logging for hover, click, and selection interactions within a MicroSim, capturing student engagement data for analysis (Bloom: Apply)</li>
+<li><strong>Analyze</strong> engagement metrics including click heatmaps, session duration, and completion rates to identify which infographic elements are most and least effective (Bloom: Analyze)</li>
+<li><strong>Evaluate</strong> the effectiveness of interactive infographic designs through A/B testing and usability testing methodologies, applying iterative design principles to improve learning outcomes (Bloom: Evaluate)</li>
+<li><strong>Deploy</strong> an intelligent textbook built with MkDocs Material to GitHub Pages using Git version control, CI/CD with GitHub Actions, and proper branch strategy (Bloom: Apply)</li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>Creating an interactive infographic is only half the story. The other half — and arguably the more valuable half — is understanding how students actually interact with your content, learning from that data, and continuously improving your designs. This chapter bridges the gap between creation and impact.</p>
+<p>The chapter unfolds in three interconnected arcs. First, you will learn the tracking and event logging infrastructure that captures student interactions as structured data. Second, you will explore the analytics and testing methodologies that transform raw interaction data into actionable design insights. Third, you will master the deployment pipeline that publishes your intelligent textbook to the web and keeps it updated through automated workflows. Together, these three arcs complete the lifecycle of an interactive infographic — from creation through deployment to continuous improvement.</p>
+<p>This is an empowering chapter because the skills you learn here give you ongoing leverage. Every infographic you publish with proper tracking generates data that informs better designs. Every deployment you automate saves hours of manual work. Every A/B test you run replaces guesswork with evidence. The result is a virtuous cycle where your infographics get better over time, not just when you have time to work on them.</p>
+<h2 id="student-interaction-tracking">Student Interaction Tracking</h2>
+<h3 id="xapi-protocol-and-the-experience-api">xAPI Protocol and the Experience API</h3>
+<p>The <strong>xAPI protocol</strong> (also called the <strong>Experience API</strong> or Tin Can API) is an open standard for recording and sharing learning experiences. xAPI provides a consistent format for describing what a learner did, with what, and in what context — enabling learning analytics across diverse platforms, tools, and content types.</p>
+<p>At its core, xAPI uses a simple <strong>Actor-Verb-Object</strong> sentence structure:</p>
+<ul>
+<li><strong>Actor</strong>: The student (identified by email, account, or anonymous ID)</li>
+<li><strong>Verb</strong>: The action performed (e.g., "experienced", "completed", "answered", "interacted")</li>
+<li><strong>Object</strong>: The content interacted with (e.g., a specific MicroSim, a particular overlay region)</li>
+</ul>
+<p>A typical xAPI statement for an interactive infographic interaction might look like:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;actor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;mbox&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mailto:student@university.edu&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Student A&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;verb&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://adlnet.gov/expapi/verbs/interacted&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;display&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;en-US&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;interacted&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;object&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://textbook.example.com/sims/cell-biology-overlay&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;definition&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;en-US&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cell Biology Overlay Infographic&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://adlnet.gov/expapi/activities/media&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;result&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;extensions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;region_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mitochondria&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;interaction_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;hover&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;duration_ms&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3200</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-03-14T14:32:15Z&quot;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>The xAPI standard is valuable for interactive infographics because it enables tracking at a granular level — not just "the student viewed the page" but "the student hovered over the mitochondria region for 3.2 seconds, then clicked the nucleus region, then spent 8 seconds reading the nucleus infobox." This level of detail reveals how students actually engage with interactive content.</p>
+<table>
+<thead>
+<tr>
+<th>xAPI Component</th>
+<th>Purpose</th>
+<th>Example for Infographics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Actor</strong></td>
+<td>Identifies the learner</td>
+<td>Anonymous ID or authenticated user</td>
+</tr>
+<tr>
+<td><strong>Verb</strong></td>
+<td>Describes the action</td>
+<td>interacted, completed, answered, experienced</td>
+</tr>
+<tr>
+<td><strong>Object</strong></td>
+<td>Identifies the content</td>
+<td>MicroSim URL, region ID, control name</td>
+</tr>
+<tr>
+<td><strong>Result</strong></td>
+<td>Records outcome details</td>
+<td>Hover duration, click target, selected options</td>
+</tr>
+<tr>
+<td><strong>Context</strong></td>
+<td>Provides situational info</td>
+<td>Chapter, lesson, device type, session ID</td>
+</tr>
+<tr>
+<td><strong>Timestamp</strong></td>
+<td>Records when it happened</td>
+<td>ISO 8601 date-time</td>
+</tr>
+</tbody>
+</table>
+<h3 id="event-logging">Event Logging</h3>
+<p><strong>Event logging</strong> is the process of capturing and recording user interactions as they occur. In the context of interactive infographics, event logging captures every hover, click, and selection event, creating a chronological record of the student's interaction journey.</p>
+<p>Implementing event logging in a MicroSim involves three steps:</p>
+<ol>
+<li><strong>Capture events</strong>: Add event listeners for hover, click, and selection interactions in your JavaScript code</li>
+<li><strong>Structure the data</strong>: Format each event with consistent fields (event type, target element, timestamp, duration)</li>
+<li><strong>Transmit the data</strong>: Send event records to a collection endpoint (an xAPI Learning Record Store, a simple analytics API, or even the browser's localStorage for offline collection)</li>
+</ol>
+<p>A practical event logging implementation for a p5.js MicroSim:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Event logging utility for MicroSim interactions</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">eventLog</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">logEvent</span><span class="p">(</span><span class="nx">eventType</span><span class="p">,</span><span class="w"> </span><span class="nx">targetId</span><span class="p">,</span><span class="w"> </span><span class="nx">details</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="nx">eventType</span><span class="p">,</span><span class="w">        </span><span class="c1">// &quot;hover&quot;, &quot;click&quot;, &quot;select&quot;</span>
+<span class="w">    </span><span class="nx">target</span><span class="o">:</span><span class="w"> </span><span class="nx">targetId</span><span class="p">,</span><span class="w">       </span><span class="c1">// &quot;region-mitochondria&quot;, &quot;slider-speed&quot;</span>
+<span class="w">    </span><span class="nx">timestamp</span><span class="o">:</span><span class="w"> </span><span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">(),</span>
+<span class="w">    </span><span class="nx">details</span><span class="o">:</span><span class="w"> </span><span class="nx">details</span><span class="w">        </span><span class="c1">// {duration_ms: 3200, value: 0.75}</span>
+<span class="w">  </span><span class="p">};</span>
+<span class="w">  </span><span class="nx">eventLog</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">event</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Send to parent frame for collection</span>
+<span class="w">  </span><span class="nb">window</span><span class="p">.</span><span class="nx">parent</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">({</span>
+<span class="w">    </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;microsim-event&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">event</span><span class="o">:</span><span class="w"> </span><span class="nx">event</span>
+<span class="w">  </span><span class="p">},</span><span class="w"> </span><span class="s1">&#39;*&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="interaction-tracking">Interaction Tracking</h3>
+<p><strong>Interaction tracking</strong> builds on event logging by organizing raw events into meaningful interaction sequences. While event logging records individual events, interaction tracking aggregates them into higher-level behaviors: "The student explored all five regions," "The student adjusted the slider 12 times," or "The student spent 80% of their time on the first two regions."</p>
+<p>Key interaction metrics to track:</p>
+<ul>
+<li><strong>Region coverage</strong>: Which interactive regions has the student explored? (hover or click count per region)</li>
+<li><strong>Exploration depth</strong>: How much time did the student spend with each region's detail content?</li>
+<li><strong>Control usage</strong>: Which sliders, buttons, or toggles did the student adjust, and how many times?</li>
+<li><strong>Sequence patterns</strong>: In what order did the student explore the content? Did they follow the intended pedagogical sequence?</li>
+<li><strong>Return visits</strong>: Did the student revisit specific regions, suggesting confusion or deep interest?</li>
+</ul>
+<h4 id="diagram-event-logging-flow-visualization">Diagram: Event Logging Flow Visualization</h4>
+<iframe src="../../sims/event-logging-flow/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Event Logging Flow Visualization</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> event-logging-flow<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> Describe
+<strong>Learning Objective:</strong> Describe the flow of interaction events from a student's action through event capture, logging, transmission, and storage by stepping through a worked example that shows concrete data at each stage of the pipeline.</p>
+<p><strong>Instructional Rationale:</strong> A step-through with worked examples showing concrete data at each stage is appropriate because the Understand objective requires learners to trace the complete event logging pipeline. Seeing actual event data as it transforms through each stage builds a clear mental model of the system.</p>
+<p><strong>Canvas Layout:</strong>
+- Main area (aliceblue): a horizontal pipeline diagram with 5 stages, each showing a data transformation
+- Below (white, silver border): a detail panel showing the data at the currently selected stage</p>
+<p><strong>Visual Elements:</strong>
+- 5 pipeline stages displayed as connected rounded rectangles:
+  1. "Student Action" (purple) — shows a hand icon clicking on a diagram region
+  2. "Event Capture" (blue) — shows a JavaScript event listener firing
+  3. "Data Structuring" (green) — shows raw event data being formatted into a JSON object
+  4. "Transmission" (orange) — shows postMessage sending data to the parent frame
+  5. "Storage &amp; Analysis" (teal) — shows data arriving in a Learning Record Store
+- Arrows between stages with small data preview labels
+- A sample MicroSim in the top-left corner (3 clickable colored rectangles) that generates real events when the student interacts with it
+- A "Live Event Stream" panel on the right showing timestamped events as they are generated</p>
+<p><strong>Data Visibility Requirements:</strong>
+Stage 1: Show "Student clicked region 'Nucleus' at position (245, 180)"
+Stage 2: Show JavaScript event object: {type: "click", clientX: 245, clientY: 180, target: "canvas"}
+Stage 3: Show structured log entry: {type: "click", target: "nucleus", timestamp: 1710423135000, details: {x: 0.41, y: 0.30}}
+Stage 4: Show postMessage payload: {type: "microsim-event", event: {type: "click", target: "nucleus", ...}}
+Stage 5: Show xAPI statement: {actor: {...}, verb: "interacted", object: "cell-biology-overlay", result: {region: "nucleus"}}</p>
+<p><strong>Interactive Controls:</strong>
+- The sample MicroSim generates real events when hovered or clicked
+- Button: "Next Stage" / "Previous Stage" — steps through the pipeline one stage at a time
+- Button: "Clear Events" — clears the live event stream
+- Toggle: "Auto-Advance" (default off) — automatically advances to the next stage when a new event is generated
+- Dropdown: "Event Type" — filter the live stream by hover, click, or all events</p>
+<p><strong>Behavior:</strong>
+- Interacting with the sample MicroSim generates real events that appear in the live stream
+- Stepping through stages shows how the same event data transforms at each pipeline stage
+- The detail panel displays formatted data with syntax highlighting
+- New events appear at the top of the live stream with a brief highlight animation
+- Responsive to window resize</p>
+<p><strong>Default Parameters:</strong>
+- Stage 1 selected
+- Auto-Advance: off
+- Event filter: all
+- Canvas width: responsive
+- Canvas height: 500px</p>
+<p>Implementation: p5.js with event capture demonstration and pipeline visualization</p>
+</details>
+<h2 id="engagement-metrics-and-analytics">Engagement Metrics and Analytics</h2>
+<h3 id="student-engagement-data">Student Engagement Data</h3>
+<p><strong>Student engagement data</strong> is the collection of quantitative and qualitative measurements that describe how students interact with educational content. For interactive infographics, engagement data includes event counts, interaction durations, coverage percentages, and behavioral patterns that collectively reveal whether students are engaged, confused, or disinterested.</p>
+<p>Engagement data falls into three categories:</p>
+<ul>
+<li><strong>Behavioral data</strong>: What the student did (clicks, hovers, scrolls, time on page)</li>
+<li><strong>Outcome data</strong>: What the student achieved (quiz scores, completion status, correct identifications)</li>
+<li><strong>Contextual data</strong>: The conditions of the interaction (device type, time of day, session number, referring page)</li>
+</ul>
+<h3 id="learning-analytics">Learning Analytics</h3>
+<p><strong>Learning analytics</strong> is the measurement, collection, analysis, and reporting of data about learners and their contexts, with the purpose of understanding and optimizing learning and the environments in which it occurs. For interactive infographics, learning analytics transforms raw engagement data into insights that inform design improvements.</p>
+<p>Key learning analytics questions for infographic designers:</p>
+<ul>
+<li><strong>Which regions receive the most attention?</strong> — Helps identify the content students find most interesting or confusing</li>
+<li><strong>Where do students drop off?</strong> — Reveals content that is too complex, too boring, or poorly positioned</li>
+<li><strong>Do students who interact more score higher?</strong> — Validates whether the interactive elements actually contribute to learning</li>
+<li><strong>Which interaction patterns correlate with better outcomes?</strong> — Identifies the most effective ways students use the infographic</li>
+</ul>
+<h3 id="engagement-metrics">Engagement Metrics</h3>
+<p><strong>Engagement metrics</strong> are specific, quantifiable measurements derived from student engagement data. The most valuable engagement metrics for interactive infographics include:</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>What It Measures</th>
+<th>What It Reveals</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Click Heatmap</strong></td>
+<td>Spatial distribution of clicks</td>
+<td>Which areas attract interaction; whether students find interactive regions</td>
+</tr>
+<tr>
+<td><strong>Session Duration</strong></td>
+<td>Total time spent with the infographic</td>
+<td>Overall engagement level; whether content holds attention</td>
+</tr>
+<tr>
+<td><strong>Completion Rate</strong></td>
+<td>Percentage of regions/steps explored</td>
+<td>Whether students explore all content or abandon partway</td>
+</tr>
+<tr>
+<td><strong>Hover Duration</strong></td>
+<td>Time spent reading each tooltip/infobox</td>
+<td>Which descriptions students find valuable; which they skip</td>
+</tr>
+<tr>
+<td><strong>Return Rate</strong></td>
+<td>Frequency of revisiting specific regions</td>
+<td>Confusion (repeated returns) or deep interest</td>
+</tr>
+<tr>
+<td><strong>Interaction Sequence</strong></td>
+<td>Order of region exploration</td>
+<td>Whether students follow the intended learning path</td>
+</tr>
+</tbody>
+</table>
+<h3 id="click-heatmap">Click Heatmap</h3>
+<p>A <strong>click heatmap</strong> is a visual overlay that shows where students click most frequently on an infographic, using color intensity to represent click density. Areas with many clicks appear as "hot" zones (typically red or orange), while areas with few or no clicks appear as "cold" zones (blue or transparent).</p>
+<p>Click heatmaps are powerful diagnostic tools because they reveal:</p>
+<ul>
+<li><strong>Discovered vs. undiscovered regions</strong>: If a region receives zero clicks, students may not realize it is interactive</li>
+<li><strong>Misclick patterns</strong>: Clusters of clicks on non-interactive areas suggest that students expect interactivity where none exists</li>
+<li><strong>Engagement distribution</strong>: An even heat distribution suggests balanced exploration; concentrated heat suggests one dominant region</li>
+</ul>
+<h3 id="session-duration">Session Duration</h3>
+<p><strong>Session duration</strong> measures the total time a student spends interacting with an infographic in a single session. Session duration is a proxy for engagement — longer sessions generally indicate that students are exploring the content rather than bouncing away. However, extremely long sessions may indicate confusion rather than engagement, so session duration should always be interpreted alongside other metrics.</p>
+<h3 id="completion-rate">Completion Rate</h3>
+<p><strong>Completion rate</strong> measures the percentage of available interactive elements that a student explored during their session. For an overlay infographic with 8 regions, a student who hovered over or clicked 6 of them has a completion rate of 75%. High completion rates suggest that the infographic successfully motivates exploration; low completion rates suggest that students either lose interest or cannot find all interactive elements.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Key Insight</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Percy is thinking">
+No single engagement metric tells the complete story. A high session duration with a low completion rate might mean the student found one region fascinating and ignored the rest — or it might mean they were confused and stuck. Always analyze multiple metrics together: session duration, completion rate, click distribution, and hover patterns. The combination reveals the full picture of student engagement.</p>
+</div>
+<h3 id="instructor-dashboard">Instructor Dashboard</h3>
+<p>An <strong>instructor dashboard</strong> is a web-based interface that aggregates and displays learning analytics for an educator, providing at-a-glance visibility into how students are engaging with interactive content. For an intelligent textbook with dozens of MicroSim infographics, the instructor dashboard answers critical questions: Which infographics are most used? Where do students struggle? Which content needs revision?</p>
+<p>A well-designed instructor dashboard includes:</p>
+<ul>
+<li><strong>Overview metrics</strong>: Total sessions, unique students, average session duration, average completion rate across all infographics</li>
+<li><strong>Per-infographic views</strong>: Drill-down into individual MicroSim performance with click heatmaps and engagement charts</li>
+<li><strong>Trend analysis</strong>: Engagement metrics over time, showing whether changes to content improve or degrade student interaction</li>
+<li><strong>Alert indicators</strong>: Flagging infographics with unusually low completion rates or high bounce rates</li>
+<li><strong>Cohort comparison</strong>: Comparing engagement between student groups, sections, or semesters</li>
+</ul>
+<h4 id="diagram-engagement-metrics-dashboard">Diagram: Engagement Metrics Dashboard</h4>
+<iframe src="../../sims/engagement-metrics-dashboard/main.html" width="100%" height="600px" scrolling="no"></iframe>
+
+<details>
+<summary>Engagement Metrics Dashboard</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> engagement-metrics-dashboard<br/>
+<strong>Library:</strong> Chart.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze (L4)
+<strong>Bloom Verb:</strong> Examine
+<strong>Learning Objective:</strong> Examine simulated engagement metrics (click heatmaps, session duration distribution, completion rates, interaction sequences) for a sample set of interactive infographics, identifying which infographics perform well and which need redesign based on the data patterns.</p>
+<p><strong>Instructional Rationale:</strong> An interactive dashboard with simulated analytics data is appropriate because the Analyze objective requires learners to examine multiple data streams and draw conclusions. Working with realistic sample data teaches the analytical mindset needed for continuous improvement.</p>
+<p><strong>Canvas Layout:</strong>
+- Top row (aliceblue): 4 metric cards showing aggregate statistics (Total Sessions, Avg Duration, Avg Completion, Active Students)
+- Middle area (aliceblue): two chart panels side by side
+- Bottom area (white, silver border): per-infographic detail table with sortable columns</p>
+<p><strong>Visual Elements:</strong>
+- <strong>Metric cards</strong> (top row): 4 rounded rectangles with large numbers:
+  - Total Sessions: 2,847
+  - Avg Session Duration: 4m 32s
+  - Avg Completion Rate: 73%
+  - Active Students (30 days): 156
+- <strong>Left chart</strong>: Bar chart showing completion rate for 8 sample infographics, with bars colored green (&gt;80%), yellow (60-80%), or red (&lt;60%)
+- <strong>Right chart</strong>: Line chart showing daily session count over 30 days, with a trend line
+- <strong>Detail table</strong>: Sortable table with columns:
+  - Infographic Name
+  - Sessions
+  - Avg Duration
+  - Completion Rate
+  - Click Coverage (percentage of regions clicked)
+  - Top Region (most-clicked region name)
+  - Status (green dot, yellow dot, red dot)
+- Sample data for 8 infographics across different chapters, with realistic variation in metrics</p>
+<p><strong>Interactive Controls:</strong>
+- Click any bar in the completion rate chart to select that infographic and update the detail panel
+- Dropdown: "Time Period" — Last 7 days, Last 30 days, Last 90 days, All Time
+- Dropdown: "Sort By" — Sessions, Duration, Completion Rate, Click Coverage
+- Toggle: "Show Trend Lines" (default on) — adds/removes trend lines on charts
+- Button: "Export Data" — copies the dashboard data as a CSV-formatted string
+- Click column headers in the detail table to sort ascending/descending</p>
+<p><strong>Behavior:</strong>
+- Selecting a time period regenerates all charts and metrics with period-appropriate simulated data
+- Clicking a bar chart element highlights the corresponding row in the detail table
+- Sorting the table re-renders with smooth row transitions
+- Metric cards animate when values change (counting up/down to new values)
+- Responsive: charts stack vertically on narrow screens</p>
+<p><strong>Default Parameters:</strong>
+- Time Period: Last 30 days
+- Sort By: Completion Rate (descending)
+- Show Trend Lines: on
+- Canvas width: responsive
+- Canvas height: 550px</p>
+<p>Implementation: Chart.js for charts, HTML table for detail view, simulated analytics data</p>
+</details>
+<h2 id="testing-and-iterative-improvement">Testing and Iterative Improvement</h2>
+<h3 id="ab-testing">A/B Testing</h3>
+<p><strong>A/B testing</strong> (also called split testing) is a methodology for comparing two versions of the same content to determine which performs better. In the context of interactive infographics, A/B testing means showing different students different versions of the same infographic and measuring which version produces better engagement metrics, learning outcomes, or both.</p>
+<p>Practical A/B testing scenarios for interactive infographics:</p>
+<ul>
+<li><strong>Layout comparison</strong>: Does a horizontal layout or vertical layout produce higher completion rates?</li>
+<li><strong>Interaction pattern comparison</strong>: Does step-reveal or free exploration lead to better learning outcomes?</li>
+<li><strong>Color scheme comparison</strong>: Does a sequential color palette or categorical palette help students distinguish regions more quickly?</li>
+<li><strong>Tooltip content comparison</strong>: Do shorter, punchier descriptions or longer, more detailed descriptions produce longer hover durations?</li>
+<li><strong>Control placement comparison</strong>: Does placing controls above or below the visualization reduce confusion?</li>
+</ul>
+<p>The A/B testing workflow:</p>
+<ol>
+<li><strong>Formulate a hypothesis</strong>: "Students will achieve higher completion rates with step-reveal navigation than free exploration"</li>
+<li><strong>Create two versions</strong>: Version A (free exploration) and Version B (step reveal)</li>
+<li><strong>Randomly assign students</strong>: Each student sees only one version</li>
+<li><strong>Collect data</strong>: Track engagement metrics for both groups over a defined period</li>
+<li><strong>Analyze results</strong>: Compare metrics between groups using statistical tests to confirm the difference is meaningful</li>
+<li><strong>Implement the winner</strong>: Adopt the version that performed better, then test the next hypothesis</li>
+</ol>
+<h3 id="user-feedback-loop">User Feedback Loop</h3>
+<p>A <strong>user feedback loop</strong> is a systematic process for collecting, analyzing, and acting on feedback from students and instructors who use the interactive content. While analytics data reveals <em>what</em> students do, feedback reveals <em>why</em> they do it — and what they wish were different.</p>
+<p>Feedback collection methods for interactive infographics:</p>
+<ul>
+<li><strong>In-line feedback</strong>: A small "Was this helpful?" prompt after completing an infographic, with optional text input</li>
+<li><strong>Survey instruments</strong>: End-of-chapter or end-of-course surveys asking about specific infographic experiences</li>
+<li><strong>Observation notes</strong>: Instructors recording student reactions and questions during classroom use</li>
+<li><strong>Support requests</strong>: Tracking questions or confusion reports related to specific infographics</li>
+</ul>
+<h3 id="usability-testing">Usability Testing</h3>
+<p><strong>Usability testing</strong> is the practice of observing real users as they interact with your content, identifying points of confusion, frustration, or delight. For interactive infographics, usability testing reveals problems that analytics alone cannot detect — such as unclear instructions, counterintuitive interactions, or visual elements that students misinterpret.</p>
+<p>A lightweight usability testing protocol for interactive infographics:</p>
+<ol>
+<li><strong>Recruit 3-5 representative users</strong> (students who match the target audience)</li>
+<li><strong>Define tasks</strong>: "Explore this infographic and tell me what the mitochondria does," or "Find the region with the highest value"</li>
+<li><strong>Observe silently</strong>: Watch and take notes as the student interacts; do not guide or correct</li>
+<li><strong>Ask follow-up questions</strong>: "What was confusing?", "What did you expect to happen when you clicked there?"</li>
+<li><strong>Identify patterns</strong>: Look for issues that multiple users encounter — these are systematic design problems</li>
+<li><strong>Prioritize fixes</strong>: Address the most impactful issues first</li>
+</ol>
+<h3 id="iterative-design">Iterative Design</h3>
+<p><strong>Iterative design</strong> is the philosophy of continuously improving content through cycles of creation, testing, measurement, and refinement. Rather than attempting to create a perfect infographic on the first try, iterative design embraces the reality that the first version is always a hypothesis — and each round of feedback and analytics data brings the design closer to optimal.</p>
+<p>The iterative design cycle for interactive infographics:</p>
+<ol>
+<li><strong>Create</strong> the initial infographic based on learning objectives and design principles</li>
+<li><strong>Deploy</strong> to the intelligent textbook</li>
+<li><strong>Collect</strong> engagement data and user feedback</li>
+<li><strong>Analyze</strong> metrics and identify improvement opportunities</li>
+<li><strong>Refine</strong> the design based on evidence</li>
+<li><strong>Redeploy</strong> the improved version</li>
+<li><strong>Repeat</strong> the cycle</li>
+</ol>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Key Insight</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Percy is thinking">
+Iterative design is the most optimistic approach to content creation because it removes the pressure of perfection. Your first version does not need to be flawless — it needs to be good enough to generate useful data. Every analytics report and every usability test gives you specific, actionable guidance for improvement. The infographics that ultimately perform best are rarely the ones that were perfect on day one — they are the ones whose creators kept iterating based on real student data.</p>
+</div>
+<h2 id="documentation-for-intelligent-textbooks">Documentation for Intelligent Textbooks</h2>
+<h3 id="lesson-plan-section">Lesson Plan Section</h3>
+<p>The <strong>lesson plan section</strong> is a structured component of a MicroSim's <code>index.md</code> documentation that describes how an instructor should integrate the infographic into a classroom lesson. A well-written lesson plan section transforms a standalone infographic into a pedagogically contextualized learning activity.</p>
+<p>Key elements of a lesson plan section:</p>
+<ul>
+<li><strong>Learning objective</strong>: What students should be able to do after completing the activity</li>
+<li><strong>Prerequisites</strong>: What students should already know before engaging with the infographic</li>
+<li><strong>Setup instructions</strong>: How to present the infographic (full screen, embedded in slides, student self-paced)</li>
+<li><strong>Activity sequence</strong>: Step-by-step instructions for the classroom activity (5-10 minutes typically)</li>
+<li><strong>Discussion prompts</strong>: Questions to ask students after they interact with the infographic</li>
+<li><strong>Assessment suggestions</strong>: How to verify that students achieved the learning objective</li>
+</ul>
+<h3 id="references-section">References Section</h3>
+<p>The <strong>references section</strong> provides links to authoritative sources that the infographic content is based on. For educational content, references serve dual purposes: they establish credibility and they provide students with paths for deeper exploration.</p>
+<p>Effective references for MicroSim infographics:</p>
+<ul>
+<li>Link to the Wikipedia article for core concepts (reliable, always available, well-maintained)</li>
+<li>Link to primary sources for data-driven visualizations</li>
+<li>Link to documentation for technical tools used (p5.js reference, xAPI specification)</li>
+<li>Include 5-10 references per MicroSim, prioritizing accessibility and reliability</li>
+</ul>
+<h2 id="markdown-authoring-for-mkdocs">Markdown Authoring for MkDocs</h2>
+<h3 id="markdown-format">Markdown Format</h3>
+<p><strong>Markdown format</strong> is a lightweight markup language that uses plain-text formatting conventions to produce structured documents. Markdown is the authoring language for MkDocs-based intelligent textbooks — every chapter, MicroSim documentation page, glossary entry, and reference section is written in Markdown.</p>
+<p>Markdown advantages for educational content:</p>
+<ul>
+<li><strong>Readable as plain text</strong>: Authors can read and edit Markdown without a preview tool</li>
+<li><strong>Version-control friendly</strong>: Markdown files produce clean diffs in Git, making collaboration straightforward</li>
+<li><strong>Extensible</strong>: MkDocs Material extends standard Markdown with admonitions, tabs, code annotations, and more</li>
+<li><strong>Separates content from presentation</strong>: The same Markdown renders differently depending on the theme, enabling design updates without content changes</li>
+</ul>
+<h3 id="admonition-block">Admonition Block</h3>
+<p>An <strong>admonition block</strong> is a visually distinct callout box used to highlight notes, warnings, tips, or other special content within a Markdown page. MkDocs Material provides a rich set of admonition types that map directly to common educational content patterns.</p>
+<p>Common admonition types and their educational uses:</p>
+<table>
+<thead>
+<tr>
+<th>Admonition Type</th>
+<th>Keyword</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Note</strong></td>
+<td><code>!!! note</code></td>
+<td>General supplementary information</td>
+</tr>
+<tr>
+<td><strong>Tip</strong></td>
+<td><code>!!! tip</code></td>
+<td>Helpful shortcuts or best practices</td>
+</tr>
+<tr>
+<td><strong>Warning</strong></td>
+<td><code>!!! warning</code></td>
+<td>Common mistakes or important cautions</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td><code>!!! example</code></td>
+<td>Worked examples or demonstrations</td>
+</tr>
+<tr>
+<td><strong>Question</strong></td>
+<td><code>!!! question</code></td>
+<td>Reflection questions for students</td>
+</tr>
+<tr>
+<td><strong>Success</strong></td>
+<td><code>!!! success</code></td>
+<td>Correct answers or achievement confirmations</td>
+</tr>
+<tr>
+<td><strong>Info</strong></td>
+<td><code>!!! info</code></td>
+<td>Background context or definitions</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><code>!!! abstract</code></td>
+<td>Chapter or section summaries</td>
+</tr>
+</tbody>
+</table>
+<p>Admonitions are created with a simple syntax:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>!!! tip &quot;Design Best Practice&quot;
+    Always test your infographic at three viewport widths
+    (360px, 768px, 1200px) before deploying.
+</code></pre></div></td></tr></table></div>
+<p>Collapsible admonitions use <code>???</code> instead of <code>!!!</code> and are excellent for self-assessment questions where students can check their answer by expanding the block.</p>
+<h3 id="code-block">Code Block</h3>
+<p>A <strong>code block</strong> is a formatted section of Markdown that displays source code with syntax highlighting, line numbers, and optional annotations. Code blocks are essential for educational content that teaches programming concepts — they present code in a readable, copy-friendly format.</p>
+<p>MkDocs Material code blocks support:</p>
+<ul>
+<li>Language-specific syntax highlighting (JavaScript, JSON, HTML, CSS, Python)</li>
+<li>Line number display</li>
+<li>Line highlighting to draw attention to specific lines</li>
+<li>Title bars showing filenames</li>
+<li>Copy buttons for one-click code copying</li>
+<li>Annotations that appear as numbered callouts within code</li>
+</ul>
+<h3 id="mermaid-diagram">Mermaid Diagram</h3>
+<p>A <strong>Mermaid diagram</strong> is a text-based diagram generated from a simple markup language embedded directly in Markdown. Mermaid supports flowcharts, sequence diagrams, Gantt charts, class diagrams, and more — all rendered as SVG graphics from plain-text descriptions.</p>
+<p>Mermaid is valuable for educational content because diagrams can be authored, versioned, and modified using the same text-based workflow as the rest of the content. No separate drawing tool is needed.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>```mermaid
+flowchart LR
+    A[Student Action] --&gt; B[Event Capture]
+    B --&gt; C[Data Structuring]
+    C --&gt; D[Transmission]
+    D --&gt; E[Storage &amp; Analysis]
+</code></pre></div></td></tr></table></div>
+<p>Mermaid diagrams are rendered automatically by MkDocs Material when the <code>pymdownx.superfences</code> extension is configured with Mermaid support.</p>
+<h2 id="mkdocs-configuration-and-site-features">MkDocs Configuration and Site Features</h2>
+<h3 id="mkdocs-material-theme">MkDocs Material Theme</h3>
+<p>The <strong>MkDocs Material theme</strong> is a feature-rich documentation theme for MkDocs that provides the visual design, navigation, search, and interactive features used by intelligent textbooks. MkDocs Material transforms plain Markdown files into a polished, responsive website with professional typography, navigation, and search functionality.</p>
+<p>Key MkDocs Material features for intelligent textbooks:</p>
+<ul>
+<li><strong>Responsive design</strong>: Automatically adapts to desktop, tablet, and mobile screen sizes</li>
+<li><strong>Dark/light mode</strong>: Supports both color schemes with user toggle</li>
+<li><strong>Integrated search</strong>: Full-text search across all pages with instant results</li>
+<li><strong>Social cards</strong>: Automatically generates Open Graph preview images for social media sharing</li>
+<li><strong>Admonition styling</strong>: Beautiful callout boxes with icons and colors</li>
+<li><strong>Code highlighting</strong>: Syntax highlighting for 200+ programming languages</li>
+<li><strong>Navigation</strong>: Sidebar navigation with expandable sections, table of contents, and breadcrumbs</li>
+</ul>
+<h3 id="mkdocs-build-process">MkDocs Build Process</h3>
+<p>The <strong>MkDocs build process</strong> transforms a directory of Markdown files, configuration, and assets into a static HTML website. Understanding the build process helps you diagnose issues, optimize performance, and customize output.</p>
+<p>The build pipeline:</p>
+<ol>
+<li><strong>Read configuration</strong>: MkDocs reads <code>mkdocs.yml</code> for site settings, theme options, plugins, and navigation structure</li>
+<li><strong>Process Markdown</strong>: Each <code>.md</code> file is parsed, extensions are applied (admonitions, code blocks, Mermaid), and HTML is generated</li>
+<li><strong>Apply theme</strong>: The Material theme wraps each page in navigation, headers, footers, and search infrastructure</li>
+<li><strong>Copy assets</strong>: CSS, JavaScript, images, and MicroSim directories are copied to the output</li>
+<li><strong>Generate extras</strong>: Search index, sitemap, social cards, and other plugin outputs are created</li>
+<li><strong>Output</strong>: The complete static site is written to the <code>site/</code> directory</li>
+</ol>
+<p>Two essential commands:</p>
+<ul>
+<li><code>mkdocs serve</code> — Starts a local development server with live reload (changes appear instantly)</li>
+<li><code>mkdocs build</code> — Generates the complete static site for deployment</li>
+</ul>
+<h3 id="mkdocsyml-configuration">mkdocs.yml Configuration</h3>
+<p>The <strong>mkdocs.yml configuration</strong> file is the central control file for an MkDocs site. It defines the site name, theme settings, navigation structure, Markdown extensions, plugins, and custom CSS/JavaScript files.</p>
+<p>Key configuration sections for intelligent textbooks:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Interactive Infographics for Intelligent Textbooks</span>
+<span class="nt">theme</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
+<span class="w">  </span><span class="nt">palette</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">primary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blue</span>
+<span class="w">    </span><span class="nt">accent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">orange</span>
+
+<span class="nt">markdown_extensions</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.details</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.superfences</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">custom_fences</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mermaid</span>
+<span class="w">          </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mermaid</span>
+<span class="w">          </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="kt">!!python/name:pymdownx.superfences.fence_mermaid</span>
+
+<span class="nt">extra_css</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">css/extra.css</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">css/mascot.css</span>
+
+<span class="nt">nav</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Home</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Chapters</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">1. Foundations</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">chapters/01-foundations/index.md</span>
+<span class="w">    </span><span class="c1"># ... additional chapters</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="navigation-structure">Navigation Structure</h3>
+<p>The <strong>navigation structure</strong> defines how pages are organized in the sidebar and how students navigate between chapters, sections, and resources. MkDocs Material supports nested navigation with expandable sections, making it natural to organize content into chapters with subsections.</p>
+<p>Navigation design principles for intelligent textbooks:</p>
+<ul>
+<li><strong>Sequential chapter ordering</strong>: Chapters should follow the learning path from foundational to advanced</li>
+<li><strong>Consistent naming</strong>: Use numbered prefixes ("1. Foundations", "2. Taxonomy") for predictable ordering</li>
+<li><strong>Supplementary sections</strong>: Place glossary, learning graph, and references outside the chapter sequence</li>
+<li><strong>Shallow hierarchy</strong>: Two levels of nesting (Chapter &gt; Page) is usually sufficient; deeper nesting creates navigation fatigue</li>
+</ul>
+<h3 id="site-search">Site Search</h3>
+<p><strong>Site search</strong> is MkDocs Material's built-in full-text search feature that enables students to find specific terms, concepts, or content across the entire textbook. Search is powered by a prebuilt index generated during the build process — no server-side search engine is needed.</p>
+<p>Search is particularly valuable for intelligent textbooks because students often need to revisit specific concepts or find definitions. A student working on Chapter 13 who needs to recall the overlay JSON format from Chapter 9 can search for "overlay JSON" and navigate directly to the relevant section.</p>
+<h3 id="social-cards-plugin">Social Cards Plugin</h3>
+<p>The <strong>social cards plugin</strong> automatically generates Open Graph preview images for every page in the textbook. When a page URL is shared on social media (LinkedIn, Twitter, Slack), the platform displays the social card image with the page title and description, creating a professional, branded preview.</p>
+<p>Social cards enhance the visibility and shareability of intelligent textbooks — when an instructor shares a chapter link, the preview image communicates quality and encourages clicks.</p>
+<h3 id="custom-css-override">Custom CSS Override</h3>
+<p>A <strong>custom CSS override</strong> allows you to extend or modify the MkDocs Material theme's default styles without editing the theme itself. Custom CSS is loaded via the <code>extra_css</code> configuration in <code>mkdocs.yml</code> and can adjust colors, spacing, fonts, iframe sizing, and any other visual property.</p>
+<p>Common custom CSS overrides for intelligent textbooks:</p>
+<ul>
+<li>Iframe sizing and border styles for embedded MicroSims</li>
+<li>Mascot admonition colors and image positioning</li>
+<li>Copy-button styling for prompt admonition blocks</li>
+<li>Logo sizing and header adjustments</li>
+<li>Print-friendly styles for PDF generation</li>
+</ul>
+<h2 id="version-control-and-deployment">Version Control and Deployment</h2>
+<h3 id="git-version-control">Git Version Control</h3>
+<p><strong>Git version control</strong> is the distributed version control system that tracks changes to your textbook files, enables collaboration, and provides a safety net for experimentation. Every file in your intelligent textbook — Markdown content, configuration, CSS, JavaScript, MicroSim code, and images — is tracked by Git, creating a complete history of every change ever made.</p>
+<p>Git advantages for intelligent textbook development:</p>
+<ul>
+<li><strong>Complete history</strong>: Every change is recorded with who made it, when, and why</li>
+<li><strong>Safe experimentation</strong>: Branches allow you to try changes without risking the working version</li>
+<li><strong>Collaboration</strong>: Multiple authors can work on different chapters simultaneously</li>
+<li><strong>Rollback</strong>: If a change introduces problems, you can revert to any previous state</li>
+<li><strong>Deployment integration</strong>: Git pushes trigger automated deployment through GitHub Actions</li>
+</ul>
+<h3 id="github-repository">GitHub Repository</h3>
+<p>A <strong>GitHub repository</strong> hosts your intelligent textbook's Git repository in the cloud, providing a web-based interface for managing code, reviewing changes, tracking issues, and configuring automated workflows. GitHub serves as both the collaboration hub and the deployment origin for GitHub Pages.</p>
+<h3 id="branch-strategy">Branch Strategy</h3>
+<p>A <strong>branch strategy</strong> defines how your team uses Git branches to organize work, review changes, and deploy updates. For intelligent textbooks, a simple branch strategy works well:</p>
+<ul>
+<li><strong>main</strong>: The production branch — always deployable, always stable</li>
+<li><strong>feature branches</strong>: Short-lived branches for specific changes (e.g., <code>add-chapter-13</code>, <code>fix-overlay-alignment</code>)</li>
+<li><strong>Pull requests</strong>: Feature branches are merged into main through pull requests, enabling review before deployment</li>
+</ul>
+<h3 id="pull-request">Pull Request</h3>
+<p>A <strong>pull request</strong> (PR) is a GitHub feature that proposes merging changes from one branch into another, providing a structured workflow for code review, discussion, and approval. For intelligent textbooks, pull requests ensure that content changes are reviewed before reaching students.</p>
+<p>Pull request best practices for educational content:</p>
+<ul>
+<li><strong>Descriptive titles</strong>: "Add Chapter 13: Advanced Visualization" not "Update files"</li>
+<li><strong>Change summary</strong>: Describe what was added, changed, or fixed</li>
+<li><strong>Preview links</strong>: Include a link to the deployed preview if available</li>
+<li><strong>Reviewer assignment</strong>: Assign a subject matter expert to verify content accuracy</li>
+</ul>
+<h3 id="github-actions-and-continuous-deployment">GitHub Actions and Continuous Deployment</h3>
+<p><strong>GitHub Actions</strong> is GitHub's built-in automation platform that executes workflows in response to repository events. For intelligent textbooks, the most important workflow is <strong>continuous deployment</strong> — automatically building and deploying the textbook website whenever changes are pushed to the main branch.</p>
+<p>A typical GitHub Actions deployment workflow:</p>
+<ol>
+<li><strong>Trigger</strong>: A push to the <code>main</code> branch (or a merged pull request)</li>
+<li><strong>Checkout</strong>: GitHub Actions checks out the repository</li>
+<li><strong>Install dependencies</strong>: Python, MkDocs, and MkDocs Material are installed</li>
+<li><strong>Build</strong>: <code>mkdocs build</code> generates the static site</li>
+<li><strong>Deploy</strong>: The built site is pushed to the <code>gh-pages</code> branch</li>
+<li><strong>Publish</strong>: GitHub Pages serves the updated site</li>
+</ol>
+<p>This automated pipeline means that merging a pull request with a chapter update results in the live textbook being updated within minutes — no manual deployment steps required.</p>
+<h3 id="github-pages-deployment">GitHub Pages Deployment</h3>
+<p><strong>GitHub Pages deployment</strong> is the process of publishing a static website directly from a GitHub repository. GitHub Pages hosts the built MkDocs site at a URL like <code>https://username.github.io/repository-name/</code>, providing free, reliable hosting for educational content.</p>
+<p>The deployment command for manual deployment:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
+</code></pre></div></td></tr></table></div>
+<p>This single command builds the site and pushes it to the <code>gh-pages</code> branch, which GitHub Pages serves automatically. For teams using CI/CD, the <code>gh-deploy</code> step is handled by GitHub Actions.</p>
+<h4 id="diagram-cicd-deployment-pipeline">Diagram: CI/CD Deployment Pipeline</h4>
+<iframe src="../../sims/cicd-deployment-pipeline/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>CI/CD Deployment Pipeline</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> cicd-deployment-pipeline<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> Describe
+<strong>Learning Objective:</strong> Describe the continuous deployment pipeline for an intelligent textbook by tracing the flow from a content change through Git commit, push, GitHub Actions build, and GitHub Pages deployment, identifying what happens at each stage.</p>
+<p><strong>Instructional Rationale:</strong> A step-through workflow with concrete examples at each stage is appropriate because the Understand objective requires learners to trace the complete deployment pipeline. Showing actual commands and outputs at each step demystifies the automation.</p>
+<p><strong>Canvas Layout:</strong>
+- Main area (aliceblue): a vertical pipeline diagram with 6 stages connected by downward arrows
+- Right side (white, silver border): detail panel for the selected stage showing commands and outputs</p>
+<p><strong>Visual Elements:</strong>
+- 6 pipeline stages displayed as connected rounded rectangles in a vertical flow:
+  1. "Content Change" (purple, icon: pencil) — "Author edits Chapter 13 index.md"
+  2. "Git Commit &amp; Push" (blue, icon: git branch) — "git add, git commit, git push origin main"
+  3. "GitHub Actions Trigger" (green, icon: play button) — "Workflow .github/workflows/deploy.yml fires"
+  4. "MkDocs Build" (orange, icon: gear) — "mkdocs build generates static HTML site"
+  5. "Deploy to gh-pages" (teal, icon: upload) — "Built site pushed to gh-pages branch"
+  6. "Live on GitHub Pages" (green, icon: globe) — "https://username.github.io/textbook/ updated"
+- Each stage has a status indicator (pending, running, complete) that animates during the walkthrough
+- A "Time Elapsed" indicator showing realistic timing (0s → 15s → 30s → 2m → 2m30s → 3m)
+- Clicking a stage shows in the detail panel:
+  - Terminal commands or GitHub UI screenshots (text representation)
+  - Expected output
+  - Common failure points and how to fix them</p>
+<p><strong>Interactive Controls:</strong>
+- Click any stage to view its details
+- Button: "Animate Pipeline" — walks through all 6 stages with 3-second pauses, showing status changing from pending → running → complete
+- Toggle: "Show Terminal Output" (default on) — displays simulated terminal output for each stage
+- Toggle: "Show Failure Scenarios" (default off) — shows what happens when each stage fails (build error, push rejected, etc.)
+- Button: "Reset" — returns all stages to pending state</p>
+<p><strong>Behavior:</strong>
+- "Animate Pipeline" runs the full deployment sequence with realistic timing
+- Status indicators transition with brief animations (spinning during "running")
+- The "Time Elapsed" counter advances realistically during animation
+- Failure scenarios show error messages and recovery commands
+- Responsive to window resize; pipeline remains vertical</p>
+<p><strong>Default Parameters:</strong>
+- All stages: pending
+- Show Terminal Output: on
+- Show Failure Scenarios: off
+- Canvas width: responsive
+- Canvas height: 500px</p>
+<p>Implementation: p5.js with pipeline stage rendering and animated status transitions</p>
+</details>
+<h2 id="the-complete-lifecycle-from-creation-to-continuous-improvement">The Complete Lifecycle: From Creation to Continuous Improvement</h2>
+<p>With the concepts in this chapter, you now have visibility into the full lifecycle of an interactive infographic:</p>
+<ol>
+<li><strong>Design</strong> — Apply information design principles, Gestalt principles, and visual encoding (Chapter 13)</li>
+<li><strong>Build</strong> — Implement with JavaScript libraries, overlay patterns, and MicroSim packaging (Chapters 8-10)</li>
+<li><strong>Generate</strong> — Accelerate creation with AI-assisted workflows (Chapter 12)</li>
+<li><strong>Document</strong> — Write lesson plans, references, and index.md pages in Markdown</li>
+<li><strong>Deploy</strong> — Publish to GitHub Pages through Git and CI/CD</li>
+<li><strong>Track</strong> — Capture student interactions with xAPI event logging</li>
+<li><strong>Analyze</strong> — Examine engagement metrics on the instructor dashboard</li>
+<li><strong>Test</strong> — Validate designs through A/B testing and usability testing</li>
+<li><strong>Iterate</strong> — Refine based on evidence and redeploy</li>
+</ol>
+<p>This lifecycle is a virtuous cycle — each iteration produces a better version of the infographic, informed by real student data. The most impactful intelligent textbooks are not the ones with the most sophisticated initial designs; they are the ones whose creators committed to the iterative improvement cycle and kept refining based on what the data revealed.</p>
+<h4 id="diagram-infographic-lifecycle-wheel">Diagram: Infographic Lifecycle Wheel</h4>
+<iframe src="../../sims/infographic-lifecycle-wheel/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Infographic Lifecycle Wheel</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> infographic-lifecycle-wheel<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand (L2)
+<strong>Bloom Verb:</strong> Summarize
+<strong>Learning Objective:</strong> Summarize the complete interactive infographic lifecycle by exploring a circular diagram showing all 9 stages from design through iteration, understanding how each stage feeds into the next and how the cycle enables continuous improvement.</p>
+<p><strong>Instructional Rationale:</strong> A circular lifecycle diagram with clickable stages is appropriate because the Understand objective requires learners to see the full picture and explain how stages connect. The circular layout emphasizes that the process is iterative, not linear.</p>
+<p><strong>Canvas Layout:</strong>
+- Main area (aliceblue): a circular diagram with 9 stages arranged around the perimeter, connected by curved arrows
+- Center: a summary area that updates based on the selected stage
+- Below (white, silver border): a timeline showing one complete cycle with estimated durations</p>
+<p><strong>Visual Elements:</strong>
+- 9 stages arranged in a circle, each represented as a colored arc segment with an icon and label:
+  1. Design (purple, lightbulb icon)
+  2. Build (blue, wrench icon)
+  3. Generate (green, AI sparkle icon)
+  4. Document (orange, document icon)
+  5. Deploy (teal, rocket icon)
+  6. Track (red, eye icon)
+  7. Analyze (indigo, chart icon)
+  8. Test (yellow, clipboard icon)
+  9. Iterate (cyan, refresh icon)
+- Curved arrows between each stage showing the flow direction (clockwise)
+- A special thicker arrow from stage 9 (Iterate) back to stage 1 (Design) emphasizing the cycle
+- The center area shows: stage name, 2-3 sentence description, key tools used, and chapter reference
+- A "Cycle Counter" showing "Iteration 1 of ∞" that increments during animation</p>
+<p><strong>Interactive Controls:</strong>
+- Click any stage segment to select it and view details in the center
+- Button: "Animate Cycle" — highlights each stage in sequence (2-second intervals), completing one full rotation
+- Button: "Show All Details" — expands to show all 9 stages in a vertical list below the wheel
+- Toggle: "Show Time Estimates" (default off) — overlays estimated duration for each stage
+- Hover over arrows to see what artifact flows between stages (e.g., Design → Build: "Design specification")</p>
+<p><strong>Behavior:</strong>
+- Clicking a stage highlights it and dims others
+- "Animate Cycle" rotates a highlight around the wheel, incrementing the cycle counter on each completion
+- Arrow hover shows the deliverable that passes between stages
+- Time estimates show realistic durations (Design: 2 hours, Build: 4 hours, Deploy: 5 minutes, etc.)
+- Responsive to window resize; circle scales proportionally</p>
+<p><strong>Default Parameters:</strong>
+- No stage selected
+- Show Time Estimates: off
+- Cycle Counter: 1
+- Canvas width: responsive
+- Canvas height: 500px</p>
+<p>Implementation: p5.js with circular layout rendering and stage interaction</p>
+</details>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Common Mistake</p>
+<p><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Percy warns you">
+The most common deployment mistake is forgetting to add new MicroSim directories to the repository before deploying. If you create a new MicroSim with <code>main.html</code>, <code>index.md</code>, and <code>metadata.json</code> but forget to <code>git add</code> those files, the deployment will succeed but the MicroSim will be missing from the live site. Always run <code>git status</code> before committing to verify that all new files are staged. Similarly, always check the deployed site after each deployment to confirm that everything renders correctly.</p>
+</div>
+<h2 id="summary_1">Summary</h2>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Excellent Work!</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Percy celebrates">
+You have now completed the full journey from infographic creation to deployment and continuous improvement! Every concept in this course connects to the lifecycle you learned in this chapter — design principles inform better creations, tracking data validates your design decisions, analytics guide your iterations, and automated deployment keeps your improvements flowing to students without delay. You are now equipped to build, publish, and continuously improve intelligent textbooks that make a real difference in student learning. Display it with style!</p>
+</div>
+<p>In this chapter, you learned that:</p>
+<ul>
+<li>The <strong>xAPI protocol</strong> and <strong>Experience API</strong> provide a standardized Actor-Verb-Object format for recording student learning interactions, enabling granular <strong>event logging</strong> of hover, click, and selection events across interactive infographics</li>
+<li><strong>Interaction tracking</strong> aggregates raw events into meaningful behavioral patterns — region coverage, exploration depth, control usage, and sequence analysis — that reveal how students actually engage with content</li>
+<li><strong>Student engagement data</strong> and <strong>learning analytics</strong> transform interaction records into actionable insights, with key <strong>engagement metrics</strong> including <strong>click heatmaps</strong> (spatial click distribution), <strong>session duration</strong> (time-on-task), and <strong>completion rate</strong> (percentage of content explored)</li>
+<li>The <strong>instructor dashboard</strong> aggregates analytics across all infographics, providing at-a-glance visibility into student engagement with drill-down capabilities for per-infographic analysis</li>
+<li><strong>A/B testing</strong> compares two content versions with randomly assigned students to determine which performs better, while <strong>usability testing</strong> observes real students interacting with content to identify confusion and friction points</li>
+<li>The <strong>user feedback loop</strong> and <strong>iterative design</strong> philosophy enable continuous improvement — each cycle of creation, deployment, data collection, and refinement produces a better version of the infographic</li>
+<li><strong>Lesson plan sections</strong> and <strong>references sections</strong> in MicroSim documentation contextualize infographics within classroom instruction and establish credibility through authoritative source links</li>
+<li><strong>Markdown format</strong> is the authoring language for MkDocs content, with <strong>admonition blocks</strong> for callouts, <strong>code blocks</strong> for syntax-highlighted source code, and <strong>Mermaid diagrams</strong> for text-based flowcharts and sequence diagrams</li>
+<li>The <strong>MkDocs Material theme</strong> provides responsive design, <strong>site search</strong>, <strong>social cards plugin</strong>, <strong>navigation structure</strong>, and <strong>custom CSS override</strong> capabilities, while <strong>mkdocs.yml configuration</strong> controls all site settings through the <strong>MkDocs build process</strong></li>
+<li><strong>Git version control</strong> tracks all changes with complete history, <strong>GitHub repository</strong> hosts the codebase, <strong>branch strategy</strong> organizes work, and <strong>pull requests</strong> enable review before merging</li>
+<li><strong>GitHub Actions</strong> automates <strong>continuous deployment</strong>, building and publishing the textbook to <strong>GitHub Pages deployment</strong> whenever changes are merged — closing the loop from content change to live update in minutes</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Experience_API">Wikipedia: xAPI (Experience API)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Learning_analytics">Wikipedia: Learning Analytics</a></li>
+<li><a href="https://en.wikipedia.org/wiki/A/B_testing">Wikipedia: A/B Testing</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Usability_testing">Wikipedia: Usability Testing</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Continuous_deployment">Wikipedia: Continuous Deployment</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Git">Wikipedia: Git</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia: Markdown</a></li>
+<li><a href="https://squidfundamentals.github.io/mkdocs-material/">MkDocs Material Documentation</a></li>
+<li><a href="https://docs.github.com/en/pages">GitHub Pages Documentation</a></li>
+<li><a href="https://docs.github.com/en/actions">GitHub Actions Documentation</a></li>
+</ul>
 
 
 
