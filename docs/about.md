@@ -1,8 +1,8 @@
 # About the Infographics for Interactive Intelligent Textbooks
 
 This interactive intelligent textbook covers the topic
-of creating interactive infographic diagrams for use in
-intelligent textbooks.  
+of using AI to create interactive infographic diagrams for use in
+intelligent textbooks. 
 
 ## Definitions of Interactive Infographic Terms
 

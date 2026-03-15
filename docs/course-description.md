@@ -1,14 +1,12 @@
 # Course Description for Interactive Infographics for Intelligent Textbooks
 
 
-## Course Title
-
-Interactive Infographics for Intelligent Textbooks
+**Course Title:** Using AI to Generate Interactive Infographics for Intelligent Textbooks
 
 ## Overview
 
 This course teaches instructional designers and educational professionals
-how to create interactive infographic diagrams for use in intelligent
+how to use AI to generate interactive infographic diagrams for use in intelligent
 textbooks. Students learn to design, build, and deploy width-responsive
 interactive infographics that conform to MicroSim standards, enabling
 consistent integration into web-based educational content. The course
@@ -42,6 +40,7 @@ including:
 - Comfort working with a text editor and file system navigation
 - Basic understanding of educational design principles
 - No advanced programming experience required (the course introduces JavaScript concepts as needed)
+- Access to a tool such as Anthropic Claude Code or OpenAI's Codex command line interface
 
 ## Reading Level
 

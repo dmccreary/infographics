@@ -17,19 +17,45 @@ nav:
       - Content: chapters/01-foundations-of-interactive-infographics/index.md
       - Quiz: chapters/01-foundations-of-interactive-infographics/quiz.md
       - Annotated References: chapters/01-foundations-of-interactive-infographics/references.md
-    - 2. Taxonomy: chapters/02-infographic-taxonomy-and-classification/index.md
-    - 3. Slide Art Diagrams: chapters/03-presentation-slide-art-diagrams/index.md
-    - 4. Visual Frameworks: chapters/04-visual-problem-solving-frameworks/index.md
-    - 5. Causal Loop Diagrams: chapters/05-causal-loop-diagrams-and-systems-thinking/index.md
-    - 6. Web Structure and Style: chapters/06-web-fundamentals-structure-style-and-data/index.md
-    - 7. JavaScript and Responsive: chapters/07-web-fundamentals-javascript-and-responsive-design/index.md
-    - 8. JS Visualization Libraries: chapters/08-javascript-visualization-libraries/index.md
-    - 9. Overlayment Patterns: chapters/09-overlayment-interactive-patterns/index.md
-    - 10. MicroSim Standards: chapters/10-microsim-standards-and-packaging/index.md
-    - 11. Learning Science: chapters/11-learning-science-for-interactive-content/index.md
-    - 12. Generative AI: chapters/12-generative-ai-for-infographic-creation/index.md
-    - 13. Advanced Visualization: chapters/13-advanced-visualization-and-design-principles/index.md
-    - 14. Tracking and Deployment: chapters/14-tracking-analytics-and-deployment/index.md
+    - 2. Taxonomy:
+      - Content: chapters/02-infographic-taxonomy-and-classification/index.md
+      - Quiz: chapters/02-infographic-taxonomy-and-classification/quiz.md
+    - 3. Slide Art Diagrams:
+      - Content: chapters/03-presentation-slide-art-diagrams/index.md
+      - Quiz: chapters/03-presentation-slide-art-diagrams/quiz.md
+    - 4. Visual Frameworks:
+      - Content: chapters/04-visual-problem-solving-frameworks/index.md
+      - Quiz: chapters/04-visual-problem-solving-frameworks/quiz.md
+    - 5. Causal Loop Diagrams:
+      - Content: chapters/05-causal-loop-diagrams-and-systems-thinking/index.md
+      - Quiz: chapters/05-causal-loop-diagrams-and-systems-thinking/quiz.md
+    - 6. Web Structure and Style:
+      - Content: chapters/06-web-fundamentals-structure-style-and-data/index.md
+      - Quiz: chapters/06-web-fundamentals-structure-style-and-data/quiz.md
+    - 7. JavaScript and Responsive:
+      - Content: chapters/07-web-fundamentals-javascript-and-responsive-design/index.md
+      - Quiz: chapters/07-web-fundamentals-javascript-and-responsive-design/quiz.md
+    - 8. JS Visualization Libraries:
+      - Content: chapters/08-javascript-visualization-libraries/index.md
+      - Quiz: chapters/08-javascript-visualization-libraries/quiz.md
+    - 9. Overlayment Patterns:
+      - Content: chapters/09-overlayment-interactive-patterns/index.md
+      - Quiz: chapters/09-overlayment-interactive-patterns/quiz.md
+    - 10. MicroSim Standards:
+      - Content: chapters/10-microsim-standards-and-packaging/index.md
+      - Quiz: chapters/10-microsim-standards-and-packaging/quiz.md
+    - 11. Learning Science:
+      - Content: chapters/11-learning-science-for-interactive-content/index.md
+      - Quiz: chapters/11-learning-science-for-interactive-content/quiz.md
+    - 12. Generative AI:
+      - Content: chapters/12-generative-ai-for-infographic-creation/index.md
+      - Quiz: chapters/12-generative-ai-for-infographic-creation/quiz.md
+    - 13. Advanced Visualization:
+      - Content: chapters/13-advanced-visualization-and-design-principles/index.md
+      - Quiz: chapters/13-advanced-visualization-and-design-principles/quiz.md
+    - 14. Tracking and Deployment:
+      - Content: chapters/14-tracking-analytics-and-deployment/index.md
+      - Quiz: chapters/14-tracking-analytics-and-deployment/quiz.md
 
 
   - MicroSims:
@@ -63,6 +89,7 @@ nav:
     - Mascot Style Guide: learning-graph/mascot-style-guide.md
     - Mascot Test: learning-graph/mascot-test.md
     - FAQ Quality Report: learning-graph/faq-quality-report.md
+    - Quiz Generation Report: learning-graph/quiz-generation-report.md
 
 
 
