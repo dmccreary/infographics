@@ -1,0 +1,52 @@
+{
+  "title": "Chart Type Selection Guide",
+  "creator": "Dan McCreary",
+  "subject": "Data Visualization",
+  "description": "Interactive decision tree guiding learners through data characteristic questions to recommend the best chart type for their visualization needs.",
+  "date": "2026-03-15",
+  "educational": {
+    "gradeLevel": ["undergraduate", "professional"],
+    "subjectArea": "Data Visualization",
+    "topic": "Chart Type Selection",
+    "learningObjectives": [
+      "Differentiate between chart types by analyzing data characteristics",
+      "Match visualization goals to appropriate chart types through guided decision-making"
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "duration": "10-15 minutes",
+    "prerequisites": ["Familiarity with data types"],
+    "standards": []
+  },
+  "technical": {
+    "framework": "Vanilla JS + Canvas 2D",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 500
+    },
+    "responsive": true,
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": true
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Decision tree guided analysis",
+    "keyQuestions": [
+      "What data characteristics make a bar chart more appropriate than a line chart?",
+      "When should you use a treemap instead of a pie chart?",
+      "How does the number of data series affect chart type selection?"
+    ],
+    "commonMisconceptions": [
+      "Pie charts work well with many categories",
+      "Bar charts and histograms are interchangeable",
+      "Line charts are appropriate for categorical data"
+    ],
+    "assessmentOpportunities": [
+      "Scenario-based chart selection exercises",
+      "Justification of chart choice based on data properties"
+    ]
+  },
+  "chapter": "08-javascript-visualization-libraries"
+}

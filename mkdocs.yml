@@ -65,8 +65,11 @@ nav:
     - Biogeochemical Cycles Dashboard: sims/biogeochemical-cycles/index.md
     - Book Levels MicroSim: sims/book-levels/index.md
     - Brewing Beer Process Explorer: sims/brewing-beer/index.md
+    - Chart Type Gallery: sims/chart-type-gallery/index.md
+    - Chart Type Selection Guide: sims/chart-type-selector/index.md
     - Comparative Anatomy Explorer: sims/comparative-anatomy/index.md
     - Event handling data flow: sims/event-handling-flow/index.md
+    - Gestalt Principles Playground: sims/gestalt-principles-playground/index.md
     - Infobox Positioning Comparison: sims/infobox-positioning-comparison/index.md
     - Interactive Infographic Taxonomy Tree: sims/infographic-taxonomy-tree/index.md
     - Learning Graph Viewer: sims/graph-viewer/index.md
@@ -74,9 +77,12 @@ nav:
     - MicroSim Architecture Overview: sims/microsim-architecture-overview/index.md
     - MicroSim Template: sims/template/index.md
     - MicroSim Uniqueness Interactive Venn Diagram: sims/microsim-uniqueness/index.md
+    - Multi-Dimensional Classification Explorer: sims/multi-dimensional-classifier/index.md
     - Prokaryote vs. Eukaryote Cell Comparison: sims/prokaryote-eukaryote-comparison/index.md
     - Purpose Classification Sorter: sims/purpose-classification-sorter/index.md
     - Structural Format Gallery: sims/structural-format-gallery/index.md
+
+
 
 
 

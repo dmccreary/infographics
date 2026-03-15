@@ -181,7 +181,7 @@ Most interactive infographics you create for intelligent textbooks will be educa
 
 #### Diagram: Purpose Classification Sorter
 
-<iframe src="../../sims/purpose-classification-sorter/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/purpose-classification-sorter/main.html" width="100%" height="405px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Purpose Classification Sorter</summary>

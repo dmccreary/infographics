@@ -326,7 +326,7 @@ function positionNextButton() {
         nextButton.show();
         nextButton.html('Next');
     } else if (gameOver) {
-        nextButton.position(canvasWidth / 2 - 40, drawHeight + 12);
+        nextButton.position(canvasWidth / 2 - 40, drawHeight - 38);
         nextButton.show();
         nextButton.html('Restart');
         nextButton.style('background-color', '#4caf50');
