@@ -65,6 +65,7 @@ nav:
     - Book Levels MicroSim: sims/book-levels/index.md
     - Brewing Beer Process Explorer: sims/brewing-beer/index.md
     - Comparative Anatomy Explorer: sims/comparative-anatomy/index.md
+    - Event Handling Flow: sims/event-handling-flow/index.md
     - Infobox Positioning Comparison: sims/infobox-positioning-comparison/index.md
     - Learning Graph Viewer: sims/graph-viewer/index.md
     - Levels of Interactivity MicroSim: sims/levels-of-interactivity/index.md
@@ -114,7 +115,8 @@ nav:
     - Cover: prompts/05-cover.md
     - Chapter Content Generation: prompts/10-chapter-content-generation.md
     - Glossary Generator: prompts/11-glossary-generator.md
-    - prompts/12-faq-generator.md
+    - FAQ Generator: prompts/12-faq-generator.md
+    - Quiz Generator: prompts/13-quiz-generator.md
 
   - FAQ: faq.md
   - Glossary: glossary.md
