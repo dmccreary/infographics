@@ -55,28 +55,28 @@ Without a shared taxonomy, design conversations stall. One person says "I need a
 
 A well-constructed taxonomy also functions as a decision tool. When you know the purpose of your infographic (to educate, to analyze, to persuade, or to promote), the structural format it should take, how complex it needs to be, and who will be reading it, you have already eliminated most of the wrong choices. The taxonomy narrows an overwhelming design space down to a manageable set of candidates.
 
-## Infographic Taxonomy: The Big Picture
+## Interactive Infographic Taxonomy: The Big Picture
 
-An **infographic taxonomy** is a hierarchical classification system that organizes infographic types along multiple independent dimensions. Each dimension captures a different design decision, and the dimensions are orthogonal — meaning you can combine any value on one dimension with any value on another. A single infographic might be *educational* in purpose, *hierarchical* in format, *detailed* in visual complexity, targeted at *professional* audiences, and grounded in the *science* content domain.
+An **interactive infographic taxonomy** is a hierarchical classification system that organizes interactive infographic types along multiple independent dimensions. Each dimension captures a different design decision, and the dimensions are orthogonal — meaning you can combine any value on one dimension with any value on another. A single infographic might be *educational* in purpose, *hierarchical* in format, *detailed* in visual complexity, targeted at *professional* audiences, and grounded in the *science* content domain.
 
 The five dimensions of our taxonomy are:
 
 | Dimension | Question It Answers | Values |
 |-----------|-------------------|--------|
-| **Purpose** | *Why* does this infographic exist? | Educational, Analytical, Persuasive, Promotional |
-| **Structural Format** | *How* is the information organized spatially? | Linear, Hierarchical, Comparative, Circular, Radial |
+| **Purpose** | *Why* does this interactive infographic exist? | Educational, Analytical, Persuasive, Promotional |
+| **Structural Format** | *How* is the interactive information organized spatially? | Linear, Hierarchical, Comparative, Circular, Radial |
 | **Visual Complexity** | *How much* detail is presented at once? | Minimalist, Detailed |
 | **Audience** | *Who* is the intended reader? | General Public, Professional/Technical, Stakeholder-Specific |
 | **Content Domain** | *What subject area* does it serve? | Science, Business, Technology, Education, Health, etc. |
 
-These five dimensions form the foundation of infographic taxonomy. In the sections that follow, we explore each dimension in depth, beginning with purpose — the most important design decision you will make.
+These five dimensions form the foundation of interactive infographic taxonomy. In the sections that follow, we explore each dimension in depth, beginning with purpose — the most important design decision you will make.
 
-#### Diagram: Infographic Taxonomy Tree
+#### Diagram: Interactive Infographic Taxonomy Tree
 
-<iframe src="../../sims/infographic-taxonomy-tree/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/infographic-taxonomy-tree/main.html" width="100%" height="1100px" scrolling="no"></iframe>
 
 <details markdown="1">
-<summary>Infographic Taxonomy Tree</summary>
+<summary>Interactive Infographic Taxonomy Tree</summary>
 Type: diagram
 **sim-id:** infographic-taxonomy-tree<br/>
 **Library:** vis-network<br/>
@@ -170,7 +170,7 @@ Promotional infographics share some techniques with persuasive ones — selectiv
 
 ### Choosing the Right Purpose
 
-Most infographics you create for intelligent textbooks will be educational. However, understanding all four purpose types helps you recognize when a different approach is appropriate. The following decision guide can help:
+Most interactive infographics you create for intelligent textbooks will be educational. However, understanding all four purpose types helps you recognize when a different approach is appropriate. The following decision guide can help:
 
 | Your Goal | Primary Purpose | Example |
 |-----------|----------------|---------|

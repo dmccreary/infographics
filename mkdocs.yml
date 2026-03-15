@@ -61,6 +61,7 @@ nav:
   - MicroSims:
     - List of MicroSims: sims/index.md
     - Animal Cell MicroSim: sims/animal-cell/index.md
+    - Audience Adaptation Comparison: sims/audience-adaptation-comparison/index.md
     - Biogeochemical Cycles Dashboard: sims/biogeochemical-cycles/index.md
     - Book Levels MicroSim: sims/book-levels/index.md
     - Brewing Beer Process Explorer: sims/brewing-beer/index.md
@@ -74,6 +75,14 @@ nav:
     - MicroSim Template: sims/template/index.md
     - MicroSim Uniqueness Interactive Venn Diagram: sims/microsim-uniqueness/index.md
     - Prokaryote vs. Eukaryote Cell Comparison: sims/prokaryote-eukaryote-comparison/index.md
+    - Purpose Classification Sorter: sims/purpose-classification-sorter/index.md
+    - Structural Format Gallery: sims/structural-format-gallery/index.md
+
+
+
+
+
+
 
 
 

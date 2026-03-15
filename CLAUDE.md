@@ -244,6 +244,7 @@ Rules for iframe embeds in chapters:
 - The MkDocs page file remains `index.md`
 - All MicroSims must use `background: aliceblue` on the `<body>` element for visual consistency
 - Width-responsive design: aliceblue drawing region above white control region with silver borders
+- **Minimum font size is 14px.** Do not use `textSize()` values smaller than 14 unless there is no other option for fitting text at narrow canvas widths. Readability is more important than fitting extra content.
 - Include Dublin Core metadata in `metadata.json` for every MicroSim
 - Every MicroSim should send a height message to the parent for auto-resize:
   `window.parent.postMessage({type: 'microsim-resize', height: height}, '*');`
