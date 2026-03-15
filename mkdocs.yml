@@ -47,10 +47,12 @@ nav:
     - MicroSim Uniqueness Interactive Venn Diagram: sims/microsim-uniqueness/index.md
     - Prokaryote vs. Eukaryote Cell Comparison: sims/prokaryote-eukaryote-comparison/index.md
 
-
-
-
+  - Stories:
+    - Overview: stories/index.md
+    - Edward Tufte - The Ink That Matters: stories/edward-tufte/index.md
+    - Story Ideas: stories/story-ideas.md
   
+
   - Learning Graph:
     - Introduction: learning-graph/index.md
     - Course Description Assessment: learning-graph/course-description-assessment.md
@@ -60,6 +62,8 @@ nav:
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
     - Mascot Style Guide: learning-graph/mascot-style-guide.md
     - Mascot Test: learning-graph/mascot-test.md
+
+
 
   - Appendices:
     - List of Appendices: appendices/index.md
