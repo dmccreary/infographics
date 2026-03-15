@@ -1,0 +1,2456 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI Infographics is a collection of resources for creating interactive infographics using AI tools.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/infographics/learning-graph/quiz-generation-report/">
+      
+      
+        <link rel="prev" href="../faq-quality-report/">
+      
+      
+        <link rel="next" href="../book-metrics/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Quiz Generation Report - AI Interactive Infographics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Quiz Generation Report - AI Interactive Infographics" >
+      
+        <meta  property="og:description"  content="AI Infographics is a collection of resources for creating interactive infographics using AI tools." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/infographics/assets/images/social/learning-graph/quiz-generation-report.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/infographics/learning-graph/quiz-generation-report/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Quiz Generation Report - AI Interactive Infographics" >
+      
+        <meta  name="twitter:description"  content="AI Infographics is a collection of resources for creating interactive infographics using AI tools." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/infographics/assets/images/social/learning-graph/quiz-generation-report.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quiz-generation-report" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AI Interactive Infographics" class="md-header__button md-logo" aria-label="AI Interactive Infographics" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Interactive Infographics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quiz Generation Report
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/infographics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI Interactive Infographics" class="md-nav__button md-logo" aria-label="AI Interactive Infographics" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    AI Interactive Infographics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/infographics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../stories/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Stories
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Learning Graph
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course-description-assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description Assessment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Concept List
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quality-metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Graph Quality Analysis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept-taxonomy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Concept Taxonomy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../taxonomy-distribution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Taxonomy Distribution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mascot-style-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mascot Style Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mascot-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mascot Test
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq-quality-report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ Quality Report
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Quiz Generation Report
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quiz Generation Report
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#executive-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executive Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Details
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#measured-token-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measured Token Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-question-token-economics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Per-Question Token Economics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context-reads-inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context Reads (Inputs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#efficiency-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Efficiency Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Statistics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Statistics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#per-chapter-quiz-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Per-Chapter Quiz Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aggregate-blooms-taxonomy-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aggregate Bloom's Taxonomy Distribution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#answer-balance-aggregate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Answer Balance (Aggregate)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execution-mode-decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execution Mode Decision
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-assurance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quality Assurance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quality Assurance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checks-performed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checks Performed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checks-not-performed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checks Not Performed
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files-created-and-modified" class="md-nav__link">
+    <span class="md-ellipsis">
+      Files Created and Modified
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Files Created and Modified">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#created-14-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Created (14 files)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modified-1-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modified (1 file)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#question-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question Format
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendations-for-future-runs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommendations for Future Runs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../book-metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Book Metrics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter Metrics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diagram-details/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Diagram and MicroSim Details
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diagram-table/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Diagram and MicroSim Table
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../appendices/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Appendices
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../research/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Research
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/index.md" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#executive-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executive Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Details
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#measured-token-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measured Token Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-question-token-economics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Per-Question Token Economics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context-reads-inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context Reads (Inputs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#efficiency-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Efficiency Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Statistics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Statistics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#per-chapter-quiz-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Per-Chapter Quiz Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aggregate-blooms-taxonomy-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aggregate Bloom's Taxonomy Distribution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#answer-balance-aggregate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Answer Balance (Aggregate)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execution-mode-decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execution Mode Decision
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-assurance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quality Assurance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quality Assurance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checks-performed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checks Performed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checks-not-performed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checks Not Performed
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files-created-and-modified" class="md-nav__link">
+    <span class="md-ellipsis">
+      Files Created and Modified
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Files Created and Modified">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#created-14-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Created (14 files)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modified-1-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modified (1 file)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#question-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question Format
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendations-for-future-runs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommendations for Future Runs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/infographics/blob/master/docs/learning-graph/quiz-generation-report.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="quiz-generation-report">Quiz Generation Report</h1>
+<h2 id="executive-summary">Executive Summary</h2>
+<p>On 2026-03-15, the Quiz Generator Skill v0.3 was executed to create
+10-question multiple-choice quizzes for all 14 chapters of the
+<em>Interactive Infographics for Intelligent Textbooks</em> course.
+The skill ran in <strong>sequential mode</strong> to minimize token consumption
+on the Claude Pro plan, producing <strong>140 questions</strong> across
+<strong>14 quiz files</strong> in approximately <strong>15 minutes</strong> of wall-clock time.</p>
+<hr />
+<h2 id="session-details">Session Details</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Skill Version</strong></td>
+<td>0.3</td>
+</tr>
+<tr>
+<td><strong>Date</strong></td>
+<td>2026-03-15</td>
+</tr>
+<tr>
+<td><strong>Model</strong></td>
+<td>Claude Opus 4.6</td>
+</tr>
+<tr>
+<td><strong>Execution Mode</strong></td>
+<td>Sequential (single agent)</td>
+</tr>
+<tr>
+<td><strong>Start Time</strong></td>
+<td>09:01:54</td>
+</tr>
+<tr>
+<td><strong>End Time</strong></td>
+<td>09:17:12</td>
+</tr>
+<tr>
+<td><strong>Wall-Clock Time</strong></td>
+<td>15 minutes 18 seconds</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="token-usage">Token Usage</h2>
+<p>Token usage was measured from the Claude Pro plan's usage dashboard,
+which reported that the quiz generation task consumed <strong>25% of the
+200K five-hour token budget</strong>, or approximately <strong>50,000 tokens total</strong>.</p>
+<h3 id="measured-token-summary">Measured Token Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Tokens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Total tokens consumed</strong></td>
+<td><strong>~50,000</strong></td>
+</tr>
+<tr>
+<td>Pro plan budget (5-hour window)</td>
+<td>200,000</td>
+</tr>
+<tr>
+<td><strong>Budget consumed</strong></td>
+<td><strong>25%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="../token-usage-during-quiz-generation.png" /></p>
+<h3 id="per-question-token-economics">Per-Question Token Economics</h3>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total questions generated</td>
+<td>140</td>
+</tr>
+<tr>
+<td>Total tokens consumed</td>
+<td>~50,000</td>
+</tr>
+<tr>
+<td><strong>Tokens per question</strong></td>
+<td><strong>~357</strong></td>
+</tr>
+<tr>
+<td>Avg. words per quiz file</td>
+<td>1,266</td>
+</tr>
+<tr>
+<td>Avg. characters per quiz file</td>
+<td>8,761</td>
+</tr>
+<tr>
+<td>Total output words (all 14 quiz files)</td>
+<td>17,721</td>
+</tr>
+<tr>
+<td>Total output characters (all 14 quiz files)</td>
+<td>122,651</td>
+</tr>
+</tbody>
+</table>
+<h3 id="context-reads-inputs">Context Reads (Inputs)</h3>
+<p>The following files were read as context to generate the quizzes:</p>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>System prompt + skill instructions</td>
+<td>Loaded once at session start</td>
+</tr>
+<tr>
+<td>Course description</td>
+<td>Full file (~8K chars)</td>
+</tr>
+<tr>
+<td>Learning graph CSV (352 concepts)</td>
+<td>Full file (~14K chars)</td>
+</tr>
+<tr>
+<td>Glossary</td>
+<td>First 2,000 lines (~84K chars)</td>
+</tr>
+<tr>
+<td>mkdocs.yml</td>
+<td>Full file (~6K chars)</td>
+</tr>
+<tr>
+<td>Chapter index.md files</td>
+<td>Partial reads (summary + key sections per chapter)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="efficiency-analysis">Efficiency Analysis</h3>
+<p>At ~357 tokens per question, the quiz generator is highly efficient.
+The sequential execution mode avoided the ~12K-token startup overhead
+per parallel agent, contributing to the low total. For comparison:</p>
+<ul>
+<li><strong>50K tokens</strong> = 14 chapters × 10 questions = 140 quiz questions</li>
+<li><strong>200K budget</strong> = enough for ~4 full quiz generation runs, or
+  one quiz run plus substantial additional work (chapter generation,
+  MicroSim creation, etc.)</li>
+</ul>
+<hr />
+<h2 id="content-statistics">Content Statistics</h2>
+<h3 id="per-chapter-quiz-summary">Per-Chapter Quiz Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Ch</th>
+<th>Chapter Title</th>
+<th>Questions</th>
+<th>Words</th>
+<th>Bloom's Distribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Foundations of Interactive Infographics</td>
+<td>10</td>
+<td>1,189</td>
+<td>R:4, U:3, Ap:2, An:1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Infographic Taxonomy and Classification</td>
+<td>10</td>
+<td>1,183</td>
+<td>R:2, U:4, Ap:2, An:2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Presentation Slide Art Diagrams</td>
+<td>10</td>
+<td>1,139</td>
+<td>R:3, U:3, Ap:3, An:1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Visual Problem-Solving Frameworks</td>
+<td>10</td>
+<td>1,213</td>
+<td>R:2, U:3, Ap:3, An:2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Causal Loop Diagrams and Systems Thinking</td>
+<td>10</td>
+<td>1,299</td>
+<td>R:3, U:2, Ap:3, An:2</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Web Fundamentals: Structure, Style, and Data</td>
+<td>10</td>
+<td>1,324</td>
+<td>R:2, U:3, Ap:3, An:2</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Web Fundamentals: JavaScript and Responsive</td>
+<td>10</td>
+<td>1,270</td>
+<td>R:2, U:3, Ap:3, An:2</td>
+</tr>
+<tr>
+<td>8</td>
+<td>JavaScript Visualization Libraries</td>
+<td>10</td>
+<td>1,234</td>
+<td>R:2, U:3, Ap:3, An:2</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Overlayment Interactive Patterns</td>
+<td>10</td>
+<td>1,387</td>
+<td>R:2, U:3, Ap:3, An:2</td>
+</tr>
+<tr>
+<td>10</td>
+<td>MicroSim Standards and Packaging</td>
+<td>10</td>
+<td>1,242</td>
+<td>R:2, U:3, Ap:3, An:2</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Learning Science for Interactive Content</td>
+<td>10</td>
+<td>1,295</td>
+<td>R:2, U:3, Ap:3, An:2</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Generative AI for Infographic Creation</td>
+<td>10</td>
+<td>1,314</td>
+<td>R:2, U:3, Ap:3, An:2</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Advanced Visualization and Design Principles</td>
+<td>10</td>
+<td>1,310</td>
+<td>R:2, U:3, Ap:3, An:2</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Tracking, Analytics, and Deployment</td>
+<td>10</td>
+<td>1,322</td>
+<td>R:2, U:3, Ap:3, An:2</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td><strong>140</strong></td>
+<td><strong>17,721</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="aggregate-blooms-taxonomy-distribution">Aggregate Bloom's Taxonomy Distribution</h3>
+<table>
+<thead>
+<tr>
+<th>Bloom's Level</th>
+<th>Count</th>
+<th>Percentage</th>
+<th>Target (Intermediate)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Remember</td>
+<td>32</td>
+<td>22.9%</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>Understand</td>
+<td>42</td>
+<td>30.0%</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>Apply</td>
+<td>40</td>
+<td>28.6%</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>Analyze</td>
+<td>26</td>
+<td>18.6%</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>Evaluate</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Create</td>
+<td>0</td>
+<td>0.0%</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table>
+<p>The distribution closely matches the intermediate chapter target
+profile. The slight overweight on Analyze (+3.6%) and underweight
+on Remember (-2.1%) reflects the technical depth of the later chapters.</p>
+<h3 id="answer-balance-aggregate">Answer Balance (Aggregate)</h3>
+<table>
+<thead>
+<tr>
+<th>Answer</th>
+<th>Count</th>
+<th>Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>36</td>
+<td>25.7%</td>
+</tr>
+<tr>
+<td>B</td>
+<td>36</td>
+<td>25.7%</td>
+</tr>
+<tr>
+<td>C</td>
+<td>36</td>
+<td>25.7%</td>
+</tr>
+<tr>
+<td>D</td>
+<td>32</td>
+<td>22.9%</td>
+</tr>
+</tbody>
+</table>
+<p>All answers fall within the acceptable 20-30% range per option.</p>
+<hr />
+<h2 id="execution-mode-decision">Execution Mode Decision</h2>
+<p>The skill documentation recommends parallel execution for 4+ chapters
+(spawning 4-6 concurrent agents). However, the project's CLAUDE.md
+contains an explicit <strong>token efficiency directive</strong>:</p>
+<blockquote>
+<p>Always default to serial processing (one Task agent) unless the user
+explicitly requests speed or parallel execution. Each parallel Task
+agent costs ~12K tokens in startup overhead.</p>
+</blockquote>
+<p>Following this directive, <strong>sequential mode</strong> was chosen. The trade-off:</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Sequential (Actual)</th>
+<th>Parallel (Estimated)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wall-clock time</td>
+<td>~15 minutes</td>
+<td>~3-4 minutes</td>
+</tr>
+<tr>
+<td>Agent startup overhead</td>
+<td>0 tokens</td>
+<td>~48,000 tokens (4 agents × 12K)</td>
+</tr>
+<tr>
+<td>Total tokens</td>
+<td>~50,000</td>
+<td>~98,000</td>
+</tr>
+<tr>
+<td>Budget consumed</td>
+<td>25%</td>
+<td>~49%</td>
+</tr>
+<tr>
+<td>Token savings</td>
+<td>—</td>
+<td>~48,000 saved (49%)</td>
+</tr>
+</tbody>
+</table>
+<p>Sequential mode saved an estimated <strong>48,000 tokens</strong> — nearly doubling
+the token cost if parallel agents had been used. At 25% of the Pro
+plan's 200K budget, the sequential approach left <strong>75% of the budget</strong>
+available for other tasks in the same five-hour window.</p>
+<hr />
+<h2 id="quality-assurance">Quality Assurance</h2>
+<h3 id="checks-performed">Checks Performed</h3>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All 14 quiz files created</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td>10 questions per chapter</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td>mkdocs.yml navigation updated (Content + Quiz per chapter)</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td><code>mkdocs build</code> succeeds without quiz-related errors</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td>Upper-alpha div format used for all questions</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td><code>??? question "Show Answer"</code> admonition used for all answers</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td>"The correct answer is <strong>X</strong>." format in every explanation</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td><strong>Concept Tested</strong> label in every explanation</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td>Horizontal rule separators between questions</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td>Answer balance within 20-30% per option</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td>No "All of the above" or "None of the above" options</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td>No duplicate questions across chapters</td>
+<td>Pass</td>
+</tr>
+</tbody>
+</table>
+<h3 id="checks-not-performed">Checks Not Performed</h3>
+<ul>
+<li><strong>Link validation</strong>: Quiz files do not contain cross-references
+  to other pages (by design, to avoid broken links)</li>
+<li><strong>Quiz bank JSON export</strong>: Not generated in this run (optional output)</li>
+<li><strong>Per-chapter metadata JSON</strong>: Not generated in this run (optional output)</li>
+</ul>
+<hr />
+<h2 id="files-created-and-modified">Files Created and Modified</h2>
+<h3 id="created-14-files">Created (14 files)</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>docs/chapters/01-foundations-of-interactive-infographics/quiz.md</code></td>
+<td>1,189 words</td>
+</tr>
+<tr>
+<td><code>docs/chapters/02-infographic-taxonomy-and-classification/quiz.md</code></td>
+<td>1,183 words</td>
+</tr>
+<tr>
+<td><code>docs/chapters/03-presentation-slide-art-diagrams/quiz.md</code></td>
+<td>1,139 words</td>
+</tr>
+<tr>
+<td><code>docs/chapters/04-visual-problem-solving-frameworks/quiz.md</code></td>
+<td>1,213 words</td>
+</tr>
+<tr>
+<td><code>docs/chapters/05-causal-loop-diagrams-and-systems-thinking/quiz.md</code></td>
+<td>1,299 words</td>
+</tr>
+<tr>
+<td><code>docs/chapters/06-web-fundamentals-structure-style-and-data/quiz.md</code></td>
+<td>1,324 words</td>
+</tr>
+<tr>
+<td><code>docs/chapters/07-web-fundamentals-javascript-and-responsive-design/quiz.md</code></td>
+<td>1,270 words</td>
+</tr>
+<tr>
+<td><code>docs/chapters/08-javascript-visualization-libraries/quiz.md</code></td>
+<td>1,234 words</td>
+</tr>
+<tr>
+<td><code>docs/chapters/09-overlayment-interactive-patterns/quiz.md</code></td>
+<td>1,387 words</td>
+</tr>
+<tr>
+<td><code>docs/chapters/10-microsim-standards-and-packaging/quiz.md</code></td>
+<td>1,242 words</td>
+</tr>
+<tr>
+<td><code>docs/chapters/11-learning-science-for-interactive-content/quiz.md</code></td>
+<td>1,295 words</td>
+</tr>
+<tr>
+<td><code>docs/chapters/12-generative-ai-for-infographic-creation/quiz.md</code></td>
+<td>1,314 words</td>
+</tr>
+<tr>
+<td><code>docs/chapters/13-advanced-visualization-and-design-principles/quiz.md</code></td>
+<td>1,310 words</td>
+</tr>
+<tr>
+<td><code>docs/chapters/14-tracking-analytics-and-deployment/quiz.md</code></td>
+<td>1,322 words</td>
+</tr>
+</tbody>
+</table>
+<h3 id="modified-1-file">Modified (1 file)</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mkdocs.yml</code></td>
+<td>Chapters 2-14 expanded from single-line nav entries to Content/Quiz sub-entries</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="question-format">Question Format</h2>
+<p>Every question follows the MkDocs Material quiz admonition format:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="gu">#### N. Question text ending with ?</span>
+
+&lt;div class=&quot;upper-alpha&quot; markdown&gt;
+<span class="k">1.</span> Option A
+<span class="k">2.</span> Option B
+<span class="k">3.</span> Option C
+<span class="k">4.</span> Option D
+&lt;/div&gt;
+
+??? question &quot;Show Answer&quot;
+    The correct answer is <span class="gs">**X**</span>. Explanation (50-100 words).
+
+    <span class="gs">**Concept Tested:**</span> Concept Name
+</code></pre></div></td></tr></table></div>
+<p>This format renders as a collapsible answer block in the MkDocs Material
+theme, allowing students to attempt the question before revealing the
+answer and explanation.</p>
+<hr />
+<h2 id="recommendations-for-future-runs">Recommendations for Future Runs</h2>
+<ol>
+<li><strong>Add Evaluate/Create questions</strong> for chapters 11-14 (advanced chapters)
+   to better cover the full Bloom's Taxonomy range.</li>
+<li><strong>Generate quiz-bank.json</strong> for LMS export and chatbot integration.</li>
+<li><strong>Add concept coverage analysis</strong> comparing tested concepts against
+   each chapter's concept list to identify gaps.</li>
+<li><strong>Consider 12 questions per chapter</strong> for chapters with 30+ concepts
+   (chapters 3, 6, 7, 8, 13, 14) to improve concept coverage.</li>
+<li><strong>Run link validation</strong> if future quizzes include cross-references
+   to chapter sections.</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../faq-quality-report/" class="md-footer__link md-footer__link--prev" aria-label="Previous: FAQ Quality Report">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                FAQ Quality Report
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../book-metrics/" class="md-footer__link md-footer__link--next" aria-label="Next: Book Metrics">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Book Metrics
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+    
+  </body>
+</html>
