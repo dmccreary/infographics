@@ -6,6 +6,7 @@
         "Chartjunk",
         "Embeddability",
         "Frontmatter",
+        "gridline",
         "gridlines",
         "hotspot",
         "hotspots",
@@ -15,14 +16,18 @@
         "Infoboxes",
         "Infographics",
         "Microsite",
+        "Minard",
+        "Minard's",
         "Moodle",
         "overlayment",
+        "Pantone",
         "Sankey",
         "Sparkline",
         "sparklines",
         "SQVID",
         "Treemap",
         "Tufte",
+        "Woodbury",
         "Xerte"
     ]
 }
