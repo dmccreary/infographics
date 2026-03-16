@@ -1,0 +1,8 @@
+{
+  "title": "Responsive Layout Simulator", "description": "Interactive simulator showing how infographic layouts adapt to mobile, tablet, and desktop viewports.",
+  "creator": "Dan McCreary", "date": "2026-03-15",
+  "subject": ["Responsive Design", "Breakpoints", "Web Layout", "CSS Media Queries"],
+  "type": "Interactive Simulation", "format": "text/html", "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0", "contributor": ["Claude Code"],
+  "bloomLevel": ["Apply"], "library": "p5.js"
+}

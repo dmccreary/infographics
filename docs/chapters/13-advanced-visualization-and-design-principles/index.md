@@ -368,7 +368,7 @@ Repetition creates predictability, and predictability reduces cognitive load. Wh
 
 #### Diagram: Gestalt Principles Interactive Playground
 
-<iframe src="../../sims/gestalt-principles-playground/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/gestalt-principles-playground/main.html" height="660" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Gestalt Principles Interactive Playground</summary>

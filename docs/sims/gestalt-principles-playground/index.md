@@ -16,6 +16,16 @@ social:
 
 [Edit the Gestalt Principles Playground on the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/f4MA6-mR7)
 
+## Sample iframe reference
+
+```html
+<iframe 
+   src="https://dmccreary.github.io/infographics/sims/gestalt-principles-playground/main.html" width="100%" 
+   height="660" 
+   scrolling="no">
+</iframe>
+```
+
 ## What Does "Gestalt" Mean?
 
 The word **Gestalt** is German for "form," "shape," or "configuration." It

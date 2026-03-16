@@ -1,0 +1,14 @@
+{
+  "title": "Accessibility Audit Checklist",
+  "description": "Structured accessibility evaluation tool with a sample MicroSim containing intentional issues, a 14-item checklist, and compliance scoring.",
+  "creator": "Dan McCreary",
+  "date": "2026-03-15",
+  "subject": ["Accessibility", "WCAG", "ARIA", "Inclusive Design", "Evaluation"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "bloomLevel": ["Evaluate"],
+  "library": "p5.js"
+}

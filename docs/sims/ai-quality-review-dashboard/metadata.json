@@ -1,0 +1,14 @@
+{
+  "title": "AI Quality Review Dashboard",
+  "description": "Structured quality review tool for evaluating AI-generated MicroSims against factual accuracy, alignment, metadata, responsiveness, and pedagogical fit criteria.",
+  "creator": "Dan McCreary",
+  "date": "2026-03-15",
+  "subject": ["Quality Assurance", "AI Review", "Content Evaluation", "Instructional Design"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "bloomLevel": ["Evaluate"],
+  "library": "p5.js"
+}

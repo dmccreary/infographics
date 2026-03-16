@@ -1,0 +1,8 @@
+{
+  "title": "Coordinate System Explorer", "description": "Interactive coordinate system explorer showing pixel and relative coordinates with crosshair cursor and placeable markers.",
+  "creator": "Dan McCreary", "date": "2026-03-15",
+  "subject": ["Coordinate Systems", "Canvas API", "Web Graphics"],
+  "type": "Interactive Simulation", "format": "text/html", "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0", "contributor": ["Claude Code"],
+  "bloomLevel": ["Apply"], "library": "p5.js"
+}

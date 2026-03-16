@@ -1,0 +1,14 @@
+{
+  "title": "Advanced Interaction Pattern Showcase",
+  "description": "Four-tab comparison of interaction patterns (step reveal, scroll reveal, zoom and pan, drill down) using the same legislative process content.",
+  "creator": "Dan McCreary",
+  "date": "2026-03-15",
+  "subject": ["Interaction Patterns", "UX Design", "Information Architecture"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "bloomLevel": ["Analyze"],
+  "library": "p5.js"
+}

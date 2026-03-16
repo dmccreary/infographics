@@ -1,0 +1,44 @@
+[
+  {
+    "description": "A chemistry teacher wants to show students what happens when sodium is dropped into water — the molecular rearrangement step by step.",
+    "correctW": "How",
+    "correctFramework": "Flowchart",
+    "recommendedSQVID": { "S": "Elaborate", "Q": "Qualitative", "V": "Execution", "I": "Individual", "D": "Delta" },
+    "explanation": "This is a 'How' question about a process. A flowchart shows the sequential steps of the reaction. Elaborate style captures molecular detail, qualitative since we're showing what happens rather than measuring, execution-focused on the physical process, individual example, and delta because it shows change over time."
+  },
+  {
+    "description": "A school principal wants to compare test score improvements across 12 departments over the past 3 years to decide where to allocate tutoring resources.",
+    "correctW": "How Much",
+    "correctFramework": "Chart",
+    "recommendedSQVID": { "S": "Simple", "Q": "Quantitative", "V": "Execution", "I": "Comparison", "D": "Delta" },
+    "explanation": "This is a 'How Much' question requiring numerical comparison. A chart (grouped bar or line) best shows quantities. Simple design for quick scanning, quantitative data, execution-oriented decision-making, comparison across departments, and delta showing improvement over time."
+  },
+  {
+    "description": "A geography teacher wants students to understand where the world's major deserts are located and how they relate to the tropics of Cancer and Capricorn.",
+    "correctW": "Where",
+    "correctFramework": "Map",
+    "recommendedSQVID": { "S": "Elaborate", "Q": "Qualitative", "V": "Vision", "I": "Comparison", "D": "Status Quo" },
+    "explanation": "This is a 'Where' question about spatial relationships. A map is the natural choice. Elaborate to show geographical detail, qualitative since we're showing positions not quantities, vision of global patterns, comparison between desert locations, and status quo since this is current state."
+  },
+  {
+    "description": "A project manager needs to explain the sequence of approvals required before a software feature goes from idea to production deployment.",
+    "correctW": "When",
+    "correctFramework": "Timeline",
+    "recommendedSQVID": { "S": "Simple", "Q": "Qualitative", "V": "Execution", "I": "Individual", "D": "Delta" },
+    "explanation": "This is a 'When' question about a temporal sequence. A timeline shows ordered stages clearly. Simple for readability, qualitative since it's about stages not measurements, execution-focused on getting things done, individual process flow, and delta showing progression through stages."
+  },
+  {
+    "description": "A biology instructor wants students to understand why the population of wolves in Yellowstone increased after they were reintroduced in 1995.",
+    "correctW": "Why",
+    "correctFramework": "Multi-variable Plot",
+    "recommendedSQVID": { "S": "Elaborate", "Q": "Quantitative", "V": "Vision", "I": "Comparison", "D": "Delta" },
+    "explanation": "This is a 'Why' question about cause and effect. A multi-variable plot can show correlations between wolf population, elk numbers, vegetation recovery, and river path changes. Elaborate to show multiple interacting variables, quantitative data, vision of ecological understanding, comparison of variables, and delta showing change over decades."
+  },
+  {
+    "description": "A museum curator wants visitors to identify the different artistic styles represented in the permanent collection — Impressionism, Cubism, Art Deco, Pop Art, and Minimalism.",
+    "correctW": "Who/What",
+    "correctFramework": "Portrait/Gallery",
+    "recommendedSQVID": { "S": "Elaborate", "Q": "Qualitative", "V": "Vision", "I": "Comparison", "D": "Status Quo" },
+    "explanation": "This is a 'Who/What' question about identifying and categorizing. A portrait/gallery layout displays examples of each style. Elaborate to show visual detail, qualitative since it's about style not numbers, vision of artistic understanding, comparison across styles, and status quo as a reference collection."
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "title": "AI Image Generation Prompt Builder",
+  "description": "Interactive prompt builder for constructing structured text-to-image prompts with subject, style, composition, and overlay constraint categories.",
+  "creator": "Dan McCreary",
+  "date": "2026-03-15",
+  "subject": ["Prompt Engineering", "AI Image Generation", "Text-to-Image", "Instructional Design"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "bloomLevel": ["Apply"],
+  "library": "p5.js"
+}

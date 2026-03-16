@@ -1,0 +1,58 @@
+{
+  "title": "Canvas vs SVG",
+  "creator": "Dan McCreary",
+  "subject": "Web Fundamentals",
+  "description": "Interactive MicroSim comparing Canvas (raster) and SVG (vector) rendering models across drawing, scaling, interaction, and performance dimensions.",
+  "date": "2026-03-15",
+  "educational": {
+    "gradeLevel": [
+      "undergraduate",
+      "professional-development"
+    ],
+    "subjectArea": "Web Technology",
+    "topic": "Canvas vs SVG Rendering Models",
+    "learningObjectives": [
+      "Compare the Canvas and SVG rendering models by observing how each handles drawing, scaling, and interaction"
+    ],
+    "bloomsTaxonomy": "Understand",
+    "bloomsVerb": "Compare",
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Basic HTML and CSS",
+      "Raster vs vector image concepts"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 450
+    },
+    "responsive": true,
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration with staged comparison",
+    "keyQuestions": [
+      "Why does Canvas produce blocky artifacts when zoomed but SVG does not?",
+      "When would you choose Canvas over SVG for an interactive infographic?",
+      "How does SVG support hover events without extra JavaScript?"
+    ],
+    "commonMisconceptions": [
+      "SVG is always better than Canvas",
+      "Canvas cannot handle user interaction at all",
+      "SVG and Canvas produce identical visual output"
+    ],
+    "assessmentOpportunities": [
+      "Students identify three differences between Canvas and SVG",
+      "Students recommend the correct technology for a given infographic scenario"
+    ]
+  },
+  "chapter": "06-web-fundamentals"
+}

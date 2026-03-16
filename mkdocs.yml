@@ -60,27 +60,86 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
+    - Accessibility Audit Checklist: sims/accessibility-audit-checklist/index.md
+    - Advanced Interaction Pattern Showcase: sims/advanced-interaction-showcase/index.md
+    - AI Image Generation Prompt Builder: sims/ai-image-prompt-builder/index.md
+    - AI Quality Review Dashboard: sims/ai-quality-review-dashboard/index.md
+    - AI-Assisted Workflow Evolution Timeline: sims/ai-workflow-evolution/index.md
     - Animal Cell MicroSim: sims/animal-cell/index.md
     - Audience Adaptation Comparison: sims/audience-adaptation-comparison/index.md
     - Biogeochemical Cycles Dashboard: sims/biogeochemical-cycles/index.md
+    - Bloom's Taxonomy MicroSim Matcher: sims/blooms-microsim-matcher/index.md
     - Book Levels MicroSim: sims/book-levels/index.md
     - Brewing Beer Process Explorer: sims/brewing-beer/index.md
+    - Browser DevTools Navigator: sims/devtools-navigator/index.md
+    - Canvas vs SVG: sims/canvas-vs-svg/index.md
     - Chart Type Gallery: sims/chart-type-gallery/index.md
     - Chart Type Selection Guide: sims/chart-type-selector/index.md
+    - CI/CD Deployment Pipeline: sims/cicd-deployment-pipeline/index.md
+    - CLD Building Blocks Explorer: sims/cld-building-blocks/index.md
+    - Cognitive Load Balance Explorer: sims/cognitive-load-explorer/index.md
     - Comparative Anatomy Explorer: sims/comparative-anatomy/index.md
+    - Concept-to-MicroSim Workflow: sims/concept-to-microsim-workflow/index.md
+    - Coordinate System Explorer: sims/coordinate-explorer/index.md
+    - Design Patterns in Infographic Architecture: sims/design-patterns-infographic/index.md
+    - Design Principles Synthesis Dashboard: sims/design-principles-dashboard/index.md
+    - Diagram Type Decision Tool: sims/diagram-type-decision-tool/index.md
+    - Educational Dashboard Builder: sims/dashboard-builder/index.md
+    - Engagement Metrics Dashboard: sims/engagement-metrics-dashboard/index.md
     - Event handling data flow: sims/event-handling-flow/index.md
-    - Gestalt Principles Playground: sims/gestalt-principles-playground/index.md
+    - Event Logging Flow Visualization: sims/event-logging-flow/index.md
+    - Framework Decision Pipeline: sims/framework-decision-pipeline/index.md
+    - Gestalt Principles Interactive Playground: sims/gestalt-principles-playground/index.md
+    - Hit Detection Playground: sims/hit-detection-playground/index.md
+    - Iframe Security Model: sims/iframe-security-model/index.md
     - Infobox Positioning Comparison: sims/infobox-positioning-comparison/index.md
+    - Infographic Design Principles Workflow: sims/design-principles-workflow/index.md
+    - Infographic Development Workflow: sims/infographic-dev-workflow/index.md
+    - Infographic Lifecycle Wheel: sims/infographic-lifecycle-wheel/index.md
+    - Infographic Type Decision Tree: sims/infographic-type-decision-tree/index.md
+    - Interaction Feedback Patterns Demo: sims/interaction-feedback-demo/index.md
+    - Interactive CLD Builder: sims/cld-builder/index.md
+    - Interactive Cycle Builder: sims/interactive-cycle-builder/index.md
     - Interactive Infographic Taxonomy Tree: sims/infographic-taxonomy-tree/index.md
+    - Interactive Learning Graph Explorer: sims/learning-graph-explorer/index.md
+    - JavaScript Modern Syntax Playground: sims/js-syntax-playground/index.md
+    - Knowledge Graph Learning Path Explorer: sims/learning-path-explorer/index.md
     - Learning Graph Viewer: sims/graph-viewer/index.md
     - Levels of Interactivity MicroSim: sims/levels-of-interactivity/index.md
+    - Leverage Point and Unintended Consequence Explorer: sims/leverage-point-explorer/index.md
+    - Library Selection Flowchart: sims/library-selection-flowchart/index.md
+    - Mayer's Principles Interactive Comparison: sims/mayers-principles-comparison/index.md
     - MicroSim Architecture Overview: sims/microsim-architecture-overview/index.md
+    - MicroSim Directory Structure Explorer: sims/microsim-directory-explorer/index.md
+    - MicroSim Quality Scorer: sims/microsim-quality-scorer/index.md
     - MicroSim Template: sims/template/index.md
     - MicroSim Uniqueness Interactive Venn Diagram: sims/microsim-uniqueness/index.md
+    - MicroSim Visual Standards Explorer: sims/microsim-visual-standards/index.md
     - Multi-Dimensional Classification Explorer: sims/multi-dimensional-classifier/index.md
+    - Overlay Type Comparison: sims/overlay-type-comparison/index.md
+    - Process Diagram Variants: sims/process-diagram-variants/index.md
     - Prokaryote vs. Eukaryote Cell Comparison: sims/prokaryote-eukaryote-comparison/index.md
     - Purpose Classification Sorter: sims/purpose-classification-sorter/index.md
+    - Reinforcing vs Balancing Loop Simulator: sims/reinforcing-vs-balancing/index.md
+    - Relationship Diagram Explorer: sims/relationship-diagram-explorer/index.md
+    - Responsive Layout Simulator: sims/responsive-layout-sim/index.md
+    - School District Infographic Adoption CLD: sims/school-district-cld/index.md
+    - Six Frameworks Interactive Gallery: sims/six-frameworks-gallery/index.md
+    - Six W's Visual Matcher: sims/six-ws-visual-matcher/index.md
+    - SmartArt Category Gallery: sims/smartart-category-gallery/index.md
+    - SmartArt Category Matching Quiz: sims/smartart-category-quiz/index.md
+    - SQVID Style Selector: sims/sqvid-style-selector/index.md
     - Structural Format Gallery: sims/structural-format-gallery/index.md
+    - Type 1 Rectangular Overlay Demo: sims/type1-rectangular-overlay/index.md
+    - Type 2 Polygon Overlay Demo: sims/type2-polygon-overlay/index.md
+    - Type 3 Callout to Edge Demo: sims/type3-callout-overlay/index.md
+    - Type 4 Floating Label with Edit Mode Demo: sims/type4-floating-overlay/index.md
+    - Virtuous and Vicious Cycle Examples: sims/virtuous-vicious-cycles/index.md
+    - Visual Encoding Channel Explorer: sims/visual-encoding-explorer/index.md
+    - Visual Framework Matching Quiz: sims/visual-framework-quiz/index.md
+    - Web Fundamentals Architecture Overview: sims/web-fundamentals-architecture/index.md
+
+
 
 
 

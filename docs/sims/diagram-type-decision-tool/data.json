@@ -1,0 +1,58 @@
+[
+  {
+    "description": "A biology teacher wants to show students what happens during the four stages of mitosis, where each stage follows the previous one in an unbroken sequence that repeats with every cell division.",
+    "correctCategory": "Cycle",
+    "correctSubtype": "Basic Cycle",
+    "explanation": "Mitosis is a repeating sequence — the output of one division feeds into the next. A Cycle diagram captures this continuous loop perfectly.",
+    "hint": "Think about whether this process has a clear beginning and end, or if it repeats."
+  },
+  {
+    "description": "A project manager needs to display the reporting structure of a 30-person department, showing who reports to whom from the VP down to individual contributors.",
+    "correctCategory": "Hierarchy",
+    "correctSubtype": "Organization Chart",
+    "explanation": "Organizational reporting structures are classic hierarchies with parent-child relationships at every level.",
+    "hint": "Consider the shape of the relationships — is there a top-level authority with branching subordinates?"
+  },
+  {
+    "description": "A cooking instructor wants to illustrate the 8 steps for making sourdough bread, from mixing the starter to the final bake, where each step must be completed before moving to the next.",
+    "correctCategory": "Process",
+    "correctSubtype": "Basic Process",
+    "explanation": "A linear sequence of steps with a clear start and end is best represented as a Process diagram.",
+    "hint": "Does this sequence repeat, or does it have a definite beginning and end?"
+  },
+  {
+    "description": "A marketing analyst wants to show how four factors — brand awareness, customer trust, purchase intent, and market share — all influence each other bidirectionally.",
+    "correctCategory": "Relationship",
+    "correctSubtype": "Basic Venn",
+    "explanation": "When multiple factors interact with each other in complex, non-hierarchical ways, a Relationship diagram (like a Venn or matrix) captures the interconnections.",
+    "hint": "Are these items in a sequence, or do they all relate to each other simultaneously?"
+  },
+  {
+    "description": "A sales trainer wants to show how a large pool of 1,000 website visitors narrows down through stages: 200 sign up, 50 start a trial, 20 become paying customers.",
+    "correctCategory": "Funnel",
+    "correctSubtype": "Basic Funnel",
+    "explanation": "A progressively narrowing quantity through stages is the defining pattern of a Funnel diagram.",
+    "hint": "Notice how the quantity decreases at each stage — what shape represents narrowing?"
+  },
+  {
+    "description": "A nutritionist wants to rank food groups by how much of your daily diet they should comprise, from grains at the base (most) to fats and sweets at the top (least).",
+    "correctCategory": "Pyramid",
+    "correctSubtype": "Basic Pyramid",
+    "explanation": "A proportional ranking from largest (base) to smallest (top) is exactly what a Pyramid diagram represents.",
+    "hint": "Think about whether the items have a proportional size relationship, like layers building up."
+  },
+  {
+    "description": "A teacher wants to present a list of 5 classroom rules with equal importance, where no rule is more critical than another and the order doesn't matter.",
+    "correctCategory": "List",
+    "correctSubtype": "Basic Block List",
+    "explanation": "When items have equal weight and no inherent sequence or relationship, a simple List diagram is the clearest choice.",
+    "hint": "Is there any ordering, hierarchy, or relationship between these items, or are they just a collection?"
+  },
+  {
+    "description": "A travel blogger wants to create a visual essay about their trip to Japan, with 6 photographs each accompanied by a descriptive caption telling the story of their journey.",
+    "correctCategory": "Picture",
+    "correctSubtype": "Captioned Pictures",
+    "explanation": "When the visual content (photographs) IS the message and text plays a supporting role, a Picture diagram is appropriate.",
+    "hint": "What is the primary content here — is it data, relationships, or visual imagery?"
+  }
+]

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Interactive Learning Graph Explorer</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="network"></div>
+        <div class="title">Interactive Learning Graph Explorer</div>
+        <div class="legend">
+            <div class="legend-item"><div class="legend-color" style="background:#4285F4;border-color:#1565C0;"></div><span><strong>p5.js</strong></span></div>
+            <div class="legend-item"><div class="legend-color" style="background:#FF9800;border-color:#E65100;"></div><span><strong>D3.js</strong></span></div>
+            <div class="legend-item"><div class="legend-color" style="background:#4CAF50;border-color:#2E7D32;"></div><span><strong>Chart.js</strong></span></div>
+            <div class="legend-item"><div class="legend-color" style="background:#9C27B0;border-color:#6A1B9A;"></div><span><strong>vis-network</strong></span></div>
+            <div class="legend-item"><div class="legend-color" style="background:#F44336;border-color:#C62828;"></div><span><strong>Leaflet</strong></span></div>
+            <div class="legend-item"><div class="legend-color" style="background:#009688;border-color:#00695C;"></div><span><strong>Advanced</strong></span></div>
+            <div class="legend-item"><div class="legend-color" style="background:#9E9E9E;border-color:#616161;"></div><span><strong>Cross-cutting</strong></span></div>
+        </div>
+        <div class="right-panel">
+            <div class="controls">
+                <input type="text" id="search-input" placeholder="Search concept..." class="search-box">
+                <button class="btn btn-secondary" id="reset-btn">Reset View</button>
+            </div>
+            <div class="info-panel" id="info-panel">
+                <div class="info-title" id="info-title">Concept Details</div>
+                <div class="info-content" id="info-content">
+                    <p>Click a node to see its details, prerequisites, and dependents.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="learning-graph-explorer.js"></script>
+</body>
+</html>

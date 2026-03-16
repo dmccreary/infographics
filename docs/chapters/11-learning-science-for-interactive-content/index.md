@@ -93,7 +93,7 @@ Working memory can hold approximately 4-7 chunks of information simultaneously. 
 
 #### Diagram: Cognitive Load Balance Explorer
 
-<iframe src="../../sims/cognitive-load-explorer/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/cognitive-load-explorer/main.html" height="700" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Cognitive Load Balance Explorer</summary>

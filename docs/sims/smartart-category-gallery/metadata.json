@@ -1,0 +1,21 @@
+{
+  "title": "SmartArt Category Gallery",
+  "description": "Interactive gallery of eight SmartArt categories with miniature visual thumbnails and detailed descriptions.",
+  "creator": "Dan McCreary",
+  "date": "2026-03-15",
+  "subject": ["SmartArt", "Diagram Categories", "Visual Communication", "Presentation Design"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "publisher": "Interactive Infographics Textbook",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Instructional Designers, Educators",
+  "version": "1.0.0",
+  "bloomLevel": ["Remember"],
+  "concepts": ["SmartArt Categories", "Diagram Types", "Visual Vocabulary"],
+  "prerequisites": ["Basic familiarity with presentation software"],
+  "library": "p5.js"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "CI/CD Deployment Pipeline",
+  "description": "Interactive pipeline diagram tracing the flow from content change through Git commit, GitHub Actions build, and GitHub Pages deployment.",
+  "creator": "Dan McCreary",
+  "date": "2026-03-15",
+  "subject": ["CI/CD", "GitHub Actions", "GitHub Pages", "Deployment", "MkDocs"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "bloomLevel": ["Understand"],
+  "library": "p5.js"
+}
