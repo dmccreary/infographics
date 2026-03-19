@@ -400,6 +400,16 @@ An **organization chart** is the most familiar hierarchy diagram — a tree show
 
 Interactive organization charts add significant value: clicking a node reveals the person's title, responsibilities, and contact information. Expand/collapse controls allow navigation through large organizations without overwhelming the viewer.
 
+#### Diagram: Organization Chart
+
+<iframe src="../../sims/org-chart/main.html" height="500" width="100%" scrolling="no"></iframe>
+
+[View Organization Chart Fullscreen (recommended)](../../sims/org-chart/main.html)
+
+This interactive organization chart uses color-coded hierarchy levels — brick red for the CEO, navy blue for C-Suite executives, deep purple for directors and managers, dark teal for team leads, and charcoal for individual contributors. Use the slider below the chart to show more or fewer positions, and drag to pan around the tree.
+
+
+
 ### Table Hierarchy
 
 A **table hierarchy** combines the tree structure of a hierarchy with the tabular layout of a spreadsheet. Each level of the hierarchy is represented as a row or column in a table, with indentation or grouping showing parent-child relationships. Table hierarchies are effective when each node has multiple attributes that need to be visible simultaneously.

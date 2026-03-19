@@ -210,8 +210,13 @@ function sizeNetworkContainer() {
     const header = document.querySelector('.header');
     const controls = document.querySelector('.controls');
     const container = document.getElementById('mynetwork');
-    const available = window.innerHeight - header.offsetHeight - controls.offsetHeight;
-    container.style.height = available + 'px';
+    let viewHeight = window.innerHeight;
+    // In some iframes, innerHeight can be 0 before layout completes
+    if (viewHeight < 100) {
+        viewHeight = 500; // fallback for iframe embed
+    }
+    const available = viewHeight - header.offsetHeight - controls.offsetHeight;
+    container.style.height = Math.max(available, 300) + 'px';
 }
 
 // Fetch and initialize the organization chart
