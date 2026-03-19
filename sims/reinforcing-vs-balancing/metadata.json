@@ -1,0 +1,10 @@
+{
+  "title": "Reinforcing vs Balancing Loop Simulator",
+  "description": "Side-by-side comparison of reinforcing and balancing feedback loops with causal loop diagrams and animated time-series graphs.",
+  "creator": "Dan McCreary", "date": "2026-03-15",
+  "subject": ["Systems Thinking", "Feedback Loops", "Causal Loop Diagrams"],
+  "type": "Interactive Simulation", "format": "text/html", "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0", "contributor": ["Claude Code"],
+  "publisher": "Interactive Infographics Textbook",
+  "bloomLevel": ["Analyze"], "library": "p5.js"
+}

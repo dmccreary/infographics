@@ -1,0 +1,14 @@
+{
+  "title": "Mayer's Principles Interactive Comparison",
+  "description": "Toggle signaling, segmenting, and spatial contiguity principles on a sample anatomy infographic to observe how each principle affects design quality.",
+  "creator": "Dan McCreary",
+  "date": "2026-03-15",
+  "subject": ["Mayer's Principles", "Multimedia Learning", "Instructional Design", "Signaling", "Segmenting", "Spatial Contiguity"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "bloomLevel": ["Apply"],
+  "library": "p5.js"
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Bloom's Taxonomy MicroSim Matcher", "description": "Two-stage matching quiz for Bloom's Taxonomy levels and MicroSim interaction patterns.",
+  "creator": "Dan McCreary", "date": "2026-03-15",
+  "subject": ["Bloom's Taxonomy", "Learning Objectives", "Instructional Design"],
+  "type": "Interactive Simulation", "format": "text/html", "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0", "contributor": ["Claude Code"],
+  "bloomLevel": ["Analyze"], "library": "p5.js"
+}

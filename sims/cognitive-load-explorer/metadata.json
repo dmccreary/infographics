@@ -1,0 +1,42 @@
+{
+  "title": "Cognitive Load Balance Explorer",
+  "description": "Interactive visualization showing how three types of cognitive load (intrinsic, extraneous, germane) compete for limited working memory capacity, and how design decisions shift the balance between them.",
+  "creator": "Dan McCreary",
+  "date": "2026-03-15",
+  "subject": [
+    "Cognitive Load Theory",
+    "Learning Science",
+    "Instructional Design",
+    "Working Memory",
+    "Educational Psychology"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/infographics/sims/cognitive-load-explorer/",
+  "publisher": "Interactive Infographics Textbook",
+  "educationalLevel": "Undergraduate, Professional Development",
+  "learningResourceType": "simulation",
+  "audience": "Instructional Designers, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "concepts": [
+    "Cognitive Load Theory",
+    "Intrinsic Load",
+    "Extraneous Load",
+    "Germane Load",
+    "Working Memory Capacity",
+    "Instructional Design"
+  ],
+  "prerequisites": [
+    "Basic understanding of learning theory",
+    "Familiarity with instructional design concepts"
+  ],
+  "library": "p5.js"
+}

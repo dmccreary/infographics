@@ -1,0 +1,11 @@
+{
+  "title": "SQVID Style Selector",
+  "description": "Interactive SQVID framework explorer with five dimension sliders and a live preview of the resulting infographic style.",
+  "creator": "Dan McCreary", "date": "2026-03-15",
+  "subject": ["SQVID Framework", "Visual Design", "Dan Roam", "Infographic Style"],
+  "type": "Interactive Simulation", "format": "text/html", "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0", "contributor": ["Claude Code"],
+  "publisher": "Interactive Infographics Textbook",
+  "educationalLevel": "Undergraduate", "learningResourceType": "simulation",
+  "bloomLevel": ["Apply"], "library": "p5.js"
+}

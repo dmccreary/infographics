@@ -1,0 +1,14 @@
+{
+  "sim_id": "relationship-diagram-explorer",
+  "diagram_name": "Relationship Diagram Explorer",
+  "chapter_number": 3,
+  "chapter_title": "Presentation Slide Art Diagrams",
+  "chapter_dir": "03-presentation-slide-art-diagrams",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Distinguish",
+  "learning_objective": "Distinguish between the four relationship diagram subtypes (Venn, Target, Radial, Matrix) by examining their visual structures and identifying which information patterns each represents.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: diagram\n**sim-id:** relationship-diagram-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand (L2)\n**Bloom Verb:** Distinguish\n**Learning Objective:** Distinguish between the four relationship diagram subtypes (Venn, Target, Radial, Matrix) by examining their visual structures and identifying which information patterns each represents.\n\nInstructional Rationale: Learners often confuse relationship subtypes because they all show \"connections.\" Presenting all four rendered side by side with interactive exploration forces learners to identify the structural differences — overlapping sets vs. concentric rings vs. hub-and-spoke vs. grid.\n\nVisual elements:\n- Four diagram thumbnails arranged in a 2x2 grid:\n  1. Venn: Three overlapping colored circles (blue, green, orange) with labels \"A\", \"B\", \"C\" and overlap regions shaded\n  2. Target: Four concentric circles (red center, orange, yellow, light gray outer) with labels \"Core\", \"Inner\", \"Middle\", \"Outer\"\n  3. Radial: A central teal circle labeled \"Hub\" with 5 gray circles connected by lines\n  4. Matrix: A 3x3 grid with colored cells, row and column headers\n- Below the grid, a detail panel showing:\n  - Subtype name and description\n  - \"Shows:\" — what information structure it represents\n  - \"Best for:\" — recommended use cases\n  - \"Interactive pattern:\" — how to add interactivity\n- Default: \"Click a diagram to learn about its information pattern.\"\n\nInteractive features:\n- Hover over a thumbnail to see its name tooltip and border highlight\n- Click a thumbnail to select it and display details below\n- Within each thumbnail, subtle hover effects show the interactive potential (e.g., Venn overlap regions highlight on hover)\n\nCanvas layout: Width-responsive, aliceblue background, minimum 600px\nColor scheme: Venn (blue/green/orange), Target (red-to-gray gradient), Radial (teal hub, gray spokes), Matrix (indigo cells)"
+}

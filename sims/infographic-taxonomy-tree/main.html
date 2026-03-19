@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Interactive Infographic Taxonomy Tree</title>
+    <script src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, Helvetica, sans-serif; background-color: aliceblue; }
+        .container { position: relative; width: 100%; height: 1100px; }
+        #network { width: 100%; height: 100%; background-color: aliceblue; }
+        .title {
+            position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
+            font-size: 20px; font-weight: bold; color: black;
+            background-color: aliceblue; z-index: 10; white-space: nowrap;
+        }
+        .legend {
+            position: absolute; top: 8px; left: 8px;
+            padding: 6px 8px; background-color: rgba(255,255,255,0.95);
+            border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 10;
+        }
+        .legend-item { display: flex; align-items: center; margin: 2px 0; font-size: 11px; }
+        .legend-color {
+            width: 14px; height: 14px; border-radius: 50%;
+            margin-right: 4px; border: 2px solid #333;
+        }
+        #info-panel {
+            position: absolute; display: none;
+            width: 280px; max-width: calc(100% - 20px);
+            background-color: rgba(255,255,255,0.97); border-radius: 8px;
+            padding: 10px 14px; box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+            border: 1px solid rgba(0,0,0,0.1);
+            z-index: 20; font-size: 13px; line-height: 1.5;
+            color: #555; pointer-events: none;
+        }
+        #info-panel .info-title { font-weight: bold; color: #333; margin-bottom: 2px; font-size: 14px; }
+        #info-panel .info-subtitle { color: #666; font-style: italic; margin-bottom: 4px; }
+        #info-panel .info-body { color: #555; }
+        .instructions {
+            position: absolute; bottom: 60px; left: 50%; transform: translateX(-50%);
+            font-size: 11px; color: #888; z-index: 10; white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="network"></div>
+        <div class="title">Interactive Infographic Taxonomy Tree</div>
+        <div class="legend">
+            <div class="legend-item"><div class="legend-color" style="background:#666"></div><span>Root</span></div>
+            <div class="legend-item"><div class="legend-color" style="background:#4a86c8"></div><span>Purpose</span></div>
+            <div class="legend-item"><div class="legend-color" style="background:#e8913a"></div><span>Structural Format</span></div>
+            <div class="legend-item"><div class="legend-color" style="background:#4caf50"></div><span>Visual Complexity</span></div>
+            <div class="legend-item"><div class="legend-color" style="background:#9c27b0"></div><span>Audience</span></div>
+            <div class="legend-item"><div class="legend-color" style="background:#00897b"></div><span>Content Domain</span></div>
+        </div>
+        <div class="instructions">Click a branch to expand/collapse. Hover for details.</div>
+        <div id="info-panel"></div>
+    </div>
+    <script src="infographic-taxonomy-tree.js"></script>
+</body>
+</html>

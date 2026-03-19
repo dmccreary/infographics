@@ -1,0 +1,92 @@
+[
+  {
+    "description": "A museum creates a large touchscreen display showing the human digestive system. Visitors tap on each organ to see a 3D animation of its function and read a short description written in everyday language.",
+    "correctPurpose": "Educational",
+    "correctFormat": "Linear",
+    "correctComplexity": "Detailed",
+    "correctAudience": "General Public",
+    "correctDomain": ["Science", "Health"],
+    "explanations": {
+      "purpose": "The goal is to teach visitors how the digestive system works — a classic educational purpose.",
+      "format": "The digestive system follows a sequential path from mouth to intestine, making it a linear format.",
+      "complexity": "3D animations and per-organ descriptions provide rich detail, making this a detailed infographic.",
+      "audience": "Everyday language and a museum setting target the general public, not specialists.",
+      "domain": "Human anatomy bridges both science (biology) and health — either answer is correct."
+    }
+  },
+  {
+    "description": "A consulting firm builds a dashboard for a hospital CEO comparing patient wait times, staff utilization, and readmission rates across five departments, with quarterly trend lines and a drill-down into each metric.",
+    "correctPurpose": "Analytical",
+    "correctFormat": "Comparative",
+    "correctComplexity": "Detailed",
+    "correctAudience": "Stakeholder",
+    "correctDomain": "Health",
+    "explanations": {
+      "purpose": "The dashboard exists to reveal patterns in operational data — an analytical purpose.",
+      "format": "Comparing metrics across five departments side by side makes this a comparative format.",
+      "complexity": "Multiple metrics, trend lines, and drill-down capability make this highly detailed.",
+      "audience": "Built specifically for a CEO to support decisions — a stakeholder audience.",
+      "domain": "Hospital operations and patient care place this in the health domain."
+    }
+  },
+  {
+    "description": "A startup creates a sleek one-page visual highlighting their project management tool's key features, customer logos, a pricing comparison table, and a prominent 'Start Your Free Trial' button.",
+    "correctPurpose": "Promotional",
+    "correctFormat": "Comparative",
+    "correctComplexity": "Minimalist",
+    "correctAudience": "Professional",
+    "correctDomain": "Technology",
+    "explanations": {
+      "purpose": "Feature highlights, customer logos, and a free trial button are classic promotional elements.",
+      "format": "The pricing comparison table aligns attributes side by side — a comparative format.",
+      "complexity": "A clean one-page layout with curated highlights is minimalist by design.",
+      "audience": "Project management tools target working professionals, not the general public.",
+      "domain": "A software tool for project management falls in the technology domain."
+    }
+  },
+  {
+    "description": "A history professor creates an interactive timeline of the Civil Rights Movement from 1954 to 1968. Students click each event to read primary source excerpts and see photographs from the era.",
+    "correctPurpose": "Educational",
+    "correctFormat": "Linear",
+    "correctComplexity": "Detailed",
+    "correctAudience": "General Public",
+    "correctDomain": "History",
+    "explanations": {
+      "purpose": "The timeline teaches historical events with primary sources — clearly educational.",
+      "format": "A chronological timeline arranges events in a sequential path — a linear format.",
+      "complexity": "Primary source excerpts and photographs at each node add rich detail.",
+      "audience": "Students in a history class represent a broad educational audience — general public.",
+      "domain": "The Civil Rights Movement is a history topic."
+    }
+  },
+  {
+    "description": "An environmental advocacy group creates a dramatic visual showing rising sea levels alongside photos of flooding in coastal cities, ending with the headline 'The cost of inaction' and a petition sign-up form.",
+    "correctPurpose": "Persuasive",
+    "correctFormat": "Linear",
+    "correctComplexity": "Minimalist",
+    "correctAudience": "General Public",
+    "correctDomain": "Science",
+    "explanations": {
+      "purpose": "Emotional imagery, a charged headline, and a petition form are persuasive techniques designed to motivate action.",
+      "format": "The narrative builds sequentially from data to photos to a call-to-action — a linear progression.",
+      "complexity": "The message is streamlined for impact with a few bold elements rather than deep data — minimalist.",
+      "audience": "A public petition targets everyday citizens — general public.",
+      "domain": "Sea level rise and climate science place this in the science domain."
+    }
+  },
+  {
+    "description": "A data science team at a retail company visualizes two years of sales data in a radial chart, with each spoke representing a product category and ring layers showing seasonal quarters, so analysts can spot which categories peak in which seasons.",
+    "correctPurpose": "Analytical",
+    "correctFormat": "Radial",
+    "correctComplexity": "Detailed",
+    "correctAudience": "Professional",
+    "correctDomain": "Business",
+    "explanations": {
+      "purpose": "The visualization exists to help analysts discover seasonal sales patterns — an analytical purpose.",
+      "format": "Spokes radiating from a center with ring layers is a radial format.",
+      "complexity": "Two years of multi-category, multi-quarter data with layered rings is detailed.",
+      "audience": "Data analysts at a company are professional users with domain expertise.",
+      "domain": "Retail sales analysis is a business domain activity."
+    }
+  }
+]

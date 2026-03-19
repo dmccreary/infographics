@@ -1,0 +1,14 @@
+{
+  "title": "Educational Dashboard Builder",
+  "description": "Drag-and-drop dashboard builder with 6 chart types, a 3x2 grid layout, and configurable data sources for educational metrics.",
+  "creator": "Dan McCreary",
+  "date": "2026-03-15",
+  "subject": ["Dashboard Design", "Data Visualization", "Chart Types", "Educational Analytics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "bloomLevel": ["Create"],
+  "library": "p5.js"
+}

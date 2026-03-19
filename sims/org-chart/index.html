@@ -1,0 +1,1482 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Interactive hierarchical organization chart demonstrating graph visualization with adjustable employee count and compact title-only view mode.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/infographics/sims/org-chart/">
+      
+      
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Organization Chart Visualization - AI Interactive Infographics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Organization Chart Visualization - AI Interactive Infographics" >
+      
+        <meta  property="og:description"  content="Interactive hierarchical organization chart demonstrating graph visualization with adjustable employee count and compact title-only view mode." >
+      
+        <meta property="og:image" content="https://dmccreary.github.io/infographics/org-chart.png">
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/infographics/sims/org-chart/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Organization Chart Visualization - AI Interactive Infographics" >
+      
+        <meta  name="twitter:description"  content="Interactive hierarchical organization chart demonstrating graph visualization with adjustable employee count and compact title-only view mode." >
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/infographics/org-chart.png">
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#organization-chart-visualization" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AI Interactive Infographics" class="md-header__button md-logo" aria-label="AI Interactive Infographics" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Interactive Infographics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Organization Chart Visualization
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/infographics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI Interactive Infographics" class="md-nav__button md-logo" aria-label="AI Interactive Infographics" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    AI Interactive Infographics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/infographics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../stories/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Stories
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../appendices/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Appendices
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../research/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Research
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/index.md" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-embed-this-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Embed This MicroSim
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-concepts-demonstrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Concepts Demonstrated
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scaling-challenges-for-large-organizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scaling Challenges for Large Organizations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scaling Challenges for Large Organizations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#screen-real-estate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Screen Real Estate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation-drill-down-and-roll-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation: Drill Down and Roll Up
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expand-and-collapse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expand and Collapse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lazy-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lazy Loading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-and-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search and Filtering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-and-dotted-line-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix and Dotted-Line Relationships
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-implications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Implications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Implementation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/infographics/blob/master/docs/sims/org-chart/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="organization-chart-visualization">Organization Chart Visualization</h1>
+<iframe src="main.html" width="100%" height="500px" scrolling="no"></iframe>
+<p><a class="md-button md-button--primary" href="main.html">Run MicroSim in Fullscreen (Recommended)</a></p>
+<h2 id="how-to-embed-this-microsim">How to Embed This MicroSim</h2>
+<p>Copy this iframe to your website:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://dmccreary.github.io/intro-to-graph/sims/org-chart/main.html&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;600px&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="description">Description</h2>
+<p>This interactive MicroSim demonstrates hierarchical graph visualization using the vis-network.js library. It displays an organizational structure for a 1,000-employee company, showing key positions from the CEO down to individual contributors.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li><strong>Adjustable Employee Count</strong>: Use the slider to display between 5 and 50 employees, allowing you to focus on specific organizational levels or view the complete hierarchy.</li>
+<li><strong>Title-Only View</strong>: Toggle between compact title-only labels and full name+title labels. The title-only view (enabled by default) is ideal for small iframes and presentations where space is limited.</li>
+<li><strong>Color-Coded Hierarchy</strong>: Five distinct colors represent different organizational levels:<ul>
+<li>Red: CEO</li>
+<li>Blue: C-Suite/Department Heads</li>
+<li>Purple: Directors/Managers</li>
+<li>Teal: Team Leads</li>
+<li>Gray: Individual Contributors</li>
+</ul>
+</li>
+<li><strong>Interactive Navigation</strong>: Drag nodes, pan the view, and zoom to explore the organizational structure in detail.</li>
+</ul>
+<p><strong>How to Use:</strong></p>
+<ol>
+<li>Adjust the "Number of Employees" slider to show more or fewer positions</li>
+<li>Check/uncheck "Show titles only" to toggle between compact and detailed views</li>
+<li>Click and drag to pan around the chart</li>
+<li>Use mouse wheel to zoom in and out</li>
+<li>Hover over nodes to highlight reporting relationships</li>
+</ol>
+<p>This visualization demonstrates how graphs can model hierarchical relationships in organizations, making it easier to understand reporting structures, span of control, and organizational depth.</p>
+<h2 id="lesson-plan">Lesson Plan</h2>
+<p><strong>Target Audience</strong>: Undergraduate and graduate students learning about graph databases and data modeling</p>
+<p><strong>Learning Objectives:</strong></p>
+<p>By the end of this lesson, students will be able to:</p>
+<ol>
+<li>Understand how hierarchical relationships can be represented as directed acyclic graphs (DAGs)</li>
+<li>Identify the key components of an organizational graph model (nodes as employees, edges as reporting relationships)</li>
+<li>Analyze organizational structures using graph properties such as depth, branching factor, and span of control</li>
+<li>Apply graph visualization techniques to represent hierarchical data effectively</li>
+<li>Compare and contrast different ways of displaying hierarchical information (tree layouts, compact vs. detailed labels)</li>
+</ol>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Basic understanding of graphs (nodes, edges, directed graphs)</li>
+<li>Familiarity with organizational hierarchies</li>
+<li>Introduction to data visualization concepts</li>
+</ul>
+<p><strong>Duration</strong>: 50 minutes</p>
+<p><strong>Activities:</strong></p>
+<ol>
+<li>
+<p><strong>Introduction (10 minutes)</strong></p>
+<ul>
+<li>Discuss organizational structures and why they matter</li>
+<li>Introduce the concept of representing organizations as graphs</li>
+<li>Show the MicroSim and explain the color-coding scheme</li>
+</ul>
+</li>
+<li>
+<p><strong>Exploration Activity (15 minutes)</strong></p>
+<ul>
+<li>Students explore the MicroSim with different employee counts (5, 15, 25, 50)</li>
+<li>Record observations about organizational depth and breadth</li>
+<li>Compare title-only vs. full-label views for different use cases</li>
+</ul>
+</li>
+<li>
+<p><strong>Analysis Exercise (15 minutes)</strong></p>
+<ul>
+<li>Calculate the span of control for different managers</li>
+<li>Identify the organizational depth (number of levels)</li>
+<li>Discuss advantages/disadvantages of different organizational structures</li>
+<li>Question: "What happens to communication pathways as the organization grows?"</li>
+</ul>
+</li>
+<li>
+<p><strong>Application Activity (10 minutes)</strong></p>
+<ul>
+<li>Small groups design an organizational structure for a hypothetical company</li>
+<li>Consider: How many levels? What span of control? Which roles are essential?</li>
+<li>Share designs and discuss trade-offs</li>
+</ul>
+</li>
+</ol>
+<p><strong>Assessment:</strong></p>
+<ul>
+<li><strong>Formative</strong>: Monitor student discussions during exploration and analysis</li>
+<li><strong>Summative</strong>: Short quiz on graph terminology and organizational structure concepts</li>
+<li><strong>Extended</strong>: Assignment to create their own organization chart using the data.json format</li>
+</ul>
+<p><strong>Extensions:</strong></p>
+<ul>
+<li>Explore how graph algorithms (shortest path, centrality) apply to organizational analysis</li>
+<li>Discuss matrix vs. hierarchical organizational structures</li>
+<li>Investigate how real companies structure their organizations (flat vs. tall hierarchies)</li>
+</ul>
+<h2 id="graph-concepts-demonstrated">Graph Concepts Demonstrated</h2>
+<p>This MicroSim illustrates several important graph database concepts:</p>
+<ol>
+<li>
+<p><strong>Directed Acyclic Graph (DAG)</strong>: The organization chart is a DAG where edges represent "reports to" relationships flowing from employees to managers, with no cycles.</p>
+</li>
+<li>
+<p><strong>Tree Structure</strong>: As a special case of a DAG, this hierarchy is a tree with a single root node (CEO) and unique paths from root to each node.</p>
+</li>
+<li>
+<p><strong>Hierarchical Layout</strong>: The vis-network library automatically arranges nodes by level, demonstrating graph layout algorithms.</p>
+</li>
+<li>
+<p><strong>Node Properties</strong>: Each node has properties (id, label, level, color) representing employee attributes.</p>
+</li>
+<li>
+<p><strong>Edge Semantics</strong>: Edges have clear semantics—they represent formal reporting relationships.</p>
+</li>
+<li>
+<p><strong>Graph Traversal</strong>: Following edges from any node toward the root traces the chain of command.</p>
+</li>
+<li>
+<p><strong>Subgraph Filtering</strong>: The slider demonstrates filtering a graph to show only a connected subgraph (first N nodes that maintain valid relationships).</p>
+</li>
+</ol>
+<h2 id="scaling-challenges-for-large-organizations">Scaling Challenges for Large Organizations</h2>
+<p>This MicroSim displays up to 50 positions — enough to illustrate the concept, but far smaller than a real enterprise. A typical Fortune 500 company has 10,000 to 300,000 employees. Rendering that many nodes on a single canvas is neither practical nor useful. The challenges fall into several categories.</p>
+<h3 id="screen-real-estate">Screen Real Estate</h3>
+<p>A hierarchy with 10,000 nodes cannot be displayed legibly at any zoom level. At a zoom where node labels are readable, only a fraction of the tree is visible. At a zoom where the entire tree fits, labels shrink to illegible dots. There is no single view that works — the tool must support multiple views at different scales.</p>
+<h3 id="navigation-drill-down-and-roll-up">Navigation: Drill Down and Roll Up</h3>
+<p>The most important capability for large org charts is <strong>drill-down navigation</strong>. Rather than showing the entire tree, the tool shows one business unit at a time with the ability to:</p>
+<ul>
+<li><strong>Drill down</strong> — click a manager node to expand it into a subtree showing their direct reports and the reports below them</li>
+<li><strong>Roll up</strong> — click a breadcrumb or "up" button to collapse back to the parent level</li>
+<li><strong>Focus view</strong> — search for an employee by name and display their position within the hierarchy, showing ancestors above and direct reports below</li>
+</ul>
+<p>This "focus + context" pattern is how every production org chart tool works, from SAP SuccessFactors to Workday to Microsoft Visio.</p>
+<h3 id="expand-and-collapse">Expand and Collapse</h3>
+<p>Within a visible subtree, individual branches should be <strong>collapsible</strong>. A VP with six directors, each managing four teams, creates a subtree of over 30 nodes. Collapsing branches the user is not interested in keeps the visible portion manageable. Visual indicators (such as a <code>+</code> or <code>−</code> icon on each manager node, or a count badge showing "12 reports") signal which nodes can be expanded.</p>
+<h3 id="lazy-loading">Lazy Loading</h3>
+<p>With tens of thousands of nodes, loading the entire dataset into the browser is wasteful. Production tools use <strong>lazy loading</strong> — fetching only the nodes needed for the current view. When the user drills into a business unit, the tool fetches that subtree from an API. This keeps page load times fast regardless of organization size.</p>
+<h3 id="search-and-filtering">Search and Filtering</h3>
+<p>In a large organization, the most common interaction is not browsing — it is searching. Users want to find a specific person, role, or department. Effective org chart tools provide:</p>
+<ul>
+<li><strong>Name search</strong> with autocomplete</li>
+<li><strong>Role/title filtering</strong> — show only directors, or only engineering managers</li>
+<li><strong>Department filtering</strong> — show only the marketing organization</li>
+<li><strong>Path highlighting</strong> — after finding someone, highlight the chain of command from that person up to the CEO</li>
+</ul>
+<h3 id="matrix-and-dotted-line-relationships">Matrix and Dotted-Line Relationships</h3>
+<p>Large organizations rarely follow a pure tree structure. Employees often have <strong>dotted-line</strong> (secondary) reporting relationships — a data scientist in the product team who also reports to the Chief Data Officer, or a regional sales manager who reports to both the VP of Sales and the regional general manager.</p>
+<p>These matrix relationships turn the tree into a directed acyclic graph (DAG), which is harder to lay out visually. Production tools handle this by showing the primary reporting line as a solid edge and dotted-line relationships as dashed edges that can be toggled on and off.</p>
+<h3 id="design-implications">Design Implications</h3>
+<p>The slider control in this MicroSim is a simplified version of the expand/collapse pattern — it controls how many nodes are visible. In a production tool, this control would be replaced by per-node expand/collapse buttons, breadcrumb navigation, search, and lazy-loading APIs. The core visualization principles (hierarchical layout, color-coded levels, readable labels) remain the same at any scale, but the navigation and data management patterns must evolve dramatically to handle real-world organizations.</p>
+<h2 id="technical-implementation">Technical Implementation</h2>
+<p><strong>Architecture:</strong></p>
+<ul>
+<li><code>data.json</code>: Contains 50 employee nodes with names, titles, hierarchy levels, and reporting relationships (edges)</li>
+<li><code>main.html</code>: HTML structure with controls (slider, checkbox), legend, and network container</li>
+<li><code>style.css</code>: Styling for header, controls, legend, and network visualization area</li>
+<li><code>script.js</code>: JavaScript logic for data loading, filtering, label formatting, and vis-network configuration</li>
+</ul>
+<p><strong>Libraries Used:</strong></p>
+<ul>
+<li><strong>vis-network.js</strong> (v9.x): JavaScript graph visualization library with excellent support for hierarchical layouts</li>
+</ul>
+<p><strong>Code Structure:</strong></p>
+<p>The script follows a clean separation of concerns:
+- Data loading and storage (async fetch from JSON)
+- Data filtering and transformation (based on slider and checkbox)
+- Network rendering and configuration (vis-network options)
+- Event handling for interactive controls</p>
+<h2 id="references">References</h2>
+<ol>
+<li><a href="https://visjs.github.io/vis-network/docs/network/">vis-network Documentation</a> - Official documentation for the vis-network library used in this MicroSim</li>
+<li><a href="https://en.wikipedia.org/wiki/Layered_graph_drawing">Hierarchical Graph Drawing</a> - Wikipedia article on algorithms for drawing hierarchical graphs</li>
+<li><a href="https://courses.lumenlearning.com/wm-principlesofmanagement/chapter/types-of-organizational-structures/">Organizational Structure Concepts</a> - 2023 - Lumen Learning - Overview of different organizational structure types</li>
+<li><a href="https://www.investopedia.com/terms/s/span-of-control.asp">Span of Control in Management</a> - 2024 - Investopedia - Explanation of span of control concept in organizational design</li>
+<li><a href="https://neo4j.com/use-cases/organizational-management/">Graph Databases and Organizational Modeling</a> - Neo4j Use Cases - How graph databases model organizational structures in enterprise systems</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+    
+  </body>
+</html>

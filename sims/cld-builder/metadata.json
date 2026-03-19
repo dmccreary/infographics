@@ -1,0 +1,14 @@
+{
+  "title": "Interactive CLD Builder",
+  "description": "Build causal loop diagrams by placing variable nodes, drawing causal links with polarity, and identifying reinforcing or balancing loops.",
+  "creator": "Dan McCreary",
+  "date": "2026-03-15",
+  "subject": ["Causal Loop Diagrams", "Systems Thinking", "Feedback Loops", "Diagram Builder"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "bloomLevel": ["Create"],
+  "library": "p5.js"
+}

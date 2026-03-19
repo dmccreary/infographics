@@ -1,0 +1,14 @@
+{
+  "title": "AI-Assisted Workflow Evolution Timeline",
+  "description": "Interactive timeline showing five eras of AI-assisted infographic creation from 2015 template tools to 2030 autonomous curriculum design.",
+  "creator": "Dan McCreary",
+  "date": "2026-03-15",
+  "subject": ["AI Evolution", "Workflow History", "Generative AI", "Educational Technology"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "bloomLevel": ["Analyze"],
+  "library": "p5.js"
+}

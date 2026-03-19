@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Chart</title>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Organization Chart</h1>
+        <p id="subtitle">Typical Organization - Showing 25 Key Positions</p>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #8B2500;"></div>
+                <span>CEO</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #1B3A5C;"></div>
+                <span>C-Suite/Heads</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #5B2C6F;"></div>
+                <span>Directors/Managers</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #1A6B5A;"></div>
+                <span>Team Leads</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #4A4A4A;"></div>
+                <span>Individual Contributors</span>
+            </div>
+        </div>
+    </div>
+    <div id="mynetwork"></div>
+    <div class="controls">
+        <div class="control-group">
+            <label for="employeeCount">Number of Employees: <span id="countValue">25</span></label>
+            <input type="range" id="employeeCount" min="5" max="50" value="25" step="5">
+        </div>
+        <div class="control-group">
+            <label>
+                <input type="checkbox" id="titleOnly" checked>
+                Show titles only (compact view)
+            </label>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

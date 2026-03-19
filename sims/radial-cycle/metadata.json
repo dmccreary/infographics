@@ -1,0 +1,11 @@
+{
+  "title": "Radial Cycle: Continuous Improvement",
+  "description": "A radial cycle diagram showing the DMAIC continuous improvement cycle with Quality as the central hub driving five sequential stages.",
+  "library": "p5.js",
+  "bloom_level": "Understand",
+  "bloom_verb": "Compare",
+  "learning_objective": "Compare the radial cycle pattern to the basic cycle by identifying the central hub and its spoke connections to all outer stages.",
+  "keywords": ["radial cycle", "DMAIC", "continuous improvement", "quality", "cycle diagram", "SmartArt"],
+  "chapter": 3,
+  "status": "active"
+}

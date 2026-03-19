@@ -1,0 +1,14 @@
+{
+  "sim_id": "canvas-vs-svg",
+  "diagram_name": "Canvas vs SVG Rendering Comparison",
+  "chapter_number": 6,
+  "chapter_title": "Web Fundamentals: Structure, Style, and Data",
+  "chapter_dir": "06-web-fundamentals-structure-style-and-data",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Compare",
+  "learning_objective": "Compare the Canvas and SVG rendering models by observing how each handles drawing, scaling, and interaction with the same set of shapes.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: microsim\n**sim-id:** canvas-vs-svg<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand (L2)\n**Bloom Verb:** Compare\n**Learning Objective:** Compare the Canvas and SVG rendering models by observing how each handles drawing, scaling, and interaction with the same set of shapes.\n\n**Instructional Rationale:** Side-by-side comparison with step-through is appropriate because the Understand objective requires learners to see the concrete differences between two rendering approaches. Showing identical shapes rendered both ways makes the abstract distinction tangible.\n\n**Canvas Layout:**\n- Left panel (50% width): Canvas-rendered shapes on aliceblue background\n- Right panel (50% width): SVG-rendered shapes on aliceblue background\n- Bottom control area (white, silver border): step-through controls and info text\n\n**Visual Elements:**\n- Both panels display the same set of 5 shapes: a circle, a rectangle, a triangle, a line, and a text label\n- Each shape is drawn in a distinct color (blue, orange, green, red, purple)\n\n**Data Visibility Requirements:**\n- Stage 1 (\"Drawing\"): Both panels render shapes; info text explains that Canvas uses pixel commands while SVG creates DOM nodes\n- Stage 2 (\"Scaling\"): Both panels zoom in 2x; Canvas shows pixelation while SVG remains crisp; info text explains resolution independence\n- Stage 3 (\"Interaction\"): User can hover over shapes; SVG shapes highlight individually with a tooltip showing the element tag name; Canvas side shows no per-shape response; info text explains DOM-based vs manual hit detection\n- Stage 4 (\"Performance\"): Both panels render 500 small circles; frame rate counters displayed; info text explains Canvas performance advantage with many elements\n\n**Interactive Controls:**\n- \"Next Stage\" / \"Previous Stage\" buttons\n- Stage indicator (\"Stage 2 of 4\")\n- Info panel explaining current demonstration\n\n**Behavior:**\n- Responsive to window resize; both panels scale proportionally\n- Stage transitions are smooth\n\n**Default Parameters:**\n- Start at Stage 1\n- Canvas width: responsive (50% each panel)\n- Canvas height: 400px per panel\n\nImplementation: Left panel uses p5.js Canvas mode; right panel uses inline SVG with JavaScript"
+}

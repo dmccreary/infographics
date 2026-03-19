@@ -1,0 +1,14 @@
+{
+  "sim_id": "infographic-taxonomy-tree",
+  "diagram_name": "Infographic Taxonomy Tree",
+  "chapter_number": 2,
+  "chapter_title": "Infographic Taxonomy and Classification",
+  "chapter_dir": "02-infographic-taxonomy-and-classification",
+  "library": "vis-network",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Classify",
+  "learning_objective": "Classify infographics by navigating the five dimensions of the taxonomy and understanding how each dimension contributes to design decisions.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: diagram\n**sim-id:** infographic-taxonomy-tree<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand (L2)\n**Bloom Verb:** Classify\n**Learning Objective:** Classify infographics by navigating the five dimensions of the taxonomy and understanding how each dimension contributes to design decisions.\n\nInstructional Rationale: A hierarchical tree visualization lets learners see the full taxonomy at a glance and explore each branch interactively. Hovering over a node reveals its definition, reinforcing the vocabulary without cluttering the initial view.\n\nVisual elements:\n- A central root node labeled \"Infographic Taxonomy\" at the top\n- Five branch nodes representing the five dimensions: Purpose, Structural Format, Visual Complexity, Audience, Content Domain\n- Leaf nodes under each branch showing the specific values (e.g., Educational, Analytical, Persuasive, Promotional under Purpose)\n- Color-coded branches: blue for Purpose, orange for Structural Format, green for Visual Complexity, purple for Audience, teal for Content Domain\n- Node size reflects number of children\n\nInteractive features:\n- Hover over any node to see a brief definition in a tooltip\n- Click a branch node to expand or collapse its children\n- Click a leaf node to highlight it and show a detailed description in an infobox panel below the graph\n- Physics-based layout with hierarchical top-down direction\n\nCanvas layout: Width-responsive, aliceblue background, minimum 600px width\nColor scheme: Blue primary, orange accent, matching book theme\nImplementation: vis-network with hierarchical layout, direction: UD (up-down)"
+}

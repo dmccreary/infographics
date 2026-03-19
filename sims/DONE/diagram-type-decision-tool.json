@@ -1,0 +1,14 @@
+{
+  "sim_id": "diagram-type-decision-tool",
+  "diagram_name": "Diagram Type Decision Tool",
+  "chapter_number": 3,
+  "chapter_title": "Presentation Slide Art Diagrams",
+  "chapter_dir": "03-presentation-slide-art-diagrams",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "Use",
+  "learning_objective": "Use the diagram type decision framework to select the best SmartArt category and subtype for a given content scenario.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: microsim\n**sim-id:** diagram-type-decision-tool<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply (L3)\n**Bloom Verb:** Use\n**Learning Objective:** Use the diagram type decision framework to select the best SmartArt category and subtype for a given content scenario.\n\nInstructional Rationale: An Apply-level decision tool presents learners with content scenarios and asks them to select the best diagram type. This bridges the gap between knowing diagram types in the abstract and applying that knowledge to real design decisions.\n\nVisual elements:\n- A scenario panel at the top showing a content design scenario (3-4 sentences describing the information to be visualized)\n- A two-step selection area below:\n  - Step 1: \"Select Category\" — eight category buttons in a row (List, Process, Cycle, Hierarchy, Relationship, Pyramid, Funnel, Picture), each with a small icon\n  - Step 2: \"Select Subtype\" — appears after Step 1, showing only the subtypes for the selected category\n- A \"Check\" button that evaluates the selection\n- A feedback panel showing:\n  - Correct: Green check with \"Excellent! [Explanation of why this is the best choice]\"\n  - Incorrect: Orange message with \"Consider: [Hint about the information structure] Try again!\"\n- A score and progress tracker: \"Scenario 3 of 8 — Score: 2/2\"\n\nInteractive features:\n- Click a category button to select it (highlighted state) — subtypes appear\n- Click a subtype button to refine the selection\n- Click \"Check\" to evaluate\n- Click \"Next\" to advance to the next scenario\n- 8 scenarios loaded from data.json\n\nData (store in data.json):\n- Array of scenario objects with: description, correctCategory, correctSubtype, explanation, hint\n- Example: \"A biology teacher wants to show how the four stages of mitosis follow each other in an unbroken sequence that repeats with every cell division.\" → Cycle, Basic Cycle\n\nCanvas layout: Width-responsive, aliceblue background, minimum 600px width\nColor scheme: Category buttons match the gallery colors; feedback uses green (correct) and orange (try again)"
+}

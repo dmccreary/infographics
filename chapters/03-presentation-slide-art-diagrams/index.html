@@ -1216,6 +1216,142 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1496,6 +1632,8 @@
   
     
     
+      
+        
       
         
       
@@ -1921,6 +2059,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Basic Cycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-the-ai-flywheel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: The AI Flywheel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-the-ai-flywheel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: The AI Flywheel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1929,6 +2091,30 @@
       Radial Cycle
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Radial Cycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-dmaic-continuous-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: DMAIC Continuous Improvement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-radial-cycle-continuous-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Radial Cycle — Continuous Improvement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1995,6 +2181,21 @@
       Organization Chart
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Organization Chart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-organization-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Organization Chart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2530,8 +2731,40 @@ Color scheme: Blue (arrows), orange (chevron), teal (timeline), green (gear), pu
 <h3 id="basic-cycle">Basic Cycle</h3>
 <p>A <strong>basic cycle</strong> is the simplest circular diagram: nodes arranged in a circle with arrows pointing clockwise from each node to the next. The last node connects back to the first, completing the loop. Basic cycles are used for any repeating process with distinct, equally weighted stages.</p>
 <p>Examples include the Plan-Do-Check-Act (PDCA) cycle, the scientific method (observe → hypothesize → experiment → analyze → repeat), and biological cycles like the Krebs cycle.</p>
+<h4 id="example-the-ai-flywheel">Example: The AI Flywheel</h4>
+<p>The AI Flywheel is a classic basic cycle infographic. It arranges four equally weighted stages — <strong>Data</strong>, <strong>Model</strong>, <strong>Prediction</strong>, and <strong>Feedback</strong> — in a circle with clockwise arrows connecting each stage to the next. No single stage dominates; the power of the diagram comes from showing that the last stage (Feedback) loops back to the first (Data), creating a self-reinforcing process. This is exactly the structural pattern that makes basic cycles effective: the viewer immediately understands that the process repeats and that each revolution strengthens the system.</p>
+<h4 id="diagram-the-ai-flywheel">Diagram: The AI Flywheel</h4>
+<iframe src="../../sims/ai-flywheel/main.html" height="470" width="100%" scrolling="no"></iframe>
+
+<p><a href="../../sims/ai-flywheel/main.html">View AI Flywheel Fullscreen</a></p>
+<p>Hover over each node to see how data feeds into model training, models generate predictions, predictions produce user feedback, and feedback provides new data — completing the cycle. Notice that the diagram uses four distinct colors to visually separate the stages while the uniform circular layout communicates that all four stages carry equal weight in the process.</p>
+<p>Notice the infobox at the bottom: the label ("Data:", "Model:", etc.) is rendered in the same color as the circle the user hovered over, using a bold, slightly larger font. The description text sits to the right of the label, uniformly indented so that all wrapped lines align at the same position. This <strong>color-matched label</strong> pattern is a good design practice for any interactive infographic with distinct colored regions — it creates an immediate visual link between the element the user selected and the explanation that appears.</p>
+<p>To implement this pattern, keep the label and description as <strong>separate data fields</strong> rather than embedding the label as the first word of a single description string. Separate fields let you style the label independently (color, size, weight) and control the indented paragraph layout without workarounds for mixed styling within a single text block.</p>
+<p>Here is an example of this data structure:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Concept descriptions</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">descriptions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="s1">&#39;Data&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;The foundation of any AI system...&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Model&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;The AI algorithm or machine learning model trained on the data...&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Prediction&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;The output or decision made by the AI model...&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Feedback&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;User responses, behaviors, and outcomes resulting from the predictions...&#39;</span>
+<span class="p">};</span>
+</code></pre></div></td></tr></table></div>
 <h3 id="radial-cycle">Radial Cycle</h3>
 <p>A <strong>radial cycle</strong> combines the circular and radial formats: a central hub connected to peripheral nodes that also connect to each other in sequence. The central hub represents the core concept or driver that powers the cycle. Radial cycles are effective when one concept is central to the repeating process.</p>
+<h4 id="example-dmaic-continuous-improvement">Example: DMAIC Continuous Improvement</h4>
+<p>The DMAIC (Define, Measure, Analyze, Improve, Control) cycle is a classic radial cycle. <strong>Quality</strong> sits at the center hub because it is the driving force behind every stage. The five outer stages cycle sequentially — each stage's output feeds the next — but all five also connect back to the central hub, showing that quality goals shape every stage and every stage feeds back into quality.</p>
+<p>Notice the visual difference from the AI Flywheel basic cycle above: the dashed spokes from the center hub to each outer node communicate that one concept <em>powers</em> the entire cycle, not just that stages follow each other in sequence. This is the defining characteristic of a radial cycle.</p>
+<h4 id="diagram-radial-cycle-continuous-improvement">Diagram: Radial Cycle — Continuous Improvement</h4>
+<iframe src="../../sims/radial-cycle/main.html" height="500" width="100%" scrolling="no"></iframe>
+
+<p><a href="../../sims/radial-cycle/main.html">View Radial Cycle Fullscreen</a></p>
+<p>Hover over each node to see its role. Notice how hovering over the central "Quality" hub highlights all the spokes, reinforcing that the hub drives every stage. The dashed spokes distinguish hub-to-node connections from the solid curved arrows of the sequential cycle.</p>
 <h3 id="gear-cycle">Gear Cycle</h3>
 <p>A <strong>gear cycle</strong> uses interlocking gear icons arranged in a circle. Like the gear process, the visual metaphor emphasizes mechanical interdependence — but in a cycle, the gears turn each other continuously. Gear cycles are effective for mechanical systems, supply chains, and any process where each stage both depends on and drives its neighbors.</p>
 <h3 id="nested-cycle">Nested Cycle</h3>
@@ -2626,6 +2859,11 @@ Color scheme: Blue nodes, orange arrows, green completion arrow (last-to-first)<
 <h3 id="organization-chart">Organization Chart</h3>
 <p>An <strong>organization chart</strong> is the most familiar hierarchy diagram — a tree showing people, roles, or departments and their reporting relationships. The CEO sits at the top, vice presidents on the next level, directors below them, and so on. Organization charts are used in any context with formal authority structures.</p>
 <p>Interactive organization charts add significant value: clicking a node reveals the person's title, responsibilities, and contact information. Expand/collapse controls allow navigation through large organizations without overwhelming the viewer.</p>
+<h4 id="diagram-organization-chart">Diagram: Organization Chart</h4>
+<iframe src="../../sims/org-chart/main.html" height="500" width="100%" scrolling="no"></iframe>
+
+<p><a href="../../sims/org-chart/main.html">View Organization Chart Fullscreen (recommended)</a></p>
+<p>This interactive organization chart uses color-coded hierarchy levels — brick red for the CEO, navy blue for C-Suite executives, deep purple for directors and managers, dark teal for team leads, and charcoal for individual contributors. Use the slider below the chart to show more or fewer positions, and drag to pan around the tree.</p>
 <h3 id="table-hierarchy">Table Hierarchy</h3>
 <p>A <strong>table hierarchy</strong> combines the tree structure of a hierarchy with the tabular layout of a spreadsheet. Each level of the hierarchy is represented as a row or column in a table, with indentation or grouping showing parent-child relationships. Table hierarchies are effective when each node has multiple attributes that need to be visible simultaneously.</p>
 <p>For example, a course curriculum hierarchy might show departments (level 1), programs (level 2), and courses (level 3), with columns for credit hours, enrollment, and instructor for each entry.</p>
@@ -2635,6 +2873,8 @@ Color scheme: Blue nodes, orange arrows, green completion arrow (last-to-first)<
 <h2 id="relationship-diagrams">Relationship Diagrams</h2>
 <p>A <strong>relationship diagram</strong> shows how items connect, overlap, or relate to each other without implying hierarchy or sequence. Relationship diagrams are the most diverse category, encompassing set overlaps, concentric targets, radial connections, and two-dimensional matrices.</p>
 <h3 id="venn-diagram">Venn Diagram</h3>
+<iframe src="../../sims/microsim-uniqueness/main.html" width="100%" height="460px" scrolling="no"></iframe>
+<p><a href="../../sims/microsim-uniqueness/main.html">Run the MicroSim Uniqueness Fullscreen</a></p>
 <p>A <strong>Venn diagram</strong> uses overlapping circles to show the relationships between sets. Items in the overlap regions belong to multiple sets simultaneously. Venn diagrams are effective for comparing 2-4 categories and highlighting what they share.</p>
 <p>Interactive Venn diagrams become powerful learning tools when learners can click on overlap regions to see specific examples of items that belong to multiple categories. For instance, a Venn diagram comparing "Educational Infographics" and "Analytical Infographics" might show "Data-driven concept explanations" in the overlap.</p>
 <h3 id="target-diagram">Target Diagram</h3>

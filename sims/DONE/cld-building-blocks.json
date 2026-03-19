@@ -1,0 +1,14 @@
+{
+  "sim_id": "cld-building-blocks",
+  "diagram_name": "CLD Building Blocks Explorer",
+  "chapter_number": 5,
+  "chapter_title": "Causal Loop Diagrams and Systems Thinking",
+  "chapter_dir": "05-causal-loop-diagrams-and-systems-thinking",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Explain",
+  "learning_objective": "Explain the three building blocks of a causal loop diagram (variables, causal links, polarity indicators) by interacting with each element and observing how they combine.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: microsim\n**sim-id:** cld-building-blocks<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand (L2)\n**Bloom Verb:** Explain\n**Learning Objective:** Explain the three building blocks of a causal loop diagram (variables, causal links, polarity indicators) by interacting with each element and observing how they combine.\n\n**Instructional Rationale:** Step-through interaction is appropriate because the Understand objective requires learners to observe how individual building blocks combine into a complete CLD. Each stage reveals one building block at a time, allowing learners to build mental models incrementally.\n\n**Canvas Layout:**\n- Drawing area (aliceblue background): displays diagram elements\n- Control area (white background, silver border): buttons and info text\n\n**Visual Elements:**\n- Three stages showing progressive construction of a simple CLD\n- Stage 1: Three labeled variable nodes (ovals with text) — \"Study Hours,\" \"Understanding,\" \"Exam Score\"\n- Stage 2: Causal link arrows appear connecting the variables\n- Stage 3: Polarity indicators (+/−) appear on each arrow with color coding (blue for positive, red for negative)\n\n**Interactive Controls:**\n- \"Next Stage\" / \"Previous Stage\" buttons for step-through\n- Current stage indicator (e.g., \"Stage 2 of 3\")\n- Info panel below the diagram explaining what the current stage demonstrates\n\n**Data Visibility Requirements:**\n- Stage 1: Show three variable nodes with labels; info text explains what variables are\n- Stage 2: Show arrows connecting variables; info text explains causal links and directionality\n- Stage 3: Show + and − symbols on arrows; info text explains positive and negative polarity\n\n**Behavior:**\n- On window resize, redraw all elements proportionally\n- Hovering over any element highlights it and shows a tooltip with its definition\n- Smooth transitions between stages\n\n**Default Parameters:**\n- Start at Stage 1\n- Canvas width: responsive to container\n- Canvas height: 450px\n\nImplementation: p5.js with step-through navigation"
+}

@@ -22,6 +22,18 @@ let triangleHeight;
 // Hover detection
 let hoveredRegion = null;
 
+// Map hovered region names to the circle indices that should be highlighted
+const highlightedCircles = {
+  'simplicity': [0],
+  'accessibility': [1],
+  'ai': [2],
+  'simplicity-accessibility': [0, 1],
+  'simplicity-ai': [0, 2],
+  'accessibility-ai': [1, 2],
+  'center': [0, 1, 2],
+  'none': []
+};
+
 // Region tooltips based on uniqueness.md content
 const tooltips = {
   'center': 'Educational MicroSims: The unique convergence of Simplicity, Accessibility, and AI Generation.  MicroSims are ideal for both educators and students that want to generate visualization of complex ideas in real time.',
@@ -108,15 +120,18 @@ function draw() {
   // move the entier drawing down 20
   translate(0, 30)
   
+  // Determine which circles are highlighted by the current hover
+  let activeIndices = highlightedCircles[hoveredRegion] || [];
+
   // Draw the three ellipses with blend mode for overlapping regions
   push();
     blendMode(MULTIPLY);
-    for (let circle of circles) {
-      fill(circle.color);
-      strokeWeight(2);
+    for (let i = 0; i < circles.length; i++) {
+      fill(circles[i].color);
       stroke('blue');
+      strokeWeight(activeIndices.includes(i) ? 3 : 1);
       // make the ellipses slightly wider in the x horiz than y vertical
-      ellipse(circle.x, circle.y, radius * 2.5, radius * 2);
+      ellipse(circles[i].x, circles[i].y, radius * 2.5, radius * 2);
     }
     blendMode(BLEND);
   pop();
@@ -163,9 +178,19 @@ function detectHoveredRegion() {
     return;
   }
 
-  // Calculate distances from mouse to each circle center
-  let distances = circles.map(c => dist(mouseX, mouseY, c.x, c.y));
-  let insideCircles = distances.map(d => d < radius);
+  // Account for the translate(0, 30) drawing offset
+  let adjustedMouseY = mouseY - 30;
+
+  // Ellipse semi-axes match the drawn ellipses: width = radius*2.5, height = radius*2
+  let semiX = radius * 1.25;
+  let semiY = radius;
+
+  // Use elliptical distance: ((dx/a)^2 + (dy/b)^2) <= 1
+  let insideCircles = circles.map(c => {
+    let dx = (mouseX - c.x) / semiX;
+    let dy = (adjustedMouseY - c.y) / semiY;
+    return (dx * dx + dy * dy) <= 1;
+  });
 
   // Determine which region
   let insideCount = insideCircles.filter(x => x).length;

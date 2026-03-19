@@ -1,0 +1,8 @@
+{
+  "title": "Overlay Type Comparison", "description": "Side-by-side comparison of four overlay types applied to the same diagram.",
+  "creator": "Dan McCreary", "date": "2026-03-15",
+  "subject": ["Overlay Patterns", "Interactive Infographics", "Image Maps"],
+  "type": "Interactive Simulation", "format": "text/html", "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0", "contributor": ["Claude Code"],
+  "bloomLevel": ["Evaluate"], "library": "p5.js"
+}

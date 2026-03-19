@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Knowledge Graph Learning Path Explorer</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="network"></div>
+        <div class="title">Learning Path Explorer</div>
+        <div class="legend">
+            <div class="legend-item"><div class="legend-color" style="background:#2196F3;border-color:#1565C0;"></div><span><strong>WEBFD</strong> Web Fundamentals</span></div>
+            <div class="legend-item"><div class="legend-color" style="background:#4CAF50;border-color:#2E7D32;"></div><span><strong>OVRLY</strong> Overlay Patterns</span></div>
+            <div class="legend-item"><div class="legend-color" style="background:#FF9800;border-color:#E65100;"></div><span><strong>MSIM</strong> MicroSim Standards</span></div>
+            <div class="legend-item"><div class="legend-color" style="background:#9C27B0;border-color:#6A1B9A;"></div><span><strong>LEARN</strong> Learning Science</span></div>
+            <div class="legend-item"><div class="legend-color" style="background:#FFD700;border-color:#FFA000;"></div><span><strong>Mastered</strong></span></div>
+        </div>
+        <div class="right-panel">
+            <div class="controls">
+                <button class="btn btn-primary" id="topo-btn">Topological Order</button>
+                <button class="btn btn-secondary" id="reset-btn">Reset</button>
+            </div>
+            <div class="info-panel" id="info-panel">
+                <div class="info-title" id="info-title">Learning Path</div>
+                <div class="info-content" id="info-content">
+                    <p>Click a node to see its dependencies.</p>
+                    <p>Double-click to mark as <strong>mastered</strong>.</p>
+                    <p>Mastering a concept unlocks its dependents.</p>
+                </div>
+            </div>
+            <div class="mastery-panel" id="mastery-panel">
+                <div class="mastery-count">Mastered: <span id="mastery-count">0</span> / <span id="total-count">0</span></div>
+                <div class="mastery-bar"><div class="mastery-fill" id="mastery-fill"></div></div>
+            </div>
+        </div>
+    </div>
+    <script src="learning-path-explorer.js"></script>
+</body>
+</html>

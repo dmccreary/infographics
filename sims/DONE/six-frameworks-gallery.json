@@ -1,0 +1,14 @@
+{
+  "sim_id": "six-frameworks-gallery",
+  "diagram_name": "Six Frameworks Interactive Gallery",
+  "chapter_number": 4,
+  "chapter_title": "Visual Problem-Solving Frameworks",
+  "chapter_dir": "04-visual-problem-solving-frameworks",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Compare",
+  "learning_objective": "Compare the six visual frameworks by examining rendered examples of each and explaining when each is most appropriate.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: diagram\n**sim-id:** six-frameworks-gallery<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand (L2)\n**Bloom Verb:** Compare\n**Learning Objective:** Compare the six visual frameworks by examining rendered examples of each and explaining when each is most appropriate.\n\nInstructional Rationale: Seeing all six frameworks rendered as concrete miniature examples — not just described in text — helps learners build visual recognition of each type. The interactive detail panel connects each visual to its question type and provides a worked example showing the framework applied to a real educational scenario.\n\nVisual elements:\n- Six visual thumbnails arranged in a 3x2 grid (responsive: 2x3 on narrow screens):\n  1. Portrait: A simple labeled outline of a person or object with callout lines to parts\n  2. Chart: A bar chart with 4 colored bars at different heights, with axis labels\n  3. Map: A schematic map with 5 location dots connected by dashed lines\n  4. Timeline: A horizontal line with 4 event markers alternating above and below\n  5. Flowchart: 3 process boxes connected by arrows with 1 diamond decision point\n  6. Multi-Variable Plot: A scatter plot with dots in 3 colors and a trend line\n- Each thumbnail has a colored border and the framework name below\n- Below the grid, a detail panel showing:\n  - Framework name and question type\n  - \"What it shows:\" — one-sentence description\n  - \"Best for:\" — 3-4 use cases\n  - \"Interactive enhancement:\" — how to add interactivity\n  - \"Educational example:\" — a specific scenario from a real course\n- Default: \"Click a framework to explore it.\"\n\nColor scheme:\n- Portrait: blue, Chart: orange, Map: green, Timeline: purple, Flowchart: teal, Multi-Variable: red\n\nInteractive features:\n- Hover to highlight a thumbnail's border\n- Click to select and populate the detail panel\n- The selected thumbnail gets a drop shadow and thicker border\n\nCanvas layout: Width-responsive, aliceblue background, minimum 600px width"
+}

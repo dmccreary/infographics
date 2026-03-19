@@ -1,0 +1,14 @@
+{
+  "sim_id": "structural-format-gallery",
+  "diagram_name": "Structural Format Gallery",
+  "chapter_number": 2,
+  "chapter_title": "Infographic Taxonomy and Classification",
+  "chapter_dir": "02-infographic-taxonomy-and-classification",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Compare",
+  "learning_objective": "Compare the five structural formats (linear, hierarchical, comparative, circular, radial) by viewing visual examples and identifying the distinguishing characteristics of each.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-15",
+  "specification": "Type: diagram\n**sim-id:** structural-format-gallery<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand (L2)\n**Bloom Verb:** Compare\n**Learning Objective:** Compare the five structural formats (linear, hierarchical, comparative, circular, radial) by viewing visual examples and identifying the distinguishing characteristics of each.\n\nInstructional Rationale: Seeing all five formats rendered as small visual thumbnails side by side allows learners to compare their spatial layouts directly. Clicking a format reveals its definition and best-use cases in an infobox, connecting the visual pattern to its appropriate context.\n\nVisual elements:\n- Five miniature infographic thumbnails arranged horizontally across the top of the canvas:\n  1. Linear: A horizontal row of 4 connected boxes with arrows (labeled \"A → B → C → D\")\n  2. Hierarchical: A tree with a root node and two levels of children\n  3. Comparative: Two columns side by side with aligned rows\n  4. Circular: Four nodes arranged in a circle with clockwise arrows\n  5. Radial: A central node with 5 spokes connecting to outer nodes\n- Each thumbnail is drawn in a 120x120 box with a colored border matching the format type\n- Below the thumbnails, a larger infobox area (full width) shows the name, description, best-use cases, and example for the currently selected format\n- Default state: Show instructional text \"Click a format above to learn more about it.\"\n\nColor scheme:\n- Linear: blue (#4285F4)\n- Hierarchical: orange (#FB8C00)\n- Comparative: green (#34A853)\n- Circular: purple (#8E44AD)\n- Radial: teal (#00897B)\n\nInteractive features:\n- Hover over a thumbnail to highlight its border and show the format name as a tooltip\n- Click a thumbnail to select it and display detailed information in the infobox below\n- Click again to deselect and return to the default instruction text\n- The selected thumbnail gets a thicker border and subtle shadow\n\nCanvas layout: Width-responsive, aliceblue background, minimum 600px width\nThumbnails resize proportionally based on canvas width"
+}

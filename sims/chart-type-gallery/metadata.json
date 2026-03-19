@@ -1,0 +1,52 @@
+{
+  "title": "Chart Type Gallery",
+  "creator": "Dan McCreary",
+  "subject": "Data Visualization",
+  "description": "Interactive gallery of 14 chart types with thumbnails, details panel, filtering by library, and quiz mode for recognition practice.",
+  "date": "2026-03-15",
+  "educational": {
+    "gradeLevel": ["undergraduate", "professional"],
+    "subjectArea": "Data Visualization",
+    "topic": "Chart Type Identification",
+    "learningObjectives": [
+      "Identify the 14 chart types by viewing example renderings",
+      "Recall which data characteristics each chart type communicates best"
+    ],
+    "bloomsTaxonomy": "Remember",
+    "duration": "10-15 minutes",
+    "prerequisites": ["Basic familiarity with data types"],
+    "standards": []
+  },
+  "technical": {
+    "framework": "Chart.js + Canvas 2D",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 650
+    },
+    "responsive": true,
+    "dependencies": ["Chart.js 4.4.0"],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": true
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Visual gallery with recognition practice and quiz mode",
+    "keyQuestions": [
+      "Which chart type would you choose for showing trends over time?",
+      "When is a pie chart appropriate vs. a bar chart?",
+      "What distinguishes a histogram from a bar chart?"
+    ],
+    "commonMisconceptions": [
+      "Histograms and bar charts are the same thing",
+      "Pie charts work well with many categories",
+      "Scatter plots can show categorical data"
+    ],
+    "assessmentOpportunities": [
+      "Quiz mode score tracking",
+      "Matching exercise with real datasets"
+    ]
+  },
+  "chapter": "08-javascript-visualization-libraries"
+}

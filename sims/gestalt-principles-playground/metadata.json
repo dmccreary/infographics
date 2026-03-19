@@ -1,0 +1,45 @@
+{
+  "title": "Gestalt Principles Interactive Playground",
+  "description": "Interactive simulation demonstrating the four Gestalt principles (proximity, contrast, alignment, repetition) through a manipulable grid of visual elements that respond to parameter changes in real time.",
+  "creator": "Dan McCreary",
+  "date": "2026-03-15",
+  "subject": [
+    "Gestalt Principles",
+    "Visual Design",
+    "Infographic Design",
+    "Proximity",
+    "Contrast",
+    "Alignment",
+    "Repetition"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/infographics/sims/gestalt-principles-playground/",
+  "publisher": "Interactive Infographics Textbook",
+  "educationalLevel": "Undergraduate, Professional Development",
+  "learningResourceType": "simulation",
+  "audience": "Instructional Designers, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "Gestalt Principles",
+    "Proximity",
+    "Contrast",
+    "Alignment",
+    "Repetition",
+    "Visual Grouping",
+    "Design Hierarchy"
+  ],
+  "prerequisites": [
+    "Basic understanding of visual design",
+    "Familiarity with infographic components"
+  ],
+  "library": "p5.js"
+}

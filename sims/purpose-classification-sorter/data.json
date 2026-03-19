@@ -1,0 +1,52 @@
+[
+  {
+    "description": "A biology teacher creates a step-by-step visual walkthrough showing how photosynthesis converts sunlight into glucose, with labeled diagrams at each stage of the light and dark reactions.",
+    "correctCategory": "Educational",
+    "explanation": "This interactive infographic exists to teach a scientific process. The step-by-step structure, labeled diagrams, and focus on explaining a concept are hallmarks of an educational purpose."
+  },
+  {
+    "description": "A university presents a visual showing declining student satisfaction scores alongside rising textbook costs, then frames their new interactive textbook initiative as the solution to both trends.",
+    "correctCategory": "Persuasive",
+    "explanation": "Although it contains data, the primary purpose is to argue a point — that the university's initiative solves a problem. The selective pairing of negative trends with a proposed solution is a persuasive framing technique."
+  },
+  {
+    "description": "A data science team visualizes three years of website traffic data, breaking down visits by source, device type, and time of day to identify which channels drive the most engagement.",
+    "correctCategory": "Analytical",
+    "explanation": "This interactive infographic exists to reveal patterns in data. The multi-dimensional breakdown (source, device, time) and focus on identifying trends are characteristic of an analytical purpose."
+  },
+  {
+    "description": "A software company creates a colorful one-page visual highlighting their new AI writing assistant's features, pricing tiers, and a prominent 'Start Free Trial' button.",
+    "correctCategory": "Promotional",
+    "explanation": "The primary goal is to market a product. Feature highlights, pricing information, and a call-to-action button are classic promotional design elements."
+  },
+  {
+    "description": "A climate research group publishes an interactive visualization comparing CO2 emissions across 50 countries over 20 years, with filters for per-capita and total output views.",
+    "correctCategory": "Analytical",
+    "explanation": "This interactive infographic presents data for analysis. The comparison across countries and time periods, combined with filter controls for different metrics, supports data exploration and pattern discovery."
+  },
+  {
+    "description": "A health department creates a visual guide explaining the five stages of grief, with descriptions of each stage, common experiences, and coping strategies for each phase.",
+    "correctCategory": "Educational",
+    "explanation": "The purpose is to teach a psychological concept. The structured explanation of stages with descriptions and practical guidance is designed to build understanding, not sell or persuade."
+  },
+  {
+    "description": "An environmental nonprofit creates a dramatic visual showing a glacier shrinking over 50 years, ending with the message 'Act now — donate to protect what remains.'",
+    "correctCategory": "Persuasive",
+    "explanation": "While it shows real data (glacier retreat), the purpose is to convince viewers to take action and donate. The emotional framing ('dramatic,' 'Act now') and call-to-action reveal persuasive intent."
+  },
+  {
+    "description": "A fitness app company designs a vibrant visual showcasing user testimonials, before-and-after statistics, and a QR code linking to their app store page.",
+    "correctCategory": "Promotional",
+    "explanation": "Testimonials, transformation statistics, and an app download link are all designed to market the product. The goal is customer acquisition, not education or data analysis."
+  },
+  {
+    "description": "A museum creates an interactive timeline showing how artistic movements influenced each other, with clickable nodes for Impressionism, Cubism, Abstract Expressionism, and Pop Art.",
+    "correctCategory": "Educational",
+    "explanation": "This interactive infographic teaches art history by showing connections between movements. The interactive timeline with explanatory content at each node is designed to build understanding of cultural evolution."
+  },
+  {
+    "description": "A financial analyst creates a dashboard showing quarterly revenue, profit margins, and customer acquisition costs across four product lines, with drill-down capability into each metric.",
+    "correctCategory": "Analytical",
+    "explanation": "This is a data analysis tool. The multi-metric dashboard with drill-down capability is designed to help viewers explore financial performance data and identify trends across product lines."
+  }
+]
