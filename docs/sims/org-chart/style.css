@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+}
+
+.header {
+    background-color: aliceblue;
+    border-bottom: 1px solid silver;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 14px;
+    color: #666;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 15px;
+    background-color: white;
+    border-top: 1px solid silver;
+    flex-wrap: wrap;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.control-group label {
+    font-size: 13px;
+    color: #333;
+    font-weight: 500;
+}
+
+#employeeCount {
+    width: 200px;
+    cursor: pointer;
+}
+
+#countValue {
+    font-weight: bold;
+    color: #3498db;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+#mynetwork {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    position: relative;
+}
+
+/* Move vis-network navigation buttons to the bottom center */
+div.vis-network div.vis-navigation div.vis-button {
+    position: absolute !important;
+    left: auto !important;
+    top: auto !important;
+    bottom: 10px !important;
+}
+div.vis-button.vis-zoomIn       { right: 80px !important; }
+div.vis-button.vis-zoomOut      { right: 50px !important; }
+div.vis-button.vis-zoomExtends  { right: 20px !important; }
+div.vis-button.vis-up           { right: 170px !important; }
+div.vis-button.vis-down         { right: 140px !important; }
+div.vis-button.vis-left         { right: 110px !important; }
+div.vis-button.vis-right        { right: 200px !important; }
