@@ -121,6 +121,51 @@ This MicroSim illustrates several important graph database concepts:
 
 7. **Subgraph Filtering**: The slider demonstrates filtering a graph to show only a connected subgraph (first N nodes that maintain valid relationships).
 
+## Scaling Challenges for Large Organizations
+
+This MicroSim displays up to 50 positions — enough to illustrate the concept, but far smaller than a real enterprise. A typical Fortune 500 company has 10,000 to 300,000 employees. Rendering that many nodes on a single canvas is neither practical nor useful. The challenges fall into several categories.
+
+### Screen Real Estate
+
+A hierarchy with 10,000 nodes cannot be displayed legibly at any zoom level. At a zoom where node labels are readable, only a fraction of the tree is visible. At a zoom where the entire tree fits, labels shrink to illegible dots. There is no single view that works — the tool must support multiple views at different scales.
+
+### Navigation: Drill Down and Roll Up
+
+The most important capability for large org charts is **drill-down navigation**. Rather than showing the entire tree, the tool shows one business unit at a time with the ability to:
+
+- **Drill down** — click a manager node to expand it into a subtree showing their direct reports and the reports below them
+- **Roll up** — click a breadcrumb or "up" button to collapse back to the parent level
+- **Focus view** — search for an employee by name and display their position within the hierarchy, showing ancestors above and direct reports below
+
+This "focus + context" pattern is how every production org chart tool works, from SAP SuccessFactors to Workday to Microsoft Visio.
+
+### Expand and Collapse
+
+Within a visible subtree, individual branches should be **collapsible**. A VP with six directors, each managing four teams, creates a subtree of over 30 nodes. Collapsing branches the user is not interested in keeps the visible portion manageable. Visual indicators (such as a `+` or `−` icon on each manager node, or a count badge showing "12 reports") signal which nodes can be expanded.
+
+### Lazy Loading
+
+With tens of thousands of nodes, loading the entire dataset into the browser is wasteful. Production tools use **lazy loading** — fetching only the nodes needed for the current view. When the user drills into a business unit, the tool fetches that subtree from an API. This keeps page load times fast regardless of organization size.
+
+### Search and Filtering
+
+In a large organization, the most common interaction is not browsing — it is searching. Users want to find a specific person, role, or department. Effective org chart tools provide:
+
+- **Name search** with autocomplete
+- **Role/title filtering** — show only directors, or only engineering managers
+- **Department filtering** — show only the marketing organization
+- **Path highlighting** — after finding someone, highlight the chain of command from that person up to the CEO
+
+### Matrix and Dotted-Line Relationships
+
+Large organizations rarely follow a pure tree structure. Employees often have **dotted-line** (secondary) reporting relationships — a data scientist in the product team who also reports to the Chief Data Officer, or a regional sales manager who reports to both the VP of Sales and the regional general manager.
+
+These matrix relationships turn the tree into a directed acyclic graph (DAG), which is harder to lay out visually. Production tools handle this by showing the primary reporting line as a solid edge and dotted-line relationships as dashed edges that can be toggled on and off.
+
+### Design Implications
+
+The slider control in this MicroSim is a simplified version of the expand/collapse pattern — it controls how many nodes are visible. In a production tool, this control would be replaced by per-node expand/collapse buttons, breadcrumb navigation, search, and lazy-loading APIs. The core visualization principles (hierarchical layout, color-coded levels, readable labels) remain the same at any scale, but the navigation and data management patterns must evolve dramatically to handle real-world organizations.
+
 ## Technical Implementation
 
 **Architecture:**
