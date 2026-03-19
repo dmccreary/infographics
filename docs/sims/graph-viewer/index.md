@@ -1,3 +1,7 @@
+---
+title: Learning Graph Viewer
+description: Interactive force-directed viewer for exploring the course learning graph with search, category filtering, pan/zoom, and live statistics.
+---
 # Learning Graph Viewer
 
 [Open Learning Graph Viewer Fullscreen](./main.html){ .md-button .md-button--primary }

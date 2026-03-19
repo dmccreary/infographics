@@ -1,4 +1,6 @@
 ---
+title: Book Levels
+description: Interactive tool showing the five levels of intelligent textbooks, from static PDF to fully adaptive AI-driven content.
 hide:
   - toc
 ---

@@ -274,6 +274,18 @@ A **basic cycle** is the simplest circular diagram: nodes arranged in a circle w
 
 Examples include the Plan-Do-Check-Act (PDCA) cycle, the scientific method (observe → hypothesize → experiment → analyze → repeat), and biological cycles like the Krebs cycle.
 
+#### Example: The AI Flywheel
+
+The AI Flywheel is a classic basic cycle infographic. It arranges four equally weighted stages — **Data**, **Model**, **Prediction**, and **Feedback** — in a circle with clockwise arrows connecting each stage to the next. No single stage dominates; the power of the diagram comes from showing that the last stage (Feedback) loops back to the first (Data), creating a self-reinforcing process. This is exactly the structural pattern that makes basic cycles effective: the viewer immediately understands that the process repeats and that each revolution strengthens the system.
+
+#### Diagram: The AI Flywheel
+
+<iframe src="../../sims/ai-flywheel/main.html" height="470" width="100%" scrolling="no"></iframe>
+
+[View AI Flywheel Fullscreen](../../sims/ai-flywheel/main.html)
+
+Hover over each node to see how data feeds into model training, models generate predictions, predictions produce user feedback, and feedback provides new data — completing the cycle. Notice that the diagram uses four distinct colors to visually separate the stages while the uniform circular layout communicates that all four stages carry equal weight in the process.
+
 ### Radial Cycle
 
 A **radial cycle** combines the circular and radial formats: a central hub connected to peripheral nodes that also connect to each other in sequence. The central hub represents the core concept or driver that powers the cycle. Radial cycles are effective when one concept is central to the repeating process.

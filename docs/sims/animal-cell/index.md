@@ -1,4 +1,6 @@
 ---
+title: Animal Cell Explorer
+description: Overlay-style MicroSim spotlighting six core organelles with hover callouts, AP tips, and a quiz mode for quick recall checks.
 hide:
     toc
 ---

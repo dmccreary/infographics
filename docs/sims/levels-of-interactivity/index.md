@@ -1,4 +1,6 @@
 ---
+title: Levels of Interactivity
+description: Visual guide to the spectrum of interactivity in educational content, from static images through fully adaptive simulations.
 hide:
   - toc
 ---
