@@ -286,9 +286,40 @@ The AI Flywheel is a classic basic cycle infographic. It arranges four equally w
 
 Hover over each node to see how data feeds into model training, models generate predictions, predictions produce user feedback, and feedback provides new data — completing the cycle. Notice that the diagram uses four distinct colors to visually separate the stages while the uniform circular layout communicates that all four stages carry equal weight in the process.
 
+Notice the infobox at the bottom: the label ("Data:", "Model:", etc.) is rendered in the same color as the circle the user hovered over, using a bold, slightly larger font. The description text sits to the right of the label, uniformly indented so that all wrapped lines align at the same position. This **color-matched label** pattern is a good design practice for any interactive infographic with distinct colored regions — it creates an immediate visual link between the element the user selected and the explanation that appears.
+
+To implement this pattern, keep the label and description as **separate data fields** rather than embedding the label as the first word of a single description string. Separate fields let you style the label independently (color, size, weight) and control the indented paragraph layout without workarounds for mixed styling within a single text block.
+
+Here is an example of this data structure:
+
+```javascript
+// Concept descriptions
+let descriptions = {
+'Data': 'The foundation of any AI system...',
+'Model': 'The AI algorithm or machine learning model trained on the data...',
+'Prediction': 'The output or decision made by the AI model...',
+'Feedback': 'User responses, behaviors, and outcomes resulting from the predictions...'
+};
+
+```
+
 ### Radial Cycle
 
 A **radial cycle** combines the circular and radial formats: a central hub connected to peripheral nodes that also connect to each other in sequence. The central hub represents the core concept or driver that powers the cycle. Radial cycles are effective when one concept is central to the repeating process.
+
+#### Example: DMAIC Continuous Improvement
+
+The DMAIC (Define, Measure, Analyze, Improve, Control) cycle is a classic radial cycle. **Quality** sits at the center hub because it is the driving force behind every stage. The five outer stages cycle sequentially — each stage's output feeds the next — but all five also connect back to the central hub, showing that quality goals shape every stage and every stage feeds back into quality.
+
+Notice the visual difference from the AI Flywheel basic cycle above: the dashed spokes from the center hub to each outer node communicate that one concept *powers* the entire cycle, not just that stages follow each other in sequence. This is the defining characteristic of a radial cycle.
+
+#### Diagram: Radial Cycle — Continuous Improvement
+
+<iframe src="../../sims/radial-cycle/main.html" height="500" width="100%" scrolling="no"></iframe>
+
+[View Radial Cycle Fullscreen](../../sims/radial-cycle/main.html)
+
+Hover over each node to see its role. Notice how hovering over the central "Quality" hub highlights all the spokes, reinforcing that the hub drives every stage. The dashed spokes distinguish hub-to-node connections from the solid curved arrows of the sequential cycle.
 
 ### Gear Cycle
 

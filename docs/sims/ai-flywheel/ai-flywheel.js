@@ -290,7 +290,14 @@ function drawDescription() {
     let baseFontSize = constrain(containerWidth * 0.025, 12, 14);
     let descWidth = canvasWidth - leftMargin * 2;
 
-    // Measure the bold label width
+    // Infobox layout: bold colored label + indented description paragraph.
+    // The label uses the node's circle color, a larger bold font, and sits
+    // at the left margin. The description paragraph is indented to the right
+    // of the label so that ALL wrapped lines align at the same x position.
+    // This produces a clean, uniform block of text beside the colored label.
+    // Approved layout — do not change the label color/size/indent pattern.
+
+    // Draw the bold colored label (matches the node's circle color)
     textStyle(BOLD);
     textSize(baseFontSize + 4);
     fill(hoveredNode.color);

@@ -313,6 +313,12 @@ Interactive Micro Simulations to help students learn interactive infographic des
 
     Interactive classification quiz where learners sort infographic descriptions into four purpose categories with immediate feedback.
 
+-   **[Radial Cycle: Continuous Improvement](./radial-cycle/index.md)**
+
+    ![Radial Cycle](./radial-cycle/radial-cycle.png)
+
+    Radial cycle diagram showing the DMAIC continuous improvement cycle with Quality as the central hub driving five sequential stages.
+
 -   **[Reinforcing vs Balancing Loop Simulator](./reinforcing-vs-balancing/index.md)**
 
     Compare the dynamic behavior of reinforcing and balancing feedback loops by adjusting initial conditions and observing system behavior over time.
