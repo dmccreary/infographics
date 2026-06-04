@@ -155,6 +155,7 @@ nav:
 
   - Stories:
     - Overview: stories/index.md
+    - William Playfair - The Shape of Numbers: stories/william-playfair/index.md
     - Edward Tufte - The Ink That Matters: stories/edward-tufte/index.md
     - Story Ideas: stories/story-ideas.md
   

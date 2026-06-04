@@ -1,0 +1,24 @@
+{
+  "metrics": {
+    "concepts": 350,
+    "chapters": 14,
+    "microsims": 81,
+    "stories": 2,
+    "glossaryTerms": 350,
+    "faqs": 72,
+    "quizQuestions": 140,
+    "chapterQuizzes": 14,
+    "chapterReferences": 1,
+    "references": 10,
+    "diagrams": 74,
+    "equations": 49,
+    "words": 180360,
+    "links": 646,
+    "appendices": 4,
+    "mascotImages": 9,
+    "developmentStage": "Not specified",
+    "equivalentPages": 780
+  },
+  "metricsGeneratedBy": "Book Metrics Python Program v0.08",
+  "metricsGeneratedOn": "June 03, 2026 at 12:10 PM"
+}
