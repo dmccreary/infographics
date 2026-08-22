@@ -35,13 +35,13 @@ MicroSim.  The other tools using embeddings to find similar MicroSims based on e
 distance measurements.  These tools help you answer the question, "What MicroSims are most similar
 to this MicroSim"?
 
-[Agent Skills Textbook](https://dmccreary.github.io/claude-skills/) - this is
+[Agent Skills Textbook](https://dmccreary.github.io/ibook-skills/) - this is
 an intelligent textbook that help you learn how to use and create your own
 Agent skills for generating MicroSims from a short specification.  Note that
 the skill in this book now work with OpenAI's codex command line interface
 as well as other AI IDEs that now support skill standards.  See the [Agent Skill website](https://agentskills.io/home) for description of these standards.
 
-[Agent Skills for generating MicroSims](https://dmccreary.github.io/claude-skills/skills/microsims/)
+[Agent Skills for generating MicroSims](https://dmccreary.github.io/ibook-skills/skills/microsims/)
 Working AI Skill files that are precise rules and complex decision trees used to generate textbooks with precise rules for
 mapping a learning objective to a MicroSim type.
 
