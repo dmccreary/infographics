@@ -1,17 +1,14 @@
 {
   "title": "Biogeochemical Cycles Dashboard",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
+  "subject": "AI Interactive Infographics",
   "description": "Interactive dashboard that overlays carbon, nitrogen, phosphorus, and water cycle flows on a shared cross-sectional landscape, helping students trace reservoirs, fluxes, and human impacts in one view.",
   "date": "2026-02-27",
   "educational": {
     "gradeLevel": [
-      "9",
-      "10",
-      "11",
-      "12"
+      "Adult"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Other",
     "topic": "Biogeochemical Cycles Dashboard",
     "learningObjectives": [
       "TODO: Add learning objectives"

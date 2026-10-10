@@ -1,17 +1,14 @@
 {
   "title": "Infographic Lifecycle Wheel",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
+  "subject": "AI Interactive Infographics",
   "description": "Interactive MicroSim for infographic lifecycle wheel",
   "date": "2026-03-15",
   "educational": {
     "gradeLevel": [
-      "9",
-      "10",
-      "11",
-      "12"
+      "Adult"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Other",
     "topic": "Infographic Lifecycle Wheel",
     "learningObjectives": [
       "TODO: Add learning objectives"

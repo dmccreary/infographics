@@ -1,17 +1,14 @@
 {
   "title": "Interactive Learning Graph Explorer",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
+  "subject": "AI Interactive Infographics",
   "description": "Interactive MicroSim for interactive learning graph explorer",
   "date": "2026-03-15",
   "educational": {
     "gradeLevel": [
-      "9",
-      "10",
-      "11",
-      "12"
+      "Adult"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Other",
     "topic": "Interactive Learning Graph Explorer",
     "learningObjectives": [
       "TODO: Add learning objectives"

@@ -1,17 +1,14 @@
 {
   "title": "Comparative Anatomy Explorer",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
+  "subject": "AI Interactive Infographics",
   "description": "Interactive MicroSim for comparative anatomy explorer",
   "date": "2026-02-27",
   "educational": {
     "gradeLevel": [
-      "9",
-      "10",
-      "11",
-      "12"
+      "Adult"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Other",
     "topic": "Comparative Anatomy Explorer",
     "learningObjectives": [
       "TODO: Add learning objectives"

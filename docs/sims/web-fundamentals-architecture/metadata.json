@@ -1,17 +1,14 @@
 {
   "title": "Web Fundamentals Architecture Overview",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
+  "subject": "AI Interactive Infographics",
   "description": "Interactive MicroSim for web fundamentals architecture overview",
   "date": "2026-03-15",
   "educational": {
     "gradeLevel": [
-      "9",
-      "10",
-      "11",
-      "12"
+      "Adult"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Other",
     "topic": "Web Fundamentals Architecture Overview",
     "learningObjectives": [
       "TODO: Add learning objectives"

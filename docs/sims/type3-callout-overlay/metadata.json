@@ -1,17 +1,14 @@
 {
   "title": "Type 3 Callout to Edge Demo",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
+  "subject": "AI Interactive Infographics",
   "description": "Interactive MicroSim for type 3 callout to edge demo",
   "date": "2026-03-15",
   "educational": {
     "gradeLevel": [
-      "9",
-      "10",
-      "11",
-      "12"
+      "Adult"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Other",
     "topic": "Type 3 Callout to Edge Demo",
     "learningObjectives": [
       "TODO: Add learning objectives"
